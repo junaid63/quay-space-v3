@@ -1,0 +1,469 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    animation: modalopen 0.5s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-content-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-side-img {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-side-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.black-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    z-index: 2;
+}
+
+.contents {
+    position: relative;
+    z-index: 3;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.contents .title {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contents .text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.modal-form {
+    flex: 1.2;
+    padding: 30px;
+    background: #fff;
+    max-height: auto;
+    overflow-y: auto;
+}
+
+.form-section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#bookingModal .icon-title {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--secondary);
+    margin: 20px 0px;
+}
+
+#bookingModal .icon-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient( 120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    animation: Modalshine 2s linear infinite;
+    /* 🔥 Infinite slow animation */
+}
+
+@keyframes Modalshine {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 120%;
+    }
+}
+
+#bookingModal .section-title {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 25px!important;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    width: 94%;
+}
+
+#bookingModal .icon-title i {
+    margin-right: 10px;
+    font-size: 20px;
+    width: 6%;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #1a3a8f;
+    box-shadow: 0 0 0 0.2rem rgba(26, 58, 143, 0.25);
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.step {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #6c757d;
+    z-index: 2;
+}
+
+
+/* .step.active {
+    background-color: #1a3a8f;
+    color: white;
+} */
+
+#bookingModal .step.completed {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.step-indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e9ecef;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.step-text {
+    position: absolute;
+    top: 40px;
+    font-size: 0.7rem;
+    text-align: center;
+    width: 80px;
+    left: -22px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.required-field::after {
+    content: '*';
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+.document-upload {
+    border: 2px dashed #00000047;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: var(--white);
+}
+
+.document-upload:hover {
+    border-color: var(--primary);
+}
+
+.plan-option {
+    position: relative;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: var(--black);
+    font-weight: 600;
+    padding-left: 20px;
+    border-left: 2px solid var(--secondary);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.plan-option:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.plan-option .text-muted {
+    font-size: 16px;
+    margin-left: 28px;
+}
+
+.form-check {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-check .form-check-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.form-check-label.modal-check-box {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--bs-gray);
+}
+
+.form-check-label.modal-radio {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bs-gray);
+}
+
+.form-check-input {
+    margin-top: 0px;
+}
+
+.form-check-input:checked {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-navigation button {
+    border-radius: 5px;
+}
+
+#bookingModal .form-navigation .all-btn-wrapper button {
+    padding: 12px 40px;
+}
+
+.section-title.font-instrumentsans-medium {
+    color: #1a3a8f;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.modal-document-upload-main {
+    padding: 20px 20px;
+    background: #eee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-document-upload-main .document-upload p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modal-document-upload-main .document-upload i::before {
+    color: var(--primary);
+}
+
+.modal-document-upload-main .document-upload .small {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+
+.modal-document-upload-main .document-upload .btn {
+    cursor: pointer;
+    background: var(--primary);
+    padding: 6px 20px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.step-indicator {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.step {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #6c757d;
+    z-index: 2;
+}
+
+
+/* completed step circle */
+
+.step.completed {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+
+/* line between steps */
+
+.step::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 200px;
+    /* adjust based on spacing */
+    height: 2px;
+    background-color: #e9ecef;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+
+/* last step has no line */
+
+.step:last-child::after {
+    display: none;
+}
+
+
+/* completed step line */
+
+.step.completed::after {
+    background-color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    .modal-content-form {
+        flex-direction: column;
+    }
+    .modal-side-img {
+        min-height: 200px;
+    }
+}

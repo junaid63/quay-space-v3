@@ -1,0 +1,23 @@
+.custom-table-style-1 table th,
+.custom-table-style-1 table td {
+  padding: 5px !important;
+}
+.custom-table-style-1 table .edit-btn,
+.custom-table-style-1 table .delete-btn {
+  padding: 5px;
+  aspect-ratio: 1;
+  width: 30px;
+  height: 30px;
+}
+.custom-table-style-1 .dt-length,
+.custom-table-style-1 .dt-search {
+  margin: 10px 0px 10px 0px !important;
+}
+.custom-table-style-1 .dt-length select {
+  padding: 10px 50px 10px 10px !important;
+}
+.custom-table-style-1 .dt-search input {
+  padding: 10px 50px 10px 10px !important;
+}
+
+/*# sourceMappingURL=custom.css.map */
