@@ -39,20 +39,29 @@ Quay Space | Faq's
                         </div>
                         <div class="accordion-wrapper fade-anim">
                             <div class="accordion" id="accordionExample">
-                                <div class="accordion-item active">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Bring their individual experience and creative?
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            People know what an FAQ is, so make that your page title. Don’t overcomplicate things by calling it “Good to Know” or “More Info”. Sometimes people put the frequently asked questions section on their Contact page, but you can create your own page and
-                                            put it right in your website navigation menu
+                                @foreach ($dynamicFaqs as $faq)
+                                    <div class="accordion-item {{ $loop->first ? 'active' : '' }}">
+                                        <h2 class="accordion-header" id="heading{{ $loop->index }}">
+                                            <button class="accordion-button {{ $loop->first ? '' : 'collapsed' }}" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapse{{ $loop->index }}"
+                                                aria-expanded="{{ $loop->first ? 'true' : 'false' }}"
+                                                aria-controls="collapse{{ $loop->index }}">
+                                                {{ ucwords($faq->title) }}
+                                            </button>
+                                        </h2>
+                                        <div id="collapse{{ $loop->index }}" 
+                                            class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}" 
+                                            aria-labelledby="heading{{ $loop->index }}"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                {!! $faq->description !!}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
+                                @endforeach
+
+                                {{-- <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Design should enrich our day?
@@ -129,7 +138,7 @@ Quay Space | Faq's
                                             put it right in your website navigation menu
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
