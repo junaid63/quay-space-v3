@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Ourteam;
+use App\Faq;
 use App\ContentPage;
 
 class FrontendController extends Controller
@@ -41,8 +42,9 @@ class FrontendController extends Controller
     public function faqs()
     {
         $view = 'frontend.faqs';
+        $dynamicFaqs = Faq::where('status', 1)->get();
         $contentpagesget = $this->ContentPagesGet();
-        return view($view,compact('contentpagesget'));
+        return view($view,compact('contentpagesget','dynamicFaqs'));
     }
     public function contactus()
     {
