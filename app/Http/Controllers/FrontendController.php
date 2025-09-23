@@ -5,9 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Ourteam;
+use App\ContentPage;
 
 class FrontendController extends Controller
 {
+    private function ContentPagesGet() 
+    {
+        return ContentPage::where('status', 1)->get();
+    }
     private function OurTeamsGet() 
     {
         return Ourteam::where('status', 1)->get();
@@ -15,34 +20,42 @@ class FrontendController extends Controller
     public function index()
     {
         $view = 'frontend.index';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
     }
     public function aboutus()
     {
         $view = 'frontend.aboutus';
         $ourteams = $this->OurTeamsGet();
-        return view($view, compact('ourteams'));
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view, compact('ourteams','contentpagesget'));
     }
     public function ourteam()
     {
         $view = 'frontend.our-team';
         $ourteams = $this->OurTeamsGet();
-        return view($view,compact('ourteams'));
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('ourteams','contentpagesget'));
+        
     }
     public function faqs()
     {
         $view = 'frontend.faqs';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
     }
     public function contactus()
     {
         $view = 'frontend.contactus';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
+
     }
     public function services()
     {
         $view = 'frontend.services';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
     }
     public function contactSubmit(Request $request)
     {   
@@ -62,12 +75,21 @@ class FrontendController extends Controller
     public function booknow()
     {
         $view = 'frontend.booknow';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
     }
     public function membership()
     {
         $view = 'frontend.membership';
-        return view($view);
+        $contentpagesget = $this->ContentPagesGet();
+        return view($view,compact('contentpagesget'));
+    }
+    public function contentpages($slug)
+    {
+        $view = 'frontend.contentpages';
+        $contentpagesget = $this->ContentPagesGet();
+        $contentPages = ContentPage::where('slug',$slug)->first();
+        return view($view,compact('contentPages','contentpagesget'));
     }
     
 }

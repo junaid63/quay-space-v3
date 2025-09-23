@@ -375,6 +375,18 @@
                 }
             });
         }
+        var custom_fixed = document.querySelector('.custom-sticky');
+        if (custom_fixed && device_width > 991) {
+            gsap.to(".custom-sticky", {
+                scrollTrigger: {
+                    trigger: ".pin-area",
+                    pin: ".custom-sticky",
+                    start: "top top",
+                    end: "40%",
+                    pinSpacing: false,
+                }
+            });
+        }
 
         // grow animation 
         var grow = document.querySelectorAll(".grow");

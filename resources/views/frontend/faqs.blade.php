@@ -27,7 +27,7 @@ Quay Space | Faq's
     <!-- faq area start  -->
     <section class="faq-area-faq-page pin-area py-lg-5 py-3">
         <div class="container">
-            <div class="row gap-lg-5 gap-0 align-items-center">
+            <div class="row gap-lg-5 gap-0">
                 <div class="col-lg-6 col-md-12 order-lg-0 order-1">
                     <div class="faq-area-faq-page-inner">
                         <div class="section-header fade-anim">
@@ -135,7 +135,7 @@ Quay Space | Faq's
                     </div>
                 </div>
                 <div class="col-lg-5 pb-lg-0 pb-5 order-lg-1 order-0 d-md-none d-lg-flex d-flex">
-                    <div class="faq-img ps-lg-0 ps-0 pin-element">
+                    <div class="faq-img custom-sticky ps-lg-0 ps-0">
                         <img src="https://img.freepik.com/free-photo/young-woman-showing-her-friend-something-her-laptop-study-session_23-2149283379.jpg" alt="">
                     </div>
                 </div>
