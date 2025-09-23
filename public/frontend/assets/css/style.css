@@ -2167,7 +2167,8 @@ section {
     text-align: center;
     line-height: 46px;
     font-size: 20px;
-    color: var(--primary);
+    /* color: var(--primary); */
+    color: var(--black);
     left: 0;
     top: 0;
     height: 46px;
@@ -4422,8 +4423,8 @@ section {
 }
 
 .hero-area .award-wrapper .circle-text-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
     /* background-color: #F9E6DC; */
 }
 

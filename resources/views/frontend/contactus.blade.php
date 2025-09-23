@@ -201,10 +201,10 @@ Quay Space | Contact Us
                                                         showConfirmButton:false,
                                                         timer:2000,
                                                     });
-                                                    $("#name").val("");
-                                                    $("#email").val("");
-                                                    $("#phone").val("");
-                                                    $("#message").val("");
+                                                    $("#contactname").val("");
+                                                    $("#contactemail").val("");
+                                                    $("#contactphone").val("");
+                                                    $("#contactmessage").val("");
                                                     $("#submit").html("submit");
                                                     $("#submit").removeAttr("disabled");
                                                     setTimeout(function(){

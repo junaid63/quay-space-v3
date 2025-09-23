@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{url('frontend/assets/css/modal.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/style.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/custom.css')}}?ref={{setting('site.css')}}">
+    <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
 
@@ -37,6 +38,33 @@
 
 <body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
 
+    {{-- Cookie Start --}}
+    <div class="cookie-popup-container" style="display:none;">
+        <div class="cookie-popup">
+            <div class="cookie-header">
+                <div class="consent-title">
+                    <span>We value your privacy</span>
+                </div>
+            </div>
+            <div class="cookie-para">
+                <p>
+                    We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept," you consent to our use of cookies.
+                </p>
+            </div>
+        
+            <div class="cookie-button-container">
+                <div class="nav-buttons">
+                    <a href="javascript:void(0);" class="d-flex justify-content-center align-items-center btn-customize me-2 accept-design">
+                        <span class="btn5 accept-cookie">Accept</span>
+                    </a>
+                    <a href="javascript:void(0);" class="d-flex justify-content-center align-items-center decline-css btn-customize me-2 accept-design">
+                        <span class="btn5 decline-cookie">Decline</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Cookie End --}}
     <!-- Form Modal -->
     <div class="modal" id="bookingModal">
         <div class="modal-content">
@@ -591,8 +619,10 @@
         });
     </script>
     <script>
-        Fancybox.bind("[data-fancybox]", {
-            // Your custom options
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            Thumbs: {
+            autoStart: true,
+            },
         });
     </script>
 
@@ -854,6 +884,48 @@
                 return isValid;
             }
         });
+    </script>
+    <!-- Cookie JS-->
+    <script>
+        setTimeout(() => {
+            var checkbox = document.getElementById("customSwitch3");
+            if (checkbox) {
+                checkbox.checked = true;
+                checkbox.dispatchEvent(new Event('change'));
+                checkbox.disabled = true;
+            }
+
+            $(document).ready(function(){
+                $(".accordion-button.custom-cookie-btn").click(function() {
+                    $(this).toggleClass("active");
+                });
+
+                // check if accepted already
+                if (localStorage.getItem('quay-space') === '1') {
+                    $('.cookie-popup-container').hide();
+                    $('html').removeClass('cookie-blocked');
+                } else {
+                    $('.cookie-popup-container').fadeIn(200);
+                    $('html').addClass('cookie-blocked');
+                }
+
+                // accept cookie
+                $('.accept-cookie').click(function () {
+                    $('.cookie-popup').slideUp(300);
+                    $('.cookie-popup-container').fadeOut(300);
+                    $('html').removeClass('cookie-blocked');
+                    localStorage.setItem('quay-space', '1');
+                });
+
+                // decline cookie
+                $('.decline-cookie').click(function () {
+                    $('.cookie-popup').slideUp(300);
+                    $('.cookie-popup-container').fadeOut(300);
+                    $('html').removeClass('cookie-blocked');
+                    localStorage.setItem('quay-space', '0'); // 0 means declined
+                });
+            });
+        }, 1000);
     </script>
     @yield('js')
 

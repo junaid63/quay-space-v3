@@ -70,10 +70,29 @@ Quay Space | Home
 
                     <div class="award-wrapper order-lg-1 order-md-2 order-0 fade-anim" data-delay="0.90" data-direction="left" data-ease="back.out(4)">
                         <div class="circle-text-wrapper">
-                            <div class="circle-text">
+                            {{-- <div class="circle-text">
                                 <img src="{{url('frontend/assets/imgs/shape/shape-3.webp')}}" alt="image" class="text">
                                 <img src="{{url('frontend/assets/imgs/shape/shape-2.webp')}}" alt="image" class="icon">
+                            </div> --}}
+                            <div class="curve-text">
+                                <div class="icon-box">
+                                    <img src="https://www.quay-space.co.uk/frontend/assets/images/icons/icon-5.png" alt="">
+                                </div>
+
+                                <svg class="curved-circle rotate-me" viewBox="0 0 200 200">
+                                    <path fill="#fff0" id="circlePath"
+                                        d="M 100, 100
+                                            m -75, 0
+                                            a 75,75 0 1,1 150,0
+                                            a 75,75 0 1,1 -150,0" />
+                                    <text font-size="14" font-weight="700" text-transform="uppercase" letter-spacing="1px" fill="#fd295d">
+                                    <textPath href="#circlePath">
+                                        • The premium co-working space in Birmingham •
+                                    </textPath>
+                                    </text>
+                                </svg>
                             </div>
+
                         </div>
                         
                     </div>
@@ -84,7 +103,7 @@ Quay Space | Home
     <!-- hero area end  -->
 
     <!-- about area start  -->
-    <section class="about-area pb-0 pb-lg-5">
+    <section class="about-area pb-0 pb-md-5 pb-lg-5">
         <div class="container large">
             {{-- <div class="about-area-inner"> --}}
                 <div class="hp-services-cards-main">
@@ -628,9 +647,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/1.jpg')}}"  data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/1.jpg')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.jpg')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -649,9 +668,9 @@ Quay Space | Home
                                         <span>View</span>
                                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                         </div>" data-cursor-class="-big">
-                                        <a href="#">
+                                        <a href="{{url('frontend/assets/imgs/gallery/2.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/2.jpg')}}" alt="image not found">
+                                            <img src="{{url('frontend/assets/imgs/gallery/2.jpg')}}" alt="image not found">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -665,9 +684,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                        <a href="#">
+                                        <a href="{{url('frontend/assets/imgs/gallery/3.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/3.jpg')}}" alt="image not found">
+                                            <img src="{{url('frontend/assets/imgs/gallery/3.jpg')}}" alt="image not found">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -677,13 +696,13 @@ Quay Space | Home
                                 </div>
                                 <div class="project-section-3__item">
                                     <div class="project-section-3__thumb" data-cursor-text="
-                                <div class='btn2'>
-                                <span>View</span>
-                                <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
-                            </div>" data-cursor-class="-big">
-                                        <a href="#">
+                                        <div class='btn2'>
+                                        <span>View</span>
+                                        <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
+                                        </div>" data-cursor-class="-big">
+                                        <a href="{{url('frontend/assets/imgs/gallery/4.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/4.jpg')}}" alt="image not found">
+                                            <img src="{{url('frontend/assets/imgs/gallery/4.jpg')}}" alt="image not found">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -697,9 +716,9 @@ Quay Space | Home
                                 <span>View</span>
                             <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                             </div>" data-cursor-class="-big">
-                                        <a href="#">
+                                        <a href="{{url('frontend/assets/imgs/gallery/5.jpg')}}" data-fancybox="gallery" >
                                             <div class="black-shade"></div>
-                                            <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/5.jpg')}}" alt="image not found">
+                                            <img src="{{url('frontend/assets/imgs/gallery/5.jpg')}}" alt="image not found">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -718,9 +737,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/9.webp')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/9.webp')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/9.webp')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -734,9 +753,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/10.webp')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/10.webp')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/10.webp')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -750,9 +769,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/11.webp')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/11.webp')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/11.webp')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -766,9 +785,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/12.webp')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/12.webp')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/12.webp')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -786,9 +805,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                    <a href="#">
+                                    <a href="{{url('frontend/assets/imgs/gallery/13.webp')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img data-fancybox="gallery" src="{{url('frontend/assets/imgs/gallery/13.webp')}}" alt="image not found">
+                                        <img src="{{url('frontend/assets/imgs/gallery/13.webp')}}" alt="image not found">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
