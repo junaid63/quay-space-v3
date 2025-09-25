@@ -74,6 +74,7 @@
     position: sticky;
     top: 0px!important;
     z-index: 999;
+    overflow: hidden;
 }
 
 
@@ -440,7 +441,7 @@
 
 .crp-footer-widget-menu a,
 .crp-footer-widget-info a {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1;
     color: var(--white);
@@ -613,7 +614,7 @@
 }
 
 .footer-widget p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     /* margin-bottom: 35px; */
@@ -629,7 +630,7 @@
 }
 
 .footer-contact-location a {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
     color: white;
@@ -744,7 +745,8 @@
     background: var(--primary);
 }
 
-.work-box:hover .content .title a {
+.work-box:hover .content .title,
+.work-box:hover .content p {
     color: var(--white);
 }
 
@@ -1024,7 +1026,7 @@
 }
 
 .aboutus-section-main {
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1033,7 +1035,11 @@
 .aboutus-main {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
+}
+
+.aboutus-main .all-btn-wrapper {
+    margin-top: 25px;
 }
 
 .aboutus-main .para {
@@ -1058,7 +1064,7 @@
     position: absolute;
     left: 0px;
     top: -35px;
-    background: white;
+    background: #f8f8f8;
     height: 100px;
     width: 40px;
     transform: rotate(45deg);
@@ -1069,7 +1075,7 @@
     position: absolute;
     right: 0px;
     top: -40px;
-    background: white;
+    background: #f8f8f8;
     height: 100px;
     width: 40px;
     transform: rotate(130deg);
@@ -1080,7 +1086,7 @@
     position: absolute;
     left: 0px;
     bottom: -40px;
-    background: white;
+    background: #f8f8f8;
     height: 100px;
     width: 40px;
     transform: rotate(130deg);
@@ -1090,7 +1096,7 @@
     position: absolute;
     right: 0px;
     bottom: -40px;
-    background: white;
+    background: #f8f8f8;
     height: 100px;
     width: 40px;
     transform: rotate(45deg);
@@ -1102,14 +1108,14 @@
     height: 100%;
     width: 50%;
     z-index: 99;
-    border-right: 10px solid white;
+    border-right: 10px solid #f8f8f8;
     left: 0px;
 }
 
 .five-imgs-main::after {
     content: '';
     position: absolute;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid #f8f8f8;
     top: 50%;
     width: 100%;
     z-index: 99;
@@ -2901,8 +2907,17 @@
     height: 100%;
 }
 
-.services-cards .cards-content .icon-para span,
 .services-cards .cards-content .cards-title p {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    font-size: 16px;
+    line-height: normal;
+    color: var(--black);
+}
+
+.services-cards .cards-content .icon-para span {
     text-align: start;
     font-size: 16px;
     /* font-family: var(--font_dmsans); */
@@ -3251,9 +3266,10 @@
     width: 70px
 }
 
-.services-hide {
+
+/* .services-hide {
     display: none;
-}
+} */
 
 .services-hide.active {
     display: block;
@@ -3309,10 +3325,10 @@ main {
     padding: 15px 20px;
     text-align: center;
     gap: 20px;
-    width: calc((100% / 4) - 70px);
+    /* width: calc((100% / 4) - 70px); */
+    width: 100%;
     border: 2px solid var(--white);
     box-shadow: 0 .1em .9em 0 #515151;
-    background: #222;
     /* transition: transform 0.3s ease; */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     transform-style: preserve-3d;
@@ -3323,19 +3339,31 @@ main {
     box-shadow: 0 0 25px rgba(255, 255, 255, .4);
 }
 
-.hp-services-cards-main .icon-content:nth-of-type(4n+1) {
+
+/* 1st, 5th, 9th ... */
+
+.swiper-wrapper .swiper-slide:nth-child(4n+1) .icon-content {
     background: var(--secondary);
 }
 
-.hp-services-cards-main .icon-content:nth-of-type(4n+2) {
+
+/* 2nd, 6th, 10th ... */
+
+.swiper-wrapper .swiper-slide:nth-child(4n+2) .icon-content {
     background: var(--primary);
 }
 
-.hp-services-cards-main .icon-content:nth-of-type(4n+3) {
+
+/* 3rd, 7th, 11th ... */
+
+.swiper-wrapper .swiper-slide:nth-child(4n+3) .icon-content {
     background: var(--third);
 }
 
-.hp-services-cards-main .icon-content:nth-of-type(4n+4) {
+
+/* 4th, 8th, 12th ... */
+
+.swiper-wrapper .swiper-slide:nth-child(4n+4) .icon-content {
     background: var(--fourth);
 }
 
@@ -3479,6 +3507,12 @@ main {
     gap: 15px;
 }
 
+.sub-title-para-points .sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+}
+
 .sub-title-para .two-paraghraph {
     display: flex;
     flex-direction: column;
@@ -3501,7 +3535,7 @@ main {
 .sub-title-para-points p,
 .sub-title-para p,
 .main-title-para p {
-    font-size: 18px;
+    font-size: 20px;
     font-size: 500;
     color: var(--bs-gray-700);
     line-height: 1.3;
@@ -3512,7 +3546,10 @@ main {
     margin-left: 35px
 }
 
-.main-title-para p:first-of-type {
+
+/* .main-title-para p:first-of-type { */
+
+.main-title-para p {
     margin-bottom: 10px
 }
 
@@ -3531,7 +3568,7 @@ main {
 
 .sub-title-para ul li span,
 .sub-title-para-points ul li span {
-    font-size: 17px;
+    font-size: 18px;
     font-size: 500;
     color: var(--bs-gray-700);
     line-height: 1.3;
@@ -3627,6 +3664,27 @@ main {
     top: 0px!important;
 } */
 
+.swiper.ServiceCards {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* Content Pages css End  */
 
@@ -3634,6 +3692,16 @@ main {
 /* @media (max-width: 1366px) { */
 
 @media (min-width: 1300px) and (max-width: 1550px) {
+    .crp-footer-big-text-wrap {
+        margin-top: 20px;
+        padding: 25px 20px;
+    }
+    .swiper.ServiceCards {
+        padding: 0px 20px;
+    }
+    .funfact-area .funfact-item .number {
+        font-size: 60px;
+    }
     .curve-text .icon-box {
         top: 35%;
         left: 35%;
@@ -3754,9 +3822,6 @@ main {
     .five-imgs-main .five {
         height: 175px;
     }
-    .aboutus-main {
-        gap: 10px;
-    }
     .aboutus-main .para p {
         font-size: 18px;
     }
@@ -3774,10 +3839,10 @@ main {
         font-size: 25px;
     }
     .about-area {
-        padding-top: 0px;
+        padding-top: 0px!important;
     }
     .hero-area .title-wrapper {
-        gap: 90px;
+        gap: 50px;
     }
     .hero-area-inner {
         margin: 0px 0px;
@@ -4083,6 +4148,69 @@ main {
 }
 
 @media (max-width: 510px) {
+    .main-title-para .section-title-wrapper {
+        margin-bottom: 10px;
+    }
+    .crp-footer-big-text span {
+        text-wrap: nowrap;
+    }
+    .hero-area .title-wrapper {
+        align-items: center;
+        gap: 90px;
+    }
+    .hero-area .big-text {
+        font-size: 80px;
+        letter-spacing: 3px;
+    }
+    .contact-area-contact-page .contact-social .title {
+        font-weight: 600;
+    }
+    .contact-area-contact-page .contact-mail .form-para {
+        line-height: 1.4;
+    }
+    .contact-area-contact-page .contact-mail .text {
+        font-size: 25px;
+    }
+    .contact-information .icon .title-info a {
+        gap: 3px;
+    }
+    .contact-information .icon .title-info {
+        width: 85%;
+    }
+    .contact-information .icon i {
+        width: 15%;
+    }
+    .contact-area-contact-page .contact-formfield input {
+        border-radius: 0px;
+    }
+    .about-area-details .swiper-pagination-bullet-active {
+        background: var(--secondary)!important;
+    }
+    .about-area-details .swiper {
+        padding: 0px 0px 20px 0px;
+    }
+    .banefits-main-div {
+        padding: 0px 20px;
+    }
+    .ourteam-cards .information-details {
+        right: 20px;
+        top: 15px;
+    }
+    .aboutus-main .all-btn-wrapper {
+        margin-top: 30px;
+    }
+    .aboutus-main {
+        gap: 10px;
+    }
+    .hero-area .award-wrapper {
+        display: none;
+    }
+    .hp-services-cards-main .icon-content {
+        box-shadow: none;
+    }
+    .swiper.ServiceCards {
+        padding: 0px 0px;
+    }
     .date h2 {
         font-size: 18px!important;
     }
@@ -4109,7 +4237,7 @@ main {
     }
     .sub-title-para ul li span,
     .sub-title-para-points ul li span {
-        font-size: 15px;
+        font-size: 16px;
     }
     .sub-title-para-points p,
     .sub-title-para p {
@@ -4121,21 +4249,18 @@ main {
     }
     .sub-title-para-points .title-wrapper strong,
     .sub-title-para .title-wrapper strong {
-        font-size: 20px!important;
+        font-size: 23px!important;
         position: relative;
-        top: 2px;
+        top: 3px;
     }
     .sub-title-para-points h2,
     .sub-title-para h2 {
-        font-size: 20px!important;
-    }
-    .main-title-para h2 {
-        font-size: 30px!important;
+        font-size: 25px!important;
     }
     .sub-title-para-points p,
     .sub-title-para p,
     .main-title-para p {
-        font-size: 16px;
+        font-size: 18px;
     }
     .content-page-main-title-para {
         padding: 20px 25px;
@@ -4146,13 +4271,28 @@ main {
     #bookingModal .icon-title i {
         font-size: 18px;
         width: 15%;
+        height: 15%;
     }
     .modal-document-upload-main .document-upload .small {
+        display: none;
         font-size: 12px;
         margin-top: 8px;
     }
+    .form-section {
+        margin-bottom: 0px;
+    }
+    #step5-content {
+        min-height: 500px;
+        max-height: 500px;
+        overflow-y: auto;
+        padding: 0px 10px;
+    }
+    .document-upload {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
     .modal-document-upload-main .document-upload p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 1.2;
     }
     .modal-document-upload-main {
@@ -4178,13 +4318,14 @@ main {
     #bookingModal .icon-title {
         padding: 10px 15px;
         width: 100%;
+        overflow: visible;
     }
     #bookingModal .section-title {
         font-size: 18px!important;
     }
     #bookingModal .section-title i {
         width: 13%;
-        font-size: 16px;
+        font-size: 18px;
     }
     .footer-widget p {
         font-size: 15px;
@@ -4221,7 +4362,7 @@ main {
         gap: 10px;
     }
     .banefits-main-div .icon-content .content .para {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.4;
     }
     .about-area-details .icon-content::before {
@@ -4240,27 +4381,30 @@ main {
     .ourteam-cards .border-secondary,
     .ourteam-cards .border-third,
     .ourteam-cards .border-fourth {
-        width: 60px;
+        width: 50px;
     }
     .ourteam-cards .img {
         height: 300px;
-        width: 215px;
+        width: 200px;
         left: 0px;
     }
     .about-tilte-icon-para .about-item span {
-        min-height: 40px;
+        font-size: 18px;
+        min-height: 0px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
     .about-tilte-icon-para .about-item {
-        width: calc((100% / 2) - 10px);
-        padding: 10px;
+        width: calc((100% / 1) - 10px);
+        padding: 15px;
+        position: relative;
+        z-index: 9999;
+        align-items: start;
+        text-align: start;
+        gap: 5px;
     }
-    .aboutus-section-main.about-details .left-white-space,
-    .aboutus-section-main.about-details .right-white-space,
-    .aboutus-section-main.about-details .bottomright-white-space,
-    .aboutus-section-main.about-details .bottomleft-white-space {
+    .about-tilte-icon-para .about-item i {
         display: none;
     }
     .aboutus-section-main.about-details {
@@ -4268,13 +4412,14 @@ main {
     }
     .aboutus-main .para p {
         font-size: 18px;
+        line-height: 1.4;
     }
     .five-imgs-main .third {
-        width: 100px;
-        height: 100px;
-        top: 90px;
-        left: 145px;
-        border: 10px solid white;
+        width: 80px;
+        height: 80px;
+        left: 38%;
+        top: 35%;
+        border: 8px solid white;
     }
     .five-imgs-main .right-white-space,
     .five-imgs-main .left-white-space {
@@ -4296,8 +4441,8 @@ main {
     .five-imgs-main .second,
     .five-imgs-main .fourth,
     .five-imgs-main .five {
-        width: 190px;
-        height: 130px;
+        width: 50%;
+        height: 50%;
     }
     .aboutus-section-main {
         height: 100%;
@@ -4312,14 +4457,18 @@ main {
         text-wrap: nowrap;
     }
     .about-area {
-        top: -85px;
+        /* top: -85px; */
+        min-height: 270px;
+        top: 70px;
         padding-top: 0px;
+        z-index: 999;
     }
     .hp-services-cards-main {
         flex-wrap: wrap;
     }
     .hp-services-cards-main .icon-content {
-        width: calc((100% / 2) - 20px);
+        /* width: calc((100% / 2) - 20px); */
+        width: 100%;
     }
     .faq-area-faq-page .faq-img::before,
     .faq-area-faq-page .faq-img::after,
@@ -4433,7 +4582,8 @@ main {
         width: 100%;
     }
     .services-pages-bars {
-        top: 32px!important;
+        /* top: 32px!important; */
+        top: 0px!important;
         z-index: 9999;
     }
     .services-area .book-a-calendy .rr-btn {
@@ -4470,7 +4620,7 @@ main {
         gap: 15px;
         z-index: 999;
         position: relative;
-        padding-top: 70px;
+        padding-top: 45px;
     }
     .team-details-cards {
         gap: 10px;
@@ -4488,22 +4638,23 @@ main {
         font-size: 18px;
     }
     .team-details-area .section-content .text {
-        margin-top: 10px;
+        margin-top: 8px;
     }
     .team-details-area .section-content .text {
-        font-size: 16px;
+        font-size: 18px;
     }
     .team-details-area .section-subtitle {
         font-size: 20px;
     }
     .team-details-area .section-title {
-        font-size: 35px;
+        font-size: 30px;
     }
     .team-details-area .team-details-cards .section-content {
         width: 100%;
     }
     .team-details-area .team-details-cards .section-content-wrapper {
         flex-direction: column;
+        height: 890px;
     }
     .about-area-details .title-wrapper {
         text-align: start;
@@ -4532,9 +4683,8 @@ main {
     }
     .banefits-main-div .icon-content .icon {
         width: 70px;
-    }
-    .banefits-main-div {
-        margin: 0px 10px;
+        height: 70px;
+        padding: 15px;
     }
     .banefits-main-div .icon-content .content span {
         font-size: 20px;
@@ -4543,7 +4693,7 @@ main {
     }
     .banefits-main-div .icon-content {
         padding: 20px 10px;
-        width: calc(95% / 2);
+        width: 100%;
         gap: 15px;
     }
     .border-top {
@@ -4563,6 +4713,9 @@ main {
     }
     .funfact-area .funfact-area-inner {
         grid-template-columns: 1fr;
+    }
+    .contact-information .icon .title-info a h6 {
+        font-weight: 600;
     }
     .contact-information .icon .title-info a span {
         font-weight: 500;
@@ -4589,7 +4742,7 @@ main {
         padding-top: 0px;
     }
     .page-title-wrapper .page-title {
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 700;
         line-height: 1;
     }
@@ -4616,7 +4769,7 @@ main {
         justify-content: start;
     }
     .nav-links-main {
-        padding-top: 20px;
+        padding: 20px 0px;
     }
     .nav-links ul li {
         width: 100%;
@@ -4656,6 +4809,9 @@ main {
     .newsletter-input-button {
         flex-direction: column;
     }
+    .contact-area-contact-page .text {
+        font-size: 18px;
+    }
     .text {
         font-size: 17px;
         font-weight: 300;
@@ -4682,19 +4838,42 @@ main {
         font-size: 40px;
         text-align: center;
     }
+    .funfact-area .section-title br {
+        display: none;
+    }
+    .funfact-area .funfact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .funfact-area .funfact-item .number {
+        font-size: 35px;
+    }
     .funfact-area .funfact-item {
         width: 100%;
         max-width: 100%;
         text-align: center;
+        width: calc((100% / 1) - 10px);
+        background: #ffffff12;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    .funfact-area .funfact-item:not(:first-child) {
+        margin-top: 20px;
     }
     .hero-slider {
         height: 60vh;
     }
     .client-area .client-capsule-wrapper {
-        height: 60vh;
+        height: 80vh;
     }
     .footer-contact-location a {
-        font-size: 17px;
+        font-size: 16px;
+    }
+    .footer-contactus-icon label {
+        font-size: 18px;
     }
     .footer-contact-location .footer-call-number {
         font-size: 20px;
@@ -4705,7 +4884,7 @@ main {
     }
     .footer-bottom-content .designed a,
     .footer-bottom-content .copy-right p a {
-        font-size: 17px;
+        font-size: 16px;
     }
     .footer-bottom-content .designed,
     .footer-bottom-content .copy-right p {
@@ -4740,6 +4919,7 @@ main {
     }
     .footer-widget {
         gap: 0px;
+        margin-bottom: 0px;
     }
     .footer-logo {
         width: 160px;
@@ -4765,7 +4945,7 @@ main {
         height: 150px;
     }
     .features-list li p {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.2;
         font-weight: 500;
     }
@@ -4773,16 +4953,20 @@ main {
         font-size: 35px;
     }
     .price-month-para h4 {
-        font-size: 22px;
+        /* font-size: 22px; */
+        font-size: 15px;
+    }
+    .price .price-month-para p {
+        font-size: 14px;
     }
     .service-banner-forms .service-title {
         width: 80%;
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1.3;
     }
     .service-banner-img {
         width: 100%;
-        padding: 20px 20px;
+        padding: 15px 15px;
         min-height: auto;
     }
     .service-banner-forms {
@@ -4797,12 +4981,13 @@ main {
     .client-area .section-title,
     .section-3__title-wrapper-title,
     .custom-work-section .section-title {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 1.2;
     }
     .section-title.font-instrumentsans-medium {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 1.2;
+        margin-bottom: 0px;
     }
     .work-box {
         border-radius: 10px;
@@ -4898,6 +5083,9 @@ main {
     .hero-area .section-title {
         font-size: 40px;
         text-align: center;
+        transform: translateY(15%);
+        /* min-height: 250px; */
+        margin-bottom: 0px;
     }
     .hero-area .hero-content {
         gap: 0px;
@@ -4921,13 +5109,13 @@ main {
 
 @media (min-width: 300px) and (max-width: 370px) {
     .hero-area .section-title {
-        font-size: 28px;
+        font-size: 25px;
     }
 }
 
 @media (min-width: 370px) and (max-width: 420px) {
     .hero-area .section-title {
-        font-size: 28px;
+        font-size: 25px;
     }
 }
 
@@ -4938,6 +5126,28 @@ main {
 }
 
 @media (min-width: 510px) and (max-width: 820px) {
+    .hero-area .title-wrapper {
+        gap: 100px;
+    }
+    .hero-area .big-text {
+        font-size: 90px;
+    }
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+    .footer-logo {
+        width: 160px;
+        height: 80px;
+    }
+    .aboutus-main .all-btn-wrapper {
+        margin-top: 20px;
+    }
+    .aboutus-main {
+        gap: 0px;
+    }
+    .hp-services-cards-main .icon-content {
+        box-shadow: none;
+    }
     .hero-area .award-wrapper {
         position: absolute;
         /* right: -80px; */
@@ -4991,7 +5201,7 @@ main {
     }
     .sub-title-para-points p,
     .sub-title-para p {
-        margin-left: 50px;
+        margin-left: 35px;
     }
     .sub-title-para ul li span,
     .sub-title-para-points ul li span {
@@ -5119,23 +5329,24 @@ main {
         font-size: 16px;
     }
     .about-area {
-        padding-top: 100px;
+        padding-top: 10px;
         padding-bottom: 30px;
     }
     .hp-services-cards-main {
         gap: 10px;
     }
     .hp-services-cards-main .icon-content .subtitle {
-        min-height: 32px;
-        font-size: 14px;
+        min-height: 25px;
+        font-size: 15px;
     }
     .hp-services-cards-main .icon-content .title {
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 800;
     }
     .hp-services-cards-main .icon-content {
         padding: 10px 10px;
-        width: calc((100% / 5) - 10px);
+        /* width: calc((100% / 5) - 10px); */
+        width: 100%;
         gap: 5px;
     }
     .hp-services-cards-main {
@@ -5161,7 +5372,7 @@ main {
         left: -60px;
     }
     .banner-custom-padding {
-        padding-top: 200px;
+        padding-top: 150px;
     }
     .about-area .section-content {
         top: 0px;
@@ -5170,7 +5381,7 @@ main {
     .client-area .section-title,
     .section-3__title-wrapper-title,
     .custom-work-section .section-title {
-        font-size: 50px;
+        font-size: 40px;
     }
     .services-content-img .section-title .dot {
         top: 20px;
@@ -5490,14 +5701,21 @@ main {
         text-align: center;
     }
     .crp-footer-big-text {
-        font-size: 60px;
-        font-weight: 500;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .crp-footer-big-text i svg {
+        height: 40px;
+        width: 40px;
     }
     .crp-footer-big-text-wrap {
         border-radius: 10px;
+        margin-top: 0px;
+        padding: 20px 20px;
     }
     .footer-widget p {
         margin-bottom: 5px;
+        width: 100%;
     }
     footer .tablet-flex {
         display: flex;
@@ -5752,7 +5970,8 @@ main {
         font-size: 20px;
     }
     .page-title-wrapper .page-title {
-        font-size: 130px;
+        /* font-size: 130px; */
+        font-size: 80px;
     }
     .page-title-wrapper {
         margin-top: 0px;

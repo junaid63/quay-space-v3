@@ -102,7 +102,7 @@ Quay Space | Contact Us
                     <div class="contact-wrap order-md-1 order-0">
                         <div class="section-content mb-lg-4 mb-3 order-md-0 order-1">
                             <div class="contact-mail">
-                                <p class="text mt-lg-0 mt-0">
+                                <p class="text mt-lg-0 mt-0 mb-2 mb-ld-2">
                                     Send us a message
                                 </p>
                                 <p class="form-para"> Fill out the form, and our team will respond within 24 hours.</p>
@@ -110,7 +110,7 @@ Quay Space | Contact Us
                         </div>
                         <form id="contact_form">
                             <div class="contact-formwrap">
-                                <div class="d-flex w-100 gap-lg-3 gap-0">
+                                <div class="d-flex flex-lg-row flex-column w-100 gap-lg-3 gap-4">
                                     <div class="contact-formfield w-100">
                                         <input type="text" id="contactname" placeholder="Name*">
                                     </div>
@@ -143,7 +143,7 @@ Quay Space | Contact Us
     <!-- contact area end  -->
 
     <!-- Map start -->
-    <section class="contact-area-contact-page pt-lg-5 pt-3">
+    <section class="contact-area-contact-page overflow-hidden pt-lg-5 pt-3">
         <div class="container-full">
             <div class="row">
                 <div class="col-12">

@@ -9,6 +9,8 @@ Quay Space | Home
 
 @section('css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" /> 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @stop
 
 @section('content')
@@ -61,7 +63,7 @@ Quay Space | Home
                                         <span class="cursor"></span>
                                     </span>
                                 </h2>
-                                <div class="big-text-wrapper d-flex d-lg-flex d-md-none">
+                                <div class="big-text-wrapper d-flex d-lg-flex d-md-flex">
                                     <h2 class="big-text">Quay Space</h2>
                                 </div>
                             </div>
@@ -85,7 +87,7 @@ Quay Space | Home
                                             m -75, 0
                                             a 75,75 0 1,1 150,0
                                             a 75,75 0 1,1 -150,0" />
-                                    <text font-size="14" font-weight="700" text-transform="uppercase" letter-spacing="1px" fill="#fd295d">
+                                    <text font-size="14" font-weight="700" text-transform="uppercase" letter-spacing="1px" fill="#ffffff">
                                     <textPath href="#circlePath">
                                         • The premium co-working space in Birmingham •
                                     </textPath>
@@ -103,101 +105,109 @@ Quay Space | Home
     <!-- hero area end  -->
 
     <!-- about area start  -->
-    <section class="about-area pb-0 pb-md-5 pb-lg-5">
+    <section class="about-area pb-0 pb-md-0 pt-md-3 pb-lg-5">
         <div class="container large">
             {{-- <div class="about-area-inner"> --}}
-                <div class="hp-services-cards-main">
-                    <!-- Meeting Room -->
-                    <div class="icon-content word-anim" data-target="meetingroom">
-                        <span class="subtitle">Professional Spaces</span>
-                        <h2 class="title">Meeting Rooms</h2>
-                        <span class="subtitle">Collaborate & Grow</span>
+                <!-- Swiper -->
+            <div class="swiper ServiceCards">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Meeting Room -->
+                            <div class="icon-content word-anim" data-target="meeting-rooms">
+                                <span class="subtitle">Professional Spaces</span>
+                                <h2 class="title">
+                                    MEETING ROOMS
+                                </h2>
+                                <span class="subtitle">Collaborate & Grow</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Private Office -->
-                    <div class="icon-content word-anim" data-target="private">
-                        <span class="subtitle">Dedicated Workspace</span>
-                        <h2 class="title">Private Office</h2>
-                        <span class="subtitle">Focus & Productivity</span>
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Private Office -->
+                            <div class="icon-content word-anim" data-target="private">
+                                <span class="subtitle">Dedicated Workspace</span>
+                                <h2 class="title">
+                                    PRIVATE OFFICE
+                                </h2>
+                                <span class="subtitle">Focus & Productivity</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Office Space -->
-                    <div class="icon-content word-anim" data-target="officespace">
-                        <span class="subtitle">Customizable Offices</span>
-                        <h2 class="title">Office Space</h2>
-                        <span class="subtitle">For Growing Teams</span>
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Office Space -->
+                            <div class="icon-content word-anim" data-target="officespace">
+                                <span class="subtitle">Customisable Offices</span>
+                                <h2 class="title">OFFICE SPACE</h2>
+                                <span class="subtitle">For Growing Teams</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Event Space -->
-                    <div class="icon-content word-anim" data-target="eventspace">
-                        <span class="subtitle">Modern Venue</span>
-                        <h2 class="title">Event Space</h2>
-                        <span class="subtitle">Host with Style</span>
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Event Space -->
+                            <div class="icon-content word-anim" data-target="eventspace">
+                                <span class="subtitle">Modern Venue</span>
+                                <h2 class="title">
+                                    EVENT SPACE
+                                </h2>
+                                <span class="subtitle">Host with Style</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Virtual Office -->
-                    <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual">
-                        <span class="subtitle">Business Address</span>
-                        <h2 class="title">Virtual Office</h2>
-                        <span class="subtitle">Work from Anywhere</span>
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Virtual Office -->
+                            <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual">
+                                <span class="subtitle">Business Address</span>
+                                <h2 class="title">
+                                    VIRTUAL OFFICE
+                                </h2>
+                                <span class="subtitle">Work from Anywhere</span>
+                            </div>
+                        </div>
                     </div>
-
+                </div>
+            </div>
+            {{-- <div class="hp-services-cards-main">
+                <!-- Meeting Room -->
+                <div class="icon-content word-anim" data-target="meetingroom">
+                    <span class="subtitle">Professional Spaces</span>
+                    <h2 class="title">Meeting Rooms</h2>
+                    <span class="subtitle">Collaborate & Grow</span>
                 </div>
 
-                {{-- <div class="section-content">
-                    <div class="shape-1"></div>
-                    <div class="shape-2"></div>
-                    <div class="shape-3"></div>
-                    <div class="shape-4"></div>
-                    <div class="row align-items-center position-relative">
-                        <div class="background-image">
-                            <img src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-dot-shape.webp" alt>
-                        </div>
-                        <div class="col-md-6 col-lg-6 order-lg-0 order-md-0 order-1">
-                            <div class="about-content">
-                                <div class="section-title-wrapper">
-                                    <div class="title-wrapper">
-                                        <h2 class="section-title font-instrumentsans-medium">Quay Space
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div class="text-wrappers">
-                                    <p class="text fade-top">
-                                        At Quay Space, we believe your workplace should do more than just give you a desk. It should inspire, energise, and connect you to the people and opportunities that help you thrive.
-                                    </p>
-                                    <p class="text fade-top">
-                                        Located in the heart of Birmingham on Broad Street, with panoramic views of the city’s historic canals, we offer more than just offices—we offer a lifestyle. Our approach is community-first, bringing together freelancers, entrepreneurs, remote workers, and established businesses who value flexibility and professionalism
-                                    </p>
-                                    <p class="text fade-top">
-                                        With services ranging from co-working memberships to director postal addresses, we help you look credible, scale efficiently, and enjoy your working day in a space that feels truly yours.
-                                    </p>
-                                    <div class="btn-wrappers about-btn fade-top">
-                                        <a href="{{route('aboutus')}}" class="rr-btn btn-text-fli hover-bg-theme">
-                                            <span class="btn-wrap">
-                                                    <span
-                                                        class="text-one">Learn
-                                                        More</span>
-                                            <span class="text-two">Learn
-                                                        More</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 order-lg-1 order-md-1 order-0">
-                            <div class="about-images">
-                                <div class="first-img about-img reveal">
-                                    <img class="img-2" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img-1.webp" alt>
-                                </div>
-                                <div class="second-img about-img reveal">
-                                    <img class="img-1" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img.webp" alt>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-            {{-- </div> --}}
+                <!-- Private Office -->
+                <div class="icon-content word-anim" data-target="private">
+                    <span class="subtitle">Dedicated Workspace</span>
+                    <h2 class="title">Private Office</h2>
+                    <span class="subtitle">Focus & Productivity</span>
+                </div>
+
+                <!-- Office Space -->
+                <div class="icon-content word-anim" data-target="officespace">
+                    <span class="subtitle">Customizable Offices</span>
+                    <h2 class="title">Office Space</h2>
+                    <span class="subtitle">For Growing Teams</span>
+                </div>
+
+                <!-- Event Space -->
+                <div class="icon-content word-anim" data-target="eventspace">
+                    <span class="subtitle">Modern Venue</span>
+                    <h2 class="title">Event Space</h2>
+                    <span class="subtitle">Host with Style</span>
+                </div>
+
+                <!-- Virtual Office -->
+                <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual">
+                    <span class="subtitle">Business Address</span>
+                    <h2 class="title">Virtual Office</h2>
+                    <span class="subtitle">Work from Anywhere</span>
+                </div>
+
+            </div> --}}
         </div>
     </section>
     <!-- about area end  -->
@@ -259,7 +269,7 @@ Quay Space | Home
         <!-- /text slider area end -->
     </section> --}}
 
-    <section class="aboutus-section-main py-lg-5 py-5 pt-0">
+    <section class="aboutus-section-main pb-lg-5 pb-5">
         <div class="container large">
             <div class="row gap-lg-0 gap-md-0 gap-4 align-items-center">
                 <div class="col-12 col-md-6 col-lg-6 order-lg-0 order-md-0 order-1">
@@ -268,7 +278,7 @@ Quay Space | Home
                             <div class="section-title-wrapper">
                                 <div class="title-wrapper">
                                     <h2 class="section-title font-instrumentsans-medium word-anim">
-                                        Perfect Workspace in Birmingham, Tailored for You
+                                        Intro About Quay Space
                                     </h2>
                                 </div>
                             </div>
@@ -338,7 +348,7 @@ Quay Space | Home
 
 
     <!-- work area start  -->
-    <section class="work-area custom-work-section py-lg-5 py-3">
+    <section class="work-area custom-work-section py-lg-5 py-3 d-none d-md-block d-lg-block">
         <div class="container large">
             <div class="work-area-inner">
                 <div class="section-content">
@@ -362,8 +372,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Co
-                                            working Space</a></h3>
+                                <h3 class="title">
+                                    Co-Working Space
+                                </h3>
+                                <p>
+                                    Flexible desks & inspiring community vibes.
+                                </p>
                             </div>
                         </div>
                         <div class="work-box">
@@ -376,8 +390,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Dedicated
-                                            office</a></h3>
+                                <h3 class="title">
+                                    Private office
+                                </h3>
+                                <p>
+                                    Private, secure offices for your growing team.
+                                </p>
                             </div>
                         </div>
                         <div class="work-box">
@@ -390,8 +408,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Office
-                                            Floor</a></h3>
+                                <h3 class="title">
+                                    Office Space
+                                </h3>
+                                <p>
+                                    Fully equipped floors for larger businesses.
+                                </p>
                             </div>
                         </div>
                         <div class="work-box">
@@ -404,8 +426,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Event
-                                            Space</a></h3>
+                                <h3 class="title">
+                                    Event Space
+                                </h3>
+                                <p>
+                                    Host workshops, networking & company events.
+                                </p>
                             </div>
                         </div>
                         <div class="work-box">
@@ -418,8 +444,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Office
-                                            Space</a></h3>
+                                <h3 class="title">
+                                    Virtual Office
+                                </h3>
+                                <p>
+                                    Professional business address, no physical office needed.
+                                </p>
                             </div>
                         </div>
                         <div class="work-box">
@@ -432,8 +462,12 @@ Quay Space | Home
                                 </div>
                             </div>
                             <div class="content">
-                                <h3 class="title"><a href="#">Meeting
-                                            Space</a></h3>
+                                <h3 class="title">
+                                    Meeting Room
+                                </h3>
+                                <p>
+                                    Professional rooms for pitches & client calls.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -869,27 +903,33 @@ Quay Space | Home
                     <span class="line-4"></span>
                     <div class="funfact-wrapper">
                         <div class="funfact-item go-visible">
-                            <span class="number">1.8M</span>
-                            <p class="text">We helped to get companies with &pound;200M+ funding.
+                            <span class="number">1,200+</span>
+                            <p class="text">
+                                Professionals have worked from Quay Space, building lasting business connections.
                             </p>
                         </div>
                         <div class="funfact-item go-visible">
-                            <span class="number">260+</span>
-                            <p class="text">Crafted responsive, user-centered website & app.</p>
-                        </div>
-                        <div class="funfact-item go-visible">
-                            <span class="number">12+</span>
-                            <p class="text">We have had quite a run in our 12+ years of working.
+                            <span class="number">150+</span>
+                            <p class="text">
+                                Businesses supported with flexible office and co-working solutions.
                             </p>
                         </div>
                         <div class="funfact-item go-visible">
-                            <span class="number">80+</span>
-                            <p class="text">Professional skilled designers and developers.
+                            <span class="number">10+ Years</span>
+                            <p class="text">
+                                Experience providing modern, fully serviced workspaces in Birmingham.
                             </p>
                         </div>
                         <div class="funfact-item go-visible">
-                            <span class="number">99%</span>
-                            <p class="text">Average 99% clients satisfaction with expertise.
+                            <span class="number">30+</span>
+                            <p class="text">
+                                Dedicated team members ensuring smooth day-to-day operations.
+                            </p>
+                        </div>
+                        <div class="funfact-item go-visible">
+                            <span class="number">95%</span>
+                            <p class="text">
+                                Average client retention rate, with long-term members staying 3+ years.
                             </p>
                         </div>
                     </div>
@@ -943,5 +983,87 @@ Quay Space | Home
     <script>
         Fancybox.bind("[data-fancybox]", {
         });
+    </script>
+    <script>
+        var ServiceCards = new Swiper('.ServiceCards', {
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    loop: true, 
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1300: {
+                    slidesPerView: 5
+                }
+            }
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+    // ---------- HOME PAGE ----------
+    $(document).on("click", ".icon-content", function () {
+        var target = $(this).data("target"); // e.g., "meetingroom" / "officespace"
+        if (target) {
+            // Redirect service page with slug in URL
+            window.location.href = "/services/" + target;
+        }
+    });
+
+    // ---------- SERVICE PAGE ----------
+    let pathParts = window.location.pathname.split("/");
+    // Example: /services/officespace → ["", "services", "officespace"]
+    let serviceFromPath = pathParts[2];
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let serviceFromQuery = urlParams.get("service");
+
+    // Final slug check
+    let service = serviceFromPath || serviceFromQuery;
+
+    if (service) {
+        activateService(service);
+    } else if ($(".swiper-slide").length) {
+        // Agar slug nahi mila → pehla wala slug default
+        let $firstService = $(".swiper-slide").first();
+        let defaultService = $firstService.data("target");
+
+        activateService(defaultService);
+
+        // URL update bina reload
+        window.history.replaceState(null, "", "/services/" + defaultService);
+    }
+
+    // ---------- SERVICE PAGE NAVIGATION ----------
+    $(".swiper-slide").on("click", function () {
+        let targetSlug = $(this).data("target"); // e.g. "virtual"
+        activateService(targetSlug);
+
+        // Update URL bina reload
+        window.history.pushState(null, "", "/services/" + targetSlug);
+    });
+
+    // 🔹 Common function
+    function activateService(service) {
+        $(".services-navber-content").removeClass("active");
+        $(".services-section").removeClass("active");
+        $(".swiper-slide").removeClass("active");
+
+        // Navbar highlight
+        $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+        $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+
+        // Section show
+        $(`.${service}`).addClass("active");
+    }
+});
+
     </script>
 @stop 

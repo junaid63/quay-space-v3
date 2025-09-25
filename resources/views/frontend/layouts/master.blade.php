@@ -264,7 +264,7 @@
                                     </div>
                                 </div>
                                 
-                                <h6 class="section-title mt-4"><i class="fas fa-credit-card"></i> Payment Details</h6>
+                                <h6 class="icon-title section-title mt-4"><i class="fas fa-credit-card"></i> Payment Details</h6>
                                 
                                 <div class="mb-3">
                                     <label for="billingName" class="form-label required-field">Billing Name & Address</label>
@@ -694,63 +694,6 @@
                     $(".cd-words-wrapper").css("display", ""); // ✅ restore animation
                 }
             });
-        });
-
-        $(document).ready(function () {
-            // ---------- HOME PAGE ----------
-            $(document).on("click", ".icon-content", function () {
-                var target = $(this).data("target"); // e.g., "meetingroom"
-                if (target) {
-                    // Redirect clean URL (safe: query param)
-                    window.location.href = "/services?service=" + target;
-                }
-            });
-
-            // ---------- SERVICE PAGE ----------
-            let pathParts = window.location.pathname.split("/"); 
-            // Example: /services/meetingroom → ["", "services", "meetingroom"]
-            let serviceFromPath = pathParts[2]; 
-
-            let urlParams = new URLSearchParams(window.location.search);
-            let serviceFromQuery = urlParams.get("service");
-
-            // Final service check
-            let service = serviceFromPath || serviceFromQuery;
-
-            if (service) {
-                activateService(service);
-            } else if ($(".swiper-slide").length) {
-                // Agar service URL me nahi hai → pehli wali ko active karo
-                let $firstService = $(".swiper-slide").first();
-                let defaultService = $firstService.data("target").replace(".", "");
-
-                activateService(defaultService);
-
-                // URL update bina reload (query param rakho taake 404 na aaye)
-                window.history.replaceState(null, "", "/services?service=" + defaultService);
-            }
-
-            // ---------- SERVICE PAGE NAVIGATION ----------
-            $(".swiper-slide").on("click", function () {
-                let targetClass = $(this).data("target"); // e.g. ".meetingroom"
-                let cleanTarget = targetClass.replace(".", "");
-
-                activateService(cleanTarget);
-
-                // URL update bina reload (safe: query param)
-                window.history.pushState(null, "", "/services?service=" + cleanTarget);
-            });
-
-            // 🔹 Common function: activate service
-            function activateService(service) {
-                $(".services-navber-content").removeClass("active");
-                $(".services-section").removeClass("active");
-                $(".swiper-slide").removeClass("active");
-
-                $(`.swiper-slide[data-target=".${service}"] .services-navber-content`).addClass("active");
-                $(`.swiper-slide[data-target=".${service}"]`).addClass("active");
-                $(`.${service}`).addClass("active");
-            }
         });
     </script>
 

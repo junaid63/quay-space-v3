@@ -8,6 +8,28 @@ Quay Space | About Us
 @stop
 
 @section('css')
+<!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 @stop
 
 @section('content')
@@ -252,7 +274,7 @@ Quay Space | About Us
     </section>
     <!-- about area end  -->
 
-    <section class="about-area about-area-details overflow-hidden py-lg-5 py-3">
+    <section class="about-area about-area-details overflow-hidden py-lg-5 py-3 d-none d-md-none d-lg-flex">
         <div class="container large">
             <div class="row">
                 <div class="col-12 col-lg-lg col-md-12">
@@ -333,6 +355,120 @@ Quay Space | About Us
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-area about-area-details overflow-hidden d-flex d-md-flex d-lg-none">
+        <div class="container large">
+            <div class="row">
+                <div class="col-12 col-lg-lg col-md-12">
+                    <div class="section-content">
+                        <div class="section-title-wrapper">
+                            <div class="title-wrapper text-center">
+                                <h2 class="section-title text-center font-instrumentsans-medium word-anim">
+                                    Why Choose Us
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper WhyChooseCards">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Cost Savings & Flexibility</span>
+                                        <p class="para">
+                                            Pay only for what you need, scale as you grow.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Networking & Community Events</span>
+                                        <p class="para">
+                                            Meet like-minded professionals and grow your network.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Perks With The Space</span>
+                                        <p class="para">
+                                            From Wi-Fi to kitchen facilities, everything is covered.
+                                        </p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Central Birmingham Location</span>
+                                        <p class="para">
+                                            Easy access for you, your team, and your clients
+                                        </p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Boost Productivity</span>
+                                        <p class="para">
+                                            Designed to inspire focus, energy, and collaboration.
+                                        </p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banefits-main-div">
+                                <div class="icon-content">
+                                    <div class="icon">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <span>Bring Structure To Your Day</span>
+                                        <p class="para">
+                                            Separate work from home life with a professional base.
+                                        </p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -462,4 +598,28 @@ Quay Space | About Us
 @stop
 
 @section('js')
+ <script src="https://www.inspirefm.org/frontend/assets/js/swiper-bundle.min.js"></script>
+    <script>
+        var WhyChooseCards = new Swiper('.WhyChooseCards', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            // loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                510: {
+                    slidesPerView: 1
+                },
+                820: {
+                    slidesPerView: 2
+                },
+            }
+        });
+    </script>
 @stop 
