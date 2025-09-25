@@ -33,7 +33,7 @@ Quay Space | Our Team
                     <div class="section-content-wrapper fade-anim d-flex flex-column flex-md-row align-items-center {{ $index % 2 == 0 ? '' : 'flex-md-row-reverse' }}">
                         
                         {{-- Content --}}
-                        <div class="section-content p-4 flex-fill">
+                        <div class="section-content flex-fill">
                             <div class="section-title-wrapper">
                                 <div class="title-wrapper">
                                     <h2 class="section-title font-sequelsans-romanbody">
