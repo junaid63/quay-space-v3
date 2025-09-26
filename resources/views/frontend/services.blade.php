@@ -156,70 +156,80 @@ Quay Space | Services
             </div>
         </div>
     </section>
+    {{-- @if(count($Servicesdetail->headings) < 0 ) --}}
     <section class="{{ $Servicesdetail->slug }} services-section services-cards-area py-lg-5 py-md-3 py-3 overflow-hidden active">
         <div class="container large">
             <div class="row gap-lg-0 gap-md-0 gap-3">
-                <div class="col-12 pb-lg-5 pb-3">
-                    <div class="services-content">
-                        <div class="section-title-wrapper mb-lg-3 mb-2">
-                            <div class="title-wrapper">
-                                <h2 class="section-title text-center font-sequelsans-romanbody word-anim">
-                                    Flexible office space solutions.
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="services-cards fade-anim">
-                        <div class="img">
-                            <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/medium-shot-woman-resigning_23-2149445783.jpg" alt="">
-                            <!-- <div class="bottom-color"></div> -->
-                        </div>
-                        <div class="cards-content">
-                            <div class="cards-title mb-lg-4 mb-2">
-                                <h2 class="word-anim mb-lg-2 mb-2">Private Office</h2>
-                                <p class="text">
-                                    Your own secure, fully furnished office with everything included — ideal for individuals or growing teams.
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-clock"></i>
-                                    <span>24/7 access & secure entry</span>
-                                </div>
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-cloud"></i>
-                                    <span>Ready-to-use desks, chairs & storage</span>
-                                </div>
-                            </div>
-                            <div class="d-flex cutom-btn-arrow">
-                                <div class="first-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                                <span class="text-one">Book Now</span>
-                                                <span class="text-two">Book Now</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="second-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="#" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
-                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
+                @foreach($Servicesdetail->headings as $heading)
+                    <div class="col-12 pb-lg-5 pb-3">
+                        <div class="services-content">
+                            <div class="section-title-wrapper mb-lg-3 mb-2">
+                                <div class="title-wrapper">
+                                    <h2 class="section-title text-center font-sequelsans-romanbody word-anim">
+                                        {{ $heading->heading }}
+                                    </h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
+                    @if($heading->cardContent)
+                        @foreach($heading->cardContent as $card)
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="services-cards fade-anim">
+                                <div class="img">
+                                    <!-- <div class="top-color"></div> -->
+                                    <img src="{{ url('storage/' . $card->image) }}" alt="">
+                                    <!-- <div class="bottom-color"></div> -->
+                                </div>
+                                <div class="cards-content">
+                                    <div class="cards-title mb-lg-4 mb-2">
+                                        <h2 class="word-anim mb-lg-2 mb-2">
+                                            {{ $card->title }}
+                                        </h2>
+                                        <p class="text">
+                                            {!! $card->card_description !!}
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                        @foreach ($card->cardPoints as $point)
+                                        <div class="icon-para">
+                                            <i class="{{ $point->icon }}"></i>
+                                            <span>
+                                                {{ $point->title }}
+                                            </span>
+                                        </div>
+                                        @endforeach
+                                    </div>
+                                    <div class="d-flex cutom-btn-arrow">
+                                        <div class="first-btn">
+                                            <div class="all-btn-wrapper">
+                                                <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
+                                                    <span class="btn-wrap">
+                                                        <span class="text-one">Book Now</span>
+                                                        <span class="text-two">Book Now</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="second-btn">
+                                            <div class="all-btn-wrapper">
+                                                <a href="#" class="rr-btn hover-bg-theme">
+                                                    <span class="btn-wrap">
+                                                <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
+                                                    <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    @endif
+                @endforeach
+
+                {{-- <div class="col-12 col-lg-3 col-md-6">
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
@@ -365,10 +375,11 @@ Quay Space | Services
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
+    {{-- @endif --}}''
     <!-- Services about area end -->
 
     <!-- client area start  -->

@@ -105,7 +105,7 @@ Quay Space | Home
     <!-- hero area end  -->
 
     <!-- about area start  -->
-    <section class="about-area pb-0 pb-md-0 pt-md-3 pb-lg-5">
+    <section class="about-area padding-top-large pb-0 pb-md-0 pt-md-3 pb-lg-5">
         <div class="container large">
             {{-- <div class="about-area-inner"> --}}
                 <!-- Swiper -->
@@ -126,7 +126,7 @@ Quay Space | Home
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Private Office -->
-                            <div class="icon-content word-anim" data-target="private">
+                            <div class="icon-content word-anim" data-target="private-office">
                                 <span class="subtitle">Dedicated Workspace</span>
                                 <h2 class="title">
                                     PRIVATE OFFICE
@@ -138,9 +138,9 @@ Quay Space | Home
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Office Space -->
-                            <div class="icon-content word-anim" data-target="officespace">
+                            <div class="icon-content word-anim" data-target="custom-office">
                                 <span class="subtitle">Customisable Offices</span>
-                                <h2 class="title">OFFICE SPACE</h2>
+                                <h2 class="title">CUSTOM OFFICE</h2>
                                 <span class="subtitle">For Growing Teams</span>
                             </div>
                         </div>
@@ -148,7 +148,7 @@ Quay Space | Home
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Event Space -->
-                            <div class="icon-content word-anim" data-target="eventspace">
+                            <div class="icon-content word-anim" data-target="event-space">
                                 <span class="subtitle">Modern Venue</span>
                                 <h2 class="title">
                                     EVENT SPACE
@@ -160,7 +160,7 @@ Quay Space | Home
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Virtual Office -->
-                            <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual">
+                            <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual-office">
                                 <span class="subtitle">Business Address</span>
                                 <h2 class="title">
                                     VIRTUAL OFFICE
@@ -297,8 +297,8 @@ Quay Space | Home
                         <div class="all-btn-wrapper fade-anim">
                             <a href="{{{route('aboutus')}}}" class="rr-btn hover-bg-theme">
                                 <span class="btn-wrap">
-                                        <span class="text-one">View More</span>
-                                <span class="text-two">View More</span>
+                                        <span class="text-one">Read More</span>
+                                <span class="text-two">Read More</span>
                                 </span>
                             </a>
                         </div>
@@ -362,7 +362,7 @@ Quay Space | Home
                 </div>
                 <div class="works-wrapper-box">
                     <div class="works-wrapper-1 fade-anim">
-                        <div class="work-box">
+                        <div class="work-box" data-target="private-office">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -1008,62 +1008,58 @@ Quay Space | Home
     </script>
     <script>
         $(document).ready(function () {
-    // ---------- HOME PAGE ----------
-    $(document).on("click", ".icon-content", function () {
-        var target = $(this).data("target"); // e.g., "meetingroom" / "officespace"
-        if (target) {
-            // Redirect service page with slug in URL
-            window.location.href = "/services/" + target;
-        }
-    });
+            // ---------- HOME PAGE ----------
+            $(document).on("click", ".icon-content", function () {
+                var target = $(this).data("target"); 
+                if (target) {
+                    window.location.href = "/services/" + target;
+                }
+            });
+            $(document).on("click", ".work-box", function () {
+                var target = $(this).data("target"); 
+                if (target) {
+                    window.location.href = "/services/" + target;
+                }
+            });
 
-    // ---------- SERVICE PAGE ----------
-    let pathParts = window.location.pathname.split("/");
-    // Example: /services/officespace → ["", "services", "officespace"]
-    let serviceFromPath = pathParts[2];
+            // sirf services page py hi niche ka code run ho
+            if (window.location.pathname.startsWith("/services")) {
+                // ---------- SERVICE PAGE ----------
+                let pathParts = window.location.pathname.split("/");
+                let serviceFromPath = pathParts[2];
+                let urlParams = new URLSearchParams(window.location.search);
+                let serviceFromQuery = urlParams.get("service");
 
-    let urlParams = new URLSearchParams(window.location.search);
-    let serviceFromQuery = urlParams.get("service");
+                let service = serviceFromPath || serviceFromQuery;
 
-    // Final slug check
-    let service = serviceFromPath || serviceFromQuery;
+                if (service) {
+                    activateService(service);
+                } else if ($(".swiper-slide").length) {
+                    let $firstService = $(".swiper-slide").first();
+                    let defaultService = $firstService.data("target");
 
-    if (service) {
-        activateService(service);
-    } else if ($(".swiper-slide").length) {
-        // Agar slug nahi mila → pehla wala slug default
-        let $firstService = $(".swiper-slide").first();
-        let defaultService = $firstService.data("target");
+                    activateService(defaultService);
 
-        activateService(defaultService);
+                    window.history.replaceState(null, "", "/services/" + defaultService);
+                }
 
-        // URL update bina reload
-        window.history.replaceState(null, "", "/services/" + defaultService);
-    }
+                $(".swiper-slide").on("click", function () {
+                    let targetSlug = $(this).data("target");
+                    activateService(targetSlug);
+                    window.history.pushState(null, "", "/services/" + targetSlug);
+                });
 
-    // ---------- SERVICE PAGE NAVIGATION ----------
-    $(".swiper-slide").on("click", function () {
-        let targetSlug = $(this).data("target"); // e.g. "virtual"
-        activateService(targetSlug);
+                function activateService(service) {
+                    $(".services-navber-content").removeClass("active");
+                    $(".services-section").removeClass("active");
+                    $(".swiper-slide").removeClass("active");
 
-        // Update URL bina reload
-        window.history.pushState(null, "", "/services/" + targetSlug);
-    });
-
-    // 🔹 Common function
-    function activateService(service) {
-        $(".services-navber-content").removeClass("active");
-        $(".services-section").removeClass("active");
-        $(".swiper-slide").removeClass("active");
-
-        // Navbar highlight
-        $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
-        $(`.swiper-slide[data-target="${service}"]`).addClass("active");
-
-        // Section show
-        $(`.${service}`).addClass("active");
-    }
-});
+                    $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+                    $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+                    $(`.${service}`).addClass("active");
+                }
+            }
+        });
 
     </script>
 @stop 
