@@ -156,7 +156,7 @@ Quay Space | Services
             </div>
         </div>
     </section>
-    {{-- @if(count($Servicesdetail->headings) < 0 ) --}}
+    @if($Servicesdetail->headings->flatMap->cardContent->isNotEmpty())
     <section class="{{ $Servicesdetail->slug }} services-section services-cards-area py-lg-5 py-md-3 py-3 overflow-hidden active">
         <div class="container large">
             <div class="row gap-lg-0 gap-md-0 gap-3">
@@ -228,158 +228,10 @@ Quay Space | Services
                         @endforeach
                     @endif
                 @endforeach
-
-                {{-- <div class="col-12 col-lg-3 col-md-6">
-                    <div class="services-cards fade-anim">
-                        <div class="img">
-                            <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg" alt="">
-                            <!-- <div class="bottom-color"></div> -->
-                        </div>
-                        <div class="cards-content">
-                            <div class="cards-title mb-lg-4 mb-2">
-                                <h2 class="word-anim mb-lg-2 mb-2">Custom Space</h2>
-                                <p class="text">
-                                    Tailor your workspace to fit your brand and workflow. From layouts to design, we’ll create a setup that works for your business.
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-ruler-combined"></i>
-                                    <span>Flexible layouts & custom fit-outs</span>
-                                </div>
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-users"></i>
-                                    <span>Scalable for teams of any size</span>
-                                </div>
-                            </div>
-                            <div class="d-flex cutom-btn-arrow">
-                                <div class="first-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="{{route('membership')}}" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one">Book Now</span>
-                                            <span class="text-two">Book Now</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="second-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="#" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
-                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="services-cards fade-anim">
-                        <div class="img">
-                            <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/indoor-shot-attractive-experienced-mature-woman-architect-sitting-desk-checking-engineering-drawings-by-her-ambitious-skilled-young-colleague-people-job-occupation-cooperation_344912-1633.jpg" alt="">
-                            <!-- <div class="bottom-color"></div> -->
-                        </div>
-                        <div class="cards-content">
-                            <div class="cards-title mb-lg-4 mb-2">
-                                <h2 class="word-anim mb-lg-2 mb-2">Day Space</h2>
-                                <p class="text">
-                                    Flexible access to professional workspace whenever you need it — without long-term commitments.
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-calendar-day"></i>
-                                    <span>Pay by the day, no contracts</span>
-                                </div>
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-wifi"></i>
-                                    <span>High-speed Wi-Fi & shared amenities</span>
-                                </div>
-                            </div>
-                            <div class="d-flex cutom-btn-arrow">
-                                <div class="first-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="booknow.html" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one">Book Now</span>
-                                            <span class="text-two">Book Now</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="second-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="#" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
-                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-3 col-md-6">
-                    <div class="services-cards fade-anim">
-                        <div class="img">
-                            <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/close-up-young-business-person-doing-internship_23-2149305389.jpg" alt="">
-                            <!-- <div class="bottom-color"></div> -->
-                        </div>
-                        <div class="cards-content">
-                            <div class="cards-title mb-lg-4 mb-2">
-                                <h2 class="word-anim mb-lg-2 mb-2">Office Memberships</h2>
-                                <p class="text">
-                                    Join the Quay Space community with flexible coworking memberships built around your schedule.
-                                </p>
-                            </div>
-                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-chair"></i>
-                                    <span>Hot desks & coworking access</span>
-                                </div>
-                                <div class="icon-para">
-                                    <i class="fa-regular fa-network-wired"></i>
-                                    <span>Networking & community events</span>
-                                </div>
-                            </div>
-                            <div class="d-flex cutom-btn-arrow">
-                                <div class="first-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="booknow.html" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one">Book Now</span>
-                                            <span class="text-two">Book Now</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="second-btn">
-                                    <div class="all-btn-wrapper">
-                                        <a href="#" class="rr-btn hover-bg-theme">
-                                            <span class="btn-wrap">
-                                        <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
-                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
-    {{-- @endif --}}''
+    @endif
     <!-- Services about area end -->
 
     <!-- client area start  -->
