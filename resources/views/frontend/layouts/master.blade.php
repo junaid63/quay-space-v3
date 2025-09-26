@@ -73,16 +73,6 @@
             </div>
             <div class="modal-body">
                 <div class="modal-content-form">
-                    {{-- <div class="modal-custom-content">
-                        <div class="modal-side-img">
-                            <div class="black-shade"></div>
-                            <img src="https://img.freepik.com/premium-photo/creative-technology-concept_1256621-1999.jpg" alt="">
-                            <div class="contents">
-                                <span class="title">Director Postal Service</span>
-                                <p class="text">Register for our premium UK business services including virtual office addresses, mail handling, and director service addresses with full compliance to UK regulations.</p>
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="modal-form">
                         <!-- Step Indicator -->
                         <div class="step-indicator">

@@ -62,7 +62,7 @@ class FrontendController extends Controller
 
         if ($slug) {
             // Agar slug diya hai to us service ka detail lao
-            $Servicesdetail = Service::where('slug', $slug)->firstOrFail();
+            $Servicesdetail = Service::with('headings.cardContent.cardPoints')->where('slug', $slug)->firstOrFail();
         } else {
             // Agar slug nahi diya (sirf /services open hua)
             if ($Servicesget->isNotEmpty()) {
@@ -77,7 +77,6 @@ class FrontendController extends Controller
 
         return view($view, compact('contentpagesget', 'Servicesget', 'Servicesdetail'));
     }
-
 
 
 
