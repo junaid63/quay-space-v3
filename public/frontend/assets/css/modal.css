@@ -440,7 +440,7 @@ body {
     width: 200px;
     /* adjust based on spacing */
     height: 2px;
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
     transform: translateY(-50%);
     z-index: -1;
 }
@@ -457,6 +457,15 @@ body {
 
 .step.completed::after {
     background-color: var(--secondary);
+}
+
+@media (max-width: 510px) {
+    .modal {
+        z-index: 99999;
+    }
+    .modal-form {
+        padding: 25px 15px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Contact;
 use App\Ourteam;
 use App\Faq;
+use App\Service;
+use App\Contact;
 use App\ContentPage;
+use App\Newsletter;
 
 class FrontendController extends Controller
 {
@@ -53,11 +55,37 @@ class FrontendController extends Controller
         return view($view,compact('contentpagesget'));
 
     }
-    public function services()
+    public function services($slug = null)
     {
         $view = 'frontend.services';
         $contentpagesget = $this->ContentPagesGet();
-        return view($view,compact('contentpagesget'));
+        $Servicesget = Service::where('status', 1)->get();
+
+        if ($slug) {
+            // Agar slug diya hai to us service ka detail lao
+            $Servicesdetail = Service::with('headings.cardContent.cardPoints')->where('slug', $slug)->firstOrFail();
+        } else {
+            // Agar slug nahi diya (sirf /services open hua)
+            if ($Servicesget->isNotEmpty()) {
+                $Servicesdetail = $Servicesget->first();
+                // Redirect /services → /services/{first-slug}
+                return redirect()->route('services', $Servicesdetail->slug);
+            } else {
+                // Agar koi service hi nahi hai → home redirect
+                return redirect()->route('index');
+            }
+        }
+
+        return view($view, compact('contentpagesget', 'Servicesget', 'Servicesdetail'));
+    }
+
+
+
+
+    public function getServiceDetail($slug)
+    {
+        $service = Service::where('slug', $slug)->firstOrFail();
+        return response()->json($service);
     }
     public function contactSubmit(Request $request)
     {   
@@ -71,6 +99,18 @@ class FrontendController extends Controller
         return response()->json([
             "status"=> "success",
             "message"=> "Thank you for Contacting us",
+            "redirect"=> "/"
+        ]);
+    }
+    public function newsletterSubmit(Request $request)
+    {
+        $newsletter = new Newsletter();
+        $newsletter->newsemail = $request->newsemail;
+        $newsletter->save();
+
+        return response()->json([
+             "status"=> "success",
+            "message"=> "Thank you for Newsletter",
             "redirect"=> "/"
         ]);
     }

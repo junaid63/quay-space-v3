@@ -15,19 +15,15 @@
         </div>
         <div class="newsletter-input-button">
             <div class="newsletter-input">
-                <input type="text" placeholder="Enter your email address">
+                <input id="newsletteremail" type="text" placeholder="Enter your email address">
             </div>
             <div class="newsletter-button">
-                <a href="#" class="rr-btn btn-text-fli hover-bg-theme">
+                <button type="button" id="newslettersubmit" class="rr-btn">
                     <span class="btn-wrap">
-                            <span class="text-one">
-                                Subscribe Now
-                            </span>
-                    <span class="text-two">
-                                Subscribe Now
-                            </span>
+                        <span class="text-one">Subscribe Now</span>
+                        <span class="text-two">Subscribe Now</span>
                     </span>
-                </a>
+                </button>
             </div>
         </div>
     </div>

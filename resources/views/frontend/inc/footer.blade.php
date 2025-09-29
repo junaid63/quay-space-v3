@@ -1,5 +1,5 @@
  <!-- footer area start  -->
-    <footer class="footer-main section-spacing pb-0">
+    <footer class="footer-main section-spacing pt-lg-5 pt-4 pb-0">
         <div class="container">
             <div class="row">
                 <!-- Column 1 -->
@@ -15,7 +15,7 @@
                 </div>
 
                 <!-- Column 2 -->
-                <div class="col-12 col-lg-2 col-md-6 mb-lg-0 mb-5">
+                <div class="col-6 col-lg-2 col-md-6 mb-lg-0 mb-md-3 mb-4">
                     <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-2">Company</h4>
                     <div class="crp-footer-widget-menu">
                         <ul>
@@ -32,15 +32,29 @@
                 </div>
 
                 <!-- Column 2 -->
-                <div class="col-12 col-lg-2 col-md-6 mb-lg-0 mb-5">
+                <div class="col-6 col-lg-2 col-md-6 mb-lg-0 mb-md-3 mb-4">
                     <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-2">Support</h4>
-                    <div class="crp-footer-widget-menu mb-lg-3 mb-md-3 mb-2">
+                    <div class="crp-footer-widget-menu mb-lg-3 mb-md-3 mb-3">
                         <ul>
                             @foreach ($contentpagesget as $content)
                             <li><a class="{{request()->route('slug') === $content->slug ? 'active': ''}}" href="{{route('contentpages', $content->slug )}}">{{ ucwords($content->title) }}</a></li>   
                             @endforeach
                         </ul>
                     </div>
+                    <div class="footer-follow-us d-block d-lg-block d-md-none">
+                        <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-3">Follow Us</h4>
+                        <div class="crp-footer-social">
+                            @if(setting('site.facebook'))
+                                <a href="{{setting('site.facebook')}}"><i class="fa-brands fa-facebook-f"></i></a>
+                            @endif
+                            @if(setting('site.instagram'))
+                                <a href="{{setting('site.instagram')}}"><i class="fa-brands fa-instagram"></i></a>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-2 col-md-6 mb-lg-0 mb-md-3 mb-4 d-none d-lg-none d-md-block">
                     <div class="footer-follow-us">
                         <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-2">Follow Us</h4>
                         <div class="crp-footer-social">
@@ -56,7 +70,7 @@
 
                 <!-- Column 3 -->
                 <div class="col-12 col-lg-4 col-md-6 tablet-flex">
-                    <div class="footer-contact-location mb-lg-4 mb-5">
+                    <div class="footer-contact-location mb-lg-4 mb-4">
                         <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-3">Location</h4>
                         <a href="https://maps.app.goo.gl/mRAnRGSL1hZJZEj2A" target="_blank">
                             {{setting('site.address')}}

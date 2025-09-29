@@ -9,50 +9,6 @@ Quay Space | Book Now
 
 @section('css')
    <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1000px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .header {
-            background: linear-gradient(to bottom right, #4a6491 0%, #f14246 100%);
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: white;
-        }
-        
-        .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            color: white;
-        } */
-        
         .form-container {
             padding: 30px;
         }
@@ -1427,7 +1383,7 @@ Quay Space | Book Now
                 $(".step").eq(step - 1).removeClass("active").addClass("completed");
                 $(".step").eq(step).addClass("active");
 
-                $(".progress-bar").css("--progress", ((step / totalSteps) * 100) + "%");
+                $(".progress-bar").css("--progress", ((step / totalSteps) * 130) + "%");
 
                 if (step === 3) updateSummary();
 

@@ -56,11 +56,6 @@
      color: black;
  }
  
- .form-check-input {
-     height: 23px !important;
-     width: 45px !important;
- }
- 
  .reject-and-accep-btn {
      display: flex;
      justify-content: flex-start;
@@ -266,10 +261,6 @@
      font-weight: 400;
  }
  
- .modal-body {
-     padding: 0px 30px
- }
- 
  .py-xxl-5 {
      padding: 50px 0px;
  }
@@ -317,7 +308,9 @@
      .cookie-popup-container .cookie-popup {
          right: 10px;
          left: 10px;
-         bottom: calc(50vh - 150px);
+         /* bottom: calc(50vh - 150px); */
+         bottom: calc(40vh - 150px);
+         z-index: 9999;
      }
      .modal {
          padding-right: 0px;

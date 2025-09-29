@@ -73,16 +73,6 @@
             </div>
             <div class="modal-body">
                 <div class="modal-content-form">
-                    {{-- <div class="modal-custom-content">
-                        <div class="modal-side-img">
-                            <div class="black-shade"></div>
-                            <img src="https://img.freepik.com/premium-photo/creative-technology-concept_1256621-1999.jpg" alt="">
-                            <div class="contents">
-                                <span class="title">Director Postal Service</span>
-                                <p class="text">Register for our premium UK business services including virtual office addresses, mail handling, and director service addresses with full compliance to UK regulations.</p>
-                            </div>
-                        </div>
-                    </div> --}}
                     <div class="modal-form">
                         <!-- Step Indicator -->
                         <div class="step-indicator">
@@ -264,7 +254,7 @@
                                     </div>
                                 </div>
                                 
-                                <h6 class="section-title mt-4"><i class="fas fa-credit-card"></i> Payment Details</h6>
+                                <h6 class="icon-title section-title mt-4"><i class="fas fa-credit-card"></i> Payment Details</h6>
                                 
                                 <div class="mb-3">
                                     <label for="billingName" class="form-label required-field">Billing Name & Address</label>
@@ -488,6 +478,101 @@
     <script src="{{url('frontend/assets/js/main.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function(){
+            $("#newslettersubmit").click(function(event){
+                event.preventDefault();
+                var newsemail = $("#newsletteremail").val();
+                var newsemailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                   
+                if(newsemail !=""){
+                    if(newsemailPattern.test(newsemail)){
+                        $(this).html("Please Wait &nbsp;<i class='fa fa-spinner fa-spin'></i>");
+                        $(this).attr("disabled","disabled");
+                        $.ajax({
+                            url:"/newsletter/submit",
+                            type:"POST",
+                            data:{
+                                newsemail:newsemail,
+                                '_token': '{{ csrf_token() }}',
+                            },
+                            success:function(response){
+                                if(response['status']=="success"){
+                                    Swal.fire({
+                                        toast: true,
+                                        position: 'center',
+                                        icon:'success',
+                                        title:response['message'],
+                                        showConfirmButton:false,
+                                        timer:2000,
+                                        backdrop: false,
+                                        customClass: {
+                                            popup: 'swal-bottom-center'
+                                        }
+                                    });
+                                    $("#newsletteremail").val("");
+                                    $("#submit").html("Subscriber Now");
+                                    $("#submit").removeAttr("disabled");
+                                    setTimeout(function(){
+                                        window.location.href = response['redirect'];
+                                    },2000);
+                                }else{
+                                    if(response['status']=="warning")
+                                        Swal.fire({
+                                            toast: true,
+                                            position: 'center',
+                                            icon:'warning',
+                                            title:response['message'],
+                                            showConfirmButton:false,
+                                            timer:1500,
+                                            backdrop: false,
+                                            customClass: {
+                                                popup: 'swal-bottom-center'
+                                            }
+                                        });
+                                    $("#submit").html("Subscriber Now");
+                                    $("#submit").removeAttr("disabled");
+                                }
+                            }
+                        });
+                    }
+                    else{
+                        $("#newsletteremail").focus();
+                        Swal.fire({
+                            toast: true,
+                            position: 'center',
+                            icon:'warning',
+                            title:'Enter a Valid Email',
+                            showConfirmButton:false,
+                            timer:1500,
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-bottom-center'
+                            }
+                        });
+                    }
+                }
+                else{
+                    $("#newsletteremail").focus();
+                    Swal.fire({
+                        toast: true,
+                        position: 'center',
+                        icon: 'warning',
+                        title: 'Enter Your Email',
+                        showConfirmButton: false,
+                        timer: 1500,
+                        backdrop: false,
+                        customClass: {
+                            popup: 'swal-bottom-center'
+                        }
+                    });
+                }
+            });
+                
+            
+        });
+    </script>
     <script>
         $(document).ready(function() {
             let $slides = $(".hero-slider .slide");
@@ -694,63 +779,6 @@
                     $(".cd-words-wrapper").css("display", ""); // ✅ restore animation
                 }
             });
-        });
-
-        $(document).ready(function () {
-            // ---------- HOME PAGE ----------
-            $(document).on("click", ".icon-content", function () {
-                var target = $(this).data("target"); // e.g., "meetingroom"
-                if (target) {
-                    // Redirect clean URL (safe: query param)
-                    window.location.href = "/services?service=" + target;
-                }
-            });
-
-            // ---------- SERVICE PAGE ----------
-            let pathParts = window.location.pathname.split("/"); 
-            // Example: /services/meetingroom → ["", "services", "meetingroom"]
-            let serviceFromPath = pathParts[2]; 
-
-            let urlParams = new URLSearchParams(window.location.search);
-            let serviceFromQuery = urlParams.get("service");
-
-            // Final service check
-            let service = serviceFromPath || serviceFromQuery;
-
-            if (service) {
-                activateService(service);
-            } else if ($(".swiper-slide").length) {
-                // Agar service URL me nahi hai → pehli wali ko active karo
-                let $firstService = $(".swiper-slide").first();
-                let defaultService = $firstService.data("target").replace(".", "");
-
-                activateService(defaultService);
-
-                // URL update bina reload (query param rakho taake 404 na aaye)
-                window.history.replaceState(null, "", "/services?service=" + defaultService);
-            }
-
-            // ---------- SERVICE PAGE NAVIGATION ----------
-            $(".swiper-slide").on("click", function () {
-                let targetClass = $(this).data("target"); // e.g. ".meetingroom"
-                let cleanTarget = targetClass.replace(".", "");
-
-                activateService(cleanTarget);
-
-                // URL update bina reload (safe: query param)
-                window.history.pushState(null, "", "/services?service=" + cleanTarget);
-            });
-
-            // 🔹 Common function: activate service
-            function activateService(service) {
-                $(".services-navber-content").removeClass("active");
-                $(".services-section").removeClass("active");
-                $(".swiper-slide").removeClass("active");
-
-                $(`.swiper-slide[data-target=".${service}"] .services-navber-content`).addClass("active");
-                $(`.swiper-slide[data-target=".${service}"]`).addClass("active");
-                $(`.${service}`).addClass("active");
-            }
         });
     </script>
 

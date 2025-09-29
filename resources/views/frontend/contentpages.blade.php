@@ -29,6 +29,16 @@ Quay Space | Privacy Policy
         <div class="container large">
             <div class="content-page-main-title-para">
                 {!! $contentPages->description !!}
+
+                {{-- <div class="date">
+                    <div class="section-title-wrapper">
+                        <div class="title-wrapper">
+                            <h2 class="section-title font-instrumentsans-medium word-anim">
+                                Last updated: 18 September 2023
+                            </h2>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
         </div>
     </section>

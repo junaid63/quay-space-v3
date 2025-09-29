@@ -18,11 +18,13 @@ Route::get('/',[FrontendController::class, 'index'])->name('index');
 Route::get('/about-us',[FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/our-team',[FrontendController::class, 'ourteam'])->name('ourteam');
 Route::get('/faqs',[FrontendController::class, 'faqs'])->name('faqs');
-Route::get('/services', [FrontendController::class, 'services'])->name('services');
+// Route::get('/services', [FrontendController::class, 'services'])->name('services');
+Route::get('/services/{slug?}', [FrontendController::class, 'services'])->name('services');
 Route::get('/booknow', [FrontendController::class, 'booknow'])->name('booknow');
 Route::get('/membership', [FrontendController::class, 'membership'])->name('membership');
 Route::get('/contact-us',[FrontendController::class, 'contactus'])->name('contactus');
 Route::post('/contact/submit',[FrontendController::class, 'contactSubmit'])->name('contactSubmit');
+Route::post('/newsletter/submit', [FrontendController::class, 'newsletterSubmit'])->name('newsletterSubmit');
 Route::get('/content-page/{slug}',[FrontendController::class, 'contentpages'])->name('contentpages');
 
 
@@ -175,3 +177,6 @@ Route::get('/ajax/accounts', function () {
 Route::post('/switch-account', AccountSwitchController::class)->middleware(['auth', 'verified'])->name('account.switch');
 
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
+
+Route::get('/service-detail/{slug}', [FrontendController::class, 'getServiceDetail']);
+

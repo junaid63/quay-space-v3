@@ -1211,7 +1211,7 @@ Quay Space | Book Now
                 $(".step").addClass("completed");
                 $(".progress-bar").css("--progress", "100%");
             });
-        });
+        });querySelector
 
         // 📌 Generate time slots
         function generateTimeSlots(date) {
@@ -1342,9 +1342,6 @@ Quay Space | Book Now
                 this.appendChild(checkIcon);
             });
         });
-
-
-
 
         function validateStep3() {
             let firstName = $("#first-name").val();
