@@ -69,16 +69,14 @@ Quay Space | Services
         </div>
     </section>
     <!-- page title area end  -->
-
-    <!-- Services about area start  -->
-    <section class="{{ $Servicesdetail->slug }} services-section services-area section-padding  overflow-hidden active">
+    <section class="{{$Servicesdetail->slug}} services-section services-area section-padding  overflow-hidden active">
         <div class="container large">
             <div class="row gap-lg-2 gap-0">
                 <div class="col-12 col-md-6 col-lg-6 order-lg-0 order-md-0 order-1">
                     <div class="services-contents">
                         <div class="title title-wrapper">
                             <h2 class="section-title text-start font-instrumentsans-medium word-anim">
-                                {{ $Servicesdetail->title }}<span class="dot">.</span>
+                                {{ ucwords($Servicesdetail->title)}}<span class="dot">.</span>
                             </h2>
                         </div>
                         <p class="text fade-top text-start">
@@ -156,6 +154,7 @@ Quay Space | Services
             </div>
         </div>
     </section>
+    <!-- Services about area end -->
     @if($Servicesdetail->headings->flatMap->cardContent->isNotEmpty())
     <section class="{{ $Servicesdetail->slug }} services-section services-cards-area py-lg-5 py-md-3 py-3 overflow-hidden active">
         <div class="container large">
@@ -232,6 +231,8 @@ Quay Space | Services
         </div>
     </section>
     @endif
+
+
     <!-- Services about area end -->
 
     <!-- client area start  -->

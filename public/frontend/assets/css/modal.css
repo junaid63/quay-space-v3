@@ -440,7 +440,7 @@ body {
     width: 200px;
     /* adjust based on spacing */
     height: 2px;
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
     transform: translateY(-50%);
     z-index: -1;
 }

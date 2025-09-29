@@ -160,7 +160,7 @@ Quay Space | Home
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Virtual Office -->
-                            <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual-office">
+                            <div class="icon-content word-anim" data-target="virtual-office">
                                 <span class="subtitle">Business Address</span>
                                 <h2 class="title">
                                     VIRTUAL OFFICE
@@ -170,44 +170,8 @@ Quay Space | Home
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            {{-- <div class="hp-services-cards-main">
-                <!-- Meeting Room -->
-                <div class="icon-content word-anim" data-target="meetingroom">
-                    <span class="subtitle">Professional Spaces</span>
-                    <h2 class="title">Meeting Rooms</h2>
-                    <span class="subtitle">Collaborate & Grow</span>
-                </div>
-
-                <!-- Private Office -->
-                <div class="icon-content word-anim" data-target="private">
-                    <span class="subtitle">Dedicated Workspace</span>
-                    <h2 class="title">Private Office</h2>
-                    <span class="subtitle">Focus & Productivity</span>
-                </div>
-
-                <!-- Office Space -->
-                <div class="icon-content word-anim" data-target="officespace">
-                    <span class="subtitle">Customizable Offices</span>
-                    <h2 class="title">Office Space</h2>
-                    <span class="subtitle">For Growing Teams</span>
-                </div>
-
-                <!-- Event Space -->
-                <div class="icon-content word-anim" data-target="eventspace">
-                    <span class="subtitle">Modern Venue</span>
-                    <h2 class="title">Event Space</h2>
-                    <span class="subtitle">Host with Style</span>
-                </div>
-
-                <!-- Virtual Office -->
-                <div class="icon-content word-anim d-none d-md-flex d-lg-flex" data-target="virtual">
-                    <span class="subtitle">Business Address</span>
-                    <h2 class="title">Virtual Office</h2>
-                    <span class="subtitle">Work from Anywhere</span>
-                </div>
-
-            </div> --}}
         </div>
     </section>
     <!-- about area end  -->
@@ -362,7 +326,7 @@ Quay Space | Home
                 </div>
                 <div class="works-wrapper-box">
                     <div class="works-wrapper-1 fade-anim">
-                        <div class="work-box" data-target="private-office">
+                        <div class="work-box" data-target="co-working">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -380,7 +344,7 @@ Quay Space | Home
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box">
+                        <div class="work-box" data-target="private-office">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -398,7 +362,7 @@ Quay Space | Home
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box">
+                        <div class="work-box" data-target="office-space">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -416,7 +380,7 @@ Quay Space | Home
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box">
+                        <div class="work-box" data-target="event-space">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -434,7 +398,7 @@ Quay Space | Home
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box">
+                        <div class="work-box" data-target="virtual-office">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -452,7 +416,7 @@ Quay Space | Home
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box">
+                        <div class="work-box" data-target="meeting-rooms">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="#">
@@ -471,16 +435,6 @@ Quay Space | Home
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="all-btn-wrapper fade-anim">
-                    <a href="#" class="rr-btn hover-bg-theme">
-                        <span class="btn-wrap">
-                                <span class="text-one">View
-                                    All</span>
-                        <span class="text-two">View
-                                    All</span>
-                        </span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -991,10 +945,13 @@ Quay Space | Home
                 delay: 2000,
                 disableOnInteraction: false,
             },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
             breakpoints: {
                 0: {
-                    loop: true, 
-                    slidesPerView: 2
+                    slidesPerView: 2,
                 },
                 768: {
                     slidesPerView: 3

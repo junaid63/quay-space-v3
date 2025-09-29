@@ -8,6 +8,7 @@ use App\Faq;
 use App\Service;
 use App\Contact;
 use App\ContentPage;
+use App\Newsletter;
 
 class FrontendController extends Controller
 {
@@ -98,6 +99,18 @@ class FrontendController extends Controller
         return response()->json([
             "status"=> "success",
             "message"=> "Thank you for Contacting us",
+            "redirect"=> "/"
+        ]);
+    }
+    public function newsletterSubmit(Request $request)
+    {
+        $newsletter = new Newsletter();
+        $newsletter->newsemail = $request->newsemail;
+        $newsletter->save();
+
+        return response()->json([
+             "status"=> "success",
+            "message"=> "Thank you for Newsletter",
             "redirect"=> "/"
         ]);
     }

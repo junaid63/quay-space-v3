@@ -478,6 +478,101 @@
     <script src="{{url('frontend/assets/js/main.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function(){
+            $("#newslettersubmit").click(function(event){
+                event.preventDefault();
+                var newsemail = $("#newsletteremail").val();
+                var newsemailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                   
+                if(newsemail !=""){
+                    if(newsemailPattern.test(newsemail)){
+                        $(this).html("Please Wait &nbsp;<i class='fa fa-spinner fa-spin'></i>");
+                        $(this).attr("disabled","disabled");
+                        $.ajax({
+                            url:"/newsletter/submit",
+                            type:"POST",
+                            data:{
+                                newsemail:newsemail,
+                                '_token': '{{ csrf_token() }}',
+                            },
+                            success:function(response){
+                                if(response['status']=="success"){
+                                    Swal.fire({
+                                        toast: true,
+                                        position: 'center',
+                                        icon:'success',
+                                        title:response['message'],
+                                        showConfirmButton:false,
+                                        timer:2000,
+                                        backdrop: false,
+                                        customClass: {
+                                            popup: 'swal-bottom-center'
+                                        }
+                                    });
+                                    $("#newsletteremail").val("");
+                                    $("#submit").html("Subscriber Now");
+                                    $("#submit").removeAttr("disabled");
+                                    setTimeout(function(){
+                                        window.location.href = response['redirect'];
+                                    },2000);
+                                }else{
+                                    if(response['status']=="warning")
+                                        Swal.fire({
+                                            toast: true,
+                                            position: 'center',
+                                            icon:'warning',
+                                            title:response['message'],
+                                            showConfirmButton:false,
+                                            timer:1500,
+                                            backdrop: false,
+                                            customClass: {
+                                                popup: 'swal-bottom-center'
+                                            }
+                                        });
+                                    $("#submit").html("Subscriber Now");
+                                    $("#submit").removeAttr("disabled");
+                                }
+                            }
+                        });
+                    }
+                    else{
+                        $("#newsletteremail").focus();
+                        Swal.fire({
+                            toast: true,
+                            position: 'center',
+                            icon:'warning',
+                            title:'Enter a Valid Email',
+                            showConfirmButton:false,
+                            timer:1500,
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-bottom-center'
+                            }
+                        });
+                    }
+                }
+                else{
+                    $("#newsletteremail").focus();
+                    Swal.fire({
+                        toast: true,
+                        position: 'center',
+                        icon: 'warning',
+                        title: 'Enter Your Email',
+                        showConfirmButton: false,
+                        timer: 1500,
+                        backdrop: false,
+                        customClass: {
+                            popup: 'swal-bottom-center'
+                        }
+                    });
+                }
+            });
+                
+            
+        });
+    </script>
     <script>
         $(document).ready(function() {
             let $slides = $(".hero-slider .slide");
