@@ -1211,7 +1211,7 @@ Quay Space | Book Now
                 $(".step").addClass("completed");
                 $(".progress-bar").css("--progress", "100%");
             });
-        });
+        });querySelector
 
         // 📌 Generate time slots
         function generateTimeSlots(date) {
