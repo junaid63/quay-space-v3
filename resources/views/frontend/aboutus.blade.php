@@ -274,7 +274,7 @@ Quay Space | About Us
     </section>
     <!-- about area end  -->
 
-    <section class="about-area about-area-details overflow-hidden py-lg-5 py-3 d-none d-md-none d-lg-flex">
+    <section class="about-area about-area-details overflow-hidden pb-lg-5 d-none d-md-none d-lg-flex">
         <div class="container large">
             <div class="row">
                 <div class="col-12 col-lg-lg col-md-12">
@@ -360,7 +360,7 @@ Quay Space | About Us
         </div>
     </section>
 
-    <section class="about-area about-area-details overflow-hidden d-flex d-md-flex d-lg-none">
+    <section class="about-area about-area-details overflow-hidden d-flex d-md-flex d-lg-none pb-4">
         <div class="container large">
             <div class="row">
                 <div class="col-12 col-lg-lg col-md-12">

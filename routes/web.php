@@ -24,6 +24,7 @@ Route::get('/booknow', [FrontendController::class, 'booknow'])->name('booknow');
 Route::get('/membership', [FrontendController::class, 'membership'])->name('membership');
 Route::get('/contact-us',[FrontendController::class, 'contactus'])->name('contactus');
 Route::post('/contact/submit',[FrontendController::class, 'contactSubmit'])->name('contactSubmit');
+Route::post('/newsletter/submit', [FrontendController::class, 'newsletterSubmit'])->name('newsletterSubmit');
 Route::get('/content-page/{slug}',[FrontendController::class, 'contentpages'])->name('contentpages');
 
 

@@ -938,8 +938,16 @@
 
 /* About Us Start  */
 
+
+/* .about-area {
+    min-height: 270px;
+    top: 70px;
+    padding-top: 0px;
+    z-index: 999;
+} */
+
 .aboutus-section-main.about-details {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .about-tilte-icon-para {
@@ -1006,6 +1014,22 @@
     border-radius: 50%;
     font-size: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-tilte-icon-para .about-item:nth-child(4n + 1) i {
+    color: var(--secondary);
+}
+
+.about-tilte-icon-para .about-item:nth-child(4n + 2) i {
+    color: var(--primary);
+}
+
+.about-tilte-icon-para .about-item:nth-child(4n + 3) i {
+    color: var(--third);
+}
+
+.about-tilte-icon-para .about-item:nth-child(4n + 4) i {
+    color: var(--fourth);
 }
 
 .about-tilte-icon-para .about-item span {
@@ -1197,6 +1221,10 @@
 .about-content {
     text-align: start;
     padding-left: 100px;
+}
+
+.about-area.about-area-details {
+    padding-top: 0px;
 }
 
 .about-area.padding-top-large {
@@ -2527,9 +2555,14 @@
 
 .services-cards-area .section-title {
     /* font-size: 60px; */
-    font-size: 50px;
+    font-size: 70px;
     color: var(--black);
     width: 100%;
+}
+
+.services-cards-area .title .section-title {
+    font-size: 50px;
+    line-height: 1.2;
 }
 
 .services-cards-area .section-title.long-title {
@@ -3689,6 +3722,41 @@ main {
     object-fit: cover;
 }
 
+.swal2-container.swal2-bottom.swal2-center {
+    bottom: 10px !important;
+    /* kitna neeche lana hai, adjust kar sakte ho */
+    top: auto !important;
+    transform: translateX(-50%);
+    left: 50% !important;
+    right: auto !important;
+}
+
+.swal2-toast .swal2-icon {
+    grid-column: 2!important;
+    justify-self: center;
+    align-items: center;
+}
+
+.swal2-toast h2:where(.swal2-title) {
+    text-align: center!important;
+    font-size: 1.4rem!important;
+    color: var(--white)!important;
+}
+
+.swal2-toast .swal2-icon {
+    width: 50px!important;
+    height: 50px!important;
+}
+
+.swal2-toast {
+    background: var(--secondary)!important;
+}
+
+div:where(.swal2-icon).swal2-warning {
+    border-color: var(--white)!important;
+    color: var(--white)!important;
+}
+
 
 /* Content Pages css End  */
 
@@ -4155,6 +4223,18 @@ main {
 }
 
 @media (max-width: 510px) {
+    .dots:not(:required) {
+        top: -20px;
+    }
+    .about-area.about-area-details {
+        top: 0px;
+    }
+    .about-area {
+        min-height: 320px;
+        top: 50px;
+        padding-top: 0px;
+        z-index: 999;
+    }
     .main-title-para .section-title-wrapper {
         margin-bottom: 10px;
     }
@@ -4190,11 +4270,12 @@ main {
     .contact-area-contact-page .contact-formfield input {
         border-radius: 0px;
     }
+    .about-area .swiper-pagination-bullet-active,
     .about-area-details .swiper-pagination-bullet-active {
         background: var(--secondary)!important;
     }
     .about-area-details .swiper {
-        padding: 0px 0px 20px 0px;
+        padding: 0px 0px 30px 0px;
     }
     .banefits-main-div {
         padding: 0px 20px;
@@ -4208,15 +4289,22 @@ main {
     }
     .aboutus-main {
         gap: 10px;
+        align-items: center;
+        text-align: center;
     }
     .hero-area .award-wrapper {
         display: none;
     }
     .hp-services-cards-main .icon-content {
         box-shadow: none;
+        padding: 20px 20px;
     }
     .swiper.ServiceCards {
-        padding: 0px 0px;
+        /* padding: 30px 0px; */
+        padding: 10px 0px 30px 0px;
+    }
+    .about-area .ServiceCards .swiper-pagination {
+        bottom: 0px;
     }
     .date h2 {
         font-size: 18px!important;
@@ -4463,15 +4551,13 @@ main {
         font-size: 15px;
         text-wrap: nowrap;
     }
-    .about-area {
-        /* top: -85px; */
-        min-height: 270px;
-        top: 70px;
+    .about-area-details .section-title-wrapper {
         padding-top: 0px;
-        z-index: 999;
     }
     .about-area.padding-top-large {
         padding-top: 0px !important;
+        top: 0px;
+        min-height: 250px;
     }
     .hp-services-cards-main {
         flex-wrap: wrap;
@@ -4670,7 +4756,8 @@ main {
         text-align: start;
     }
     .about-area-details .section-title-wrapper {
-        padding-top: 60px;
+        /* padding-top: 60px; */
+        padding-top: 0px;
     }
     .about-area-details .about-images .second-img {
         position: relative;
@@ -4812,6 +4899,9 @@ main {
     .rr-btn .btn-wrap {
         font-weight: 500;
     }
+    .newsletter-input-button .newsletter-button button {
+        width: 100%;
+    }
     .newsletter-input-button .newsletter-input,
     .newsletter-input-button .newsletter-button {
         width: 100%;
@@ -4874,7 +4964,7 @@ main {
         margin-top: 20px;
     }
     .hero-slider {
-        height: 60vh;
+        height: 100%;
     }
     .client-area .client-capsule-wrapper {
         height: 80vh;
@@ -5022,7 +5112,7 @@ main {
         color: var(--black);
     }
     .hero-area .banner-custom-padding {
-        padding-top: 80px;
+        padding: 80px 0px;
     }
     .hero-area-inner .banner-custom-padding {
         padding-top: 0px;

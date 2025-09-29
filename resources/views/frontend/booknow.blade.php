@@ -1343,9 +1343,6 @@ Quay Space | Book Now
             });
         });
 
-
-
-
         function validateStep3() {
             let firstName = $("#first-name").val();
             let lastName = $("#last-name").val();

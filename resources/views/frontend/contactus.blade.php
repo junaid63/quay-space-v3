@@ -195,11 +195,16 @@ Quay Space | Contact Us
                                             success:function(response){
                                                 if(response['status']=="success"){
                                                     Swal.fire({
-                                                        position:'center',
                                                         icon:'success',
                                                         title:response['message'],
                                                         showConfirmButton:false,
                                                         timer:2000,
+                                                        toast: true,
+                                                        position: 'bottom',
+                                                        backdrop: false,
+                                                        customClass: {
+                                                            popup: 'swal-bottom-center'
+                                                        }
                                                     });
                                                     $("#contactname").val("");
                                                     $("#contactemail").val("");
@@ -213,11 +218,16 @@ Quay Space | Contact Us
                                                 }else{
                                                     if(response['status']=="warning")
                                                         Swal.fire({
-                                                        position:'center',
                                                         icon:'warning',
                                                         title:response['message'],
                                                         showConfirmButton:false,
                                                         timer:1500,
+                                                        toast: true,
+                                                        position: 'bottom',
+                                                        backdrop: false,
+                                                        customClass: {
+                                                            popup: 'swal-bottom-center'
+                                                        }
                                                         });
                                                     $("#submit").html("submit");
                                                     $("#submit").removeAttr("disabled");
@@ -228,66 +238,96 @@ Quay Space | Contact Us
                                     else{
                                         $("#contactphone").focus();
                                         Swal.fire({
-                                            position:'center',
                                             icon:'warning',
                                             title:'Enter 12 Digits Number',
                                             showConfirmButton:false,
                                             timer:1500,
+                                            toast: true,
+                                            position: 'bottom',
+                                            backdrop: false,
+                                            customClass: {
+                                                popup: 'swal-bottom-center'
+                                            }
                                         });
                                     }
                                 }
                                 else{
                                     $("#contactemail").focus();
                                     Swal.fire({
-                                        position:'center',
                                         icon:'warning',
                                         title:'Enter a Valid Email',
                                         showConfirmButton:false,
                                         timer:1500,
+                                        toast: true,
+                                        position: 'bottom',
+                                        backdrop: false,
+                                        customClass: {
+                                            popup: 'swal-bottom-center'
+                                        }
                                     });
                                 }
                             }
                             else{
                                 $("#contactmessage").focus();
                                 Swal.fire({
-                                    position:'center',
                                     icon:'warning',
                                     title:'Enter Message',
                                     showConfirmButton:false,
                                     timer:1500,
+                                    toast: true,
+                                    position: 'bottom',
+                                    backdrop: false,
+                                    customClass: {
+                                        popup: 'swal-bottom-center'
+                                    }
                                 });
                             }
                         }
                         else{
                             $("#contactphone").focus();
                             Swal.fire({
-                                position:'center',
                                 icon:'warning',
                                 title:'Enter Phone Number',
                                 showConfirmButton:false,
                                 timer:1500,
+                                toast: true,
+                                position: 'bottom',
+                                backdrop: false,
+                                customClass: {
+                                    popup: 'swal-bottom-center'
+                                }
                             });
                         }
                     }
                     else{
                         $("#contactemail").focus();
                         Swal.fire({
-                            position:'center',
                             icon:'warning',
                             title:'Enter Your Email',
                             showConfirmButton:false,
                             timer:1500,
+                            toast: true,
+                            position: 'bottom',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-bottom-center'
+                            }
                         });
                     }
                 }
                 else{
                     $("#contactname").focus();
                     Swal.fire({
-                        position:'center',
                         icon:'warning',
                         title:'Enter Your Name',
                         showConfirmButton:false,
                         timer:1500,
+                        toast: true,
+                        position: 'bottom',
+                        backdrop: false,
+                           customClass: {
+                            popup: 'swal-bottom-center'
+                        }
                     });
                 }
             });
