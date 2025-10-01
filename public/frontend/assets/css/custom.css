@@ -4086,7 +4086,7 @@ div:where(.swal2-icon).swal2-warning {
 
 .feature-card:hover {
     transform: translate(5px, 5px);
-    box-shadow: none;
+    box-shadow: none!important;
     border: 2px solid var(--secondary);
 }
 
