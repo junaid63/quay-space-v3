@@ -155,7 +155,7 @@ Quay Space | Services
         </div>
     </section>
     <!-- Services about area end -->
-    @if($Servicesdetail->headings->flatMap->cardContent->isNotEmpty())
+    {{-- @if($Servicesdetail->headings->flatMap->cardContent->isNotEmpty())
     <section class="{{ $Servicesdetail->slug }} services-section services-cards-area py-lg-5 py-md-3 py-3 overflow-hidden active">
         <div class="container large">
             <div class="row gap-lg-0 gap-md-0 gap-3">
@@ -230,7 +230,1119 @@ Quay Space | Services
             </div>
         </div>
     </section>
+    @endif --}}
+    @if($Servicesdetail->headings->flatMap->cardContent->isNotEmpty())
+    <section class="{{ $Servicesdetail->slug }} services-section services-cards-area py-lg-5 py-md-3 py-3 overflow-hidden active">
+        <div class="container large">
+            <div class="row gap-lg-0 gap-md-0 gap-3 services-row-wrapper"><!-- ✅ new class added -->
+                @foreach($Servicesdetail->headings as $heading)
+                    <div class="col-12 pb-lg-5 pb-3">
+                        <div class="services-content">
+                            <div class="section-title-wrapper mb-lg-3 mb-2">
+                                <div class="title-wrapper">
+                                    <h2 class="section-title text-center font-sequelsans-romanbody word-anim">
+                                        {{ $heading->heading }}
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if($heading->cardContent)
+                        @php $count = 0; @endphp
+                        @foreach($heading->cardContent as $card)
+                            @if($count < 3) <!-- ✅ sirf 3 services cards show -->
+                            <div class="col-12 col-lg-3 col-md-6">
+                                <div class="services-cards fade-anim">
+                                    <div class="img">
+                                        <img src="{{ asset('storage/' . $card->image) }}" alt="">
+                                    </div>
+                                    <div class="cards-content">
+                                        <div class="cards-title mb-lg-3 mb-2">
+                                            <h2 class="word-anim mb-lg-2 mb-2">{{ $card->title }}</h2>
+                                            <p class="text">{!! $card->card_description !!}</p>
+                                        </div>
+                                        <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                            @foreach ($card->cardPoints as $point)
+                                                <div class="icon-para">
+                                                    <i class="{{ $point->icon }}"></i>
+                                                    <span>{{ $point->title }}</span>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                        <div class="d-flex cutom-btn-arrow">
+                                            <div class="first-btn">
+                                                <div class="all-btn-wrapper">
+                                                    <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
+                                                        <span class="btn-wrap">
+                                                            <span class="text-one">Book Now</span>
+                                                            <span class="text-two">Book Now</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="second-btn">
+                                                <div class="all-btn-wrapper">
+                                                    <a href="#" class="rr-btn hover-bg-theme">
+                                                        <span class="btn-wrap">
+                                                            <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
+                                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
+                            @php $count++; @endphp
+                        @endforeach
+
+                        <!-- ✅ Last static "Need Help" card -->
+                        <div class="col-12 col-lg-3 col-md-6">
+                            <div class="services-cards needhelp-card fade-anim">
+                                <div class="img">
+                                    <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                                </div>
+                                <div class="cards-content">
+                                    <div class="cards-title mb-lg-3 mb-2">
+                                        <h2 class="word-anim mb-lg-2 mb-2">Need a helping hand?</h2>
+                                        <p class="paraghraph-multi-lines">
+                                            Arrange a 1:1 call with a professional advisor.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                        <div class="icon-para">
+                                            <i class="fa-regular fa-people"></i>
+                                            <span>Agents available worldwide</span>
+                                        </div>
+                                        <div class="icon-para">
+                                            <i class="fa-regular fa-people"></i>
+                                            <span>Discuss different options</span>
+                                        </div>
+                                        <div class="icon-para">
+                                            <i class="fa-regular fa-people"></i>
+                                            <span>Receive a personalized quote</span>
+                                        </div>
+                                        <div class="icon-para">
+                                            <i class="fa-regular fa-people"></i>
+                                            <span>Sign up and get started</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex cutom-btn-arrow">
+                                        <div class="first-btn">
+                                            <div class="all-btn-wrapper">
+                                                <a href="{{route('contactus')}}" class="rr-btn hover-bg-theme">
+                                                    <span class="btn-wrap">
+                                                        <span class="text-one">Talk with Us</span>
+                                                        <span class="text-two">Talk with Us</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ✅ End Need Help Card -->
+
+                    @endif
+                @endforeach
+            </div>
+        </div>
+    </section>
     @endif
+
+
+    {{-- office-space  --}}
+    <section class="office-space services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- co-working  --}}
+    <section class="co-working services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    {{-- private-office --}}
+    <section class="private-office services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- custom-office --}}
+    <section class="custom-office services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- day-office --}}
+    <section class="day-office services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- dedicated-desks --}}
+    <section class="dedicated-desks services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- virtual-office --}}
+    <section class="virtual-office services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- telephone-answering --}}
+    <section class="telephone-answering services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- business-address --}}
+    <section class="business-address services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- meeting-rooms --}}
+    <section class="meeting-rooms services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- event-space --}}
+    <section class="event-space services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- workplace-recovery --}}
+    <section class="workplace-recovery services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- custom-space-solution --}}
+    <section class="custom-space-solution services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Large conference rooms
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Informal lounges
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Event halls
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Auditoriums
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Outdoor terraces
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Exhibition spaces
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Services about area end -->

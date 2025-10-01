@@ -26,7 +26,8 @@ Route::get('/contact-us',[FrontendController::class, 'contactus'])->name('contac
 Route::post('/contact/submit',[FrontendController::class, 'contactSubmit'])->name('contactSubmit');
 Route::post('/newsletter/submit', [FrontendController::class, 'newsletterSubmit'])->name('newsletterSubmit');
 Route::get('/content-page/{slug}',[FrontendController::class, 'contentpages'])->name('contentpages');
-
+Route::get('/360-view',[FrontendController::class, 'threesixty'])->name('threesixty');
+Route::get('/360-detail-page',[FrontendController::class, 'threesixty_detail'])->name('threesixty_detail');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

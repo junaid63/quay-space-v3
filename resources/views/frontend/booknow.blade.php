@@ -230,6 +230,7 @@ Quay Space | Book Now
         }
         .location-card.active ul {
             background: var(--secondary);
+            border-left: 2px solid var(--white);
         }
         .location-card .img-title {
             display: flex;
@@ -1014,11 +1015,6 @@ Quay Space | Book Now
                                     <label for="phone">Phone Number</label>
                                     <input type="tel" id="phone" required>
                                 </div>
-                                <div class="input-group">
-                                    <label for="company">Company Name</label>
-                                    <input type="text" id="company">
-                                </div>
-                                
                             </div>
                             <div class="input-group">
                                 <label for="message">Additional Requirements</label>
@@ -1110,7 +1106,283 @@ Quay Space | Book Now
 @stop
 
 @section('js')
-    <script>
+<script>
+    let currentStep = 1;
+    const totalSteps = 4;
+    const bookingData = {
+        service: null,
+        date: null,
+        time: null,
+        duration: null,
+        firstName: null,
+        lastName: null,
+        email: null,
+        phone: null,
+        company: null,
+        notes: null,
+        location: null
+    };
+
+    // Predefined booked slots
+    const bookedSlots = {
+        '2023-10-25': ['10:00', '10:30', '14:00', '14:30', '15:00'],
+        '2023-10-26': ['09:00', '09:30', '11:00', '16:00', '16:30'],
+        '2023-10-27': ['13:00', '13:30', '14:00', '15:30', '17:00']
+    };
+
+    $(document).ready(function () {
+        // 📌 Set min date to today
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        const todayStr = `${yyyy}-${mm}-${dd}`;
+        $("#booking-date").attr("min", todayStr).val(todayStr);
+
+        // Generate slots for today
+        generateTimeSlots(todayStr);
+
+        // 📌 Service card selection
+        $(".service-card").on("click", function () {
+            $(".service-card").removeClass("selected");
+            $(this).addClass("selected");
+            bookingData.service = $(this).data("service");
+        });
+
+        // 📌 Date change
+        $("#booking-date").on("change", function () {
+            generateTimeSlots($(this).val());
+        });
+
+        // 📌 Duration change
+        $("#duration").on("change", function () {
+            if ($(this).val() && $("#booking-date").val()) {
+                generateTimeSlots($("#booking-date").val());
+            }
+        });
+
+        // 📌 Location card selection (step 2)
+        const cards = document.querySelectorAll(".location-card");
+        cards.forEach(card => {
+            card.addEventListener("click", function () {
+                cards.forEach(c => {
+                    c.classList.remove("active");
+                    let oldIcon = c.querySelector(".check-icon");
+                    if (oldIcon) oldIcon.remove();
+                });
+
+                this.classList.add("active");
+
+                if (!this.querySelector(".check-icon")) {
+                    let checkIcon = document.createElement("i");
+                    checkIcon.classList.add("fas", "fa-check-circle", "check-icon");
+                    this.querySelector(".img-title").appendChild(checkIcon);
+                }
+            });
+        });
+
+        // 📌 Next button
+        $(".next-btn").on("click", function (e) {
+            e.preventDefault();
+            let step = currentStep;
+
+            if (step === 1 && !validateStep1()) return;
+            if (step === 2 && !validateStep2()) return;
+            if (step === 3 && !validateStep3()) return;
+
+            // Hide current form step and show next
+            $(`#step-${step}`).removeClass("active");
+            $(`#step-${step + 1}`).addClass("active");
+
+            // Progress steps
+            $(".step").eq(step - 1).removeClass("active").addClass("completed"); // current step completed
+            $(".step").eq(step).addClass("active"); // next step active
+
+            // Update progress bar
+            $(".progress-bar").css("--progress", ((step / totalSteps) * 100) + "%");
+
+            if (step === 3) updateSummary();
+
+            currentStep++;
+        });
+
+
+        // 📌 Prev button
+        $(".prev-btn").on("click", function (e) {
+            e.preventDefault();
+            let step = currentStep;
+
+            $(`#step-${step}`).removeClass("active");
+            $(`#step-${step - 1}`).addClass("active");
+
+            $(".step").eq(step - 1).removeClass("active");
+            $(".step").eq(step - 2).removeClass("completed").addClass("active");
+
+            $(".progress-bar").css("--progress", (((step - 2) / totalSteps) * 100) + "%");
+
+            currentStep--;
+        });
+
+        // 📌 Submit button
+        $(".submit-btn").on("click", function (e) {
+            e.preventDefault();
+            console.log("Booking submitted:", bookingData);
+
+            const refNumber = Math.floor(1000 + Math.random() * 9000);
+            $("#booking-ref").text(`QS-2023-${refNumber}`);
+
+            $("#step-4").removeClass("active");
+            $("#step-5").addClass("active");
+
+            $(".step").addClass("completed");
+            $(".progress-bar").css("--progress", "100%");
+        });
+    });
+
+    // 📌 Generate time slots
+    function generateTimeSlots(date) {
+        const $slotsContainer = $("#time-slots");
+        $slotsContainer.empty();
+
+        const duration = parseInt($("#duration").val()); // duration in hours
+        if (!duration) {
+            $slotsContainer.html("<p>Please select a duration first</p>");
+            return;
+        }
+
+        const startHour = 8;
+        const endHour = 18;
+
+        for (let hour = startHour; hour <= endHour; hour++) {
+            for (let minute = 0; minute < 60; minute += 30) {
+                let slotTime = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+
+                let slotStart = new Date(`1970-01-01T${slotTime}:00`);
+                let slotEnd = new Date(slotStart.getTime() + duration * 60 * 60 * 1000);
+
+                if (slotEnd.getHours() > endHour || (slotEnd.getHours() === endHour && slotEnd.getMinutes() > 0)) {
+                    continue;
+                }
+
+                let isBooked = false;
+                if (bookedSlots[date]) {
+                    for (let t = new Date(slotStart); t < slotEnd; t.setMinutes(t.getMinutes() + 30)) {
+                        let timeStr = `${t.getHours().toString().padStart(2, '0')}:${t.getMinutes().toString().padStart(2, '0')}`;
+                        if (bookedSlots[date].includes(timeStr)) {
+                            isBooked = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (!isBooked) {
+                    const $slot = $("<div>").addClass("time-slot").text(formatTimeDisplay(slotTime));
+                    $slot.on("click", function () {
+                        $(".time-slot").removeClass("selected");
+                        $(this).addClass("selected");
+
+                        bookingData.time = slotTime;
+                        bookingData.date = date;
+                        bookingData.duration = duration;
+                    });
+                    $slotsContainer.append($slot);
+                }
+            }
+        }
+
+        if ($slotsContainer.children().length === 0) {
+            $slotsContainer.html("<p>No available slots for the selected date and duration.</p>");
+        }
+    }
+
+    // 📌 Helpers
+    function formatTimeDisplay(timeString) {
+        const [hours, minutes] = timeString.split(":");
+        const hourNum = parseInt(hours);
+        const period = hourNum >= 12 ? "PM" : "AM";
+        const displayHour = hourNum % 12 || 12;
+        return `${displayHour}:${minutes} ${period}`;
+    }
+
+    function validateStep1() {
+        if (!$("#booking-date").val()) {
+            alert("Please select a date");
+            return false;
+        }
+
+        if (!$("#duration").val()) {
+            alert("Please select a duration");
+            return false;
+        }
+
+        if ($(".time-slot.selected").length === 0) {
+            alert("Please select a time slot");
+            return false;
+        }
+
+        bookingData.date = $("#booking-date").val();
+        bookingData.duration = $("#duration").val();
+        bookingData.time = $(".time-slot.selected").text();
+        return true;
+    }
+
+    function validateStep2() {
+        let selectedCard = document.querySelector(".location-card.active");
+        if (!selectedCard) {
+            alert("Please select a floor before proceeding.");
+            return false;
+        }
+        bookingData.location = selectedCard.querySelector("h3").innerText.trim();
+        return true;
+    }
+
+    function validateStep3() {
+        let firstName = $("#firstname").val();
+        let lastName = $("#lastname").val();
+        let email = $("#email").val();
+        let phone = $("#phone").val();
+
+        if (!firstName || !lastName || !email || !phone) {
+            alert("Please fill in all required fields");
+            return false;
+        }
+
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email");
+            return false;
+        }
+
+        bookingData.firstName = firstName;
+        bookingData.lastName = lastName;
+        bookingData.email = email;
+        bookingData.phone = phone;
+        bookingData.notes = $("#message").val();
+
+        return true;
+    }
+
+    function updateSummary() {
+        $("#summary-service").text($("#serviceName").text());
+        $("#summary-floor").text(bookingData.location);
+        $("#summary-date").text(formatDateDisplay(bookingData.date));
+        $("#summary-time").text(bookingData.time);
+        $("#summary-duration").text($("#duration option:selected").text());
+        $("#summary-name").text(`${bookingData.firstName} ${bookingData.lastName}`);
+        $("#summary-email").text(bookingData.email);
+        $("#summary-phone").text(bookingData.phone);
+    }
+
+    function formatDateDisplay(dateString) {
+        return new Date(dateString).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+    }
+</script>
+
+    {{-- <script>
         let currentStep = 1;
         const totalSteps = 4;
         const bookingData = {
@@ -1310,38 +1582,43 @@ Quay Space | Book Now
             return true;
         }
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".location-card");
+
+            cards.forEach(card => {
+                card.addEventListener("click", function () {
+                    // 🔹 Sab cards se active class aur check icon hatao
+                    cards.forEach(c => {
+                        c.classList.remove("active");
+                        let oldIcon = c.querySelector(".check-icon");
+                        if (oldIcon) oldIcon.remove();
+                    });
+
+                    // 🔹 Clicked card par active class add karo
+                    this.classList.add("active");
+
+                    // 🔹 Agar check icon pehle se nahi hai to hi add karo
+                    if (!this.querySelector(".check-icon")) {
+                        let checkIcon = document.createElement("i");
+                        checkIcon.classList.add("fas", "fa-check-circle", "check-icon");
+                        this.querySelector(".img-title").appendChild(checkIcon);
+                    }
+                });
+            });
+        });
+
         function validateStep2() {
-            // check selected location
-            let selectedLocation = document.querySelector(".location-card.active");
-            if (!selectedLocation) {
-                alert("Please select a location");
+            let selectedCard = document.querySelector(".location-card.active");
+            if (!selectedCard) {
+                alert("Please select a floor before proceeding.");
                 return false;
             }
 
-            // save in bookingData
-            bookingData.location = selectedLocation.dataset.location;
+            // Save selected floor in bookingData
+            bookingData.location = selectedCard.getAttribute("data-location");
 
-            return true; // allow next step
+            return true;
         }
-        // Add click events to location cards
-        document.querySelectorAll(".location-card").forEach(card => {
-            card.addEventListener("click", function () {
-                // sab cards se active class aur check icon hata do
-                document.querySelectorAll(".location-card").forEach(c => {
-                    c.classList.remove("active");
-                    let oldIcon = c.querySelector(".fa-check-circle");
-                    if (oldIcon) oldIcon.remove();
-                });
-
-                // clicked card par active class add karo
-                this.classList.add("active");
-
-                // direct icon add karo
-                let checkIcon = document.createElement("i");
-                checkIcon.classList.add("fas", "fa-check-circle", "check-icon");
-                this.appendChild(checkIcon);
-            });
-        });
 
         function validateStep3() {
             let firstName = $("#first-name").val();
@@ -1386,5 +1663,5 @@ Quay Space | Book Now
                 day: "numeric"
             });
         }
-    </script>
+    </script> --}}
 @stop 

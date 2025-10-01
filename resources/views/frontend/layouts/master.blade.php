@@ -423,6 +423,14 @@
                                 </span>
                             </a>
                         </li>
+                        {{-- <li>
+                            <a href="{{route('threesixty')}}" class="@if(Route::currentRouteName() === 'threesixty') active @endif rr-btn hover-bg-theme custom-menu">
+                                <span class="btn-wrap">
+                                            <span class="text-one">360 View</span>
+                                <span class="text-two">360 View</span>
+                                </span>
+                            </a>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
@@ -955,6 +963,9 @@
             });
         }, 1000);
     </script>
+    {{-- <script>
+        document.querySelector(".spinal__column").classList.add("hide");
+    </script> --}}
     @yield('js')
 
    
