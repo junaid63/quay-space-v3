@@ -63,6 +63,7 @@ work page css
     --secondary: #f14246;
     --third: #f6861f;
     --fourth: #52b347;
+    --five: #9b59b6;
     --border: rgba(17, 17, 17, 0.1);
     --bg: #111111;
     --theme: #FF6A3A;
@@ -4834,6 +4835,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all ease .3s;
 }
 
 .works-wrapper-1 .work-box .title {
@@ -4849,6 +4851,10 @@ section {
     color: var(--black);
     font-size: 18px;
     line-height: 1.4;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1199px) {
