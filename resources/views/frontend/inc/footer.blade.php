@@ -19,14 +19,21 @@
                     <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-2">Company</h4>
                     <div class="crp-footer-widget-menu">
                         <ul>
-                            <li><a class="@if(Route::currentRouteName() === 'index') active @endif" href="{{route('index')}}">Home</a></li>
-                            <li><a class="@if(Route::currentRouteName() === 'aboutus') active @endif" href="{{route('aboutus')}}">About
-                                        Us</a></li>
-                            <li><a href="our-{{route('ourteam')}}">Our
-                                        Team</a></li>
-                            <li><a href="{{route('faqs')}}">Faq's</a></li>
-                            <li><a href="{{route('contactus')}}">Contact
-                                        Us</a></li>
+                            <li>
+                                <a class="@if(Route::currentRouteName() === 'index') active @endif" href="{{route('index')}}">Home</a>
+                            </li>
+                            <li>
+                                <a class="@if(Route::currentRouteName() === 'aboutus') active @endif" href="{{route('aboutus')}}">AboutUs</a>
+                            </li>
+                            <li>
+                                <a class="@if(Route::currentRouteName() === 'ourteam') active @endif" href="{{route('ourteam')}}">Our Team</a>
+                            </li>
+                            <li>
+                                <a class="@if(Route::currentRouteName() === 'faqs') active @endif" href="{{route('faqs')}}">Faq's</a>
+                            </li>
+                            <li>
+                                <a class="@if(Route::currentRouteName() === 'contactus') active @endif" href="{{route('contactus')}}">Contact Us</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
