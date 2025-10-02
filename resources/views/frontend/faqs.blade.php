@@ -25,7 +25,7 @@ Quay Space | Faq's
     <!-- page title area end  -->
 
     <!-- faq area start  -->
-    <section class="faq-area-faq-page pin-area py-lg-5 py-3">
+    <section class="faq-area-faq-page overflow-hidden pin-area py-lg-5 py-3">
         <div class="container">
             <div class="row gap-lg-5 gap-0">
                 <div class="col-lg-6 col-md-12 order-lg-0 order-1">

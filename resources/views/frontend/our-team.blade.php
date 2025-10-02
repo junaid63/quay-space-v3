@@ -26,7 +26,7 @@ Quay Space | Our Team
     <!-- page title area end  -->
 
     <!-- team details area start  -->
-    <section class="team-details-area section-spacing-top pb-lg-5 pb-3">
+    <section class="team-details-area overflow-hidden section-spacing-top pb-lg-5 pb-3">
         <div class="container">
             <div class="team-details-cards">
                @foreach($ourteams as $index => $team)
