@@ -382,7 +382,7 @@
                     trigger: ".pin-area",
                     pin: ".custom-sticky",
                     start: "top top",
-                    end: "40%",
+                    end: "25%",
                     pinSpacing: false,
                 }
             });

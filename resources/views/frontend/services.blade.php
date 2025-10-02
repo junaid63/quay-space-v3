@@ -34,19 +34,6 @@ Quay Space | Services
                     <!-- Swiper -->
                     <div class="swiper servicesCards">
                         <div class="swiper-wrapper">
-                            {{-- @foreach ($Servicesget as $service)
-                                <div class="swiper-slide">
-                                    <a href="{{ route('services', $service->slug) }}" 
-                                    class="services-navber-content {{ $Servicesdetail->id == $service->id ? 'active' : '' }}">
-                                        <div class="img">
-                                            <img src="{{ url('storage/' . $service->icon) }}" alt="">
-                                        </div>
-                                        <div class="services-navber-title">
-                                            <span>{{ $service->title }}</span>
-                                        </div>
-                                    </a>
-                                </div>
-                            @endforeach --}}
                             @foreach ($Servicesget as $service)
                                 <div class="swiper-slide" data-target="{{$service->slug}}">
                                     <a href="{{ route('services', $service->slug) }}" 
@@ -248,7 +235,7 @@ Quay Space | Services
                         </div>
                     </div>
 
-                    @if($heading->cardContent)
+                    {{-- @if($heading->cardContent)
                         @php $count = 0; @endphp
                         @foreach($heading->cardContent as $card)
                             @if($count < 3) <!-- ✅ sirf 3 services cards show -->
@@ -259,7 +246,7 @@ Quay Space | Services
                                     </div>
                                     <div class="cards-content">
                                         <div class="cards-title mb-lg-3 mb-2">
-                                            <h2 class="word-anim mb-lg-2 mb-2">{{ $card->title }}</h2>
+                                            <h2 class="mb-lg-2 mb-2">{{ $card->title }}</h2>
                                             <p class="text">{!! $card->card_description !!}</p>
                                         </div>
                                         <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
@@ -307,27 +294,21 @@ Quay Space | Services
                                 </div>
                                 <div class="cards-content">
                                     <div class="cards-title mb-lg-3 mb-2">
-                                        <h2 class="word-anim mb-lg-2 mb-2">Need a helping hand?</h2>
+                                        <h2 class="mb-lg-2 mb-2">
+                                            Need Guidance?
+                                        </h2>
                                         <p class="paraghraph-multi-lines">
-                                            Arrange a 1:1 call with a professional advisor.
+                                            Not sure which office setup suits you best? Our expert advisors will guide you through the options and help you choose the right solution.
                                         </p>
                                     </div>
                                     <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
                                         <div class="icon-para">
-                                            <i class="fa-regular fa-people"></i>
-                                            <span>Agents available worldwide</span>
+                                            <i class="fa-solid fa-headset"></i>
+                                            <span>Free 1:1 consultation</span>
                                         </div>
                                         <div class="icon-para">
-                                            <i class="fa-regular fa-people"></i>
-                                            <span>Discuss different options</span>
-                                        </div>
-                                        <div class="icon-para">
-                                            <i class="fa-regular fa-people"></i>
-                                            <span>Receive a personalized quote</span>
-                                        </div>
-                                        <div class="icon-para">
-                                            <i class="fa-regular fa-people"></i>
-                                            <span>Sign up and get started</span>
+                                            <i class="fa-solid fa-user-check"></i>
+                                            <span>Personalized recommendations</span>
                                         </div>
                                     </div>
                                     <div class="d-flex cutom-btn-arrow">
@@ -346,7 +327,106 @@ Quay Space | Services
                             </div>
                         </div>
                         <!-- ✅ End Need Help Card -->
+                    @endif --}}
+                    @if($heading->cardContent)
+                        <div class="swiper serviceContentCards">
+                            <div class="swiper-wrapper">
+                                @php $count = 0; @endphp
+                                @foreach($heading->cardContent as $card)
+                                    @if($count < 3) <!-- ✅ sirf 3 services cards show -->
+                                    <div class="swiper-slide">
+                                        <div class="services-cards fade-anim">
+                                            <div class="img">
+                                                <img src="{{ asset('storage/' . $card->image) }}" alt="">
+                                            </div>
+                                            <div class="cards-content">
+                                                <div class="cards-title mb-lg-3 mb-2">
+                                                    <h2 class="mb-lg-2 mb-2">{{ $card->title }}</h2>
+                                                    <p class="text">{!! $card->card_description !!}</p>
+                                                </div>
+                                                <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                                    @foreach ($card->cardPoints as $point)
+                                                        <div class="icon-para">
+                                                            <i class="{{ $point->icon }}"></i>
+                                                            <span>{{ $point->title }}</span>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                                <div class="d-flex cutom-btn-arrow">
+                                                    <div class="first-btn">
+                                                        <div class="all-btn-wrapper">
+                                                            <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
+                                                                <span class="btn-wrap">
+                                                                    <span class="text-one">Book Now</span>
+                                                                    <span class="text-two">Book Now</span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-btn">
+                                                        <div class="all-btn-wrapper">
+                                                            <a href="#" class="rr-btn hover-bg-theme">
+                                                                <span class="btn-wrap">
+                                                                    <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
+                                                                    <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endif
+                                    @php $count++; @endphp
+                                @endforeach
 
+                                <!-- ✅ Last static "Need Help" card -->
+                                <div class="swiper-slide">
+                                    <div class="services-cards needhelp-card fade-anim">
+                                        <div class="img">
+                                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                                        </div>
+                                        <div class="cards-content">
+                                            <div class="cards-title mb-lg-3 mb-2">
+                                                <h2 class="mb-lg-2 mb-2">
+                                                    Need Guidance?
+                                                </h2>
+                                                <p class="paraghraph-multi-lines">
+                                                    Not sure which office setup suits you best? Our expert advisors will guide you through the options and help you choose the right solution.
+                                                </p>
+                                            </div>
+                                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                                <div class="icon-para">
+                                                    <i class="fa-solid fa-headset"></i>
+                                                    <span>Free 1:1 consultation</span>
+                                                </div>
+                                                <div class="icon-para">
+                                                    <i class="fa-solid fa-user-check"></i>
+                                                    <span>Personalized recommendations</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex cutom-btn-arrow">
+                                                <div class="first-btn">
+                                                    <div class="all-btn-wrapper">
+                                                        <a href="{{route('contactus')}}" class="rr-btn hover-bg-theme">
+                                                            <span class="btn-wrap">
+                                                                <span class="text-one">Talk with Us</span>
+                                                                <span class="text-two">Talk with Us</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ✅ End Need Help Card -->
+                            </div>
+
+                            <!-- Swiper Navigation & Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
                     @endif
                 @endforeach
             </div>
@@ -382,47 +462,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Work Smarter with Our Office Spaces
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Finding the right office doesn’t have to be complicated. Our office spaces are designed to give you everything you need — a professional setting, the right facilities, and the flexibility to scale as your business grows. Whether you’re a solo professional or managing a team, you’ll find a space that simply works.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Fully equipped and move-in ready
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Flexible terms — stay short or long term
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Professional, comfortable environment
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Support whenever you need it
                                 </p>
                             </li>
                         </ul>
@@ -458,47 +527,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Coworking That Feels Different
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Coworking isn’t just about having a desk — it’s about being part of something bigger. Our spaces are full of energy, ideas, and people who love what they do. Here, you can focus on your own work, grab a coffee with someone new, and maybe even find your next collaborator. 
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Flexible memberships that fit around your life 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    A welcoming community, not just a workspace 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Light-filled, inspiring open-plan areas
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Free coffee, breakout spots, and regular socials 
                                 </p>
                             </li>
                         </ul>
@@ -534,47 +592,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Our Own Private Office, Just the Way You Want It 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Sometimes you just need a space that’s truly yours — no distractions, no interruptions, just focus. Our private offices give you the freedom to work the way you want, while still having everything you need close at hand. Whether you’re running a small team or working solo, it’s your space to create, grow, and succeed.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Fully furnished and ready the moment you walk in 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Flexible plans — stay for a month or longer
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    High-speed internet and on-call support 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    24/7 secure entry so you’re never tied to a clock
                                 </p>
                             </li>
                         </ul>
@@ -610,47 +657,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                A Workspace That’s Uniquely Your
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Your business is unique, and your office should be too. With our custom office solutions, you get the chance to design a space that reflects your culture, your brand, and your way of working.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Fully customisable layout
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Branding and design flexibility 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Scales as your team grows 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Professional support every step of the way
                                 </p>
                             </li>
                         </ul>
@@ -686,47 +722,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                An Office, Just for the Day
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Sometimes you don’t need a long-term lease — you just need a professional office for a few hours or a day. Our day offices give you the privacy and focus of a traditional office, with total flexibility.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Pay only for the day you use
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Fully equipped and ready to go
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Perfect for interviews or one-off projects 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    No contracts or commitments 
                                 </p>
                             </li>
                         </ul>
@@ -762,47 +787,101 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Your Own Spot in a Shared Office 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                             A dedicated desk gives you the best of both worlds: the consistency of a private space and the energy of a coworking community.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    our own desk, every day
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Storage included
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Part of a vibrant community
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
+                                    Affordable monthly plans
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- dedicated-desks --}}
+    <section class="hot-desks services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
+        <div class="container large">
+            <div class="row justify-content-center">
+                <div class="service-about-img-content">
+                    <div class="services-about-images order-lg-0 order-1">
+                        <div class="border-line"></div>
+                        <div class="img-one">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        </div>
+                        <div class="img-two">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="services-contents order-lg-1 order-0">
+                        <div class="four-borders">
+                            <div class="d-flex">
+                                <div class="border-primary"></div>
+                                <div class="border-secondary"></div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="border-third"></div>
+                                <div class="border-fourth"></div>
+                            </div>
+                        </div>
+                        <div class="title title-wrapper">
+                            <h4 class="section-title text-start font-instrumentsans-medium">
+                                Hot Desk Space That Works on Your Schedule
+                                <span class="dot">.</span>
+                            </h4>
+                        </div>
+                        <p class="text text-black fade-top text-start">
+                            Come in, find a spot, and get straight to work. Hot desking gives you the freedom to use a professional environment without committing long-term. 
+                        </p>
+                        <ul class="custom-points">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    Affordable daily or monthly options
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Outdoor terraces
+                                    Work alongside other professionals
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Exhibition spaces
+                                    Full access to shared facilities
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>
+                                    No hassle, just plug in and go
                                 </p>
                             </li>
                         </ul>
@@ -838,47 +917,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                A Professional Address, Without the Office 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            You don’t always need four walls to run a successful business. Sometimes all you need is the right address, someone to take your calls, and the peace of mind that your mail is handled. Our virtual office plans give you the professional presence of an office, without the overheads.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    A recognised business address you can use right away
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Mail collection and forwarding so you never miss anything important 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Call answering that feels seamless to your clients 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    The option to book meeting rooms when face-to-face matters 
                                 </p>
                             </li>
                         </ul>
@@ -914,47 +982,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Never Miss a Call Again 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            A missed call can mean a missed opportunity. Our telephone answering service ensures your clients always hear a professional, friendly voice, even when you’re busy.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Dedicated reception team
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Calls answered in your business name
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Messages forwarded instantly 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Affordable, flexible plans 
                                 </p>
                             </li>
                         </ul>
@@ -990,47 +1047,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                A Trusted Business Address Without the Office Costs
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Your business deserves a professional address, even if you’re working remotely. With our business address service, you can show credibility to clients while keeping your personal details private.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Instantly usable business address 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Mail handling and forwarding
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Simple, affordable setup 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Adds professionalism to your brand 
                                 </p>
                             </li>
                         </ul>
@@ -1066,47 +1112,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Spaces That Make Every Meeting Count 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            The right environment can turn an ordinary meeting into a productive one. Our meeting rooms give you privacy, comfort, and the professional feel you need to impress clients, interview candidates, or bring your team together.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Book by the hour or full da
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Fully equipped with screens & Wi-F
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Comfortable seating and refreshments 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Easy online booking
                                 </p>
                             </li>
                         </ul>
@@ -1142,47 +1177,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                The Perfect Venue for Any Event
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            From networking sessions to product launches, our event spaces adapt to your occasion. With flexible layouts, modern facilities, and a supportive team, you can host events that make a lasting impression.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Spaces for small or large groups 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    AV, Wi-Fi, and tech support included 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Central and accessible locations 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Flexible layouts for any event type
                                 </p>
                             </li>
                         </ul>
@@ -1218,123 +1242,36 @@ Quay Space | Services
                         </div>
                         <div class="title title-wrapper">
                             <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
+                                Get Back to Business, Fast 
+                                <span class="dot">.</span>
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
+                            Unexpected events don’t have to stop your business. Our workplace recovery services give you instant access to fully equipped offices so your team can continue working without disruption.
                         </p>
                         <ul class="custom-points">
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Large conference rooms
+                                    Emergency-ready workspaces
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Informal lounges
+                                    Quick setup in case of downtime 
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Event halls
+                                    Reliable IT and support staff
                                 </p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-check"></i>
                                 <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    {{-- custom-space-solution --}}
-    <section class="custom-space-solution services-section services-hide services-content-img services-cards-area second-section py-lg-5 py-md-3 py-3">
-        <div class="container large">
-            <div class="row justify-content-center">
-                <div class="service-about-img-content">
-                    <div class="services-about-images order-lg-0 order-1">
-                        <div class="border-line"></div>
-                        <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
-                        </div>
-                        <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="services-contents order-lg-1 order-0">
-                        <div class="four-borders">
-                            <div class="d-flex">
-                                <div class="border-primary"></div>
-                                <div class="border-secondary"></div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="border-third"></div>
-                                <div class="border-fourth"></div>
-                            </div>
-                        </div>
-                        <div class="title title-wrapper">
-                            <h4 class="section-title text-start font-instrumentsans-medium">
-                                Whatever the event, we’ve got the space<span class="dot">.</span>
-                            </h4>
-                        </div>
-                        <p class="text text-black fade-top text-start">
-                            Whatever you need, and wherever you need it, we have the perfect space to meet your requirements. With thousands of locations worldwide, and a variety of sizes and configurations to choose from.
-                        </p>
-                        <ul class="custom-points">
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Large conference rooms
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Informal lounges
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Event halls
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Auditoriums
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Outdoor terraces
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-check"></i>
-                                <p>
-                                    Exhibition spaces
+                                    Flexible short-term use
                                 </p>
                             </li>
                         </ul>
@@ -1372,7 +1309,7 @@ Quay Space | Services
             spaceBetween: 0,
             // loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 2500,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -1393,6 +1330,29 @@ Quay Space | Services
                 1900: {
                     slidesPerView: 12
                 }
+            }
+        });
+        var partnerSwiper = new Swiper('.serviceContentCards', {
+            spaceBetween: 20,
+            // loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                980: {
+                    slidesPerView: 4
+                },
             }
         });
     </script>
