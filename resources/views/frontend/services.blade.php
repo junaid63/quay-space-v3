@@ -365,7 +365,7 @@ Quay Space | Services
                                                     </div>
                                                     <div class="second-btn">
                                                         <div class="all-btn-wrapper">
-                                                            <a href="#" class="rr-btn hover-bg-theme">
+                                                            <a href="{{ route('services', $card->slug) }}" class="rr-btn hover-bg-theme">
                                                                 <span class="btn-wrap">
                                                                     <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
                                                                     <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
