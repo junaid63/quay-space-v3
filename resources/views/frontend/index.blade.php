@@ -268,7 +268,7 @@ Quay Space | Home
                     <div class="five-imgs-main fade-anim">
                         <div class="left-white-space"></div>
                         <div class="right-white-space"></div>
-                        <div class="first-two-images fade-anim">
+                        <div class="first-two-images">
                             <div class="first">
                                 <img src="{{url('frontend/assets/imgs/about/first.webp')}}" alt="">
                             </div>
@@ -276,10 +276,10 @@ Quay Space | Home
                                 <img src="{{url('frontend/assets/imgs/about/second.webp')}}" alt="">
                             </div>
                         </div>
-                        <div class="third fade-anim">
+                        <div class="third">
                             <img src="{{url('frontend/assets/imgs/about/third.webp')}}" alt="">
                         </div>
-                        <div class="second-two-images fade-anim">
+                        <div class="second-two-images">
                             <div class="fourth">
                                 <img src="{{url('frontend/assets/imgs/about/fourth.webp')}}" alt="">
                             </div>
@@ -489,7 +489,7 @@ Quay Space | Home
     <!-- work area end  -->
 
 
-    <section class="features-section py-lg-5 pt-3">
+    <section class="features-section py-lg-5 py-3">
         <div class="container-fluid px-lg-5">
             <div class="section-header">
                 <div class="section-content">
