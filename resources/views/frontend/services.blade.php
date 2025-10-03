@@ -467,7 +467,7 @@ Quay Space | Services
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Finding the right office doesn’t have to be complicated. Our office spaces are designed to give you everything you need — a professional setting, the right facilities, and the flexibility to scale as your business grows. Whether you’re a solo professional or managing a team, you’ll find a space that simply works.
+                            Finding the right office doesn’t have to be complicated. Our office spaces are designed to give you everything you need a professional setting, the right facilities, and the flexibility to scale as your business grows. Whether you’re a solo professional or managing a team, you’ll find a space that simply works.
                         </p>
                         <ul class="custom-points">
                             <li>
@@ -532,7 +532,7 @@ Quay Space | Services
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Coworking isn’t just about having a desk — it’s about being part of something bigger. Our spaces are full of energy, ideas, and people who love what they do. Here, you can focus on your own work, grab a coffee with someone new, and maybe even find your next collaborator. 
+                            Coworking isn’t just about having a desk it’s about being part of something bigger. Our spaces are full of energy, ideas, and people who love what they do. Here, you can focus on your own work, grab a coffee with someone new, and maybe even find your next collaborator. 
                         </p>
                         <ul class="custom-points">
                             <li>
@@ -597,7 +597,7 @@ Quay Space | Services
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Sometimes you just need a space that’s truly yours — no distractions, no interruptions, just focus. Our private offices give you the freedom to work the way you want, while still having everything you need close at hand. Whether you’re running a small team or working solo, it’s your space to create, grow, and succeed.
+                            Sometimes you just need a space that’s truly yours no distractions, no interruptions, just focus. Our private offices give you the freedom to work the way you want, while still having everything you need close at hand. Whether you’re running a small team or working solo, it’s your space to create, grow, and succeed.
                         </p>
                         <ul class="custom-points">
                             <li>
@@ -727,7 +727,7 @@ Quay Space | Services
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                            Sometimes you don’t need a long-term lease — you just need a professional office for a few hours or a day. Our day offices give you the privacy and focus of a traditional office, with total flexibility.
+                            Sometimes you don’t need a long-term lease you just need a professional office for a few hours or a day. Our day offices give you the privacy and focus of a traditional office, with total flexibility.
                         </p>
                         <ul class="custom-points">
                             <li>
@@ -792,7 +792,7 @@ Quay Space | Services
                             </h4>
                         </div>
                         <p class="text text-black fade-top text-start">
-                             A dedicated desk gives you the best of both worlds: the consistency of a private space and the energy of a coworking community.
+                             A dedicated desk gives you the best of both worlds the consistency of a private space and the energy of a coworking community.
                         </p>
                         <ul class="custom-points">
                             <li>
