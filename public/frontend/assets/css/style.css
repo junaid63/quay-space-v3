@@ -2147,7 +2147,7 @@ section {
     display: block;
     border-radius: 50px;
     /* z-index: 9999; */
-    z-index: 999999;
+    z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-100px);
@@ -2158,7 +2158,7 @@ section {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
     background-color: var(--black);
 }
 
@@ -2177,7 +2177,7 @@ section {
     width: 46px;
     cursor: pointer;
     display: block;
-    z-index: 1;
+    z-index: 9999;
     transition: all 200ms linear;
     border-radius: 50px;
 }

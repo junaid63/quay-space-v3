@@ -474,52 +474,8 @@ Quay Space | About Us
         </div>
     </section>
 
-
     <!-- funfact area start  -->
-    <section class="funfact-area fade-anim">
-        <div class="container large">
-            <div class="funfact-area-inner pin-area">
-                <div class="section-header section-spacing-top pin-element">
-                    <div class="section-title-wrapper">
-                        <div class="title-wrapper">
-                            <h2 class="section-title font-instrumentsans-medium word-anim">Perfect
-                                <br> —activity
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="funfact-wrapper-box section-spacing">
-                    <span class="line-1"></span>
-                    <span class="line-2"></span>
-                    <span class="line-3"></span>
-                    <span class="line-4"></span>
-                    <div class="funfact-wrapper">
-                        <div class="funfact-item go-visible">
-                            <span class="number">1.8M</span>
-                            <p class="text">We helped to get companies with &pound;200M+ funding.</p>
-                        </div>
-                        <div class="funfact-item go-visible">
-                            <span class="number">260+</span>
-                            <p class="text">Crafted responsive, user-centered website & app.</p>
-                        </div>
-                        <div class="funfact-item go-visible">
-                            <span class="number">12+</span>
-                            <p class="text">We have had quite a run in our 12+ years of working.</p>
-                        </div>
-                        <div class="funfact-item go-visible">
-                            <span class="number">80+</span>
-                            <p class="text">Professional skilled designers and developers.
-                            </p>
-                        </div>
-                        <div class="funfact-item go-visible">
-                            <span class="number">99%</span>
-                            <p class="text">Average 99% clients satisfaction with expertise.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('frontend.inc.perfectactivities')
     <!-- funfact area end  -->
 
     <!-- team area start  -->
