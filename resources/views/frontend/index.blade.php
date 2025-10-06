@@ -1238,6 +1238,9 @@ Quay Space | Home
                     slidesPerView: 2
                 },
                 1300: {
+                    slidesPerView: 4
+                },
+                1500: {
                     slidesPerView: 5
                 }
             }
