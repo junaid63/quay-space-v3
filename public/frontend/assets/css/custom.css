@@ -4319,9 +4319,26 @@
         position: relative;
         top: 50px;
     }
+    
+    .features-section .swiper-pagination-bullet-active {
+        background: var(--secondary);
+    }
     /* @media (max-width: 1366px) { */
     
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .feature-stats span {
+            font-size: 15px;
+        }
+        .feature-stats i {
+            font-size: 15px;
+            width: 30px;
+        }
+        .feature-content h3 {
+            font-size: 20px;
+        }
+        .feature-content {
+            padding: 10px 10px;
+        }
         .about-area.padding-top-large {
             padding-top: 0px!important;
         }
