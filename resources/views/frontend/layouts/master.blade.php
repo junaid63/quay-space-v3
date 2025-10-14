@@ -32,9 +32,9 @@
     <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
-
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
@@ -719,7 +719,6 @@
             },
         });
     </script>
-
     <script>
         $(document).ready(function() {
             let selectedDate = null;
@@ -790,7 +789,6 @@
             });
         });
     </script>
-
     <script>
         $(document).ready(function () {
             let $modal = $('#bookingModal');
@@ -969,6 +967,5 @@
     </script> --}}
     @yield('js')
 
-   
 </body>
 </html>

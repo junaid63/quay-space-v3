@@ -10,6 +10,8 @@ Quay Space | Services
 @section('css')
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 @stop
 
 @section('content')
@@ -89,10 +91,10 @@ Quay Space | Services
                             </div>
                             <div class="book-a-calendy">
                                 <div class="all-btn-wrapper">
-                                    <a href="#" class="rr-btn hover-bg-theme">
+                                    <a href="#" class="rr-btn hover-bg-theme" id="bookMeetingBtn">
                                         <span class="btn-wrap">
-                                <span class="text-one">Book A Meeting</span>
-                                        <span class="text-two">Book A Meeting</span>
+                                            <span class="text-one">Book A Meeting</span>
+                                            <span class="text-two">Book A Meeting</span>
                                         </span>
                                     </a>
                                 </div>
@@ -127,11 +129,11 @@ Quay Space | Services
                             </div>
                             <div class="book-a-calendy">
                                 <div class="all-btn-wrapper">
-                                    <a href="#" class="rr-btn hover-bg-theme">
-                                        <span class="btn-wrap">
-                                <span class="text-one">Book A Meeting</span>
+                                    <a href="#" class="rr-btn hover-bg-theme" id="bookMeetingBtn">
+                                    <span class="btn-wrap">
+                                        <span class="text-one">Book A Meeting</span>
                                         <span class="text-two">Book A Meeting</span>
-                                        </span>
+                                    </span>
                                     </a>
                                 </div>
                             </div>
@@ -1300,6 +1302,17 @@ Quay Space | Services
 @stop
 
 @section('js')
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        document.getElementById("bookMeetingBtn").addEventListener("click", function (e) {
+            e.preventDefault();
+            Calendly.initPopupWidget({
+            url: 'https://calendly.com/afzal-ssfgroup/30min'
+            });
+            return false;
+        });
+    </script>
+    <!-- Calendly badge widget end -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
