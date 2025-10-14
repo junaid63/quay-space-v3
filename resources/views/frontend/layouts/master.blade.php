@@ -410,8 +410,8 @@
                         <li>
                             <a href="{{route('faqs')}}" class="@if(Route::currentRouteName() === 'faqs') active @endif rr-btn hover-bg-theme custom-menu">
                                 <span class="btn-wrap">
-                                            <span class="text-one">Faq's</span>
-                                <span class="text-two">Faq's</span>
+                                            <span class="text-one">FAQs</span>
+                                <span class="text-two">FAQs</span>
                                 </span>
                             </a>
                         </li>

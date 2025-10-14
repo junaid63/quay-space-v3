@@ -29,7 +29,7 @@
                                 <a class="@if(Route::currentRouteName() === 'ourteam') active @endif" href="{{route('ourteam')}}">Our Team</a>
                             </li>
                             <li>
-                                <a class="@if(Route::currentRouteName() === 'faqs') active @endif" href="{{route('faqs')}}">Faq's</a>
+                                <a class="@if(Route::currentRouteName() === 'faqs') active @endif" href="{{route('faqs')}}">FAQs</a>
                             </li>
                             <li>
                                 <a class="@if(Route::currentRouteName() === 'contactus') active @endif" href="{{route('contactus')}}">Contact Us</a>
