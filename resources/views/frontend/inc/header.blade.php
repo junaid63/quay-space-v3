@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="header__button order-lg-2 order-md-2">
-                    <a href="{{route('contactus')}}" class="rr-btn transperent-button">
+                    <a href="#" class="rr-btn transperent-button bookMeetingBtn">
                         <span class="btn-wrap">
                                 <span class="text-one">Let’s Talk</span>
                         <span class="text-two">Let’s Talk</span>
