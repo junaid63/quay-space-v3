@@ -376,7 +376,7 @@ Quay Space | Home
                         <div class="work-box" data-target="co-working">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" alt="image">
                                     </a>
@@ -394,7 +394,7 @@ Quay Space | Home
                         <div class="work-box" data-target="private-office">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/dedicated.jpg')}}" alt="image">
                                     </a>
@@ -412,7 +412,7 @@ Quay Space | Home
                         <div class="work-box" data-target="office-space">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" alt="image">
                                     </a>
@@ -430,7 +430,7 @@ Quay Space | Home
                         <div class="work-box" data-target="event-space">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" alt="image">
                                     </a>
@@ -448,7 +448,7 @@ Quay Space | Home
                         <div class="work-box" data-target="virtual-office">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/office-space.jpg')}}" alt="image">
                                     </a>
@@ -466,7 +466,7 @@ Quay Space | Home
                         <div class="work-box" data-target="meeting-rooms">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="view more">
-                                    <a href="#">
+                                    <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" alt="image">
                                     </a>
