@@ -34,7 +34,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 
 <body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
@@ -486,6 +487,19 @@
     <!-- Template Main JS File -->
     <script src="{{url('frontend/assets/js/main.js')}}"></script>
 
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        const buttons = document.getElementsByClassName("bookMeetingBtn");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function (e) {
+            e.preventDefault();
+            Calendly.initPopupWidget({
+                url: 'https://calendly.com/afzal-ssfgroup/30min'
+            });
+            return false;
+            });
+        }
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
