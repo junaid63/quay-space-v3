@@ -557,22 +557,21 @@ Quay Space | About Us
  <script src="https://www.inspirefm.org/frontend/assets/js/swiper-bundle.min.js"></script>
     <script>
         var WhyChooseCards = new Swiper('.WhyChooseCards', {
-            slidesPerView: 1,
             spaceBetween: 20,
             // loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
             breakpoints: {
-                510: {
+                0: {
                     slidesPerView: 1
                 },
-                820: {
+                510: {
                     slidesPerView: 2
                 },
             }
