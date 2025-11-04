@@ -363,7 +363,7 @@ Quay Space | Services
                                                             </a>
                                                         </div>
                                                     </div>
-                                                    <div class="second-btn">
+                                                    {{-- <div class="second-btn">
                                                         <div class="all-btn-wrapper">
                                                             <a href="{{ route('services', $card->slug) }}" class="rr-btn hover-bg-theme">
                                                                 <span class="btn-wrap">
@@ -372,7 +372,7 @@ Quay Space | Services
                                                                 </span>
                                                             </a>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                 </div>
                                             </div>
                                         </div>
