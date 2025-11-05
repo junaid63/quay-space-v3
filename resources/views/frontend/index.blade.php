@@ -1032,32 +1032,35 @@ Quay Space | Home
                     </div>
                 </div>
                 
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="project-section-3__item">
                         <div class="project-section-3__btn">
-                            <a href="#">View Gallery <span><svg
-                                            width="21"
-                                            height="17"
-                                            viewBox="0 0 21 17"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1 8.59961L20 8.59961"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M12.4004 1L20.0004 8.6L12.4004 16.2"
-                                                stroke="white"
-                                                stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </span></a>
+                            <a href="#">View Gallery 
+                                <span>
+                                    <svg
+                                        width="21"
+                                        height="17"
+                                        viewBox="0 0 21 17"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 8.59961L20 8.59961"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.4004 1L20.0004 8.6L12.4004 16.2"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
