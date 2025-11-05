@@ -3397,7 +3397,8 @@
     .hero-area .title-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 120px;
+        /* gap: 120px; */
+        gap: 100px;
     }
     /* Home Page Services Section End  */
     
@@ -4326,6 +4327,72 @@
     /* @media (max-width: 1366px) { */
     
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .services-content-img .services-about-images .border-line {
+            left: 150px;
+        }
+        .services-navber-content .img {
+            height: 28px;
+            width: 25px;
+        }
+        .services-navber-content {
+            gap: 1px;
+            padding: 5px 10px;
+        }
+        .services-area .services-image::after {
+            bottom: -30px;
+            left: -30px;
+        }
+        .services-area .services-image::before {
+            top: -30px;
+            right: -30px;
+        }
+        .services-area .services-image::after,
+        .services-area .services-image::before {
+            width: 160px;
+        }
+        .footer-bottom-content .copy-right p {
+            font-size: 15px;
+        }
+        .footer-contact-location a {
+            font-size: 16px;
+        }
+        .footer-logo {
+            width: 170px;
+            height: auto;
+        }
+        .crp-footer-social a i {
+            width: 35px;
+        }
+        .crp-footer-widget-title {
+            font-size: 25px;
+        }
+        .services-content-img .service-about-img-content {
+            height: 70vh;
+        }
+        .services-content-img .services-about-images .img-two {
+            width: 265px;
+            height: 340px;
+            left: 20px;
+        }
+        .services-content-img .services-about-images .img-one {
+            width: 265px;
+            height: 340px;
+            right: 15px;
+        }
+        .services-cards .cards-content .icon-para span {
+            min-height: 40px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .services-cards .cards-content .cards-title p {
+            /* min-height: 105px; */
+            min-height: 98px;
+            font-size: 15px;
+        }
+
+
         .newsletter-button .rr-btn {
             padding: 10px 26px;
         }
@@ -4351,6 +4418,7 @@
         .crp-footer-big-text-wrap {
             margin-top: 20px;
             padding: 25px 20px;
+            border-radius: 10px;
         }
         .swiper.ServiceCards {
             padding: 0px 20px;
@@ -4367,13 +4435,16 @@
         }
         .footer-widget p {
             width: 85%;
+            font-size: 15px;
         }
         .services-area .services-contents p {
+            font-size: 16px;
             font-weight: 400;
         }
         .faq-area-faq-page .faq-img {
             position: relative;
-            top: -120px;
+            /* top: -120px; */
+            top: 20px!important;
             height: 360px !important;
         }
         .faq-area-faq-page .accordion-body {
@@ -4498,12 +4569,14 @@
             padding-top: 0px!important;
         }
         .hero-area .title-wrapper {
-            gap: 80px;
+            /* gap: 80px; */
+            gap: 50px;
         }
         .hero-area-inner {
             margin: 0px 0px;
         }
         .crp-footer-big-text {
+            font-size: 55px;
             font-weight: 500;
         }
         .text {
@@ -4534,11 +4607,13 @@
         font-size: 40px;
     } */
         .services-area .section-title {
-            font-size: 55px;
+            /* font-size: 55px; */
+            font-size: 50px;
         }
         .services-area .services-image {
             height: auto;
-            min-width: 550px;
+            /* min-width: 550px; */
+            min-width: 500px;
         }
         .book-a-meeting-main {
             width: 100%!important;
@@ -4804,6 +4879,19 @@
     }
     
     @media (max-width: 510px) {
+        .services-navber-content {
+            width: 160px;
+        }
+        .services-pages-bars .servicesCards .swiper-button-next ,
+        .services-pages-bars .servicesCards .swiper-button-prev {
+            display: none;
+        }
+        .services-pages-bars .swiper-wrapper {
+            gap: 5px;
+        }
+        /* .services-navber-content {
+            width: 100px;
+        } */
         .ourteam-cards .img img {
             object-fit: cover;
         }
@@ -6725,7 +6813,7 @@
         }
     }
     
-    @media (min-width: 1550px) and (max-width: 1900px) {
+    @media (min-width: 1450px) and (max-width: 1900px) {
         .membership-main .membership-card ul {
             min-height: 115px;
         }
@@ -6825,29 +6913,6 @@
         }
     }
 
-    @media (min-width: 1300px) and (max-width: 1450px) {
-        .services-content-img .service-about-img-content {
-            height: 70vh;
-        }
-        .services-content-img .services-about-images .img-two {
-            width: 230px;
-            height: 270px;
-            left: 110px;
-            bottom: -6px;
-        }
-        .services-content-img .services-about-images .img-one {
-            width: 230px;
-            height: 270px;
-            top: 30px;
-        }
-        .services-cards .cards-content .icon-para span {
-            min-height: 40px;
-        }
-        .services-cards .cards-content .cards-title p {
-            min-height: 105px;
-        }
-    }
-    
     .loader5 {
         height: 100%;
         display: flex;

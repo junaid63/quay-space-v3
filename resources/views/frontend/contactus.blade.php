@@ -76,7 +76,7 @@ Quay Space | Contact Us
                                 <div class="icon">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <div class="title-info">
-                                        <a href="tel:{{setting('site.address')}}">
+                                        <a href="https://maps.app.goo.gl/mRAnRGSL1hZJZEj2A">
                                             <h6 class="text-black">Visit Us</h6>
                                             <span>{{(setting('site.address'))}}</span>
                                         </a>
