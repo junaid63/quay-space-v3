@@ -6824,6 +6824,29 @@
             margin-top: 0px;
         }
     }
+
+    @media (min-width: 1300px) and (max-width: 1450px) {
+        .services-content-img .service-about-img-content {
+            height: 70vh;
+        }
+        .services-content-img .services-about-images .img-two {
+            width: 230px;
+            height: 270px;
+            left: 110px;
+            bottom: -6px;
+        }
+        .services-content-img .services-about-images .img-one {
+            width: 230px;
+            height: 270px;
+            top: 30px;
+        }
+        .services-cards .cards-content .icon-para span {
+            min-height: 40px;
+        }
+        .services-cards .cards-content .cards-title p {
+            min-height: 105px;
+        }
+    }
     
     .loader5 {
         height: 100%;
