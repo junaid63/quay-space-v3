@@ -58,7 +58,7 @@ Quay Space | Services
     <!-- page title area end  -->
     <section class="{{$Servicesdetail->slug}} services-section services-area section-padding  overflow-hidden active">
         <div class="container large">
-            <div class="row gap-lg-2 gap-0">
+            <div class="row gap-lg-5 gap-0">
                 <div class="col-12 col-md-6 col-lg-6 order-lg-0 order-md-0 order-1">
                     <div class="services-contents">
                         <div class="title title-wrapper">
@@ -1307,12 +1307,12 @@ Quay Space | Services
     <script>
         var partnerSwiper = new Swiper('.servicesCards', {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 10,
             // loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -1321,7 +1321,6 @@ Quay Space | Services
                 768: {
                     slidesPerView: 4
                 },
-
                 980: {
                     slidesPerView: 6
                 },
