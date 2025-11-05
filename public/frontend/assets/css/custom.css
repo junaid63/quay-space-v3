@@ -3912,6 +3912,7 @@
     }
     
     .floor-info {
+        display: none;
         position: absolute;
         bottom: 20px;
         left: 20px;
