@@ -26,7 +26,6 @@ class Spacerequest extends FormRequest
     }
 
 
-
     public function messages(): array
     {
         return [

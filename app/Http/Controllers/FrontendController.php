@@ -57,6 +57,15 @@ class FrontendController extends Controller
         $amenitiesget = $this->AmenitiesGet();
         return view($view,compact('contentpagesget','dynamicFaqs','amenitiesget'));
     }
+    public function calendly()
+    {
+        $view = 'frontend.calendly';
+        $contentpagesget = $this->ContentPagesGet();
+        $amenitiesget = $this->AmenitiesGet();
+        return view($view,compact('contentpagesget', 'amenitiesget'));
+    }
+    
+
     public function contactus()
     {
         $view = 'frontend.contactus';
