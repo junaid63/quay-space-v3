@@ -505,7 +505,7 @@
     <script src="{{url('frontend/assets/js/main.js')}}"></script>
 
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         const buttons = document.getElementsByClassName("bookMeetingBtn");
         for (let i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function (e) {
@@ -516,7 +516,18 @@
             return false;
             });
         }
-        </script>
+    </script> --}}
+    <script type="text/javascript">
+        const buttons = document.getElementsByClassName("bookMeetingBtn");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // Redirect to Laravel route
+                window.location.href = "{{ route('calendly') }}";
+            });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
