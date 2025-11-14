@@ -4353,8 +4353,15 @@
     .contact-information.calendly-get-touch .icon .title-info {
         width: 82%;
     }
+    .servicesCards .swiper-wrapper {
+        justify-content: start;
+    }
+
     
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .servicesCards .swiper-wrapper {
+            justify-content: center;
+        }
         .servicesCards .swiper-wrapper {
             justify-content: start;
         }
