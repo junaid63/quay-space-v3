@@ -4321,13 +4321,43 @@
         position: relative;
         top: 50px;
     }
-    
+     
     .features-section .swiper-pagination-bullet-active {
         background: var(--secondary);
     }
+
+    .servicesCards .swiper-wrapper {
+        justify-content: center;
+    }
     /* @media (max-width: 1366px) { */
+
+    .contact-information.calendly-get-touch {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .contact-information.calendly-get-touch::before {
+        content: none!important;
+    }
+    .contact-information.calendly-get-touch .icon {
+        width: calc((100% / 3) - 15px);
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .contact-information.calendly-get-touch .icon i {
+        width: 18%;
+    }
+    .contact-information.calendly-get-touch .icon .title-info {
+        width: 82%;
+    }
     
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .servicesCards .swiper-wrapper {
+            justify-content: start;
+        }
         .services-content-img .services-about-images .border-line {
             left: 150px;
         }

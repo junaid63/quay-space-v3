@@ -12,12 +12,14 @@ use App\Http\Controllers\SpaceController;
 use App\Http\Controllers\SpacetypeController;
 use App\Http\Controllers\AmenitiesContorller;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[FrontendController::class, 'index'])->name('index');
 Route::get('/about-us',[FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/our-team',[FrontendController::class, 'ourteam'])->name('ourteam');
 Route::get('/faqs',[FrontendController::class, 'faqs'])->name('faqs');
+Route::get('/calendly',[FrontendController::class, 'calendly'])->name('calendly');
 // Route::get('/services', [FrontendController::class, 'services'])->name('services');
 Route::get('/services/{slug?}', [FrontendController::class, 'services'])->name('services');
 Route::get('/booknow', [FrontendController::class, 'booknow'])->name('booknow');
@@ -43,26 +45,6 @@ Route::prefix('dashboard')->middleware('auth')->name('dashboard.')->group(functi
     Route::get('/company', [CompanyController::class, 'company'])->name('company');
     Route::get('/company/json', [CompanyController::class, 'company_json'])->name('company_json');
 
-    // Route::prefix('proceedings')->name('proceedings.')->group(function () {
-    //     Route::get('/', [ProceedingController::class, 'proceedings'])->name('index');
-    //     Route::get('/json', [ProceedingController::class, 'proceedings_json'])->name('json');
-    //     Route::post('/store', [ProceedingController::class, 'proceedings_store'])->name('store');
-    //     Route::patch('/{id}/toggle-status', [ProceedingController::class, 'toggleStatus'])->name('toggleStatus');
-    //     Route::get('{id}', [ProceedingController::class, 'show'])->name('show');
-    //     Route::put('{id}', [ProceedingController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [ProceedingController::class, 'destroy'])->name('destroy');
-    // });
-
-    // Route::prefix('fundings')->name('fundings.')->group(function () {
-    //     Route::get('/', [FundingController::class, 'fundings'])->name('index');
-    //     Route::get('/json', [FundingController::class, 'fundings_json'])->name('json');
-    //     Route::post('/store', [FundingController::class, 'fundings_store'])->name('store');
-    //     Route::patch('/{id}/toggle-status', [FundingController::class, 'toggleStatus'])->name('toggleStatus');
-    //     Route::get('{id}', [FundingController::class, 'show'])->name('show');
-    //     Route::put('{id}', [FundingController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [FundingController::class, 'destroy'])->name('destroy');
-    // });
-
     Route::prefix('activity')->name('activity.')->group(function () {
         Route::get('/', [ActivityController::class, 'activity'])->name('index');
         Route::get('/json', [ActivityController::class, 'activity_json'])->name('json');
@@ -72,49 +54,6 @@ Route::prefix('dashboard')->middleware('auth')->name('dashboard.')->group(functi
         Route::put('{id}', [ActivityController::class, 'update'])->name('update');
         Route::delete('{id}',  [ActivityController::class, 'destroy'])->name('destroy');
     });
-
-    // Route::prefix('matterstatus')->name('matterstatus.')->group(function () {
-    //     Route::get('/', [MatterStatusController::class, 'matterstatus'])->name('index');
-    //     Route::get('/json', [MatterStatusController::class, 'matterstatus_json'])->name('json');
-    //     Route::post('/store', [MatterStatusController::class, 'matterstatus_store'])->name('store');
-    //     Route::patch('/{id}/toggle-status', [MatterStatusController::class, 'toggleStatus'])->name('toggleStatus');
-    //     Route::get('{id}', [MatterStatusController::class, 'show'])->name('show');
-    //     Route::put('{id}', [MatterStatusController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [MatterStatusController::class, 'destroy'])->name('destroy');
-    // });
-
-    // Route::prefix('matterlist')->name('matterlist.')->group(function () {
-    //     Route::get('/', [MatterListController::class, 'matterlist'])->name('index');
-    //     Route::get('/json', [MatterListController::class, 'matterlist_json'])->name('json');
-    //     Route::post('/store', [MatterListController::class, 'matterlist_store'])->name('store');
-    //     Route::get('/export-data/{id}', [MatterListController::class, 'matterlist_export_data'])->name('export_data');
-    //     Route::get('{id}', [MatterListController::class, 'show'])->name('show');
-    //     Route::put('{id}', [MatterListController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [MatterListController::class, 'destroy'])->name('destroy');
-    // });
-
-    // Route::prefix('client')->name('client.')->group(function () {
-    //     Route::get('/', [ClientController::class, 'client'])->name('index');
-    //     Route::get('/json', [ClientController::class, 'client_json'])->name('json');
-    //     Route::get('/filters', [ClientController::class, 'client_filters'])->name('filters');
-    //     Route::post('/store', [ClientController::class, 'client_store'])->name('store');
-    //     Route::patch('/{id}/toggle-status', [ClientController::class, 'toggleStatus'])->name('toggleStatus');
-    //     Route::get('{id}', [ClientController::class, 'show'])->name('show');
-    //     Route::put('{id}', [ClientController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [ClientController::class, 'destroy'])->name('destroy');
-    // });
-
-    // Route::prefix('timemanagement')->name('timemanagement.')->group(function () {
-    //     Route::get('/', [TimeManagementController::class, 'timemanagement'])->name('index');
-    //     Route::get('/json', [TimeManagementController::class, 'timemanagement_json'])->name('json');
-    //     Route::get('/filters', [TimeManagementController::class, 'timemanagement_filters'])->name('filters');
-    //     Route::get('/get-suggestion', [TimeManagementController::class, 'timemanagement_getsuggestion'])->name('getsuggestion');
-    //     Route::get('/get-user-suggestion', [TimeManagementController::class, 'timemanagement_getUserSuggestion'])->name('getusersuggestion');
-    //     Route::post('/store', [TimeManagementController::class, 'timemanagement_store'])->name('store');
-    //     Route::get('{id}', [TimeManagementController::class, 'show'])->name('show');
-    //     Route::put('{id}', [TimeManagementController::class, 'update'])->name('update');
-    //     Route::delete('{id}',  [TimeManagementController::class, 'destroy'])->name('destroy');
-    // });
 
     Route::prefix('user')->name('user.')->group(function () {
         Route::get('/', [UserController::class, 'user'])->name('index');
@@ -134,6 +73,16 @@ Route::prefix('dashboard')->middleware('auth')->name('dashboard.')->group(functi
         Route::get('{id}', [FloorController::class, 'show'])->name('show');
         Route::put('{id}', [FloorController::class, 'update'])->name('update');
         Route::delete('{id}',  [FloorController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::prefix('service')->name('service.')->group(function () {
+        Route::get('/', [ServiceController::class, 'service'])->name('index');
+        Route::get('/json', [ServiceController::class, 'service_json'])->name('json');
+        Route::get('{id}', [ServiceController::class, 'show'])->name('show');
+        Route::post('/store', [ServiceController::class, 'service_store'])->name('store');
+        Route::patch('/{id}/toggle-status', [ServiceController::class, 'toggleStatus'])->name('toggleStatus');
+        Route::put('{id}', [ServiceController::class, 'update'])->name('update');
+        Route::delete('{id}',  [ServiceController::class, 'destroy'])->name('destroy');
     });
 
     Route::prefix('spacetype')->name('spacetype.')->group(function () {
