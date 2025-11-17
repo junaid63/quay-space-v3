@@ -209,11 +209,12 @@
         rgba(0, 0, 0, 0.8) 100%     
     ),
     #0000009c;  */
-        background: linear-gradient(to bottom, rgb(0 0 0) 0%, /* Top dark */
-        rgb(0 0 0 / 79%) 20%, /* Transparent middle start */
-        rgb(0 0 0 / 15%) 80%, /* Transparent middle end */
-        rgb(0 0 0) 100%/* Bottom dark */
-        ), #00000000;
+        /* background: linear-gradient(to bottom, rgb(0 0 0) 0%,
+        rgb(0 0 0 / 79%) 20%, 
+        rgb(0 0 0 / 15%) 80%, 
+        rgb(0 0 0) 100%
+        ), #00000000; */
+        background: linear-gradient(to bottom, rgb(0 0 0) 0%, /* Top dark */ rgb(0 0 0) 20%, /* Transparent middle start */ rgb(0 0 0 / 42%) 80%, /* Transparent middle end */ rgb(0 0 0) 100% /* Bottom dark */), #00000000;
         position: absolute;
     }
     
@@ -684,6 +685,10 @@
     .works-wrapper-1 .work-box .thumb {
         overflow: hidden;
     }
+
+    /* .works-wrapper-1 .work-box .thumb .image {
+        height: 250px;
+    } */
     
     .works-wrapper-1 .work-box .thumb .image img {
         transition: all ease .3s;
