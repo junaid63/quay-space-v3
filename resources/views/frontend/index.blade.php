@@ -396,7 +396,7 @@ Quay Space | Home
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/dedicated.jpg')}}" alt="image">
+                                        <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" alt="image">
                                     </a>
                                 </div>
                             </div>
@@ -450,7 +450,7 @@ Quay Space | Home
                                 <div class="image scale" data-cursor-text="view more">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/office-space.jpg')}}" alt="image">
+                                        <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" alt="image">
                                     </a>
                                 </div>
                             </div>

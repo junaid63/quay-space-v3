@@ -13,7 +13,7 @@ Quay Space | Faq's
 @section('content')
 
     <!-- page title area start  -->
-    <section class="page-title-area faq-banner" style="background-image: url('frontend/assets/imgs/banner/faq.webp');">
+    <section class="page-title-area faq-banner" style="background-image: url('frontend/assets/imgs/banner/faqs.jpg');">
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">
