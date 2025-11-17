@@ -15,7 +15,7 @@ Quay Space | Contact Us
 @section('content')
 
     <!-- page title area start  -->
-    <section class="page-title-area contact-banner" style="background-image: url('frontend/assets/imgs/banner/contact-us.webp');">
+    <section class="page-title-area contact-banner" style="background-image: url('frontend/assets/imgs/banner/contact-us.jpg');">
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">

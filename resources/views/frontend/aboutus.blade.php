@@ -35,7 +35,7 @@ Quay Space | About Us
 @section('content')
 
     <!-- page title area start  -->
-    <section class="page-title-area about-banner" style="background-image: url('frontend/assets/imgs/banner/about-us.webp');">
+    <section class="page-title-area about-banner" style="background-image: url('frontend/assets/imgs/banner/about-us.jpg');">
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">
