@@ -10,6 +10,7 @@ use App\Contact;
 use App\ContentPage;
 use App\Newsletter;
 use App\Amenity;
+use App\Blog;
 
 class FrontendController extends Controller
 {
@@ -28,9 +29,10 @@ class FrontendController extends Controller
     public function index()
     {
         $view = 'frontend.index';
+        $blogs = Blog::get();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','amenitiesget'));
+        return view($view,compact('contentpagesget','amenitiesget','blogs'));
     }
     public function aboutus()
     {
@@ -47,6 +49,27 @@ class FrontendController extends Controller
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
         return view($view,compact('ourteams','contentpagesget','amenitiesget'));
+        
+    }
+    public function blog()
+    {
+        $view = 'frontend.blog';
+        $blogs = Blog::get();
+        $ourteams = $this->OurTeamsGet();
+        $contentpagesget = $this->ContentPagesGet();
+        $amenitiesget = $this->AmenitiesGet();
+        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogs'));
+        
+    }
+    public function blogdetails($slug)
+    {
+        $view = 'frontend.blog-details';
+        $blogdetails = Blog::where('slug', $slug)->first();
+        $popularblogs = Blog::where('id' , '!=' , $blogdetails->id)->inRandomOrder()->take(3)->get();
+        $ourteams = $this->OurTeamsGet();
+        $contentpagesget = $this->ContentPagesGet();
+        $amenitiesget = $this->AmenitiesGet();
+        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogdetails','popularblogs'));
         
     }
     public function faqs()

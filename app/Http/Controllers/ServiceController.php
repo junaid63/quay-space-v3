@@ -21,7 +21,7 @@ class ServiceController extends Controller
     public function service_store(ServiceRequest $request)
     {
         try {
-            $folder = 'services/' . date('FY'); // e.g. services/November2025
+            $folder = 'services/' . date('FY'); 
             $imagePath = null;
             if ($request->hasFile('image') && $request->file('image')->isValid()) {
                 $imageName = uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
@@ -91,16 +91,78 @@ class ServiceController extends Controller
         ], 200, [], JSON_UNESCAPED_SLASHES);
     }
 
-    public function update(Servicerequest $request, $id)
+    // public function update(ServiceRequest $request, $id)
+    // {
+    //     $service = Service::findOrFail($id);
+
+    //     $data = [
+    //         'title' => $request->title,
+    //     ];
+
+    //     // Only update image if a new file is uploaded
+    //     if ($request->hasFile('image') && $request->file('image')->isValid()) {
+
+    //         $folder = 'services/' . date('FY');
+    //         $imageName = uniqid() . '.' . $request->file('image')->getClientOriginalExtension();
+    //         $imagePath = $request->file('image')->storeAs($folder, $imageName, 'public');
+
+    //         $data['image'] = $imagePath;
+    //     }
+
+    //     // Only update icon if a new file is uploaded
+    //     if ($request->hasFile('icon') && $request->file('icon')->isValid()) {
+
+    //         $folder = 'services/' . date('FY');
+    //         $iconName = uniqid() . '.' . $request->file('icon')->getClientOriginalExtension();
+    //         $iconPath = $request->file('icon')->storeAs($folder, $iconName, 'public');
+
+    //         $data['icon'] = $iconPath;
+    //     }
+
+    //     $service->update($data);
+
+    //     return response()->json(['message' => 'Service updated successfully']);
+    // }
+    public function update(Request $request, $id)
     {
         $service = Service::findOrFail($id);
-        $data = [
-            'title' => $request->title,
-            'status' => 1,
-        ];
-        $service->update($data);
-        return response()->json(['message' => 'Floor updated successfully']);
+
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'image' => 'nullable|file|mimes:jpg,jpeg,png,webp|max:2048',
+            'icon'  => 'nullable|file|mimes:jpg,jpeg,png,webp,svg|max:2048',
+        ]);
+
+        $service->title = $request->title;
+
+        // IMAGE UPDATE ONLY IF USER SELECTED
+        if ($request->hasFile('image')) {
+            // delete old image
+            if ($service->image && file_exists(public_path('uploads/service/' . $service->image))) {
+                unlink(public_path('uploads/service/' . $service->image));
+            }
+
+            $imageName = time() . '_img.' . $request->image->extension();
+            $request->image->move(public_path('uploads/service'), $imageName);
+            $service->image = $imageName;
+        }
+
+        // ICON UPDATE ONLY IF USER SELECTED
+        if ($request->hasFile('icon')) {
+            if ($service->icon && file_exists(public_path('uploads/service/' . $service->icon))) {
+                unlink(public_path('uploads/service/' . $service->icon));
+            }
+
+            $iconName = time() . '_icon.' . $request->icon->extension();
+            $request->icon->move(public_path('uploads/service'), $iconName);
+            $service->icon = $iconName;
+        }
+
+        $service->save();
+
+        return response()->json(['message' => 'Service updated successfully']);
     }
+
 
     public function destroy($id)
     {

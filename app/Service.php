@@ -51,7 +51,7 @@ class Service extends Model
 
 
                 $imageTag = '<img src="' . $imageUrl . '" alt="Service Image" width="70" height="60" class="rounded" style="object-fit:cover;">';
-                $iconTag = '<img src="' . $iconUrl . '" alt="Service Image" width="50" class="rounded" style="aspect-ratio: 1;object-fit:contain;background: #eee;padding: 10px;border: 1px solid #000;">';
+                $iconTag = '<img src="' . $iconUrl . '" alt="Service Image" width="50" class="rounded" style="aspect-ratio: 1;object-fit:contain;padding: 10px;border: 1px solid #d5d5d5;">';
 
                 $statusToggle = ($services->status == 1)
                     ? '<label class="switch switch-success">
