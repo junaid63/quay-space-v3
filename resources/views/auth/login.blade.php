@@ -31,7 +31,7 @@
     <!-- Logo -->
         <div class="image-on-video auth-cover-brand">
             <a href="index.html" class="app-brand">
-                <img src="{{url('storage')}}/{{setting('site.backend-logo')}}" alt="Quay Space" class="img-fluid landing-logo">
+                <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" alt="Quay Space" class="img-fluid landing-logo">
             </a>
         </div>
     <!-- /Logo -->

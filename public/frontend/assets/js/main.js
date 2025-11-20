@@ -387,6 +387,33 @@
                 }
             });
         }
+        // var custom_fixed = document.querySelector('.blog-sticky');
+        // if (custom_fixed && device_width > 991) {
+        //     gsap.to(".blog-sticky", {
+        //         scrollTrigger: {
+        //             trigger: ".pin-area",
+        //             pin: ".blog-sticky",
+        //             start: "top top",
+        //             end: "20%",
+        //             pinSpacing: false,
+        //         }
+        //     });
+        // }
+        var sidebar = document.querySelector('.blog-sticky');
+        var pinArea = document.querySelector('.pin-area');
+
+        if (sidebar && pinArea && device_width > 991) {
+            gsap.to(sidebar, {
+                scrollTrigger: {
+                    trigger: pinArea,
+                    start: "top top",
+                    pin: sidebar,
+                    pinSpacing: false,
+                    end: () => "+=" + (pinArea.offsetHeight - sidebar.offsetHeight),
+                    markers: false
+                }
+            });
+        }
 
         // grow animation 
         var grow = document.querySelectorAll(".grow");

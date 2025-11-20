@@ -1072,6 +1072,215 @@ Quay Space | Home
     <!-- client area start  -->
     @include('frontend.inc.amenities')
     <!-- client area end  -->
+    <style>
+        .blog-home-main {
+            background: #eee;
+        }
+        .blog-home-content-img {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            height: 450px;
+            transition: all ease .3s;
+        }
+        .blog-home-main .col-3:hover:nth-child(4n+1) .blog-home-content-img {
+            box-shadow: 0px 0px 200px rgb(241 66 70 / 40%);
+        }
+        .blog-home-main .col-3:hover:nth-child(4n+2) .blog-home-content-img {
+            box-shadow: 0px 0px 200px rgb(4 149 243 / 40%);
+        }
+        .blog-home-main .col-3:hover:nth-child(4n+3) .blog-home-content-img {
+            box-shadow: 0px 0px 200px rgb(246 134 31 / 40%);
+        }
+        .blog-home-main .col-3:hover:nth-child(4n+4) .blog-home-content-img {
+            box-shadow: 0px 0px 200px rgb(82 179 71 / 40%);
+        }
+        .blog-home-main .col-3 .blog-home-content-img {
+            box-shadow: none;
+            cursor: pointer;
+        }
+        .blog-home-content-img .image {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .blog-home-content-img .image::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #000000a8, transparent);
+            border-radius: 10px;
+            z-index: 1;
+        }
+
+        .blog-home-content-img .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-home-content-img:hover .image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-home-content-img .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 2;
+            color: white;
+        }
+        .blog-home-content-img .content .subtitle {
+            background: var(--white);
+            display: inline;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: var(--secondary);
+            position: relative;
+            bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .blog-home-content-img .content h4 {
+            color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        .blog-home-content-img .content p {
+            color: white;
+            font-size: 18px;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .blog-home-content-img:hover .content p {
+            transform: translateY(0);
+            opacity: 1;
+            max-height: 120px;
+        }
+        .blog-home-content-img:hover .content h4 {
+            transform: translateY(-10px);
+        }
+        .blog-home-content-img:hover .content .subtitle {
+            bottom: 20px;
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .text-ellipsis-4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        /* Additional styling for the overall section */
+        .services-section {
+            padding: 50px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        
+        .work-area-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+    <section class="services-section blog-home-main pt-lg-5 pt-3 mt-lg-5 mt-2">
+        <div class="container large">
+            <div class="work-area-inner">
+                <div class="section-content mb-md-5 mb-3">
+                    <div class="section-title-wrapper">
+                        <div class="title-wrapper">
+                            <h2 class="section-title text-center font-instrumentsans-medium word-anim">
+                                Explore Latest From Blog
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach($blogs as $blog)
+                    <div class="col-3">
+                        <div class="blog-home-content-img">
+                            <a href="{{route('blogdetails', $blog->slug)}}">
+                                <div class="image">
+                                    <img src="{{ url('storage/'. $blog->home_card_img ) }}" alt="">
+                                </div>  
+                                <div class="content p-3">
+                                    <span class="subtitle">{{ ucwords($blog->sub_title) }}</span>
+                                    <h4>
+                                        {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 5))) }}...
+                                    </h4>
+                                    <p class="text-ellipsis-4">
+                                        {{ $blog->short_description }}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                    {{-- <div class="col-3">
+                        <div class="blog-home-content-img">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mountain">
+                            </div>  
+                            <div class="content p-3">
+                                <h4>
+                                    Top 10 Mountain Destinations for Adventure Seekers
+                                </h4>
+                                <p class="text-ellipsis-4">
+                                    Discover the most breathtaking mountain destinations that will satisfy your thirst for adventure and provide unforgettable experiences in nature's most majestic settings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="blog-home-content-img">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1742827871480-4962b0653e1d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>  
+                            <div class="content p-3">
+                                <h4>
+                                    Hidden Beach Paradises You Need to Visit This Year
+                                </h4>
+                                <p class="text-ellipsis-4">
+                                    Escape the crowded tourist spots and discover these hidden beach paradises that offer pristine sands, crystal clear waters, and the ultimate relaxation experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="blog-home-content-img">
+                            <div class="image">
+                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="City">
+                            </div>  
+                            <div class="content p-3">
+                                <h4>
+                                    Urban Exploration: Finding Beauty in City Landscapes
+                                </h4>
+                                <p class="text-ellipsis-4">
+                                    Cities have their own unique charm and beauty. Learn how to explore urban environments with a fresh perspective and discover the hidden gems in concrete jungles.
+                                </p>
+                            </div>
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- cta area start  -->
     @include('frontend.inc.letswork')
