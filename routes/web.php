@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[FrontendController::class, 'index'])->name('index');
 Route::get('/about-us',[FrontendController::class, 'aboutus'])->name('aboutus');
 Route::get('/our-team',[FrontendController::class, 'ourteam'])->name('ourteam');
+Route::get('/blog',[FrontendController::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}',[FrontendController::class, 'blogdetails'])->name('blogdetails');
 Route::get('/faqs',[FrontendController::class, 'faqs'])->name('faqs');
 Route::get('/calendly',[FrontendController::class, 'calendly'])->name('calendly');
 // Route::get('/services', [FrontendController::class, 'services'])->name('services');
@@ -80,8 +82,8 @@ Route::prefix('dashboard')->middleware('auth')->name('dashboard.')->group(functi
         Route::get('/json', [ServiceController::class, 'service_json'])->name('json');
         Route::get('{id}', [ServiceController::class, 'show'])->name('show');
         Route::post('/store', [ServiceController::class, 'service_store'])->name('store');
-        Route::patch('/{id}/toggle-status', [ServiceController::class, 'toggleStatus'])->name('toggleStatus');
         Route::put('{id}', [ServiceController::class, 'update'])->name('update');
+        Route::patch('/{id}/toggle-status', [ServiceController::class, 'toggleStatus'])->name('toggleStatus');
         Route::delete('{id}',  [ServiceController::class, 'destroy'])->name('destroy');
     });
 

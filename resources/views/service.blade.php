@@ -56,6 +56,10 @@ Service
             $('.add-show-image').addClass('d-flex');
             $('.add-show-image').removeClass('d-none');
             $('.edit-show-image').addClass('d-none');
+
+            $('.add-show-icon').addClass('d-flex');
+            $('.add-show-icon').removeClass('d-none');
+            $('.edit-show-icon').addClass('d-none');
             $('#add-modal').modal('show');
         });
     });
@@ -100,13 +104,12 @@ Service
                 $('#title').val(data.title);
                 $('#status').val(data.status);
 
-                // ✅ Show existing image & icon previews (not inside input)
                 const imagePreview = data.image
-                    ? `<img src="${data.image}" alt="Current Image" width="80" height="80" class="rounded border">`
+                    ? `<img src="${data.image}" alt="Current Image" width="70" height="70" class="rounded border">`
                     : `<span class="text-muted">No image available</span>`;
 
                 const iconPreview = data.icon
-                    ? `<img src="${data.icon}" alt="Current Icon" width="60" height="60" class="rounded border">`
+                    ? `<img src="${data.icon}" alt="Current Icon" width="70" height="70" style="" class="rounded border">`
                     : `<span class="text-muted">No icon available</span>`;
 
                 $('#image-preview').html(imagePreview);
@@ -114,6 +117,10 @@ Service
                 $('.add-show-image').addClass('d-none');
                 $('.edit-show-image').removeClass('d-none');
                 $('.edit-show-image').addClass('d-flex');
+
+                $('.add-show-icon').addClass('d-none');
+                $('.edit-show-icon').removeClass('d-none');
+                $('.edit-show-icon').addClass('d-flex');
 
                 // Update modal text and button
                 $('#modalCenterTitle').text('Edit Service');
@@ -154,6 +161,67 @@ Service
             }
         });
 
+        // $('#saveFundingBtn').on('click', function () {
+        //     if ($(this).prop('disabled')) return;
+
+        //     const $btn = $(this)
+        //         .prop('disabled', true)
+        //         .html(`<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Saving…`);
+
+        //     $('#alertPlaceholder').empty();
+
+        //     const id = $('#service_id').val();
+        //     const title = $('#title').val();
+        //     const image = $('#image')[0].files[0]; 
+        //     const icon = $('#icon')[0].files[0];   
+
+        //     const url = id
+        //         ? `{{ route('dashboard.service.update', ':id') }}`.replace(':id', id)
+        //         : `{{ route('dashboard.service.store') }}`;
+
+        //     const method = id ? 'POST' : 'POST'; 
+
+        //     // ✅ Create FormData (important for file upload)
+        //     const formData = new FormData();
+        //     formData.append('_token', '{{ csrf_token() }}');
+        //     if (id) formData.append('_method', 'PUT'); // Laravel spoof PUT
+        //     formData.append('title', title);
+        //     if (image) formData.append('image', image);
+        //     if (icon) formData.append('icon', icon);
+
+        //     $.ajax({
+        //         url: url,
+        //         type: method,
+        //         data: formData,
+        //         processData: false, // required for FormData
+        //         contentType: false, // required for FormData
+        //         cache: false,
+        //         dataType: 'json',
+        //         success: function (response) {
+        //             showAlert('success', response.message);
+        //             $('.datatables-ajax').DataTable().ajax.reload(null, false);
+
+        //             if (!id) {
+        //                 $('#title').val('');
+        //                 $('#image').val('');
+        //                 $('#icon').val('');
+        //             } else {
+        //                 modal.hide();
+        //             }
+        //         },
+        //         error: function (xhr) {
+        //             if (xhr.status === 422 && xhr.responseJSON?.errors) {
+        //                 const errors = Object.values(xhr.responseJSON.errors).flat().join('<br>');
+        //                 showAlert('danger', errors);
+        //             } else {
+        //                 showAlert('danger', 'Something went wrong. Please try again.');
+        //             }
+        //         },
+        //         complete: function () {
+        //             $btn.prop('disabled', false).text(id ? 'Update' : 'Save');
+        //         }
+        //     });
+        // });
         $('#saveFundingBtn').on('click', function () {
             if ($(this).prop('disabled')) return;
 
@@ -163,113 +231,79 @@ Service
 
             $('#alertPlaceholder').empty();
 
-            const id = $('#service_id').val();
+            const id = $('#service_id').val(); // hidden input for edit
             const title = $('#title').val();
-            const image = $('#image')[0].files[0]; // ✅ get actual file
-            const icon = $('#icon')[0].files[0];   // ✅ get actual file
 
+            // SAFE FILE HANDLING — No errors if empty
+            const imageInput = document.getElementById('image');
+            const iconInput = document.getElementById('Icon');
+
+            const image = imageInput?.files?.length ? imageInput.files[0] : null;
+            const icon = iconInput?.files?.length ? iconInput.files[0] : null;
+
+            // Deciding URL
             const url = id
                 ? `{{ route('dashboard.service.update', ':id') }}`.replace(':id', id)
                 : `{{ route('dashboard.service.store') }}`;
-            const method = id ? 'POST' : 'POST'; // both use POST (we’ll spoof PUT for updates)
 
-            // ✅ Create FormData (important for file upload)
+            // Prepare form data
             const formData = new FormData();
             formData.append('_token', '{{ csrf_token() }}');
-            if (id) formData.append('_method', 'PUT'); // Laravel spoof PUT
             formData.append('title', title);
+
+            if (id) {
+                formData.append('_method', 'PUT'); // Laravel update spoofing
+            }
+
+            // ADD ONLY IF FILE SELECTED (update optional)
             if (image) formData.append('image', image);
             if (icon) formData.append('icon', icon);
 
             $.ajax({
                 url: url,
-                type: method,
+                type: 'POST',
                 data: formData,
-                processData: false, // required for FormData
-                contentType: false, // required for FormData
+                processData: false,
+                contentType: false,
                 cache: false,
                 dataType: 'json',
+
                 success: function (response) {
                     showAlert('success', response.message);
+
                     $('.datatables-ajax').DataTable().ajax.reload(null, false);
 
+                    // RESET IN ADD MODE
                     if (!id) {
                         $('#title').val('');
                         $('#image').val('');
-                        $('#icon').val('');
-                    } else {
-                        modal.hide();
+                        $('#Icon').val('');
+                    }
+
+                    // CLOSE MODAL IN EDIT MODE
+                    if (id) {
+                        $('#add-modal').modal('hide');
                     }
                 },
+
                 error: function (xhr) {
                     if (xhr.status === 422 && xhr.responseJSON?.errors) {
-                        const errors = Object.values(xhr.responseJSON.errors).flat().join('<br>');
+                        const errors = Object.values(xhr.responseJSON.errors)
+                            .flat()
+                            .join('<br>');
                         showAlert('danger', errors);
                     } else {
                         showAlert('danger', 'Something went wrong. Please try again.');
                     }
                 },
+
                 complete: function () {
                     $btn.prop('disabled', false).text(id ? 'Update' : 'Save');
                 }
             });
         });
-
-        // $('#saveFundingBtn').on('click', function () {
-        //     if ($(this).prop('disabled')) return;
-        //     $(this).prop('disabled', true);
-        //     $('#alertPlaceholder').empty();
-        //     const id = $('#service_id').val();
-        //     const title = $('#title').val();
-        //     const image = $('#image').val();
-        //     const icon = $('#icon').val();
-        //     const $btn = $(this).prop('disabled', true).html(
-        //         `<span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>Saving…`
-        //     );
-
-        //     const url = id
-        //         ? `{{ route('dashboard.service.update', ':id') }}`.replace(':id', id)
-        //         : `{{ route('dashboard.service.store') }}`;
-        //     const method = id ? 'PUT' : 'POST';
-
-        //     $.ajax({
-        //         url: url,
-        //         type: method,
-        //         data: {
-        //             _token: '{{ csrf_token() }}',
-        //             title: title,
-        //             image: image,
-        //             icon: icon,
-        //         },
-        //         dataType: 'json'
-        //     })
-        //     .done(function (response) {
-        //         console.log(response);
-        //         showAlert('success', response.message);
-        //         $('.datatables-ajax').DataTable().ajax.reload(null, false);
-        //         if (!id){
-        //             $('#title').val('');
-        //             $('#image').val('');
-        //             $('#icon').val('');
-        //             $('#class').val('');
-        //         }
-        //         else {
-        //             modal.hide();
-        //         }
-        //     })
-        //     .fail(function (xhr) {
-        //         if (xhr.status === 422) {
-        //             const errors = Object.values(xhr.responseJSON.errors).flat().join('<br>');
-        //             showAlert('danger', errors);
-        //         } else {
-        //             showAlert('danger', 'Something went wrong. Please try again.');
-        //         }
-        //     })
-        //     .always(function () {
-        //         $btn.prop('disabled', false).text(id ? 'Update' : 'Save');
-        //     });
-        // });
     });
+
 
     $(document).on('change', '.status-toggle', function () {
         const checkbox = $(this);
@@ -356,17 +390,20 @@ Service
                     <div class="col mb-4">
                         <label for="image" class="form-label">Image</label>
                         <input type="file" id="image" class="add-show-image form-control" placeholder="Insert Image">
-                        <div class="edit-show-image gap-lg-3 justiy-content-center align-items-center" style="padding: 5px;background:#eee;border-radius:5px;">
+                        <div class="edit-show-image gap-lg-3 justiy-content-center align-items-center" style="padding: 5px;border: 1px solid #00000026;border-radius:5px;">
                             <input type="file" id="image" class="form-control" placeholder="Insert Image">
-                            <div id="image-preview" class="mt-2"></div>
+                            <div id="image-preview"></div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-4">
-                        <label for="icon" class="form-label">Icon</label>
-                        <input type="file" id="icon" class="form-control" placeholder="Insert Icon">
-                        <div id="icon-preview" class="d-none mt-2"></div>
+                        <label for="Icon" class="form-label">Icon</label>
+                        <input type="file" id="Icon" class="add-show-icon form-control" placeholder="Insert Icon">
+                        <div class="edit-show-icon gap-lg-3 justiy-content-center align-items-center" style="padding: 5px;border: 1px solid #00000026;border-radius:5px;">
+                            <input type="file" id="Icon" class="form-control" placeholder="Insert Icon">
+                            <div id="icon-preview"></div>
+                        </div>
                     </div>
                 </div>
             </div>

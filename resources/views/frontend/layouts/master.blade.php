@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="{{url('frontend/assets/css/modal.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/style.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/custom.css')}}?ref={{setting('site.css')}}">
+    <link rel="stylesheet" href="{{url('frontend/assets/css/blog.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
@@ -421,6 +422,14 @@
                                             <span
                                                 class="text-one">Services</span>
                                 <span class="text-two">Services</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('blog')}}" class="@if(Route::currentRouteName() === 'blog') active @endif rr-btn hover-bg-theme custom-menu">
+                                <span class="btn-wrap">
+                                    <span class="text-one">Blogs</span>
+                                    <span class="text-two">Blogs</span>
                                 </span>
                             </a>
                         </li>
