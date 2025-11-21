@@ -1,7 +1,7 @@
 <!-- Newsletter area start  -->
 <div class="image-wrapper parallax-view">
     <div class="black-shade"></div>
-    <img class="w-100" src="{{url('frontend/assets/imgs/banner/5.jpg')}}" alt="image" data-speed="0.1">
+    <img class="w-100" src="{{url('frontend/assets/imgs/banner/5.jpg')}}" alt="Newsletter Banner Img" data-speed="0.1">
     <div class="newsletter">
         <div class="section-content">
             <div class="section-title-wrapper">

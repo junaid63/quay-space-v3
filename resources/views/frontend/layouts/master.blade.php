@@ -28,14 +28,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{url('frontend/assets/imgs/favicons/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{url('frontend/assets/imgs/favicons/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('frontend/assets/imgs/favicons/favicon-16x16.png')}}">
-    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#f14246">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#f14246">
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url('frontend/assets/vendor/fontawesome.min.css ss')}}">
+    <link rel="stylesheet" href="{{url('frontend/assets/vendor/fontawesome.min.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/meanmenu.min.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/animate.min.css')}}">

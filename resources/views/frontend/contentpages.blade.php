@@ -14,7 +14,7 @@ Quay Space | Privacy Policy
 @section('content')
 
     <!-- page title area start  -->
-    <section class="page-title-area contact-banner" style="background-image: url('{{url('frontend/assets/imgs/banner/contact-us.webp')}}');">
+    <section class="page-title-area contact-banner" style="background-image: url('{{url('frontend/assets/imgs/banner/contentpages-banner.jpg')}}');">
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">
@@ -26,7 +26,7 @@ Quay Space | Privacy Policy
     <!-- page title area end  -->
 
     <section class="content-pages-main py-lg-5 py-3">
-        <div class="container large">
+        <div class="container">
             <div class="content-page-main-title-para">
                 {!! $contentPages->description !!}
             </div>
