@@ -511,7 +511,7 @@
     <script src="{{url('frontend/assets/vendor/throwable.js')}}"></script>
     <script src="{{url('frontend/assets/js/magiccursor.js')}}"></script>
     <!-- Template Main JS File -->
-    <script src="{{url('frontend/assets/js/main.js')}}"></script>
+    <script src="{{url('frontend/assets/js/main.js')}}?ref={{setting('site.css')}}"></script>
 
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     {{-- <script type="text/javascript">
