@@ -87,30 +87,47 @@ Quay Space | Blog
                         <div class="sidebar-widget">
                             <h3 class="widget-title">Share Page</h3>
                             <div class="tags-list">
+
+                                <!-- WhatsApp -->
                                 <a href="https://api.whatsapp.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
-                                <a href="https://www.facebook.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
-                                <a href="https://www.instagram.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- Instagram (Direct sharing NOT supported by URL) -->
+                                <a href="https://www.instagram.com/?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
-                                <a href="https://www.tiktok.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- TikTok (Direct share link NOT supported, open profile only) -->
+                                <a href="https://www.tiktok.com" target="_blank">
                                     <i class="fa-brands fa-tiktok"></i>
                                 </a>
-                                <a href="https://www.messenger.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- Messenger -->
+                                <a href="https://www.facebook.com/dialog/send?link={{ urlencode(route('blogdetails', $blog->slug)) }}&app_id=123456&redirect_uri={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-facebook-messenger"></i>
                                 </a>
-                                <a href="https://www.youtube.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- YouTube (No share link support, sends to YouTube page only) -->
+                                <a href="https://www.youtube.com" target="_blank">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
-                                <a href="https://www.linkedin.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-linkedin"></i>
                                 </a>
-                                <a href="https://www.x.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+
+                                <!-- X (Twitter) -->
+                                <a href="https://twitter.com/intent/tweet?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
+
                             </div>
                         </div>
                     </div>

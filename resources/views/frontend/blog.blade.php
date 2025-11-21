@@ -175,7 +175,6 @@ Quay Space | Blog
 
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
