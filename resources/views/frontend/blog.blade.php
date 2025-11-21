@@ -18,7 +18,7 @@ Quay Space | Blog
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">
-                    <h2 class="page-title fade-anim colored-text-layer" id="colorful-title">Blog</h2>
+                    <h2 class="page-title fade-anim colored-text-layer" id="colorful-title">Blogs</h2>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ Quay Space | Blog
                                             <span class="blog-category">{{ ucwords($blog->sub_title) }}</span>
                                         </div>
                                         <h3 class="blog-title">
-                                            <a href="#">
+                                            <a href="{{ route('blogdetails', $blog->slug ) }}">
                                                 {{ ucwords($blog->title) }}
                                             </a>
                                         </h3>
@@ -55,7 +55,7 @@ Quay Space | Blog
                                             {{ $blog->short_description }}
                                         </p>
                                         <div class="all-btn-wrapper fade-anim">
-                                            <a href="#" class="rr-btn hover-bg-theme animated-btn">
+                                            <a href="{{ route('blogdetails', $blog->slug ) }}" class="rr-btn hover-bg-theme animated-btn">
                                                 <i class="fa-jelly fa-regular fa-arrow-right"></i>
                                             </a>
                                         </div>
@@ -100,7 +100,7 @@ Quay Space | Blog
                         </div>
                         
                         <!-- Tags Widget -->
-                        <div class="sidebar-widget">
+                        {{-- <div class="sidebar-widget">
                             <h3 class="widget-title">Share Page</h3>
                             <div class="tags-list">
                                 <a href="https://api.whatsapp.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
@@ -127,6 +127,52 @@ Quay Space | Blog
                                 <a href="https://www.x.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
+                            </div>
+                        </div> --}}
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Share Page</h3>
+                            <div class="tags-list">
+
+                                <!-- WhatsApp -->
+                                <a href="https://api.whatsapp.com/send?text={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+
+                                <!-- Facebook -->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <!-- Instagram (Direct sharing NOT supported by URL) -->
+                                <a href="https://www.instagram.com/?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <!-- TikTok (Direct share link NOT supported, open profile only) -->
+                                <a href="https://www.tiktok.com" target="_blank">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+
+                                <!-- Messenger -->
+                                <a href="https://www.facebook.com/dialog/send?link={{ urlencode(route('blogdetails', $blog->slug)) }}&app_id=123456&redirect_uri={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-facebook-messenger"></i>
+                                </a>
+
+                                <!-- YouTube (No share link support, sends to YouTube page only) -->
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
+                                <!-- X (Twitter) -->
+                                <a href="https://twitter.com/intent/tweet?url={{ urlencode(route('blogdetails', $blog->slug)) }}" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
                             </div>
                         </div>
                     </div>
