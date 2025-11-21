@@ -6030,6 +6030,9 @@
     }
     
     @media (min-width: 510px) and (max-width: 820px) {
+        .blog-home-content-img {
+            height: 400px;
+        }
         .ourteam-cards .img img {
             object-fit: cover;
         }
