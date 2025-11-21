@@ -827,14 +827,14 @@
     .nav-links ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: start;
         width: 100%;
+        gap: 10px;
     }
     
     .nav-links ul li {
-        /* width: calc(100% / 5); */
-        width: 23%;
-        margin: 10px 10px;
+        width: calc((100% / 4) - 10px);
+        /* width: 23%; */
     }
     
     .project-section-3__thumb .black-shade {
@@ -4384,6 +4384,9 @@
 
     
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .offset-header {
+            margin: 0px 0px;
+        }
         .servicesCards .swiper-wrapper {
             justify-content: center;
         }
@@ -4700,7 +4703,7 @@
             height: 60vh;
         }
         .page-title-wrapper .page-title {
-            font-size: 100px;
+            font-size: 70px;
         }
         .about-area-details .about-images .second-img {
             height: 500px;
@@ -4731,7 +4734,7 @@
             top: 160px;
         }
         .nav-links ul li {
-            width: 28%;
+            width: calc((100% / 4) - 10px);
         }
         .contact-area-contact-page .section-content-wrapper .offset-widget-box {
             bottom: 0px;
@@ -4763,7 +4766,8 @@
         }
         .side-info {
             height: 80%;
-            padding: 20px 220px;
+            /* padding: 20px 220px; */
+            padding: 20px 130px;
         }
         .header-p-inline-60 {
             padding: 0px;
@@ -6690,8 +6694,10 @@
             height: auto;
         }
         .side-info {
-            padding: 10px 30px;
-            height: 100%;
+            /* padding: 10px 30px; */
+            /* height: 100%; */
+            padding: 25px 30px;
+            height: 60%;
         }
         .footer-bottom-content .designed,
         .footer-bottom-content .copy-right p {

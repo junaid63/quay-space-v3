@@ -6,7 +6,7 @@
   Description: Redox - Creative Agency and Portfolio HTML Template
   Version: 1.0
 
------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
 
 /************ TABLE OF CONTENTS ***************
 variable css
@@ -1427,11 +1427,7 @@ h6 {
 
 .offset-widget-box .contact-item .icon:hover {
     transform: translateY(-10px);
-    background
 }
-
-
-/* mean menu customize */
 
 .mobile-menu {
     margin-top: 40px;
@@ -14675,7 +14671,7 @@ only screen and (max-width: 1919px) {
     color: var(--primary);
     font-family: var(--font_sequelsansromanbody);
     position: relative;
-    d align-items: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1919px) {
@@ -17001,7 +16997,7 @@ only screen and (max-width: 1919px) {
 .faq-area-faq-page .accordion-button {
     /* font-size: 30px; */
     /* font-weight: 310; */
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
     line-height: 1.16;
     /* letter-spacing: -0.07em; */
@@ -17039,6 +17035,10 @@ only screen and (max-width: 1919px) {
     height: auto;
     position: relative;
     right: 20px;
+    font-size: 20px;
+}
+.faq-area-faq-page .accordion-button::before {
+    font-size: 18px;
 }
 
 .faq-area-faq-page .accordion-button:not(.collapsed) {
@@ -24671,13 +24671,13 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 /* flaticon font  */
 
-@font-face {
+/* @font-face {
     font-family: "busico";
     src: url("../fonts/busico.eot");
     src: url("../fonts/busico.eot?#iefix") format("embedded-opentype"), url("../fonts/busico.woff2") format("woff2"), url("../fonts/busico.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 [class^=icon-]:before,
 [class*=" icon-"]:before {
@@ -26661,7 +26661,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 /* digital agency modern page css */
 
-@font-face {
+/* @font-face {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Regular.ttf");
     font-weight: 400;
@@ -26689,7 +26689,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Extrabold.ttf");
     font-weight: 800;
-}
+} */
 
 :root {
     --rr-ff-heading1: "Beatrice Trial", sans-serif;

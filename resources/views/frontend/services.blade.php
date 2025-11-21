@@ -39,7 +39,7 @@ Quay Space | Services
                                     <a href="{{ route('services', $service->slug) }}" 
                                     class="services-navber-content {{ $Servicesdetail->id == $service->id ? 'active' : '' }}">
                                         <div class="img">
-                                            <img src="{{ url('storage/' . $service->icon) }}" alt="">
+                                            <img src="{{ url('storage/' . $service->icon) }}" alt="{{ $service->title }} Icon">
                                         </div>
                                         <div class="services-navber-title">
                                             <span>{{ $service->title }}</span>
@@ -102,7 +102,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="Service Image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -337,7 +337,7 @@ Quay Space | Services
                                     <div class="swiper-slide">
                                         <div class="services-cards fade-anim">
                                             <div class="img">
-                                                <img src="{{ asset('storage/' . $card->image) }}" alt="">
+                                                <img src="{{ asset('storage/' . $card->image) }}" alt="{{ $card->title }}">
                                             </div>
                                             <div class="cards-content">
                                                 <div class="cards-title mb-lg-3 mb-2">
@@ -385,7 +385,7 @@ Quay Space | Services
                                 <div class="swiper-slide">
                                     <div class="services-cards needhelp-card fade-anim">
                                         <div class="img">
-                                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="Need Help Image">
                                         </div>
                                         <div class="cards-content">
                                             <div class="cards-title mb-lg-3 mb-2">
@@ -443,10 +443,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -508,10 +508,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -573,10 +573,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -638,10 +638,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -703,10 +703,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -768,10 +768,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -833,10 +833,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -898,10 +898,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -963,10 +963,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1028,10 +1028,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1093,10 +1093,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1158,10 +1158,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1223,10 +1223,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
