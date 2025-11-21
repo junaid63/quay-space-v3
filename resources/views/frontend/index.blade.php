@@ -1073,7 +1073,7 @@ Quay Space | Home
     @include('frontend.inc.amenities')
     <!-- client area end  -->
    
-    <section class="services-section blog-home-main pt-lg-5 pt-3 mt-lg-5 mt-2">
+    <section class="services-section blog-home-main py-lg-5 py-4 mt-lg-5 mt-2">
         <div class="container large">
             <div class="work-area-inner">
                 <div class="section-content mb-md-5 mb-3">
@@ -1097,7 +1097,7 @@ Quay Space | Home
                                     <div class="content p-3">
                                         <span class="subtitle">{{ ucwords($blog->sub_title) }}</span>
                                         <h4>
-                                            {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 5))) }}...
+                                            {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 6))) }}...
                                         </h4>
                                         <p class="text-ellipsis-4">
                                             {{ $blog->short_description }}
@@ -1243,7 +1243,7 @@ Quay Space | Home
     </script>
     <script>
         var ServiceCards = new Swiper('.BlogsCards', {
-            spaceBetween: 10,
+            spaceBetween: 20,
             // autoplay: {
             //     delay: 2000,
             //     disableOnInteraction: false,
