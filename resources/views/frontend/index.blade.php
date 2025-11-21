@@ -1085,72 +1085,30 @@ Quay Space | Home
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    @foreach($blogs as $blog)
-                    <div class="col-3">
-                        <div class="blog-home-content-img">
-                            <a href="{{route('blogdetails', $blog->slug)}}">
-                                <div class="image">
-                                    <img src="{{ url('storage/'. $blog->home_card_img ) }}" alt="">
-                                </div>  
-                                <div class="content p-3">
-                                    <span class="subtitle">{{ ucwords($blog->sub_title) }}</span>
-                                    <h4>
-                                        {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 5))) }}...
-                                    </h4>
-                                    <p class="text-ellipsis-4">
-                                        {{ $blog->short_description }}
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    @endforeach
-                    {{-- <div class="col-3">
-                        <div class="blog-home-content-img">
-                            <div class="image">
-                                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mountain">
-                            </div>  
-                            <div class="content p-3">
-                                <h4>
-                                    Top 10 Mountain Destinations for Adventure Seekers
-                                </h4>
-                                <p class="text-ellipsis-4">
-                                    Discover the most breathtaking mountain destinations that will satisfy your thirst for adventure and provide unforgettable experiences in nature's most majestic settings.
-                                </p>
+                <div class="swiper BlogsCards">
+                    <div class="swiper-wrapper">
+                        @foreach($blogs as $blog)
+                        <div class="swiper-slide">
+                            <div class="blog-home-content-img">
+                                <a href="{{route('blogdetails', $blog->slug)}}">
+                                    <div class="image">
+                                        <img src="{{ url('storage/'. $blog->home_card_img ) }}" alt="">
+                                    </div>  
+                                    <div class="content p-3">
+                                        <span class="subtitle">{{ ucwords($blog->sub_title) }}</span>
+                                        <h4>
+                                            {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 5))) }}...
+                                        </h4>
+                                        <p class="text-ellipsis-4">
+                                            {{ $blog->short_description }}
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                    <div class="col-3">
-                        <div class="blog-home-content-img">
-                            <div class="image">
-                                <img src="https://images.unsplash.com/photo-1742827871480-4962b0653e1d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                            </div>  
-                            <div class="content p-3">
-                                <h4>
-                                    Hidden Beach Paradises You Need to Visit This Year
-                                </h4>
-                                <p class="text-ellipsis-4">
-                                    Escape the crowded tourist spots and discover these hidden beach paradises that offer pristine sands, crystal clear waters, and the ultimate relaxation experience.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="blog-home-content-img">
-                            <div class="image">
-                                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="City">
-                            </div>  
-                            <div class="content p-3">
-                                <h4>
-                                    Urban Exploration: Finding Beauty in City Landscapes
-                                </h4>
-                                <p class="text-ellipsis-4">
-                                    Cities have their own unique charm and beauty. Learn how to explore urban environments with a fresh perspective and discover the hidden gems in concrete jungles.
-                                </p>
-                            </div>
-                        </div>
-                    </div> --}}
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -1284,6 +1242,30 @@ Quay Space | Home
         });
     </script>
     <script>
+        var ServiceCards = new Swiper('.BlogsCards', {
+            spaceBetween: 10,
+            // autoplay: {
+            //     delay: 2000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    spaceBetween: 20,
+                    slidesPerView: 2
+                },
+                1300: {
+                    slidesPerView: 4
+                }
+            }
+        });
+
         var ServiceCards = new Swiper('.ServiceCards', {
             spaceBetween: 10,
             autoplay: {

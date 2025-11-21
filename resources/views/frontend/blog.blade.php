@@ -84,6 +84,10 @@ Quay Space | Blog
                                             <h4>
                                                 {{ ucwords(implode(' ', array_slice(explode(' ', $blog->title), 0, 10))) }}...
                                             </h4>
+                                            @php
+                                                $createdat = $blog->created_at;
+                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('F - d - Y');
+                                            @endphp
                                             <div class="d-flex gap-2 justify-content-end">
                                                 <i class="fa-regular fa-calendar"></i>
                                                 <span class="post-date">{{ $timeformat }}</span>

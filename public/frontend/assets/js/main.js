@@ -406,7 +406,7 @@
             gsap.to(sidebar, {
                 scrollTrigger: {
                     trigger: pinArea,
-                    start: "top top",
+                    start: "top 10px",
                     pin: sidebar,
                     pinSpacing: false,
                     end: () => "+=" + (pinArea.offsetHeight - sidebar.offsetHeight),
