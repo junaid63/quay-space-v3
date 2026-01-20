@@ -203,18 +203,7 @@
                                     </h6>
                                 </div>
                                 
-                                <div class="mb-3">
-                                    <label for="forwardingAddress" class="form-label required-field">Mail Forwarding Address</label>
-                                    <textarea class="form-control" id="forwardingAddress" rows="3" required placeholder="Where should we forward your mail?"></textarea>
-                                    <div class="form-check mt-2">
-                                        <input class="form-check-input" type="checkbox" id="overseasForwarding">
-                                        <label class="form-check-label modal-check-box" for="overseasForwarding">
-                                            Overseas Address (outside UK)
-                                        </label>
-                                    </div>
-                                </div>
-                                
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                     <label class="form-label required-field">Forwarding Frequency</label>
                                     <div>
                                         <div class="form-check form-check-inline">
@@ -230,7 +219,7 @@
                                             <label class="form-check-label modal-radio" for="monthly">Monthly</label>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 
                                 <div class="mb-3">
                                     <label class="form-label required-field">Scanning Option</label>
@@ -261,15 +250,15 @@
                                         <i class="fas fa-cloud-upload-alt fa-2x mb-2 text-primary"></i>
                                         <p>Upload Proof of ID (Passport/Driving License)</p>
                                         <p class="small text-muted">Max file size: 5MB. Accepted formats: JPG, PDF, PNG</p>
-                                        <input type="file" class="d-none" id="proofId">
-                                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('proofId').click()">Select File</button>
+                                        <input type="file" id="proofId">
+                                        {{-- <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('proofId').click()">Select File</button> --}}
                                     </div>
                                     <div class="document-upload">
                                         <i class="fas fa-cloud-upload-alt fa-2x mb-2 text-primary"></i>
                                         <p>Upload Proof of Address (Utility Bill/Bank Statement)</p>
                                         <p class="small text-muted">Max file size: 5MB. Accepted formats: JPG, PDF, PNG</p>
-                                        <input type="file" class="d-none" id="proofAddress">
-                                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('proofAddress').click()">Select File</button>
+                                        <input type="file" id="proofAddress">
+                                        {{-- <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('proofAddress').click()">Select File</button> --}}
                                     </div>
                                 </div>
                                 
@@ -281,13 +270,15 @@
                                 </div>
                                 
                                 <div class="mb-3">
-                                    <label class="form-label required-field">Payment Method</label>
-                                    <select class="form-select" required>
+                                    <label class="form-label required-field mb-md-3">Payment Method</label>
+                                    <div class="document-upload text-start" style="border:2px dashed #f14246">
+                                        <span for="billingName" class="form-label required-field">Credit/Debit Card</span>
+                                    </div>
+
+                                    {{-- <select class="form-select" required>
                                         <option value="">Select payment method</option>
                                         <option value="card">Credit/Debit Card</option>
-                                        <option value="bank">Bank Transfer</option>
-                                        <option value="paypal">PayPal</option>
-                                    </select>
+                                    </select> --}}
                                 </div>
                             </div>
 
