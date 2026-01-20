@@ -4604,17 +4604,17 @@
             line-height: 1.1;
         }
         .five-imgs-main .third {
-            width: 110px;
-            height: 110px;
-            top: 125px;
-            left: 215px;
+            width: 100px;
+            height: 100px;
+            top: 105px;
+            left: 220px;
             border: 10px solid white;
         }
         .five-imgs-main .first,
         .five-imgs-main .second,
         .five-imgs-main .fourth,
         .five-imgs-main .five {
-            height: 175px;
+            height: 145px;
         }
         .aboutus-main .para p {
             font-size: 18px;
