@@ -1137,7 +1137,8 @@
     .five-imgs-main .fourth,
     .five-imgs-main .five {
         width: 350px;
-        height: 230px;
+        /* height: 230px; */
+        height: 200px;
     }
     
     .five-imgs-main .five,
@@ -1172,7 +1173,7 @@
         position: absolute;
         width: 120px;
         height: 120px;
-        top: 178px;
+        top: 145px;
         left: 300px;
         z-index: 999;
         border: 15px solid white;
@@ -4359,7 +4360,7 @@
         width: 82%;
     }
     .servicesCards .swiper-wrapper {
-        justify-content: start;
+        justify-content: center;
     }
 
     .text-ellipsis-4 {
@@ -4944,7 +4945,7 @@
             padding-top: 150px;
         }
     }
-    
+
     @media (max-width: 510px) {
         .services-navber-content {
             width: 160px;
@@ -5315,15 +5316,27 @@
         }
         .five-imgs-main .fourth img {
             border-radius: 0px 0px 0px 70px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         .five-imgs-main .third img {
             border-radius: 0px 0px 0px 70px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         .five-imgs-main .second img {
             border-radius: 0px 70px 0px 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         .five-imgs-main .first img {
             border-radius: 70px 0px 0px 0px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
         .five-imgs-main .first,
         .five-imgs-main .second,

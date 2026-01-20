@@ -355,7 +355,13 @@ Quay Space | Services
                                                 <div class="d-flex cutom-btn-arrow">
                                                     <div class="first-btn">
                                                         <div class="all-btn-wrapper">
-                                                            <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
+                                                            {{-- <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
+                                                                <span class="btn-wrap">
+                                                                    <span class="text-one">Book Now</span>
+                                                                    <span class="text-two">Book Now</span>
+                                                                </span>
+                                                            </a> --}}
+                                                            <a href="javascript:void(0);" class="rr-btn hover-bg-theme bookMeetingBtn">
                                                                 <span class="btn-wrap">
                                                                     <span class="text-one">Book Now</span>
                                                                     <span class="text-two">Book Now</span>
