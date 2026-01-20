@@ -215,21 +215,21 @@ Quay Space | About Us
                         <div class="right-white-space"></div>
                         <div class="first-two-images fade-anim">
                             <div class="first">
-                                <img src="{{url('frontend/assets/imgs/about/first.webp')}}" alt="About img one">
+                                <img src="{{url('frontend/assets/imgs/about/first.jpg')}}" alt="About img one">
                             </div>
                             <div class="second">
-                                <img src="{{url('frontend/assets/imgs/about/second.webp')}}" alt="About img two">
+                                <img src="{{url('frontend/assets/imgs/about/second.jpg')}}" alt="About img two">test
                             </div>
                         </div>
                         <div class="third fade-anim">
-                            <img src="{{url('frontend/assets/imgs/about/third.webp')}}" alt="About img three">
+                            <img src="{{url('frontend/assets/imgs/about/third.jpg')}}" alt="About img three">
                         </div>
                         <div class="second-two-images fade-anim">
                             <div class="fourth">
-                                <img src="{{url('frontend/assets/imgs/about/fourth.webp')}}" alt="About img four">
+                                <img src="{{url('frontend/assets/imgs/about/fourth.jpg')}}" alt="About img four">
                             </div>
                             <div class="five">
-                                <img src="{{url('frontend/assets/imgs/about/five.webp')}}" alt="About img five">
+                                <img src="{{url('frontend/assets/imgs/about/five.jpg')}}" alt="About img five">
                             </div>
                         </div>
                         <div class="bottomleft-white-space"></div>
