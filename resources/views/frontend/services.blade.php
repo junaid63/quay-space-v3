@@ -102,7 +102,11 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="Service Image">
+                        @if(!empty($Servicesdetail->image))
+                            <img src="{{ url('storage/' . $Servicesdetail->image) }}" alt="{{ $Servicesdetail->title }}">
+                        @else
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="Service Image">
+                        @endif
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
