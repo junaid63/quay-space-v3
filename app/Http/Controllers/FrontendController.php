@@ -11,6 +11,7 @@ use App\ContentPage;
 use App\Newsletter;
 use App\Amenity;
 use App\Blog;
+use App\MailingAdvantage;
 
 class FrontendController extends Controller
 {
@@ -171,6 +172,28 @@ class FrontendController extends Controller
         return response()->json([
              "status"=> "success",
             "message"=> "Thank you for Newsletter",
+            "redirect"=> "/"
+        ]);
+    }
+    public function mailingadvantageSubmit(Request $request)
+    {
+        $mailingAdvantage = new MailingAdvantage();
+        $mailingAdvantag->service_name = $request->service_name;
+        $mailingAdvantag->company_or_name = $request->full_name;
+        $mailingAdvantag->email = $request->email;	
+        $mailingAdvantag->phone = $request->phone;	
+        $mailingAdvantag->company_registration = $request->company_number;	
+        $mailingAdvantag->company_address = $request->company_address;	
+        $mailingAdvantag->company_message = $request->director_details;
+        $mailingAdvantag->scanning_option = $request->scanning_option;
+        $mailingAdvantag->upload_passport = $request->proof_id;	
+        $mailingAdvantag->upload_utility_bill = $request->proofAddress;	
+        $mailingAdvantag->biling_address	 = $request->billing_address;	
+        $mailingAdvantag->save();
+
+        return response()->json([
+            "status"=> "success",
+            "message"=> "Thank you for Mailing Advantage",
             "redirect"=> "/"
         ]);
     }

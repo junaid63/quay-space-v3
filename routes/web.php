@@ -33,6 +33,8 @@ Route::get('/content-page/{slug}',[FrontendController::class, 'contentpages'])->
 Route::get('/360-view',[FrontendController::class, 'threesixty'])->name('threesixty');
 Route::get('/360-detail-page',[FrontendController::class, 'threesixty_detail'])->name('threesixty_detail');
 
+Route::post('/mailingadvantage/submit', [FrontendController::class, 'mailingadvantageSubmit'])->name('mailingadvantageSubmit');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
