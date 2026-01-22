@@ -239,99 +239,6 @@ Quay Space | Services
                         </div>
                     </div>
 
-                    {{-- @if($heading->cardContent)
-                        @php $count = 0; @endphp
-                        @foreach($heading->cardContent as $card)
-                            @if($count < 3) <!-- ✅ sirf 3 services cards show -->
-                            <div class="col-12 col-lg-3 col-md-6">
-                                <div class="services-cards fade-anim">
-                                    <div class="img">
-                                        <img src="{{ asset('storage/' . $card->image) }}" alt="">
-                                    </div>
-                                    <div class="cards-content">
-                                        <div class="cards-title mb-lg-3 mb-2">
-                                            <h2 class="mb-lg-2 mb-2">{{ $card->title }}</h2>
-                                            <p class="text">{!! $card->card_description !!}</p>
-                                        </div>
-                                        <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                            @foreach ($card->cardPoints as $point)
-                                                <div class="icon-para">
-                                                    <i class="{{ $point->icon }}"></i>
-                                                    <span>{{ $point->title }}</span>
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                        <div class="d-flex cutom-btn-arrow">
-                                            <div class="first-btn">
-                                                <div class="all-btn-wrapper">
-                                                    <a href="{{route('booknow')}}" class="rr-btn hover-bg-theme">
-                                                        <span class="btn-wrap">
-                                                            <span class="text-one">Book Now</span>
-                                                            <span class="text-two">Book Now</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="second-btn">
-                                                <div class="all-btn-wrapper">
-                                                    <a href="#" class="rr-btn hover-bg-theme">
-                                                        <span class="btn-wrap">
-                                                            <span class="text-one"><i class="fa-regular fa-arrow-right"></i></span>
-                                                            <span class="text-two"><i class="fa-regular fa-arrow-right"></i></span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endif
-                            @php $count++; @endphp
-                        @endforeach
-
-                        <!-- ✅ Last static "Need Help" card -->
-                        <div class="col-12 col-lg-3 col-md-6">
-                            <div class="services-cards needhelp-card fade-anim">
-                                <div class="img">
-                                    <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
-                                </div>
-                                <div class="cards-content">
-                                    <div class="cards-title mb-lg-3 mb-2">
-                                        <h2 class="mb-lg-2 mb-2">
-                                            Need Guidance?
-                                        </h2>
-                                        <p class="paraghraph-multi-lines">
-                                            Not sure which office setup suits you best? Our expert advisors will guide you through the options and help you choose the right solution.
-                                        </p>
-                                    </div>
-                                    <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
-                                        <div class="icon-para">
-                                            <i class="fa-solid fa-headset"></i>
-                                            <span>Free 1:1 consultation</span>
-                                        </div>
-                                        <div class="icon-para">
-                                            <i class="fa-solid fa-user-check"></i>
-                                            <span>Personalized recommendations</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex cutom-btn-arrow">
-                                        <div class="first-btn">
-                                            <div class="all-btn-wrapper">
-                                                <a href="{{route('contactus')}}" class="rr-btn hover-bg-theme">
-                                                    <span class="btn-wrap">
-                                                        <span class="text-one">Talk with Us</span>
-                                                        <span class="text-two">Talk with Us</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ✅ End Need Help Card -->
-                    @endif --}}
                     @if($heading->cardContent)
                         <div class="swiper serviceContentCards">
                             <div class="swiper-wrapper">
@@ -453,10 +360,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/01.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/02.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -518,10 +425,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/03.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/04.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -583,10 +490,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/05.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/06.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -648,10 +555,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/07.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/08.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -713,10 +620,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/09.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/10.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -778,10 +685,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/09.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/10.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -843,10 +750,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/13.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/14.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -908,10 +815,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/11.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/12.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -973,10 +880,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/15.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/16.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1038,10 +945,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/13.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/14.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1103,10 +1010,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/15.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/16.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1168,10 +1075,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/17.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/18.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1233,10 +1140,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/19.jpg') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/20.jpg') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">

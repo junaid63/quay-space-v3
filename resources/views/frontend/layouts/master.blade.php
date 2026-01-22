@@ -114,7 +114,7 @@
                                 <div class="plan-options-main">
                                     <div class="plan-option">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="virtualOffice" id="planOption" value="virtualOffice" required>
+                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="virtualOffice" id="virtualOffice" value="virtualOffice" required>
                                             <label class="form-check-label" for="virtualOffice">
                                                 Virtual Office Address
                                             </label>
@@ -123,7 +123,7 @@
                                     </div>
                                     <div class="plan-option">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="directorService" id="planOption" value="directorService">
+                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="directorService" id="directorService" value="directorService">
                                             <label class="form-check-label" for="directorService">
                                                 Director Service Address
                                             </label>
@@ -132,7 +132,7 @@
                                     </div>
                                     <div class="plan-option">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="fullMailbox" id="planOption" value="fullMailbox">
+                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="fullMailbox" id="fullMailbox" value="fullMailbox">
                                             <label class="form-check-label" for="fullMailbox">
                                                 Full Mailbox Service
                                             </label>
@@ -1258,27 +1258,63 @@
                     data: formData,
                     processData: false,
                     contentType: false,
-                    success: function (response) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Success',
-                            text: 'Registration submitted successfully! You will receive a confirmation email shortly.',
-                            showConfirmButton: false,
-                            timer: 3000
-                        });
-                        // Reset form & modal
-                        $('#bookingModal').hide();
-                        $('body').css('overflow', 'auto');
-                        $('#bookingForm')[0].reset();
-                        currentStep = 1;
-                        updateStepIndicator();
+                    // success: function (response) {
+                    //     Swal.fire({
+                    //         icon: 'success',
+                    //         title: 'Success',
+                    //         text: 'Registration submitted successfully! You will receive a confirmation email shortly.',
+                    //         showConfirmButton: false,
+                    //         timer: 3000
+                    //     });
+                    //     // Reset form & modal
+                    //     $('#bookingModal').hide();
+                    //     $('body').css('overflow', 'auto');
+                    //     $('#bookingForm')[0].reset();
+                    //     currentStep = 1;
+                    //     updateStepIndicator();
+                    // },
+                    // error: function (err) {
+                    //     Swal.fire({
+                    //         icon: 'error',
+                    //         title: 'Error',
+                    //         text: 'Something went wrong. Please try again.',
+                    //         showConfirmButton: true
+                    //     });
+                    // },
+                    success:function(response){
+                        if(response['status']=="success"){
+                            Swal.fire({
+                                icon:'success',
+                                title:response['message'],
+                                showConfirmButton:false,
+                                timer:2000,
+                                toast: true,
+                                position: 'center',
+                                backdrop: false,
+                                customClass: {
+                                    popup: 'swal-center-center'
+                                }
+                            });
+                            // Reset form & modal
+                            $('#bookingModal').hide();
+                            $('body').css('overflow', 'auto');
+                            $('#bookingForm')[0].reset();
+                            currentStep = 1;
+                            updateStepIndicator();
+                        }
                     },
-                    error: function (err) {
+                     error: function (err) {
                         Swal.fire({
-                            icon: 'error',
                             title: 'Error',
                             text: 'Something went wrong. Please try again.',
-                            showConfirmButton: true
+                            showConfirmButton:false,
+                            timer:1500,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
                         });
                     }
                 });
@@ -1318,13 +1354,29 @@
                 // STEP 1
                 if (step === 1) {
                     let $selectedPlan = $('.plan-options-main input[name="planOption"]:checked');
+                    // if (!$selectedPlan.length) {
+                    //     Swal.fire({
+                    //         icon: 'error',
+                    //         title: 'Required',
+                    //         text: 'Please select a service to continue',
+                    //         showConfirmButton: false,
+                    //         timer: 2000
+                    //     });
+                    //     return false; 
+                    // }
                     if (!$selectedPlan.length) {
                         Swal.fire({
                             icon: 'error',
                             title: 'Required',
                             text: 'Please select a service to continue',
-                            showConfirmButton: false,
-                            timer: 2000
+                            showConfirmButton:false,
+                            timer:1500,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
                         });
                         return false; 
                     }
