@@ -178,25 +178,32 @@ class FrontendController extends Controller
     public function mailingadvantageSubmit(Request $request)
     {
         $mailingAdvantage = new MailingAdvantage();
-        $mailingAdvantag->service_name = $request->service_name;
-        $mailingAdvantag->company_or_name = $request->full_name;
-        $mailingAdvantag->email = $request->email;	
-        $mailingAdvantag->phone = $request->phone;	
-        $mailingAdvantag->company_registration = $request->company_number;	
-        $mailingAdvantag->company_address = $request->company_address;	
-        $mailingAdvantag->company_message = $request->director_details;
-        $mailingAdvantag->scanning_option = $request->scanning_option;
-        $mailingAdvantag->upload_passport = $request->proof_id;	
-        $mailingAdvantag->upload_utility_bill = $request->proofAddress;	
-        $mailingAdvantag->biling_address	 = $request->billing_address;	
-        $mailingAdvantag->save();
+        $mailingAdvantage->service_name          = $request->service_name;
+        $mailingAdvantage->company_or_name       = $request->full_name;
+        $mailingAdvantage->email                 = $request->email;
+        $mailingAdvantage->phone                 = $request->phone;
+        $mailingAdvantage->company_registration  = $request->company_number;
+        $mailingAdvantage->company_address       = $request->company_address;
+        $mailingAdvantage->company_message       = $request->director_details;
+        $mailingAdvantage->scanning_option        = $request->scanning_option;
+        $mailingAdvantage->biling_address         = $request->billing_address;
+        if ($request->hasFile('proof_id')) {
+            $mailingAdvantage->upload_passport =
+                $request->file('proof_id')->store('mailing-advantage', 'public');
+        }
+        if ($request->hasFile('proof_address')) {
+            $mailingAdvantage->upload_utility_bill =
+                $request->file('proof_address')->store('mailing-advantage', 'public');
+        }
+        $mailingAdvantage->save();
 
         return response()->json([
-            "status"=> "success",
-            "message"=> "Thank you for Mailing Advantage",
-            "redirect"=> "/"
+            "status"   => "success",
+            "message"  => "Thank you for Mailing Advantage",
+            "redirect" => "/"
         ]);
     }
+
     public function booknow()
     {
         $view = 'frontend.booknow';
