@@ -6625,6 +6625,9 @@
     }
     
     @media (min-width: 510px) and (max-width: 820px) {
+        .modal.active {
+            transform: translate(0px, 0px);
+        }
         .stripe-thankyou .our-team .thank-four-borders.first {
             top: 0px;
         }
