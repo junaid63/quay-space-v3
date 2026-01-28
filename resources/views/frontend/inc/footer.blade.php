@@ -10,7 +10,7 @@
                         </a>
                     </div>
                     <p>
-                        Quay Space – Birmingham’s flexible workspace hub. Join hundreds of professionals already enjoying coworking, private offices, and event spaces designed to help businesses grow.
+                        Quay Space Birmingham’s flexible workspace hub. Join hundreds of professionals already enjoying coworking, private offices, and event spaces designed to help businesses grow.
                     </p>
                 </div>
 
@@ -132,7 +132,7 @@
                     <div class="col-lg-6">
                         <div class="copy-right">
                             <p>© <span id="currentYear"></span> <a href="#"> Quay Space
-                                    </a>. All rights reserved.</p>
+                                    </a> All rights reserved.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">

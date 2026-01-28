@@ -99,7 +99,6 @@
                             <div class="step" id="step2">2</div>
                             <div class="step" id="step3">3</div>
                             <div class="step" id="step4">4</div>
-                            <div class="step" id="step5">5</div>
                         </div>
 
                         <form id="bookingForm">
@@ -113,31 +112,64 @@
                                 </div>
                                 <div class="plan-options-main">
                                     <div class="plan-option">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="virtualOffice" id="virtualOffice" value="virtualOffice" required>
-                                            <label class="form-check-label" for="virtualOffice">
-                                                Virtual Office Address
-                                            </label>
-                                        </div>
-                                        <p class="mb-0 mt-2 text-muted">Professional business address with mail handling services</p>
+                                        <label class="form-check-label" for="virtualOffice">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="70" data-servicename="Virtual Office" id="virtualOffice" value="virtualOffice" required>
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="virtualOffice">
+                                                            Virtual Office Address
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Professional business address with mail handling services</p>
+                                                </div>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;70
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </label>
                                     </div>
                                     <div class="plan-option">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="directorService" id="directorService" value="directorService">
-                                            <label class="form-check-label" for="directorService">
-                                                Director Service Address
-                                            </label>
-                                        </div>
-                                        <p class="mb-0 mt-2 text-muted">Official address for company directors</p>
+                                        <label class="form-check-label" for="directorService">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check"> 
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="90" data-servicename="Director Service" id="directorService" value="directorService">
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="directorService">
+                                                            Director Service Address
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Official address for company directors</p>
+                                                </div>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;90
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </label>
                                     </div>
                                     <div class="plan-option">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="planOption" data-servicename="fullMailbox" id="fullMailbox" value="fullMailbox">
-                                            <label class="form-check-label" for="fullMailbox">
-                                                Full Mailbox Service
-                                            </label>
-                                        </div>
-                                        <p class="mb-0 mt-2 text-muted">Complete mail management with scanning and forwarding</p>
+                                        <label class="form-check-label" for="fullMailbox">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="120" data-servicename="Full Mailbox" id="fullMailbox" value="fullMailbox">
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="fullMailbox">
+                                                            Full Mailbox Service
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Complete mail management with scanning and forwarding</p>
+                                                </div>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;120
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -201,25 +233,6 @@
                                         Mail Handling Preferences
                                     </h6>
                                 </div>
-                                
-                                {{-- <div class="mb-3">
-                                    <label class="form-label required-field">Forwarding Frequency</label>
-                                    <div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="forwardingFrequency" id="daily" value="daily" required>
-                                            <label class="form-check-label modal-radio" for="daily">Daily</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="forwardingFrequency" id="weekly" value="weekly">
-                                            <label class="form-check-label modal-radio" for="weekly">Weekly</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="forwardingFrequency" id="monthly" value="monthly">
-                                            <label class="form-check-label modal-radio" for="monthly">Monthly</label>
-                                        </div>
-                                    </div>
-                                </div> --}}
-                                
                                 <div class="mb-3">
                                     <label class="form-label required-field">Scanning Option</label>
                                     <div>
@@ -233,17 +246,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Step 5: Identity Verification & Payment -->
-                            <div class="form-section step-content d-none" id="step5-content">
                                 <div class="icon-title">
                                     <i class="fas fa-id-card"></i>
                                     <h6 class="section-title"> 
                                         Identity Verification (UK Law Requirement)
                                     </h6>
                                 </div>
-                                
                                 <div class="modal-document-upload-main">
                                     <div class="document-upload">
                                         <i class="fas fa-cloud-upload-alt fa-2x mb-2 text-primary"></i>
@@ -257,25 +266,6 @@
                                         <p class="small text-muted">Max file size: 5MB. Accepted formats: JPG, PDF, PNG</p>
                                         <input type="file" id="proofAddress">
                                     </div>
-                                </div>
-                                
-                                <h6 class="icon-title section-title mt-4"><i class="fas fa-credit-card"></i> Payment Details</h6>
-                                
-                                <div class="mb-3">
-                                    <label for="billingName" class="form-label required-field">Billing Name & Address</label>
-                                    <textarea class="form-control" id="billingName" rows="2" required></textarea>
-                                </div>
-                                
-                                <div class="mb-3">
-                                    <label class="form-label required-field mb-md-3">Payment Method</label>
-                                    <div class="document-upload text-start" style="border:2px dashed #f14246">
-                                        <span for="billingName" class="form-label required-field">Credit/Debit Card</span>
-                                    </div>
-
-                                    {{-- <select class="form-select" required>
-                                        <option value="">Select payment method</option>
-                                        <option value="card">Credit/Debit Card</option>
-                                    </select> --}}
                                 </div>
                             </div>
 
@@ -458,7 +448,7 @@
     <!-- side toggle end -->
 
     @include('frontend.inc.header')
-
+    
     <div class="has-smooth" id="has_smooth"></div>
     <div id="smooth-wrapper">
         <div id="smooth-content">
@@ -505,6 +495,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://js.stripe.com/v3/"></script>
     <script>
         $(document).ready(function(){
             $("#newslettersubmit").click(function(event){
@@ -742,22 +733,33 @@
             let selectedTime = null;
 
             // Open modal
-            $("#openModal").on("click", function() {
+            $("#openModal").on("click", function(e) {
+                e.stopPropagation();
                 $("#bookingModal").addClass("active");
-                $(".cd-words-wrapper").addClass("hide"); // 🔴 hide text animation
+                $(".cd-words-wrapper").addClass("hide"); 
             });
 
-            // Close modal
-            $("#closeModal").on("click", function() {
+            // Close modal (button 1)
+            $("#closeModal").on("click", function(e) {
+                e.stopPropagation();
                 $("#bookingModal").removeClass("active");
-                $(".cd-words-wrapper").removeClass("hide"); // ✅ show back text animation
+                $(".cd-words-wrapper").removeClass("hide"); 
             });
 
-            // Close form modal
-            $("#closeFormModal").on("click", function() {
+            // Close modal (button 2)
+            $("#closeFormModal").on("click", function(e) {
+                e.stopPropagation();
                 $("#bookingModal").removeClass("active");
-                $(".cd-words-wrapper").removeClass("hide"); // ✅ show back text animation
+                $(".cd-words-wrapper").removeClass("hide"); 
             });
+
+            // Modal ke andar click par close na ho
+            $("#bookingModal").on("click", function(e) {
+                e.stopPropagation();
+            });
+
+            // Agar kahin document/body click par close laga hua hai to usay hata do
+            $(document).off("click");
 
             // Next to form
             $("#nextToForm").on("click", function() {
@@ -804,351 +806,16 @@
                     $(".cd-words-wrapper").css("display", ""); // ✅ restore animation
                 }
             });
+
+            $('.plan-options-main input[name="planOption"]').on('change', function () {
+                $('.plan-options-main .plan-option').removeClass('active');
+                $(this).closest('.plan-option').addClass('active');
+
+            });
+
         });
     </script>
     <script>
-        // $(document).ready(function () {
-        //     $("#phone").mask('99999-999999');
-        //     let $modal = $('#bookingModal');
-        //     let $openModalBtn = $('#openModalBtn');
-        //     let $closeModalBtn = $('#closeFormModal');
-        //     let $stepContents = $('.step-content');
-        //     let $steps = $('.step');
-        //     let $prevBtn = $('#prevBtn');
-        //     let $nextBtn = $('#nextBtn');
-        //     let $submitBtn = $('#submitBtn');
-        //     let currentStep = 1;
-
-        //     // Close form modal
-        //     $("#closeModalForm").on("click", function() {
-        //         $("#bookingModal").removeClass("active");
-        //     });
-
-        //     // Open modal
-        //     $openModalBtn.on('click', function () {
-        //         $modal.show();
-        //         $('body').css('overflow', 'hidden');
-        //     });
-
-        //     // Close modal
-        //     $closeModalBtn.on('click', function () {
-        //         $modal.hide();
-        //         $('body').css('overflow', 'auto');
-        //     });
-
-        //     // Close modal when clicking outside
-        //     $(window).on('click', function (event) {
-        //         if ($(event.target).is($modal)) {
-        //             $modal.hide();
-        //             $('body').css('overflow', 'auto');
-        //         }
-        //     });
-
-        //     // Initialize steps
-        //     updateStepIndicator();
-
-        //     // Next button click handler
-        //     $nextBtn.on('click', function () {
-        //         if (validateStep(currentStep)) {
-        //             if (currentStep < 5) {
-        //                 currentStep++;
-        //                 updateStepIndicator();
-        //             }
-
-        //             if (currentStep === 5) {
-        //                 $nextBtn.addClass('d-none');
-        //                 $('.submit-button').removeClass('d-none');
-        //             }
-        //         }
-        //     });
-
-        //     // Previous button click handler
-        //     $prevBtn.on('click', function () {
-        //         if (currentStep > 1) {
-        //             currentStep--;
-        //             updateStepIndicator();
-        //             $nextBtn.removeClass('d-none');
-        //             $('.submit-button').addClass('d-none');
-        //         }
-        //     });
-
-        //     $submitBtn.on('click', function () {
-        //         if (validateStep(currentStep)) {
-        //             if (currentStep < 5) {
-        //                 currentStep++;
-        //                 updateStepIndicator();
-        //             }
-        //         }
-        //     });
-
-        //     // Form submission handler
-        //     $('#bookingForm').on('submit', function (e) {
-        //         e.preventDefault();
-        //         if (validateStep(5)) {
-        //             alert('Registration submitted successfully! You will receive a confirmation email shortly.');
-        //             $modal.hide();
-        //             $('body').css('overflow', 'auto');
-        //         }
-        //     });
-
-        //     // Update step indicator and show current step content
-        //     function updateStepIndicator() {
-        //         // Update step indicators
-        //         $steps.each(function (index) {
-        //             if (index + 1 < currentStep) {
-        //                 $(this).removeClass('active').addClass('completed');
-        //             } else if (index + 1 === currentStep) {
-        //                 $(this).addClass('active').removeClass('completed');
-        //             } else {
-        //                 $(this).removeClass('active completed');
-        //             }
-        //         });
-
-        //         // Show current step content
-        //         $stepContents.each(function (index) {
-        //             if (index + 1 === currentStep) {
-        //                 $(this).removeClass('d-none');
-        //             } else {
-        //                 $(this).addClass('d-none');
-        //             }
-        //         });
-
-        //         // Hide previous button on first step
-        //         if (currentStep === 1) {
-        //             $prevBtn.css('visibility', 'hidden');
-        //         } else {
-        //             $prevBtn.css('visibility', 'visible');
-        //         }
-        //     }
-
-        //     // Validate current step
-        //     function validateStep(step) {
-        //         let isValid = true;
-        //         // STEP 1
-        //         if (step === 1) {
-        //             let $selectedPlan = $('input[name="planOption"]:checked');
-        //             if (!$selectedPlan.length) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Please select a service to continue',
-        //                     showConfirmButton:false,
-        //                     timer:2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             // ✅ GET SELECTED SERVICE NAME
-        //             let serviceName = $selectedPlan.data('servicename');
-        //             let serviceValue = $selectedPlan.val();
-
-        //             console.log('Selected Service Name:', serviceName);
-        //             console.log('Selected Service Value:', serviceValue);
-
-        //             // 👉 hidden input / backend use
-        //             $('#service_name').val(serviceName);
-        //         }
-
-        //         // STEP 2
-        //         if (step === 2) {
-
-        //             let fullName = $('#fullName').val().trim();
-        //             let email = $('#email').val().trim();
-        //             let phone = $('#phone').val().trim();
-
-        //             let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        //             let phonePattern = /^\d{5}-\d{6}$/;
-
-        //             if (!fullName) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter Full Name or Company Name',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             if (!email) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter your Email',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             // ✅ FIXED EMAIL CHECK
-        //             if (!emailPattern.test(email)) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Invalid Email',
-        //                     text: 'Please enter a valid email address',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             if (!phone) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter your Phone Number',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             // ✅ PHONE LENGTH VALIDATION
-        //             if (!phonePattern.test(phone)) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Invalid Phone',
-        //                     text: 'Phone number must be exactly 12 digits',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-        //         }
-
-        //         // STEP 3
-        //         if (step === 3) {
-
-        //             let companyNumber = $('#companyRegNumber').val().trim();
-        //             let companyAddress = $('#registeredOfficeAddress').val().trim();
-        //             let companyMessage = $('#directorDetails').val().trim();
-
-        //             if (!companyNumber) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter Company Registration Number',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             if (!companyAddress) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter Company Office Address',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             if (!companyMessage) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter Director Details',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-        //         }
-
-        //         // STEP 4
-        //         if (step === 4) {
-
-        //             let scanningOption = $('input[name="scanningOption"]:checked').val();
-
-        //             // ✅ RADIO BUTTON VALIDATION
-        //             if (!scanningOption) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Please select a scanning option',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-        //         }
-
-        //         // STEP 5
-        //         if (step === 5) {
-        //             // Billing Name validation
-        //             let billingAddress = $('#billingName').val().trim();
-        //             if (!billingAddress) {
-        //                 Swal.fire({
-        //                     icon: 'error',
-        //                     title: 'Required',
-        //                     text: 'Enter Billing Name & Address',
-        //                     showConfirmButton: false,
-        //                     timer: 2000
-        //                 });
-        //                 return false;
-        //             }
-
-        //             // File validation function
-        //             function validateFile(inputId, fileTypeText) {
-        //                 const fileInput = document.getElementById(inputId);
-        //                 if (!fileInput.files || fileInput.files.length === 0) {
-        //                     Swal.fire({
-        //                         icon: 'error',
-        //                         title: 'Required',
-        //                         text: `Upload ${fileTypeText}`,
-        //                         showConfirmButton: false,
-        //                         timer: 2000
-        //                     });
-        //                     return false;
-        //                 }
-
-        //                 const file = fileInput.files[0];
-        //                 const allowedTypes = ['image/jpeg', 'image/png', 'application/pdf'];
-        //                 const maxSize = 5 * 1024 * 1024; // 5MB
-
-        //                 if (!allowedTypes.includes(file.type)) {
-        //                     Swal.fire({
-        //                         icon: 'error',
-        //                         title: 'Invalid File',
-        //                         text: `${fileTypeText} must be JPG, PNG, or PDF`,
-        //                         showConfirmButton: false,
-        //                         timer: 2000
-        //                     });
-        //                     return false;
-        //                 }
-
-        //                 if (file.size > maxSize) {
-        //                     Swal.fire({
-        //                         icon: 'error',
-        //                         title: 'File Too Large',
-        //                         text: `${fileTypeText} must be less than 5MB`,
-        //                         showConfirmButton: false,
-        //                         timer: 2000
-        //                     });
-        //                     return false;
-        //                 }
-
-        //                 return true;
-        //             }
-
-        //             // Validate Proof of ID
-        //             if (!validateFile('proofId', 'Proof of ID')) return false;
-
-        //             // Validate Proof of Address
-        //             if (!validateFile('proofAddress', 'Proof of Address')) return false;
-
-        //         }
-
-
-
-
-        //         return isValid;
-        //     }
-
-        // });
         $(document).ready(function () {
             $("#phone").mask('99999-999999');
             let $modal = $('#bookingModal');
@@ -1192,12 +859,12 @@
             // Next button click handler
             $nextBtn.on('click', function () {
                 if (validateStep(currentStep)) {
-                    if (currentStep < 5) {
+                    if (currentStep < 4) {
                         currentStep++;
                         updateStepIndicator();
                     }
 
-                    if (currentStep === 5) {
+                    if (currentStep === 4) {
                         $nextBtn.addClass('d-none');
                         $('.submit-button').removeClass('d-none');
                     }
@@ -1216,17 +883,24 @@
 
             // Submit button click handler
             $submitBtn.on('click', function () {
-                if (!validateStep(5)) return;
+                if (!validateStep(4)) return;
 
                 // Collect all step data in FormData
                 let formData = new FormData();
 
                 // STEP 1: Service selection
+                // if ($selectedPlan.length) {
+                    //     formData.append('service_name', $selectedPlan.data('servicename'));
+                    //     formData.append('service_value', $selectedPlan.val());
+                    // }
                 let $selectedPlan = $('input[name="planOption"]:checked');
                 if ($selectedPlan.length) {
-                    formData.append('service_name', $selectedPlan.data('servicename'));
-                    formData.append('service_value', $selectedPlan.val());
-                }
+                let serviceName = $selectedPlan.data('servicename'); 
+                let servicePrice = $selectedPlan.data('price'); // ← Add this
+                formData.append('service_name', serviceName);
+                formData.append('service_value', $selectedPlan.val());
+                formData.append('service_price', servicePrice); // ← Add this
+            }
 
                 // STEP 2: Personal info
                 formData.append('full_name', $('#fullName').val().trim());
@@ -1242,7 +916,6 @@
                 formData.append('scanning_option', $('input[name="scanningOption"]:checked').val());
 
                 // STEP 5: Billing info
-                formData.append('billing_address', $('#billingName').val().trim());
                 formData.append('_token', '{{ csrf_token() }}');
 
                 // Files
@@ -1252,43 +925,26 @@
                 if (proofAddressFile) formData.append('proof_address', proofAddressFile);
 
                 // Send data via AJAX
+                $(this).html("Please Wait &nbsp;<i class='fa fa-spinner fa-spin'></i>");
+                $(this).attr("disabled","disabled");
                 $.ajax({
                     url: '/mailingadvantage/submit', 
                     type: 'POST',
                     data: formData,
                     processData: false,
                     contentType: false,
-                    // success: function (response) {
-                    //     Swal.fire({
-                    //         icon: 'success',
-                    //         title: 'Success',
-                    //         text: 'Registration submitted successfully! You will receive a confirmation email shortly.',
-                    //         showConfirmButton: false,
-                    //         timer: 3000
-                    //     });
-                    //     // Reset form & modal
-                    //     $('#bookingModal').hide();
-                    //     $('body').css('overflow', 'auto');
-                    //     $('#bookingForm')[0].reset();
-                    //     currentStep = 1;
-                    //     updateStepIndicator();
-                    // },
-                    // error: function (err) {
-                    //     Swal.fire({
-                    //         icon: 'error',
-                    //         title: 'Error',
-                    //         text: 'Something went wrong. Please try again.',
-                    //         showConfirmButton: true
-                    //     });
-                    // },
                     success:function(response){
                         if(response['status']=="success"){
+                            if(response.stripe_url){
+                                setTimeout(function(){
+                                    window.location.href = response.stripe_url;
+                                }, 10000); // 10 seconds
+                            }
                             Swal.fire({
-                                icon:'success',
+                                // icon:'success',
                                 title:response['message'],
                                 showConfirmButton:false,
                                 timer:2000,
-                                toast: true,
                                 position: 'center',
                                 backdrop: false,
                                 customClass: {
@@ -1301,6 +957,9 @@
                             $('#bookingForm')[0].reset();
                             currentStep = 1;
                             updateStepIndicator();
+                            window.reload();
+                            $("#submitBtn").html("submit");
+                            $("#submitBtn").removeAttr("disabled");
                         }
                     },
                      error: function (err) {
@@ -1308,7 +967,7 @@
                             title: 'Error',
                             text: 'Something went wrong. Please try again.',
                             showConfirmButton:false,
-                            timer:1500,
+                            timer:2000,
                             toast: true,
                             position: 'center',
                             backdrop: false,
@@ -1316,6 +975,8 @@
                                 popup: 'swal-center-center'
                             }
                         });
+                        $("#submitBtn").html("submit");
+                        $("#submitBtn").removeAttr("disabled");
                     }
                 });
             });
@@ -1354,23 +1015,12 @@
                 // STEP 1
                 if (step === 1) {
                     let $selectedPlan = $('.plan-options-main input[name="planOption"]:checked');
-                    // if (!$selectedPlan.length) {
-                    //     Swal.fire({
-                    //         icon: 'error',
-                    //         title: 'Required',
-                    //         text: 'Please select a service to continue',
-                    //         showConfirmButton: false,
-                    //         timer: 2000
-                    //     });
-                    //     return false; 
-                    // }
                     if (!$selectedPlan.length) {
                         Swal.fire({
-                            icon: 'error',
-                            title: 'Required',
-                            text: 'Please select a service to continue',
+                            icon: 'warning',
+                            title: 'Please select a service to continue',
                             showConfirmButton:false,
-                            timer:1500,
+                            timer:2000,
                             toast: true,
                             position: 'center',
                             backdrop: false,
@@ -1394,11 +1044,81 @@
                     let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
                     let phonePattern = /^\d{5}-\d{6}$/;
 
-                    if (!fullName) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter Full Name or Company Name', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!email) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter your Email', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!emailPattern.test(email)) { Swal.fire({ icon: 'error', title: 'Invalid Email', text: 'Please enter a valid email address', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!phone) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter your Phone Number', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!phonePattern.test(phone)) { Swal.fire({ icon: 'error', title: 'Invalid Phone', text: 'Phone number must be exactly 12 digits', showConfirmButton: false, timer: 2000 }); return false; }
+                    if (!fullName) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Enter Full Name or Company Name', 
+                            showConfirmButton: false, 
+                            timer: 2000, 
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!email) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Enter your Email', 
+                            showConfirmButton: false, 
+                            timer: 2000, 
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!emailPattern.test(email)) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Please enter a valid email address', 
+                            showConfirmButton: false, 
+                            timer: 2000, 
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!phone) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Enter your Phone Number', 
+                            showConfirmButton: false, 
+                            timer: 2000, 
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!phonePattern.test(phone)) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Phone number must be exactly 12 digits', 
+                            showConfirmButton: false, 
+                            timer: 2000,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
                 }
 
                 // STEP 3
@@ -1406,34 +1126,125 @@
                     let companyNumber = $('#companyRegNumber').val().trim();
                     let companyAddress = $('#registeredOfficeAddress').val().trim();
                     let companyMessage = $('#directorDetails').val().trim();
-                    if (!companyNumber) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter Company Registration Number', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!companyAddress) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter Company Office Address', showConfirmButton: false, timer: 2000 }); return false; }
-                    if (!companyMessage) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter Director Details', showConfirmButton: false, timer: 2000 }); return false; }
+                    if (!companyNumber) { 
+                        Swal.fire({
+                            icon: 'warning', 
+                            title: 'Enter Company Registration Number', 
+                            showConfirmButton: false, 
+                            timer: 2000,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!companyAddress) { 
+                        Swal.fire({
+                            icon: 'warning', 
+                            title: 'Enter Company Office Address', 
+                            showConfirmButton: false, 
+                            timer: 2000,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
+                    if (!companyMessage) { 
+                        Swal.fire({
+                            icon: 'warning', 
+                            title: 'Enter Director Details', 
+                            showConfirmButton: false, 
+                            timer: 2000,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        }); 
+                        return false; 
+                    }
                 }
 
                 // STEP 4
                 if (step === 4) {
                     let scanningOption = $('input[name="scanningOption"]:checked').val();
-                    if (!scanningOption) { Swal.fire({ icon: 'error', title: 'Required', text: 'Please select a scanning option', showConfirmButton: false, timer: 2000 }); return false; }
-                }
-
-                // STEP 5
-                if (step === 5) {
-                    let billingAddress = $('#billingName').val().trim();
-                    if (!billingAddress) { Swal.fire({ icon: 'error', title: 'Required', text: 'Enter Billing Name & Address', showConfirmButton: false, timer: 2000 }); return false; }
+                    if (!scanningOption) { 
+                        Swal.fire({ 
+                            icon: 'warning', 
+                            title: 'Please select a scanning option', 
+                            showConfirmButton: false, 
+                            timer: 2000,
+                            toast: true,
+                            position: 'center',
+                            backdrop: false,
+                            customClass: {
+                                popup: 'swal-center-center'
+                            }
+                        });
+                        return false; 
+                    }
 
                     function validateFile(inputId, fileTypeText) {
                         const fileInput = document.getElementById(inputId);
                         if (!fileInput.files || fileInput.files.length === 0) {
-                            Swal.fire({ icon: 'error', title: 'Required', text: `Upload ${fileTypeText}`, showConfirmButton: false, timer: 2000 }); return false; }
+                            Swal.fire({ 
+                                icon: 'warning',
+                                title: `Upload ${fileTypeText}`, 
+                                showConfirmButton: false, 
+                                timer: 2000,
+                                toast: true,
+                                position: 'center',
+                                backdrop: false,
+                                customClass: {
+                                    popup: 'swal-center-center'
+                                }
+                            }); 
+                            return false; 
+                        }
                         const file = fileInput.files[0];
                         const allowedTypes = ['image/jpeg', 'image/png', 'application/pdf'];
                         const maxSize = 5 * 1024 * 1024;
-                        if (!allowedTypes.includes(file.type)) { Swal.fire({ icon: 'error', title: 'Invalid File', text: `${fileTypeText} must be JPG, PNG, or PDF`, showConfirmButton: false, timer: 2000 }); return false; }
-                        if (file.size > maxSize) { Swal.fire({ icon: 'error', title: 'File Too Large', text: `${fileTypeText} must be less than 5MB`, showConfirmButton: false, timer: 2000 }); return false; }
+                        if (!allowedTypes.includes(file.type)) { 
+                            Swal.fire({ 
+                                icon: 'warning',
+                                title: `${fileTypeText} must be JPG, PNG, or PDF`, 
+                                showConfirmButton: false, 
+                                timer: 2000,
+                                toast: true,
+                                position: 'center',
+                                backdrop: false,
+                                customClass: {
+                                    popup: 'swal-center-center'
+                                }
+                            }); 
+                            return false; 
+                        }
+                        if (file.size > maxSize) { S
+                            wal.fire({ 
+                                icon: 'warning', 
+                                title: 'File Too Large', 
+                                text: `${fileTypeText} must be less than 5MB`, 
+                                showConfirmButton: false, 
+                                timer: 2000,
+                                toast: true,
+                                position: 'center',
+                                backdrop: false,
+                                customClass: {
+                                    popup: 'swal-center-center'
+                                }
+                            }); 
+                            return false; 
+                        }
                         return true;
                     }
-
                     if (!validateFile('proofId', 'Proof of ID')) return false;
                     if (!validateFile('proofAddress', 'Proof of Address')) return false;
                 }
