@@ -41,7 +41,7 @@ Quay Space | Blog
                                         <div class="blog-meta">
                                             @php
                                                 $createdat = $blog->created_at;
-                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('F - d - Y');
+                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
                                             @endphp
                                             <span class="blog-date">{{ $timeformat }}</span>
                                             <span class="blog-category">{{ ucwords($blog->sub_title) }}</span>
@@ -86,7 +86,7 @@ Quay Space | Blog
                                             </h4>
                                             @php
                                                 $createdat = $blog->created_at;
-                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('F - d - Y');
+                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
                                             @endphp
                                             <div class="d-flex gap-2 justify-content-end">
                                                 <i class="fa-regular fa-calendar"></i>

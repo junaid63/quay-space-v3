@@ -17,7 +17,8 @@ Quay Space | Blog
         <div class="container large">
             <div class="page-title-area-inner section-spacing-top">
                 <div class="page-title-wrapper">
-                    <h2 class="page-title fade-anim colored-text-layer" id="colorful-title">{{ ucwords(implode(' ', array_slice(explode(' ', $blogdetails->title), 0, 3))) }}</h2>
+                    {{-- <h2 class="page-title fade-anim colored-text-layer" id="colorful-title">{{ ucwords(implode(' ', array_slice(explode(' ', $blogdetails->title), 0, 3))) }}</h2> --}}
+                    <h2 class="page-title fade-anim colored-text-layer" id="colorful-title">{{ ucwords(implode(' ', array_slice(explode(' ', $blogdetails->title), 0, 5))) }}</h2>
                 </div>
             </div>
         </div>
@@ -34,7 +35,7 @@ Quay Space | Blog
                             <div class="blog-details-content">
                                 @php
                                     $createdat = $blogdetails->created_at;
-                                    $timeformat = \Carbon\Carbon::parse($createdat)->format('F - d - Y');
+                                    $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
                                 @endphp
                                 <div class="blog-details-meta">
                                     <span class="blog-details-date">{{ $timeformat }}</span>
@@ -65,7 +66,7 @@ Quay Space | Blog
                                         <div class="recent-post-content">
                                                 @php
                                                 $createdat = $blog->created_at;
-                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('F - d - Y');
+                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
                                             @endphp
                                             <div class="recent-post-content">
                                                 <h4>
