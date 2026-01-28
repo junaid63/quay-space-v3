@@ -76,14 +76,14 @@ Quay Space | Services
                                     <i class="fa-regular fa-phone-volume"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Talk to us now:</label>
-                                        <a href="tel:+44 121 269 3637">+44 121 269 3637</a>
+                                        <a href="tel:{{ setting('site.phone') }}">{{ setting('site.phone') }}</a>
                                     </div>
                                 </div>
                                 <div class="service-contacts">
                                     <i class="fa-regular fa-envelope"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Connect with us:</label>
-                                        <a href="mailto:info@quay-space.co.uk">info@quay-space.co.uk</a>
+                                        <a href="mailto:{{ setting('site.gmail') }}">{{ setting('site.gmail') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -118,14 +118,14 @@ Quay Space | Services
                                     <i class="fa-regular fa-phone-volume"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Talk to us now:</label>
-                                        <a href="tel:+44 121 269 3637">+44 121 269 3637</a>
+                                        <a href="tel:{{ setting('site.phone') }}">{{ setting('site.phone') }}</a>
                                     </div>
                                 </div>
                                 <div class="service-contacts">
                                     <i class="fa-regular fa-envelope"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Connect with us:</label>
-                                        <a href="mailto:info@quay-space.co.uk">info@quay-space.co.uk</a>
+                                        <a href="mailto:{{ setting('site.email') }}">{{ setting('site.gmail') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@ Quay Space | Services
                                                     Not sure which office setup suits you best? Our expert advisors will guide you through the options and help you choose the right solution.
                                                 </p>
                                             </div>
-                                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                            <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
                                                 <div class="icon-para">
                                                     <i class="fa-solid fa-headset"></i>
                                                     <span>Free 1:1 consultation</span>

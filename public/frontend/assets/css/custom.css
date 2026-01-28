@@ -2862,7 +2862,8 @@
     }
     
     .services-cards-area .services-cards .cards-content .service-card-points {
-        min-height: 50px;
+        /* min-height: 50px; */
+        min-height: 75px;
     }
     
     .services-cards .cards-content .need-help-div {
