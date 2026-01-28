@@ -195,7 +195,7 @@ Quay Space | About Us
                         </div>
                         <div class="para word-anim">
                             <p>
-                                At Quay Space, we believe a workspace should be more than four walls and a desk — it should be a community that inspires growth, collaboration, and innovation.
+                                At Quay Space, we believe a workspace should be more than four walls and a desk it should be a community that inspires growth, collaboration, and innovation.
                             </p>
                             <p>
                                 Based on Birmingham’s iconic Broad Street with stunning canal-side views, our spaces combine modern facilities with a welcoming environment designed to suit freelancers, entrepreneurs, start-ups, and established businesses alike.
@@ -204,7 +204,7 @@ Quay Space | About Us
                                 Whether you need a hot desk for a day, a fully serviced private office, or an event venue for your team, Quay Space gives you flexibility without compromise.
                             </p>
                             <p>
-                                Our mission is simple: to create spaces that help businesses flourish while making work feel inspiring, productive, and connected.
+                                Our mission is simple to create spaces that help businesses flourish while making work feel inspiring, productive, and connected.
                             </p>
                         </div>
                     </div>

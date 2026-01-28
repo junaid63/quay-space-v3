@@ -13,6 +13,7 @@ use App\Http\Controllers\SpacetypeController;
 use App\Http\Controllers\AmenitiesContorller;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\StripeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[FrontendController::class, 'index'])->name('index');
@@ -34,6 +35,11 @@ Route::get('/360-view',[FrontendController::class, 'threesixty'])->name('threesi
 Route::get('/360-detail-page',[FrontendController::class, 'threesixty_detail'])->name('threesixty_detail');
 
 Route::post('/mailingadvantage/submit', [FrontendController::class, 'mailingadvantageSubmit'])->name('mailingadvantageSubmit');
+Route::get('/success',[FrontendController::class, 'success'])->name('success');
+
+Route::get('/checkout', [StripeController::class, 'checkoutForm']);
+Route::post('/checkout', [StripeController::class, 'createCheckoutSession']);
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

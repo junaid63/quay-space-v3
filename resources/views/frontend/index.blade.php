@@ -445,7 +445,7 @@ Quay Space | Home
                     <div class="works-wrapper-1 fade-anim">
                         <div class="work-box" data-target="co-working">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" alt="Co-Working Section Img">
@@ -463,7 +463,7 @@ Quay Space | Home
                         </div>
                         <div class="work-box" data-target="private-office">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" alt="Private Office Section Img">
@@ -481,7 +481,7 @@ Quay Space | Home
                         </div>
                         <div class="work-box" data-target="office-space">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" alt="Office Space Section Img">
@@ -499,7 +499,7 @@ Quay Space | Home
                         </div>
                         <div class="work-box" data-target="event-space">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" alt="Event Space Section Img">
@@ -517,7 +517,7 @@ Quay Space | Home
                         </div>
                         <div class="work-box" data-target="virtual-office">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" alt="Virtual Office Section Img">
@@ -535,7 +535,7 @@ Quay Space | Home
                         </div>
                         <div class="work-box" data-target="meeting-rooms">
                             <div class="thumb">
-                                <div class="image scale" data-cursor-text="view more">
+                                <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" alt="Meeting Room Section Img">
@@ -1198,166 +1198,82 @@ Quay Space | Home
 @section('js')
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     const floorButtons = document.querySelectorAll('.threesixty-button button');
-        //     const iframe = document.querySelector('.threesixty-view iframe');
-        //     const floorInfo = document.querySelector('.floor-info');
-        //     const loadingIndicator = document.querySelector('.loading-indicator');
-            
-        //     // Floor information data
-        //     const floorData = {
-        //         second: {
-        //             title: "Second Floor",
-        //             description: "This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings."
-        //         },
-        //         third: {
-        //             title: "Third Floor",
-        //             description: "Home to our executive offices, private meeting rooms, and a dedicated innovation lab for creative brainstorming sessions."
-        //         },
-        //         seven: {
-        //             title: "Seventh Floor",
-        //             description: "The seventh floor offers panoramic views of the city and houses our main auditorium, training center, and multimedia studio."
-        //         },
-        //         eight: {
-        //             title: "Eighth Floor",
-        //             description: "Our top floor features a rooftop garden, wellness center, and a premium dining area for employees and special guests."
-        //         }
-        //     };
-            
-        //     // Add click event listeners to buttons
-        //     floorButtons.forEach(button => {
-        //         button.addEventListener('click', function() {
-        //             // Remove active class from all buttons
-        //             floorButtons.forEach(btn => btn.classList.remove('active'));
-                    
-        //             // Add active class to clicked button
-        //             this.classList.add('active');
-                    
-        //             // Get floor data
-        //             const floor = this.getAttribute('data-floor');
-        //             const src = this.getAttribute('data-src');
-                    
-        //             // Show loading indicator
-        //             loadingIndicator.classList.add('show');
-        //             iframe.style.opacity = '0';
-                    
-        //             // Update iframe source after a short delay to show loading animation
-        //             setTimeout(() => {
-        //                 iframe.src = src;
-                        
-        //                 // Update floor information
-        //                 floorInfo.querySelector('h3').textContent = floorData[floor].title;
-        //                 floorInfo.querySelector('p').textContent = floorData[floor].description;
-                        
-        //                 // Hide loading indicator when iframe loads
-        //                 iframe.onload = function() {
-        //                     loadingIndicator.classList.remove('show');
-        //                     iframe.style.opacity = '1';
-                            
-        //                     // Show floor info with animation
-        //                     floorInfo.classList.remove('show');
-        //                     setTimeout(() => {
-        //                         floorInfo.classList.add('show');
-        //                     }, 300);
-        //                 };
-        //             }, 500);
-        //         });
-        //     });
-            
-        //     // Hide floor info after 5 seconds
-        //     setTimeout(() => {
-        //         floorInfo.classList.remove('show');
-        //     }, 5000);
-            
-        //     // Show floor info on hover
-        //     iframe.addEventListener('mouseenter', () => {
-        //         floorInfo.classList.add('show');
-        //     });
-            
-        //     // Hide floor info when not hovering
-        //     iframe.addEventListener('mouseleave', () => {
-        //         setTimeout(() => {
-        //             floorInfo.classList.remove('show');
-        //         }, 1000);
-        //     });
-        // });
         document.addEventListener('DOMContentLoaded', function() {
-    const floorButtons = document.querySelectorAll('.threesixty-button button');
-    const iframe = document.querySelector('.threesixty-view iframe');
-    const floorInfo = document.querySelector('.floor-info');
-    const loadingIndicator = document.querySelector('.loading-indicator');
+            const floorButtons = document.querySelectorAll('.threesixty-button button');
+            const iframe = document.querySelector('.threesixty-view iframe');
+            const floorInfo = document.querySelector('.floor-info');
+            const loadingIndicator = document.querySelector('.loading-indicator');
 
-    // Floor info content
-    const floorData = {
-        second: {
-            title: "Second Floor",
-            description: "This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings."
-        },
-        third: {
-            title: "Third Floor",
-            description: "Home to our executive offices, private meeting rooms, and a dedicated innovation lab for creative brainstorming sessions."
-        },
-        seven: {
-            title: "Seventh Floor",
-            description: "The seventh floor offers panoramic views of the city and houses our main auditorium, training center, and multimedia studio."
-        },
-        eight: {
-            title: "Eighth Floor",
-            description: "Our top floor features a rooftop garden, wellness center, and a premium dining area for employees and special guests."
-        }
-    };
+            // Floor info content
+            const floorData = {
+                second: {
+                    title: "Second Floor",
+                    description: "This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings."
+                },
+                third: {
+                    title: "Third Floor",
+                    description: "Home to our executive offices, private meeting rooms, and a dedicated innovation lab for creative brainstorming sessions."
+                },
+                seven: {
+                    title: "Seventh Floor",
+                    description: "The seventh floor offers panoramic views of the city and houses our main auditorium, training center, and multimedia studio."
+                },
+                eight: {
+                    title: "Eighth Floor",
+                    description: "Our top floor features a rooftop garden, wellness center, and a premium dining area for employees and special guests."
+                }
+            };
 
-    // Function to load floor
-    function loadFloor(button) {
-        const floor = button.getAttribute('data-floor');
-        const src = button.getAttribute('data-src');
+            // Function to load floor
+            function loadFloor(button) {
+                const floor = button.getAttribute('data-floor');
+                const src = button.getAttribute('data-src');
 
-        if (!src) {
-            console.error('No valid src for floor:', floor);
-            return;
-        }
+                if (!src) {
+                    console.error('No valid src for floor:', floor);
+                    return;
+                }
 
-        // Update active button
-        floorButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+                // Update active button
+                floorButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-        // Show loading indicator
-        loadingIndicator.classList.add('show');
-        iframe.style.opacity = '0';
+                // Show loading indicator
+                loadingIndicator.classList.add('show');
+                iframe.style.opacity = '0';
 
-        // Update iframe src
-        iframe.src = src;
+                // Update iframe src
+                iframe.src = src;
 
-        // When iframe loads
-        iframe.onload = function() {
-            loadingIndicator.classList.remove('show');
-            iframe.style.opacity = '1';
+                // When iframe loads
+                iframe.onload = function() {
+                    loadingIndicator.classList.remove('show');
+                    iframe.style.opacity = '1';
 
-            // Update floor info
-            if(floorData[floor]) {
-                floorInfo.querySelector('h3').textContent = floorData[floor].title;
-                floorInfo.querySelector('p').textContent = floorData[floor].description;
+                    // Update floor info
+                    if(floorData[floor]) {
+                        floorInfo.querySelector('h3').textContent = floorData[floor].title;
+                        floorInfo.querySelector('p').textContent = floorData[floor].description;
+                    }
+
+                    // Show floor info with animation
+                    floorInfo.classList.remove('show');
+                    setTimeout(() => floorInfo.classList.add('show'), 200);
+                };
             }
 
-            // Show floor info with animation
-            floorInfo.classList.remove('show');
-            setTimeout(() => floorInfo.classList.add('show'), 200);
-        };
-    }
+            // Add click event
+            floorButtons.forEach(button => {
+                button.addEventListener('click', () => loadFloor(button));
+            });
 
-    // Add click event
-    floorButtons.forEach(button => {
-        button.addEventListener('click', () => loadFloor(button));
-    });
+            // Auto-hide floor info after 5s
+            setTimeout(() => floorInfo.classList.remove('show'), 5000);
 
-    // Auto-hide floor info after 5s
-    setTimeout(() => floorInfo.classList.remove('show'), 5000);
-
-    // Show info on iframe hover
-    iframe.addEventListener('mouseenter', () => floorInfo.classList.add('show'));
-    iframe.addEventListener('mouseleave', () => setTimeout(() => floorInfo.classList.remove('show'), 1000));
-});
-
+            // Show info on iframe hover
+            iframe.addEventListener('mouseenter', () => floorInfo.classList.add('show'));
+            iframe.addEventListener('mouseleave', () => setTimeout(() => floorInfo.classList.remove('show'), 1000));
+        });
     </script>
     <script>
         document.querySelectorAll(".icon-content").forEach(card => {

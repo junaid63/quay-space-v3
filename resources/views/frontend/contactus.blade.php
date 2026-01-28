@@ -33,9 +33,9 @@ Quay Space | Contact Us
                 <div class="section-header fade-anim">
                     <div class="section-title-wrapper">
                         <div class="title-wrapper">
-                            <h2 class="section-title text-center font-sequelsans-romanbody">
+                            {{-- <h2 class="section-title text-center font-sequelsans-romanbody">
                                 Get in touch
-                            </h2>
+                            </h2> --}}
                             <p class="text text-black py-3">
                                 At Quay Space, we’re always excited to hear from you. Whether you’re curious about our coworking spaces, private offices, meeting rooms, or virtual office services, our team is here to help.
                             </p>
