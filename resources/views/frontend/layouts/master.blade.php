@@ -112,58 +112,64 @@
                                 </div>
                                 <div class="plan-options-main">
                                     <div class="plan-option">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="title-para">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="planOption" data-price="70" data-servicename="Virtual Office" id="virtualOffice" value="virtualOffice" required>
-                                                    <label class="form-check-label" for="virtualOffice">
-                                                        Virtual Office Address
-                                                    </label>
+                                        <label class="form-check-label" for="virtualOffice">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="70" data-servicename="Virtual Office" id="virtualOffice" value="virtualOffice" required>
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="virtualOffice">
+                                                            Virtual Office Address
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Professional business address with mail handling services</p>
                                                 </div>
-                                                <p class="mb-0 mt-2 text-muted">Professional business address with mail handling services</p>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;70
+                                                    </h2>
+                                                </div>
                                             </div>
-                                            <div class="price">
-                                                <h2 class="section-title text-black text-center">
-                                                    &pound;70
-                                                </h2>
-                                            </div>
-                                        </div>
+                                        </label>
                                     </div>
                                     <div class="plan-option">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="title-para">
-                                                <div class="form-check"> 
-                                                    <input class="form-check-input" type="radio" name="planOption" data-price="90" data-servicename="Director Service" id="directorService" value="directorService">
-                                                    <label class="form-check-label" for="directorService">
-                                                        Director Service Address
-                                                    </label>
+                                        <label class="form-check-label" for="directorService">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check"> 
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="90" data-servicename="Director Service" id="directorService" value="directorService">
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="directorService">
+                                                            Director Service Address
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Official address for company directors</p>
                                                 </div>
-                                                <p class="mb-0 mt-2 text-muted">Official address for company directors</p>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;90
+                                                    </h2>
+                                                </div>
                                             </div>
-                                            <div class="price">
-                                                <h2 class="section-title text-black text-center">
-                                                    &pound;90
-                                                </h2>
-                                            </div>
-                                        </div>
+                                        </label>
                                     </div>
                                     <div class="plan-option">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="title-para">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="planOption" data-price="120" data-servicename="Full Mailbox" id="fullMailbox" value="fullMailbox">
-                                                    <label class="form-check-label" for="fullMailbox">
-                                                        Full Mailbox Service
-                                                    </label>
+                                        <label class="form-check-label" for="fullMailbox">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="title-para">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="planOption" data-price="120" data-servicename="Full Mailbox" id="fullMailbox" value="fullMailbox">
+                                                        <div class="form-check-label padding-0 ps-md-0 ps-0" for="fullMailbox">
+                                                            Full Mailbox Service
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-muted">Complete mail management with scanning and forwarding</p>
                                                 </div>
-                                                <p class="mb-0 mt-2 text-muted">Complete mail management with scanning and forwarding</p>
+                                                <div class="price">
+                                                    <h2 class="section-title text-center">
+                                                        &pound;120
+                                                    </h2>
+                                                </div>
                                             </div>
-                                            <div class="price">
-                                                <h2 class="section-title text-black text-center">
-                                                    &pound;120
-                                                </h2>
-                                            </div>
-                                        </div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

@@ -4409,10 +4409,6 @@
     div:where(.swal2-container) h2:where(.swal2-title) {
         color: white!important;
     }
-    #bookingModal .price .section-title {
-        font-size: 40px;
-        font-weight: 700;
-    }
     /* Modern Gradient Header */
     .stripe-thankyou {
         position: relative;
