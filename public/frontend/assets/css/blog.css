@@ -1042,6 +1042,14 @@
 
 /* Responsive */
 @media (max-width: 510px) {
+    .blog-home-content-img .content {
+        bottom: 10px;
+    }
+    .blog-home-content-img .content p {
+        opacity: 1;
+        max-height: 100%;
+        transform: translateY(10px);
+    }
     .blog-details-content .blog-title-point-para-second ul li,
     .blog-title-point-para-second ul {
         margin-left: 0px;
