@@ -65,4 +65,12 @@
             'sort' => 8,
             'roles' => [1],
         ],
+        [
+            'title' => 'Mailing Advantage',
+            'icon' => 'tabler-mail',
+            'route' => 'dashboard.mailingadvantage.index',
+            'active' => 'dashboard.mailingadvantage.index',
+            'sort' => 8,
+            'roles' => [1],
+        ],
     ];
