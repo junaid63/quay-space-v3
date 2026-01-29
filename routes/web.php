@@ -125,6 +125,11 @@ Route::prefix('dashboard')->middleware('auth')->name('dashboard.')->group(functi
         Route::delete('{id}',  [AmenitiesContorller::class, 'destroy'])->name('destroy');
     });
 
+    Route::prefix('mailingadvantage')->name('mailingadvantage.')->group(function () {
+        Route::get('/', [ActivityController::class, 'mailingadvantage'])->name('index');
+        Route::get('/json', [ActivityController::class, 'activity_json'])->name('json');
+    });
+
 });
 Route::post('/password/email', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
 Route::get('password/reset/{token}', function ($token) {return view('auth.reset-password', ['token' => $token]);})->middleware('login')->name('password.reset');

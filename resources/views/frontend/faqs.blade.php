@@ -66,7 +66,7 @@ Quay Space | Faq's
                 </div>
                 <div class="col-lg-5 pb-lg-0 pb-5 order-lg-1 order-0 d-md-none d-lg-flex d-flex">
                     <div class="faq-img custom-sticky ps-lg-0 ps-0">
-                        <img src="{{ url('frontend/assets/imgs/faq/faq.png') }}" alt="Faqs Img">
+                        <img src="{{ url('frontend/assets/imgs/faq/faq-new.png') }}" alt="Faqs Img">
                     </div>
                 </div>
             </div>
