@@ -270,21 +270,21 @@ Quay Space | Home
                         <div class="right-white-space"></div>
                         <div class="first-two-images">
                             <div class="first">
-                                <img src="{{url('frontend/assets/imgs/about/first.jpg')}}" alt="About Img one">
+                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" alt="About Img one">
                             </div>
                             <div class="second">
-                                <img src="{{url('frontend/assets/imgs/about/second.jpg')}}" alt="About Img two">
+                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" alt="About Img two">
                             </div>
                         </div>
                         <div class="third">
-                            <img src="{{url('frontend/assets/imgs/about/third.jpg')}}" alt="About Img three">
+                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" alt="About Img three">
                         </div>
                         <div class="second-two-images">
                             <div class="fourth">
-                                <img src="{{url('frontend/assets/imgs/about/fourth.jpg')}}" alt="About Img four">
+                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" alt="About Img four">
                             </div>
                             <div class="five">
-                                <img src="{{url('frontend/assets/imgs/about/five.jpg')}}" alt="About Img five">
+                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" alt="About Img five">
                             </div>
                         </div>
                         <div class="bottomleft-white-space"></div>
@@ -816,7 +816,7 @@ Quay Space | Home
                         </div>
                         <div class="service-banner-img px-lg-4 order-lg-1 order-0">
                             <div class="service-img image-wrapper image scale position-relative">
-                                <img src="{{url('frontend/assets/imgs/mailing/mailing.webp')}}" alt="Mailing Advantage Img">
+                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new.png')}}" alt="Mailing Advantage Img">
                             </div>
                         </div>
                     </div>
@@ -1012,7 +1012,7 @@ Quay Space | Home
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-lg-6 col-md-6 pe-lg-3 py-md-0 px-0 py-3">
+                    <div class="col-lg-6 col-md-6 pe-lg-3 py-md-0 px-0 py-3">
                         <div class="custom-4-images">
                             <div class="project-section-3__item">
                                 <div class="project-section-3__thumb" data-cursor-text="
@@ -1020,9 +1020,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                    <a href="{{url('frontend/assets/imgs/gallery/9.webp')}}" data-fancybox="gallery">
+                                    <a href="{{url('frontend/assets/imgs/gallery/1.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/9.webp')}}" alt="Gallery six Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.png')}}" alt="Gallery six Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1036,9 +1036,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="{{url('frontend/assets/imgs/gallery/10.webp')}}" data-fancybox="gallery">
+                                    <a href="{{url('frontend/assets/imgs/gallery/2.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/10.webp')}}" alt="Gallery seven Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/2.png')}}" alt="Gallery seven Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1052,9 +1052,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="{{url('frontend/assets/imgs/gallery/11.webp')}}" data-fancybox="gallery">
+                                    <a href="{{url('frontend/assets/imgs/gallery/3.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/11.webp')}}" alt="Gallery eight Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/3.png')}}" alt="Gallery eight Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1068,9 +1068,9 @@ Quay Space | Home
                             <span>View</span>
                         <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                         </div>" data-cursor-class="-big">
-                                    <a href="{{url('frontend/assets/imgs/gallery/12.webp')}}" data-fancybox="gallery">
+                                    <a href="{{url('frontend/assets/imgs/gallery/4.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/12.webp')}}" alt="Gallery nine Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/4.png')}}" alt="Gallery nine Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1079,8 +1079,8 @@ Quay Space | Home
                                 </div>
                             </div>
                         </div>
-                    </div> --}}
-                    {{-- <div class="col-lg-6 col-md-6 px-0">
+                    </div>
+                    <div class="col-lg-6 col-md-6 px-0">
                         <div class="gallery-images one-gallery">
                             <div class="project-section-3__item">
                                 <div class="project-section-3__thumb" data-cursor-text="
@@ -1088,9 +1088,9 @@ Quay Space | Home
                                     <span>View</span>
                                     <div class='arrow'><i class='fa fa-solid fa-arrow-right'></i></div>
                                     </div>" data-cursor-class="-big">
-                                    <a href="{{url('frontend/assets/imgs/gallery/13.webp')}}" data-fancybox="gallery">
+                                    <a href="{{url('frontend/assets/imgs/gallery/5.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/13.webp')}}" alt="Gallery ten Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/5.png')}}" alt="Gallery ten Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1099,7 +1099,7 @@ Quay Space | Home
                                 </div>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
                 
                 {{-- <div class="col-lg-12">

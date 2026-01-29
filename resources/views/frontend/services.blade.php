@@ -76,14 +76,14 @@ Quay Space | Services
                                     <i class="fa-regular fa-phone-volume"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Talk to us now:</label>
-                                        <a href="tel:+44 121 269 3637">+44 121 269 3637</a>
+                                        <a href="tel:{{ setting('site.phone') }}">{{ setting('site.phone') }}</a>
                                     </div>
                                 </div>
                                 <div class="service-contacts">
                                     <i class="fa-regular fa-envelope"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Connect with us:</label>
-                                        <a href="mailto:info@quay-space.co.uk">info@quay-space.co.uk</a>
+                                        <a href="mailto:{{ setting('site.gmail') }}">{{ setting('site.gmail') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -118,14 +118,14 @@ Quay Space | Services
                                     <i class="fa-regular fa-phone-volume"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Talk to us now:</label>
-                                        <a href="tel:+44 121 269 3637">+44 121 269 3637</a>
+                                        <a href="tel:{{ setting('site.phone') }}">{{ setting('site.phone') }}</a>
                                     </div>
                                 </div>
                                 <div class="service-contacts">
                                     <i class="fa-regular fa-envelope"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Connect with us:</label>
-                                        <a href="mailto:info@quay-space.co.uk">info@quay-space.co.uk</a>
+                                        <a href="mailto:{{ setting('site.email') }}">{{ setting('site.gmail') }}</a>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +302,7 @@ Quay Space | Services
                                 <div class="swiper-slide">
                                     <div class="services-cards needhelp-card fade-anim">
                                         <div class="img">
-                                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="Need Help Image">
+                                            <img src="{{ url('frontend/assets/imgs/service/need-help.png') }}" alt="Need Help Image">
                                         </div>
                                         <div class="cards-content">
                                             <div class="cards-title mb-lg-3 mb-2">
@@ -313,7 +313,7 @@ Quay Space | Services
                                                     Not sure which office setup suits you best? Our expert advisors will guide you through the options and help you choose the right solution.
                                                 </p>
                                             </div>
-                                            <div class="d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
+                                            <div class="service-card-points d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
                                                 <div class="icon-para">
                                                     <i class="fa-solid fa-headset"></i>
                                                     <span>Free 1:1 consultation</span>
@@ -360,10 +360,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/01.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-02.png') }}" alt="Service Smarter Second Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/02.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-01.png') }}" alt="Work Smarter first Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -425,10 +425,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/03.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-03.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/04.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-04.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -490,10 +490,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/05.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-05.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/06.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-06.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -555,10 +555,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/07.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-07.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/08.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-08.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -685,10 +685,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/09.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-09.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/10.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-10.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -815,10 +815,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/11.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-11.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/12.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-12.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -945,10 +945,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/13.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-13.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/14.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-14.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1010,10 +1010,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/15.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-15.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/16.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-16.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1075,10 +1075,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/17.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-17.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/18.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-18.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -1140,10 +1140,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="{{ url('frontend/assets/imgs/service/19.jpg') }}" alt="Work Smarter first Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-19.png') }}" alt="Work Smarter first Img">
                         </div>
                         <div class="img-two">
-                            <img src="{{ url('frontend/assets/imgs/service/20.jpg') }}" alt="Service Smarter Second Img">
+                            <img src="{{ url('frontend/assets/imgs/service/new-20.png') }}" alt="Service Smarter Second Img">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
