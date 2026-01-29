@@ -5887,6 +5887,8 @@
             height: 80px;
             left: 38%;
             top: 35%; */
+            width: 100px;
+            height: 100px;
             border: 8px solid white;
         }
         .five-imgs-main .right-white-space,
@@ -6905,6 +6907,8 @@
             top: 77px;
             left: 130px; */
             border: 10px solid white;
+            width: 100px;
+            height: 100px;
         }
         .five-imgs-main .first,
         .five-imgs-main .second,
