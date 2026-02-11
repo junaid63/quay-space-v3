@@ -4,16 +4,28 @@
 <!-- Mirrored from html.ravextheme.com/redox/light/javascript:void(0); by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Aug 2025 06:36:53 GMT -->
 
 <head>
-    @yield('metas')
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Redox HTML Template">
+    <!-- Google Tag Manager -->
+    {{-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-54RDC35J');</script> --}}
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="{{ ucwords(config('app.name')) }}">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:type" content="{{ ucwords(config('app.name')) }}">
+    <meta name="twitter:domain" content="{{ url()->current() }}">
+    {{-- <meta name="google-site-verification" content="7jsJ9BEJBapcGl6N2himlwljiOVnIZBqw5yvxnfudh8" /> --}}
+    @yield('metas')
+    @yield('schema')
 
     <title>@yield('title')</title>
 
-    @yield('css')
     <!-- Fav Icon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{url('frontend/assets/imgs/favicons/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{url('frontend/assets/imgs/favicons/apple-icon-60x60.png')}}">
@@ -39,23 +51,26 @@
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/animate.min.css')}}">
 
-    <!-- Template Main CSS File -->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="{{url('frontend/assets/css/modal.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/style.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/custom.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/blog.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
 
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Calendly badge widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    @yield('css')
+
 </head>
 
 <body class="body-wrapper body-digital-agency font-heading-instrumentsans-medium">
+    @yield('gtag')
 
     {{-- Cookie Start --}}
     <div class="cookie-popup-container" style="display:none;">
