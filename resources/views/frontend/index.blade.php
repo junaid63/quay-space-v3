@@ -1,15 +1,82 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="{{ setting('site.title') }}">
+    <meta name="description" content="{{ setting('site.description') }}">
+    <meta property="og:title" content="{{ setting('site.title') }}">
+    <meta property="og:description" content="{{ setting('site.description') }}">
+    <meta name="twitter:title" content="{{ setting('site.title') }}">
+    <meta name="twitter:description" content="{{ setting('site.description') }}">
 @stop
 
+@section('schema')
+    {{-- <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Granny Annexe Company",
+            "image": "https://www.grannyannexecompany.co.uk/storage/settings/January2026/kDhmeMjTlPGF5t0XVT6y.png",
+            "@id": "",
+            "url": "https://www.grannyannexecompany.co.uk/",
+            "telephone": "0333 444 0376",
+            "priceRange": "£ £ £ £ £ £",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ANX Builds Ltd 128 City Road,",
+                "addressLocality": "London",
+                "postalCode": "EC1V 2NX",
+                "addressCountry": "GB"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 51.5273469,
+                "longitude": -0.0888062
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Monday",
+                "opens": "08:30",
+                "closes": "17:30"
+            },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Tuesday",
+                "opens": "08:30",
+                "closes": "17:30"
+            },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Wednesday",
+                "opens": "08:30",
+                "closes": "17:30"
+            },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Thursday",
+                "opens": "08:30",
+                "closes": "17:30"
+            },{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "08:30",
+                "closes": "17:30"
+            }] 
+        }
+    </script> --}}
+@endsection
+
 @section('title')
-Quay Space | Home
+{{ setting('site.title') }}
+@stop
+
+@section('gtag')
+    {{-- <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZHTHG51SF"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4ZHTHG51SF'); </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54RDC35J"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --> --}}
 @stop
 
 @section('css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" /> 
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @stop
 
@@ -803,96 +870,13 @@ Quay Space | Home
                                     </p>
                                 </li>
                             </ul>
-                            {{-- <div class="all-btn-wrapper fade-anim">
-                                <button class="rr-btn hover-bg-theme btn" id="openModal">
-                                    <span class="btn-wrap">
-                                        <span
-                                            class="text-one">Discover Lifestyle</span>
-                                        <span
-                                            class="text-two">Discover Lifestyle</span>
-                                    </span>
-                                </button>
-                            </div> --}}
                         </div>
                         <div class="service-banner-img px-lg-4 order-lg-1 order-0">
                             <div class="service-img image-wrapper image scale position-relative">
-                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new.png')}}" alt="Mailing Advantage Img">
+                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new-01.webp')}}" alt="Mailing Advantage Img">
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="border-line"></div> --}}
-                    {{-- <div class="service-banner-div">
-                        <div class="service-banner-img px-lg-4">
-                            <div class="service-img image-wrapper image scale position-relative">
-                                <img src="{{url('frontend/assets/imgs/mailing/waterfront.webp')}}" alt>
-                            </div>
-                        </div>
-                        <div class="service-banner-forms">
-                            <div class="four-borders">
-                                <div class="d-flex">
-                                    <div class="border-primary"></div>
-                                    <div class="border-secondary"></div>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="border-third"></div>
-                                    <div class="border-fourth"></div>
-                                </div>
-                            </div>
-                            <span class="section-title service-title word-anim">
-                                The Quay Waterfront Advantage
-                            </span>
-                            <div class="price py-lg-2">
-                                <strong>&pound;100</strong>
-                                <div class="price-month-para">
-                                    <h4>Included with Membership</h4>
-                                    <p>10% offer to buy now.</p>
-                                </div>
-                            </div>
-                            <ul class="features-list">
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <p>
-                                        Inspiring canal-side views across Birmingham
-                                    </p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <p>
-                                        Arrive by boat or enjoy the waterside atmosphere
-                                    </p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <p>
-                                        Exclusive networking events & socials
-                                    </p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <p>
-                                        Premium backdrop for client meetings & team photos
-                                    </p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle"></i>
-                                    <p>
-                                        A workspace designed for wellbeing & productivity
-                                    </p>
-                                </li>
-                            </ul>
-                            <div class="all-btn-wrapper fade-anim">
-                                <button class="rr-btn hover-bg-theme btn" id="openModal">
-                                        <span class="btn-wrap">
-                                            <span
-                                                class="text-one">Discover Lifestyle</span>
-                                            <span
-                                                class="text-two">Discover Lifestyle</span>
-                                        </span>
-                                    </button>
-
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
