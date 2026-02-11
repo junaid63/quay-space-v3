@@ -770,7 +770,7 @@ Quay Space | Home
                                 The Quay Mailing Advantage
                             </span>
                             <div class="price py-lg-2">
-                                <strong>&pound;100</strong>
+                                {{-- <strong>&pound;100</strong> --}}
                                 <div class="price-month-para">
                                     <h4>Included with Membership</h4>
                                     <p>10% offer to buy now.</p>
@@ -803,7 +803,7 @@ Quay Space | Home
                                     </p>
                                 </li>
                             </ul>
-                            <div class="all-btn-wrapper fade-anim">
+                            {{-- <div class="all-btn-wrapper fade-anim">
                                 <button class="rr-btn hover-bg-theme btn" id="openModal">
                                     <span class="btn-wrap">
                                         <span
@@ -812,7 +812,7 @@ Quay Space | Home
                                             class="text-two">Discover Lifestyle</span>
                                     </span>
                                 </button>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="service-banner-img px-lg-4 order-lg-1 order-0">
                             <div class="service-img image-wrapper image scale position-relative">
@@ -1323,7 +1323,10 @@ Quay Space | Home
                     spaceBetween: 20,
                     slidesPerView: 2
                 },
-                1300: {
+                1200: {
+                    slidesPerView: 4
+                },
+                1500: {
                     slidesPerView: 4
                 }
             }
@@ -1345,6 +1348,9 @@ Quay Space | Home
                 },
                 768: {
                     slidesPerView: 3
+                },
+                1200: {
+                    slidesPerView: 5
                 },
                 1300: {
                     slidesPerView: 5
@@ -1369,10 +1375,13 @@ Quay Space | Home
                 768: {
                     slidesPerView: 2
                 },
-                1300: {
-                    slidesPerView: 4
+                1200: {
+                    slidesPerView: 3
                 },
                 1500: {
+                    slidesPerView: 4
+                },
+                1600: {
                     slidesPerView: 5
                 }
             }

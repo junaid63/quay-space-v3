@@ -1241,8 +1241,11 @@ Quay Space | Services
                 980: {
                     slidesPerView: 6
                 },
-                1300: {
+                1200: {
                     slidesPerView: 8
+                },
+                1300: {
+                    slidesPerView: 9
                 },
                 1900: {
                     slidesPerView: 12

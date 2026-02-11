@@ -1042,6 +1042,9 @@
 
 /* Responsive */
 @media (max-width: 510px) {
+    .blog-details-content ul li .blog-details-paraghraph {
+        font-size: 16px;
+    }
     .blog-home-content-img .content {
         bottom: 10px;
     }
@@ -1072,7 +1075,7 @@
         font-size: 30px;
     }
     .recent-post-content .post-date {
-        font-size: 1rem;
+        font-size: 12px;
     }
     .recent-post-content h4 {
         font-size: 16px;

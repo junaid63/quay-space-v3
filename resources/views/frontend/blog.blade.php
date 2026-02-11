@@ -25,7 +25,7 @@ Quay Space | Blog
     </section>
     <!-- page title area end  -->
 
-     <section class="services-section blog-detail-main py-lg-5 py-2">
+     <section class="services-section blog-detail-main py-lg-5 py-md-4 py-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">

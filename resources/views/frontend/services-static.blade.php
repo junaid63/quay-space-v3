@@ -3501,7 +3501,7 @@ Quay Space | Services
                     slidesPerView: 6
                 },
                 1300: {
-                    slidesPerView: 8
+                    slidesPerView: 9
                 },
                 1900: {
                     slidesPerView: 12

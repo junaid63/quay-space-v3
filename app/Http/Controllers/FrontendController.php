@@ -14,6 +14,9 @@ use App\Blog;
 use App\MailingAdvantage;
 use Stripe\Stripe;
 use Stripe\Checkout\Session;
+use Str;
+use App\Jobs\ContactJob;
+
 
 class FrontendController extends Controller
 {
@@ -152,19 +155,37 @@ class FrontendController extends Controller
     }
     public function contactSubmit(Request $request)
     {   
+        $refkey = Str::random(10);
+
         $Data = new Contact();
         $Data->name = $request->name;
         $Data->email = $request->email;
         $Data->phone = $request->phone;
+        $Data->selected_service = $request->service;
         $Data->message = $request->message;
         $Data->save();
+
+        dispatch(new ContactJob($Data->id, $Data->email, "contactuser"));
+        $NOTIFICATION_EMAIL = explode(',' , setting('site.Notification_Email'));
+        foreach($NOTIFICATION_EMAIL as $NE)
+        {
+            dispatch(new ContactJob($Data->id, $NE, "admin"));
+        }
         
         return response()->json([
             "status"=> "success",
             "message"=> "Thank you for Contacting us",
-            "redirect"=> "/"
+            "redirect"=> route('thankyouPage', $refkey) 
         ]);
     }
+    public function thankyouPage($refkey) 
+    {
+        $view = 'frontend.contact-thankyou';
+        $contentpagesget = $this->ContentPagesGet();
+        $amenitiesget = $this->AmenitiesGet();
+        return view($view, compact('contentpagesget','amenitiesget'));
+    }
+
     public function newsletterSubmit(Request $request)
     {
         $newsletter = new Newsletter();
