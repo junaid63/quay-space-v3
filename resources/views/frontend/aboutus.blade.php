@@ -1,6 +1,12 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="">
+    <meta name="description" content="{{ setting('site.description') }}">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="{{ setting('site.description') }}">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="{{ setting('site.description') }}">
 @stop
 
 @section('title')

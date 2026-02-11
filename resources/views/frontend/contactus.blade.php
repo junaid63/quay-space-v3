@@ -118,9 +118,28 @@ Quay Space | Contact Us
                                         <input type="text" id="contactemail" placeholder="Email*">
                                     </div>
                                 </div>
-                                <div class="contact-formfield">
-                                    <input type="text" id="contactphone" placeholder="Phone*">
+                                <div class="d-flex flex-lg-row flex-column w-100 gap-lg-3 gap-4">
+                                    <div class="contact-formfield w-100">
+                                        <input type="text" id="contactphone" placeholder="Phone*">
+                                    </div>
+                                    <div class="contact-formfield w-100">
+                                        <select name="sevices" id="selected_service">
+                                        <option value="0" disabled selected>Select Service*</option>
+                                        <option value="Office Space">Office Space</option>
+                                        <option value="Co-WOrking">Co-WOrking</option>
+                                        <option value="Private Office">Private Office</option>
+                                        <option value="Custom Office">Custom Office</option>
+                                        <option value="Dedicated Desks">Dedicated Desks</option>
+                                        <option value="Virtual Office">Virtual Office</option>
+                                        <option value="Business Address">Business Address</option>
+                                        <option value="Meeting Rooms">Meeting Rooms</option>
+                                        <option value="Event Space">Event Space</option>
+                                        <option value="Workplace Recovery">Workplace Recovery</option>
+                                        <option value="Mailing Advantage">Mailing Advantage</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                
                                 <div class="contact-formfield message">
                                     <input type="text" id="contactmessage" placeholder="Message*">
                                 </div>
@@ -169,6 +188,7 @@ Quay Space | Contact Us
                 var name = $("#contactname").val();
                 var email = $("#contactemail").val();
                 var phone = $("#contactphone").val();
+                var service = $("#selected_service").val();
                 var message = $("#contactmessage").val();
 
                 // Regular expression for email validation
@@ -177,73 +197,88 @@ Quay Space | Contact Us
                 if(name !=""){
                     if(email !=""){
                         if(phone !=""){
-                            if(message !=""){
-                                if(emailPattern.test(email)){
-                                    if(phone.length == 12){
-                                        $(this).html("Please Wait &nbsp;<i class='fa fa-spinner fa-spin'></i>");
-                                        $(this).attr("disabled","disabled");
-                                        $.ajax({
-                                            url:"/contact/submit",
-                                            type:"POST",
-                                            data:{
-                                                name:name,
-                                                email:email,
-                                                phone:phone,
-                                                message:message,
-                                                '_token': '{{ csrf_token() }}',
-                                            },
-                                            success:function(response){
-                                                if(response['status']=="success"){
-                                                    Swal.fire({
-                                                        icon:'success',
-                                                        title:response['message'],
-                                                        showConfirmButton:false,
-                                                        timer:2000,
-                                                        toast: true,
-                                                        position: 'bottom',
-                                                        backdrop: false,
-                                                        customClass: {
-                                                            popup: 'swal-bottom-center'
-                                                        }
-                                                    });
-                                                    $("#contactname").val("");
-                                                    $("#contactemail").val("");
-                                                    $("#contactphone").val("");
-                                                    $("#contactmessage").val("");
-                                                    $("#submit").html("submit");
-                                                    $("#submit").removeAttr("disabled");
-                                                    setTimeout(function(){
-                                                        window.location.href = response['redirect'];
-                                                    },2000);
-                                                }else{
-                                                    if(response['status']=="warning")
+                            if(service != null){
+                                if(message !=""){
+                                    if(emailPattern.test(email)){
+                                        if(phone.length == 12){
+                                            $(this).html("Please Wait &nbsp;<i class='fa fa-spinner fa-spin'></i>");
+                                            $(this).attr("disabled","disabled");
+                                            $.ajax({
+                                                url:"/contact/submit",
+                                                type:"POST",
+                                                data:{
+                                                    name:name,
+                                                    email:email,
+                                                    phone:phone,
+                                                    service:service,
+                                                    message:message,
+                                                    '_token': '{{ csrf_token() }}',
+                                                },
+                                                success:function(response){
+                                                    if(response['status']=="success"){
                                                         Swal.fire({
-                                                        icon:'warning',
-                                                        title:response['message'],
-                                                        showConfirmButton:false,
-                                                        timer:1500,
-                                                        toast: true,
-                                                        position: 'bottom',
-                                                        backdrop: false,
-                                                        customClass: {
-                                                            popup: 'swal-bottom-center'
-                                                        }
+                                                            icon:'success',
+                                                            title:response['message'],
+                                                            showConfirmButton:false,
+                                                            timer:2000,
+                                                            position: 'center',
+                                                            backdrop: false,
+                                                            customClass: {
+                                                                popup: 'swal-bottom-center'
+                                                            }
                                                         });
-                                                    $("#submit").html("submit");
-                                                    $("#submit").removeAttr("disabled");
+                                                        $("#contactname").val("");
+                                                        $("#contactemail").val("");
+                                                        $("#contactphone").val("");
+                                                        $("#selected_service").val("0");
+                                                        $("#contactmessage").val("");
+                                                        $("#submit").html("submit");
+                                                        $("#submit").removeAttr("disabled");
+                                                        setTimeout(function(){
+                                                            window.location.href = response['redirect'];
+                                                        },2000);
+                                                    }else{
+                                                        if(response['status']=="warning")
+                                                            Swal.fire({
+                                                            icon:'warning',
+                                                            title:response['message'],
+                                                            showConfirmButton:false,
+                                                            timer:1500,
+                                                            position: 'center',
+                                                            backdrop: false,
+                                                            customClass: {
+                                                                popup: 'swal-bottom-center'
+                                                            }
+                                                            });
+                                                        $("#submit").html("submit");
+                                                        $("#submit").removeAttr("disabled");
+                                                    }
                                                 }
-                                            }
-                                        });
+                                            });
+                                        }
+                                        else{
+                                            $("#contactphone").focus();
+                                            Swal.fire({
+                                                icon:'warning',
+                                                title:'Enter 12 Digits Number',
+                                                showConfirmButton:false,
+                                                timer:1500,
+                                                position: 'center',
+                                                backdrop: false,
+                                                customClass: {
+                                                    popup: 'swal-bottom-center'
+                                                }
+                                            });
+                                        }
                                     }
                                     else{
-                                        $("#contactphone").focus();
+                                        $("#contactemail").focus();
                                         Swal.fire({
                                             icon:'warning',
-                                            title:'Enter 12 Digits Number',
+                                            title:'Enter a Valid Email',
                                             showConfirmButton:false,
                                             timer:1500,
-                                            toast: true,
-                                            position: 'bottom',
+                                            position: 'center',
                                             backdrop: false,
                                             customClass: {
                                                 popup: 'swal-bottom-center'
@@ -252,14 +287,13 @@ Quay Space | Contact Us
                                     }
                                 }
                                 else{
-                                    $("#contactemail").focus();
+                                    $("#contactmessage").focus();
                                     Swal.fire({
                                         icon:'warning',
-                                        title:'Enter a Valid Email',
+                                        title:'Enter Message',
                                         showConfirmButton:false,
                                         timer:1500,
-                                        toast: true,
-                                        position: 'bottom',
+                                        position: 'center',
                                         backdrop: false,
                                         customClass: {
                                             popup: 'swal-bottom-center'
@@ -268,14 +302,13 @@ Quay Space | Contact Us
                                 }
                             }
                             else{
-                                $("#contactmessage").focus();
+                                $("#selected_service").focus();
                                 Swal.fire({
                                     icon:'warning',
-                                    title:'Enter Message',
+                                    title:'Select Service',
                                     showConfirmButton:false,
                                     timer:1500,
-                                    toast: true,
-                                    position: 'bottom',
+                                    position: 'center',
                                     backdrop: false,
                                     customClass: {
                                         popup: 'swal-bottom-center'
@@ -290,8 +323,7 @@ Quay Space | Contact Us
                                 title:'Enter Phone Number',
                                 showConfirmButton:false,
                                 timer:1500,
-                                toast: true,
-                                position: 'bottom',
+                                position: 'center',
                                 backdrop: false,
                                 customClass: {
                                     popup: 'swal-bottom-center'
@@ -306,8 +338,7 @@ Quay Space | Contact Us
                             title:'Enter Your Email',
                             showConfirmButton:false,
                             timer:1500,
-                            toast: true,
-                            position: 'bottom',
+                            position: 'center',
                             backdrop: false,
                             customClass: {
                                 popup: 'swal-bottom-center'
@@ -322,8 +353,7 @@ Quay Space | Contact Us
                         title:'Enter Your Name',
                         showConfirmButton:false,
                         timer:1500,
-                        toast: true,
-                        position: 'bottom',
+                        position: 'center',
                         backdrop: false,
                            customClass: {
                             popup: 'swal-bottom-center'
