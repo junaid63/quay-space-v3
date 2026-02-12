@@ -4,19 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
 
 class Floor extends Model
 {
-    use LogsActivity , SoftDeletes;
+    use SoftDeletes;
     protected static $logName = 'floors';
     protected $fillable = ['name' , 'slug' , 'number' , 'status'];
-
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()->logAll()->useLogName('floors');
-    }
 
     public static function withstatusget()
     {

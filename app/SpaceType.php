@@ -4,20 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
 use App\Traits\Slug;
 
 class SpaceType extends Model
 {
-    use LogsActivity , SoftDeletes, Slug;
+    use SoftDeletes, Slug;
     protected static $logName = 'spacetype';
     protected $fillable = ['name' , 'slug' , 'description' , 'status'];
-
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()->logAll()->useLogName('spacetype');
-    }
 
     public static function withstatusget()
     {
