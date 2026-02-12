@@ -27,7 +27,7 @@ Quay Space | Calendly
     <div class="container">
         <!-- Calendly Inline Widget -->
         <div class="calendly-inline-widget"
-            data-url="https://calendly.com/afzal-ssfgroup/30min"
+            data-url="https://calendly.com/quayspace/30min"
             style="min-width:320px; height:700px;">
         </div>
     </div>
