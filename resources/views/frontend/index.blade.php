@@ -168,7 +168,7 @@
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Meeting Room -->
-                            <div class="icon-content word-anim" data-target="meeting-rooms">
+                            <div class="icon-content word-anim" data-target="meeting-rooms-birmingham">
                                 <span class="subtitle">Professional Spaces</span>
                                 <h2 class="title">
                                     MEETING ROOMS
@@ -180,7 +180,7 @@
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Private Office -->
-                            <div class="icon-content word-anim" data-target="private-office">
+                            <div class="icon-content word-anim" data-target="private-office-to-rent-birmingham">
                                 <span class="subtitle">Dedicated Workspace</span>
                                 <h2 class="title">
                                     PRIVATE OFFICE
@@ -192,7 +192,7 @@
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Office Space -->
-                            <div class="icon-content word-anim" data-target="custom-office">
+                            <div class="icon-content word-anim" data-target="birmingham-customs-office">
                                 <span class="subtitle">Customisable Offices</span>
                                 <h2 class="title">CUSTOM OFFICE</h2>
                                 <span class="subtitle">For Growing Teams</span>
@@ -202,7 +202,7 @@
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Event Space -->
-                            <div class="icon-content word-anim" data-target="event-space">
+                            <div class="icon-content word-anim" data-target="event-space-birmingham">
                                 <span class="subtitle">Modern Venue</span>
                                 <h2 class="title">
                                     EVENT SPACE
@@ -214,7 +214,7 @@
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Virtual Office -->
-                            <div class="icon-content word-anim" data-target="virtual-office">
+                            <div class="icon-content word-anim" data-target="virtual-office-birmingham-uk">
                                 <span class="subtitle">Business Address</span>
                                 <h2 class="title">
                                     VIRTUAL OFFICE
@@ -519,7 +519,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="private-office">
+                        <div class="work-box" data-target="private-office-to-rent-birmingham">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
@@ -537,7 +537,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="office-space">
+                        <div class="work-box" data-target="office-space-birmingham-uk">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
@@ -555,7 +555,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="event-space">
+                        <div class="work-box" data-target="event-space-birmingham">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
@@ -573,7 +573,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="virtual-office">
+                        <div class="work-box" data-target="virtual-office-birmingham-uk">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
@@ -591,7 +591,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="meeting-rooms">
+                        <div class="work-box" data-target="meeting-rooms-birmingham">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="javscript:void(0);">
