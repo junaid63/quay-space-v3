@@ -361,8 +361,8 @@
             <div class="offset-button">
                 <a href="#" class="rr-btn hover-bg-theme">
                     <span class="btn-wrap">
-                                <span class="text-one">Let's Talk</span>
-                    <span class="text-two">Let's Talk</span>
+                        <span class="text-one">Let's Talk</span>
+                        <span class="text-two">Let's Talk</span>
                     </span>
                 </a>
             </div>
@@ -496,6 +496,8 @@
     <script src="{{url('frontend/assets/js/main.js')}}?ref={{setting('site.css')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
+
+    <!-- Calendly inline widget begin -->
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script type="text/javascript">
         const buttons = document.getElementsByClassName("bookMeetingBtn");
