@@ -26,6 +26,8 @@
 
     <title>@yield('title')</title>
 
+    <!--Canonical -->
+    <link rel="canonical" href="{{ url()->current() }}" />
     <!-- Fav Icon -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{url('frontend/assets/imgs/favicons/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{url('frontend/assets/imgs/favicons/apple-icon-60x60.png')}}">
@@ -50,13 +52,11 @@
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/meanmenu.min.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/vendor/animate.min.css')}}">
-
     <link rel="stylesheet" href="{{url('frontend/assets/css/modal.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/style.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/custom.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/blog.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
-
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
