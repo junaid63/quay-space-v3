@@ -1,11 +1,18 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="{{ $Servicesdetail->meta_title }}">
+    <meta name="description" content="{{ $Servicesdetail->meta_description }}">
+    <meta property="og:title" content="{{ $Servicesdetail->meta_title }}">
+    <meta property="og:description" content="{{ $Servicesdetail->meta_description }}">
+    <meta name="twitter:title" content="{{ $Servicesdetail->meta_title }}">
+    <meta name="twitter:description" content="{{ $Servicesdetail->meta_description }}">
 @stop
 
 @section('title')
-Quay Space | Services
+    {{ $Servicesdetail->meta_title }}
 @stop
+
 
 @section('css')
     <!-- Link Swiper's CSS -->
