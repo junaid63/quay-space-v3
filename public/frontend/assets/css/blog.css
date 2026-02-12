@@ -368,7 +368,7 @@
 }
 
 .sidebar-widget .tags-list a {
-    width: calc((100% / 4) - 10px);
+    width: calc((100% / 3) - 10px);
 }
 .sidebar-widget .tags-list a i {
     /* background: var(--secondary); */
@@ -900,7 +900,7 @@
 }
 
 .sidebar-widget .tags-list a {
-    width: calc((100% / 4) - 10px);
+    width: calc((100% / 3) - 10px);
 }
 .widget-title {
     /* color: var(--secondary); */
@@ -1101,9 +1101,10 @@
     }
     .sidebar-widget .tags-list a i {
         height: 60px;
+        font-size: 35px;
     }
     .sidebar-widget .tags-list a {
-        width: calc((100% / 8) - 10px);
+        width: calc((100% / 3) - 10px);
     }
     .widget-title {
         font-size: 35px;
