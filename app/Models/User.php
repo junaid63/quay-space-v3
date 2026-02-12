@@ -9,13 +9,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 use TCG\Voyager\Models\Role;
 
 class User extends \TCG\Voyager\Models\User
 {
-    use HasApiTokens, HasFactory, Notifiable , LogsActivity;
+    use HasApiTokens, HasFactory, Notifiable;
 
     protected static $logName = 'users';
     public function getActivitylogOptions(): LogOptions
