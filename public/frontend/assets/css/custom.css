@@ -5744,6 +5744,11 @@
     }
 
     @media (max-width: 510px) {
+        .blog-home-content-img .content p {
+            opacity: 1!important;
+            max-height: 120px!important;
+            transform: translateY(0%)!important;
+        }
         .thankyou-main .thankyou-title-desc-icon p {
             font-size: 18px;
         }
@@ -6931,6 +6936,20 @@
     }
     
     @media (min-width: 510px) and (max-width: 820px) {
+        .newsletter-input-button .newsletter-button button {
+            text-wrap: nowrap;
+        }
+        .newsletter-input-button .newsletter-input {
+            width: 70%;
+        }
+        .newsletter-input-button .newsletter-button {
+            width: 30%;
+        }
+        .blog-home-content-img .content p {
+            opacity: 1!important;
+            max-height: 120px!important;
+            transform: translateY(0%)!important;
+        }
         .thankyou-main {
             margin: 0px 0px;
         }
@@ -7837,7 +7856,18 @@
             font-weight: 500;
         }
         .header-p-inline-60 {
-            padding: 0px;
+            padding: 10px 0px;
+        }
+    }
+    @media (min-width: 820px) and (max-width: 920px) {
+        .service-banner-forms {
+            min-height: 320px;
+        }
+        .swiper.ServiceCards {
+            padding: 30px 20px;
+        }
+        .hero-slider {
+            height: 45vh;
         }
     }
 
