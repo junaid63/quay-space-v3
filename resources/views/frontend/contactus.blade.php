@@ -7,6 +7,7 @@
     <meta property="og:description" content="Contact Us at Quay Space – Reach our team about flexible offices and workspace options. Ask questions, book a tour & start your journey with us today.">
     <meta name="twitter:title" content="Contact Us at Quay Space – Get in Touch Today">
     <meta name="twitter:description" content="Contact Us at Quay Space – Reach our team about flexible offices and workspace options. Ask questions, book a tour & start your journey with us today.">
+    <meta name="twitter:domain" content="{{ env("APP_URL") }}">
 @stop
 
 @section('title')

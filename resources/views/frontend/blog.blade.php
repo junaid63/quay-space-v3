@@ -7,6 +7,7 @@
     <meta property="og:description" content="Blogs at Quay Space – Explore expert articles on flexible offices, workspace tips and industry trends. Dive in, learn more & stay ahead with our latest insights today.">
     <meta name="twitter:title" content="Blogs at Quay Space – Read Insights & Stay Inspired">
     <meta name="twitter:description" content="Blogs at Quay Space – Explore expert articles on flexible offices, workspace tips and industry trends. Dive in, learn more & stay ahead with our latest insights today.">
+    <meta name="twitter:domain" content="{{ env("APP_URL") }}">
 @stop
 
 

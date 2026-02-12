@@ -4,8 +4,6 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
 use App\SpaceType;
 use App\Floor;
 use App\Amenity;
@@ -13,14 +11,9 @@ use App\SpaceAmenity;
 
 class Space extends Model
 {
-    use LogsActivity , SoftDeletes;
+    use SoftDeletes;
     protected static $logName = 'space';
     protected $fillable = ['name' , 'floor_id' , 'space_type_id' , 'capacity', 'price_per_day', 'status', 'description', 'created_at'];
-
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()->logAll()->useLogName('space');
-    }
 
     public static function withstatusget()
     {

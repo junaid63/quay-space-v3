@@ -4,21 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\Traits\LogsActivity;
-use Spatie\Activitylog\LogOptions;
 use App\ServiceHeading;
 use App\Traits\Slug;
 
 class Service extends Model
 {
-    use LogsActivity , SoftDeletes, Slug;
+    use SoftDeletes, Slug;
     protected static $logName = 'service';
     protected $fillable = ['title', 'image', 'icon', 'slug' , 'status'];
-
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()->logAll()->useLogName('service');
-    }
 
     public static function withstatusget()
     {
