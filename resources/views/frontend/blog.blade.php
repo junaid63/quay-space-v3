@@ -1,10 +1,17 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="Blogs at Quay Space – Read Insights & Stay Inspired">
+    <meta name="description" content="Blogs at Quay Space – Explore expert articles on flexible offices, workspace tips and industry trends. Dive in, learn more & stay ahead with our latest insights today.">
+    <meta property="og:title" content="Blogs at Quay Space – Read Insights & Stay Inspired">
+    <meta property="og:description" content="Blogs at Quay Space – Explore expert articles on flexible offices, workspace tips and industry trends. Dive in, learn more & stay ahead with our latest insights today.">
+    <meta name="twitter:title" content="Blogs at Quay Space – Read Insights & Stay Inspired">
+    <meta name="twitter:description" content="Blogs at Quay Space – Explore expert articles on flexible offices, workspace tips and industry trends. Dive in, learn more & stay ahead with our latest insights today.">
 @stop
 
+
 @section('title')
-Quay Space | Blog
+    Blogs at Quay Space – Read Insights & Stay Inspired
 @stop
 
 @section('css')

@@ -1,16 +1,16 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
-    <meta name="title" content="">
-    <meta name="description" content="{{ setting('site.description') }}">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="{{ setting('site.description') }}">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="{{ setting('site.description') }}">
+    <meta name="title" content="About Quay Space | Flexible Offices – Book Today">
+    <meta name="description" content="About Quay Space – Discover modern, flexible office space in the heart of the UK. Learn our story, explore our workspace solutions & book a tour today.">
+    <meta property="og:title" content="About Quay Space | Flexible Offices – Book Today">
+    <meta property="og:description" content="About Quay Space – Discover modern, flexible office space in the heart of the UK. Learn our story, explore our workspace solutions & book a tour today.">
+    <meta name="twitter:title" content="About Quay Space | Flexible Offices – Book Today">
+    <meta name="twitter:description" content="About Quay Space – Discover modern, flexible office space in the heart of the UK. Learn our story, explore our workspace solutions & book a tour today.">
 @stop
 
 @section('title')
-Quay Space | About Us
+About Quay Space | Flexible Offices – Book Today
 @stop
 
 @section('css')

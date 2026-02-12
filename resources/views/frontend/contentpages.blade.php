@@ -1,10 +1,16 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="{{ $contentPages->meta_title }}">
+    <meta name="description" content="{{ $contentPages->meta_description }}">
+    <meta property="og:title" content="{{ $contentPages->meta_title }}">
+    <meta property="og:description" content="{{ $contentPages->meta_description }}">
+    <meta name="twitter:title" content="{{ $contentPages->meta_title }}">
+    <meta name="twitter:description" content="{{ $contentPages->meta_description }}">
 @stop
 
 @section('title')
-Quay Space | Privacy Policy
+    {{ $contentPages->meta_title }}
 @stop
 
 @section('css')
