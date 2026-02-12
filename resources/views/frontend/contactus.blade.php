@@ -1,10 +1,16 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="Contact Us at Quay Space – Get in Touch Today">
+    <meta name="description" content="Contact Us at Quay Space – Reach our team about flexible offices and workspace options. Ask questions, book a tour & start your journey with us today.">
+    <meta property="og:title" content="Contact Us at Quay Space – Get in Touch Today">
+    <meta property="og:description" content="Contact Us at Quay Space – Reach our team about flexible offices and workspace options. Ask questions, book a tour & start your journey with us today.">
+    <meta name="twitter:title" content="Contact Us at Quay Space – Get in Touch Today">
+    <meta name="twitter:description" content="Contact Us at Quay Space – Reach our team about flexible offices and workspace options. Ask questions, book a tour & start your journey with us today.">
 @stop
 
 @section('title')
-Quay Space | Contact Us
+    Contact Us at Quay Space – Get in Touch Today
 @stop
 
 @section('css')

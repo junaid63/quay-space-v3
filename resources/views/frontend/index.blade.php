@@ -10,56 +10,42 @@
 @stop
 
 @section('schema')
-    {{-- <script type="application/ld+json">
+    <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Granny Annexe Company",
-            "image": "https://www.grannyannexecompany.co.uk/storage/settings/January2026/kDhmeMjTlPGF5t0XVT6y.png",
-            "@id": "",
-            "url": "https://www.grannyannexecompany.co.uk/",
-            "telephone": "0333 444 0376",
-            "priceRange": "£ £ £ £ £ £",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "ANX Builds Ltd 128 City Road,",
-                "addressLocality": "London",
-                "postalCode": "EC1V 2NX",
-                "addressCountry": "GB"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 51.5273469,
-                "longitude": -0.0888062
-            },
-            "openingHoursSpecification": [{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Monday",
-                "opens": "08:30",
-                "closes": "17:30"
-            },{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Tuesday",
-                "opens": "08:30",
-                "closes": "17:30"
-            },{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Wednesday",
-                "opens": "08:30",
-                "closes": "17:30"
-            },{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Thursday",
-                "opens": "08:30",
-                "closes": "17:30"
-            },{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Friday",
-                "opens": "08:30",
-                "closes": "17:30"
-            }] 
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "QUAY SPACE",
+        "image": "https://www.quay-space.co.uk/storage/settings/December2023/2Jxkorg8HK0giszfQueN.png",
+        "@id": "",
+        "url": "https://www.quay-space.co.uk/",
+        "telephone": "441212693637",
+        "priceRange": "$$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Quayside Tower, Broad St,",
+            "addressLocality": "Birmingham",
+            "postalCode": "B1 2HF",
+            "addressCountry": "GB"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 52.47704100000001,
+            "longitude": -1.9111622
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        } 
         }
-    </script> --}}
+    </script>
 @endsection
 
 @section('title')
@@ -67,12 +53,16 @@
 @stop
 
 @section('gtag')
-    {{-- <!-- Google tag (gtag.js) --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZHTHG51SF"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4ZHTHG51SF'); </script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54RDC35J"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) --> --}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K12Z2DJ2P4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-K12Z2DJ2P4');
+    </script>
+    <!-- Google tag (gtag.js) -->
 @stop
 
 @section('css')

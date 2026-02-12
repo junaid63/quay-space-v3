@@ -1,10 +1,16 @@
 @extends('frontend/layouts/master')
 
 @section('metas')
+    <meta name="title" content="{{ $blogdetails->meta_title }}">
+    <meta name="description" content="{{ $blogdetails->meta_description }}">
+    <meta property="og:title" content="{{ $blogdetails->meta_title }}">
+    <meta property="og:description" content="{{ $blogdetails->meta_description }}">
+    <meta name="twitter:title" content="{{ $blogdetails->meta_title }}">
+    <meta name="twitter:description" content="{{ $blogdetails->meta_description }}">
 @stop
 
 @section('title')
-Quay Space | Blog
+    {{ $blogdetails->meta_title }}
 @stop
 
 @section('css')
