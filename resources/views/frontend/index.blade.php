@@ -7,6 +7,7 @@
     <meta property="og:description" content="{{ setting('site.description') }}">
     <meta name="twitter:title" content="{{ setting('site.title') }}">
     <meta name="twitter:description" content="{{ setting('site.description') }}">
+    <meta name="twitter:domain" content="{{ env("APP_URL") }}">
 @stop
 
 @section('schema')

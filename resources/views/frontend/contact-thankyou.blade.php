@@ -7,6 +7,7 @@
     <meta property="og:description" content="Garden granny annexe UK experts at ANX Builds. Contact our team for pricing, advice or a free consultation. Speak to us today and start your project with confidence.">
     <meta name="twitter:title" content="Garden Granny Annexe UK Contact | ANX Builds Today">
     <meta name="twitter:description" content="Garden granny annexe UK experts at ANX Builds. Contact our team for pricing, advice or a free consultation. Speak to us today and start your project with confidence.">
+    <meta name="twitter:domain" content="{{ env("APP_URL") }}">
 @endsection
 
 @section('title')
