@@ -38,7 +38,9 @@ class FrontendController extends Controller
         $blogs = Blog::get();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','amenitiesget','blogs'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget','amenitiesget','blogs','Servicesget','firstService'));
     }
     public function aboutus()
     {
@@ -120,30 +122,57 @@ class FrontendController extends Controller
 
     }
     
+    // public function services($slug = null)
+    // {
+    //     $view = 'frontend.services';
+    //     $contentpagesget = $this->ContentPagesGet();
+    //     $amenitiesget = $this->AmenitiesGet();
+    //     $Servicesget = Service::where('status', 1)->get();
+
+    //     if ($slug) {
+    //         // Agar slug diya hai to us service ka detail lao
+    //         $Servicesdetail = Service::with('headings.cardContent.cardPoints')->where('slug', $slug)->firstOrFail();
+    //     } else {
+    //         if ($Servicesget->isNotEmpty()) {
+    //             $Servicesdetail = $Servicesget->first();
+    //             // Redirect /services → /services/{first-slug}
+    //             return redirect()->route('services', $Servicesdetail->slug);
+    //         } else {
+    //             return redirect()->route('index');
+    //         }
+    //     }
+
+    //     return view($view, compact('contentpagesget', 'Servicesget', 'Servicesdetail','amenitiesget'));
+    // }
     public function services($slug = null)
     {
         $view = 'frontend.services';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
         $Servicesget = Service::where('status', 1)->get();
-
+        $firstService = $Servicesget->first();
         if ($slug) {
-            // Agar slug diya hai to us service ka detail lao
-            $Servicesdetail = Service::with('headings.cardContent.cardPoints')->where('slug', $slug)->firstOrFail();
+            // slug se service lao
+            $Servicesdetail = Service::with('headings.cardContent.cardPoints')
+                ->where('slug', $slug)
+                ->firstOrFail();
         } else {
-            // Agar slug nahi diya (sirf /services open hua)
             if ($Servicesget->isNotEmpty()) {
                 $Servicesdetail = $Servicesget->first();
-                // Redirect /services → /services/{first-slug}
-                return redirect()->route('services', $Servicesdetail->slug);
             } else {
-                // Agar koi service hi nahi hai → home redirect
                 return redirect()->route('index');
             }
         }
 
-        return view($view, compact('contentpagesget', 'Servicesget', 'Servicesdetail','amenitiesget'));
+        return view($view, compact(
+            'contentpagesget',
+            'Servicesget',
+            'Servicesdetail',
+            'amenitiesget',
+            'firstService'
+        ));
     }
+
 
 
 

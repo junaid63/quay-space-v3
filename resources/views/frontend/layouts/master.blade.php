@@ -398,12 +398,15 @@
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="{{route('services')}}" class="@if(Route::currentRouteName() === 'services') active @endif rr-btn hover-bg-theme custom-menu">
+                       <li>
+                            @php
+                                $firstService = $Servicesget->first();
+                            @endphp
+                            <a href="{{ $firstService ? route('services', $firstService->slug) : '#' }}" 
+                            class="@if(Route::currentRouteName() === 'services') active @endif rr-btn hover-bg-theme custom-menu">
                                 <span class="btn-wrap">
-                                            <span
-                                                class="text-one">Services</span>
-                                <span class="text-two">Services</span>
+                                    <span class="text-one">Services</span>
+                                    <span class="text-two">Services</span>
                                 </span>
                             </a>
                         </li>

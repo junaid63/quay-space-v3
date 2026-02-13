@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Page Not Found</title>
+    <title>Page Not Found | 404</title>
     <link rel="stylesheet" href="{{ url('frontend/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/css/SSF-Global-icon.css') }}">
     <link rel="stylesheet" href="{{ url('frontend/assets/css/custom.css') }}?ref={{ setting('site.css') }}">
-
+    <link rel="stylesheet" href="{{ url('frontend/assets/css/style.css') }}?ref={{ setting('site.css') }}">
     <!--- Favicons Start--->
     <link rel="apple-touch-icon" sizes="57x57" href="{{url('frontend/assets/images/favicon/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{url('frontend/assets/images/favicon/apple-icon-60x60.png')}}">
@@ -59,10 +59,12 @@
                                 Sorry, The page you  are looking for is not found. Something went wrong. Our team has been notified. Please try refreshing the page or visit our homepage to continue.
                             </p>
                         </div>
-                        <div class="slider-btn">
-                            <a class="tj-primary-btn" href="{{ route('index') }}">
-                                <span class="btn-text"><span>Back to Home</span></span>
-                                <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        <div class="all-btn-wrapper fade-anim">
+                            <a href="{{{route('index')}}}" class="rr-btn hover-bg-theme">
+                                <span class="btn-wrap">
+                                        <span class="text-one">Back to Home</span>
+                                <span class="text-two">Back to Home</span>
+                                </span>
                             </a>
                         </div>
                     </div>

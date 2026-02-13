@@ -145,4 +145,5 @@ Route::post('/switch-account', AccountSwitchController::class)->middleware(['aut
 Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
 
 Route::get('/service-detail/{slug}', [FrontendController::class, 'getServiceDetail']);
-Route::get('/{slug?}', [FrontendController::class, 'services'])->name('services');
+// Route::get('service/{slug?}', [FrontendController::class, 'services'])->name('services');
+Route::get('{slug?}', [FrontendController::class, 'services'])->name('services');
