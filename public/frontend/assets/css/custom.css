@@ -5029,7 +5029,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(var(--secondary), var(--primary)), url('../img/banner/background/whychoose-banner-02.webp');
+  background: linear-gradient(#f14246d6, #0495f3d9), url(../imgs/banner/2.jpg);
 }
 .error-main-div {
   width: 100%;
@@ -5046,29 +5046,33 @@
   font-weight: bold;
 }
 .oops-heading {
-  height: 180px;
+  height: 130px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white!important;
+  font-family: var(--bs-body-font-family);
 }
 .error-message span {
   font-weight: 600;
-  letter-spacing: -0.03em;
+  font-family: var(--bs-body-font-family);
+  letter-spacing: 5px;
   text-transform: capitalize;
   color: var(--bs-clr-h-4);
-  line-height: 1.076;
   font-size: 52px;
   margin-bottom: 0;
+  color: white!important;
 }
 .error-para {
-  width: 80%;
+  width: 65%;
 }
 .error-para p {
+  font-family: var(--bs-body-font-family);
+  color: white!important;
   font-size: 24px;
   line-height: 1.555;
   font-weight: 400;
-  color: var(--bs-black);
   margin-bottom: 0;
 }
 
