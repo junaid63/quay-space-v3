@@ -164,7 +164,7 @@
             {{-- <div class="about-area-inner"> --}}
                 <!-- Swiper -->
             <div class="swiper ServiceCards">
-                <div class="swiper-wrapper">
+                {{-- <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="hp-services-cards-main">
                             <!-- Meeting Room -->
@@ -223,7 +223,72 @@
                             </div>
                         </div>
                     </div>
+                </div> --}}
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Meeting Room -->
+                            <div class="icon-content word-anim" data-target="{{ $Servicesget[7]->slug ?? '' }}">
+                                <span class="subtitle">Professional Spaces</span>
+                                <h2 class="title">
+                                    MEETING ROOMS
+                                </h2>
+                                <span class="subtitle">Collaborate & Grow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Private Office -->
+                            <div class="icon-content word-anim" data-target="{{ $Servicesget[2]->slug ?? '' }}">
+                                <span class="subtitle">Dedicated Workspace</span>
+                                <h2 class="title">
+                                    PRIVATE OFFICE
+                                </h2>
+                                <span class="subtitle">Focus & Productivity</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Office Space -->
+                            <div class="icon-content word-anim" data-target="{{ $Servicesget[3]->slug ?? '' }}">
+                                <span class="subtitle">Customisable Offices</span>
+                                <h2 class="title">CUSTOM OFFICE</h2>
+                                <span class="subtitle">For Growing Teams</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Event Space -->
+                            <div class="icon-content word-anim" data-target="{{ $Servicesget[8]->slug ?? '' }}">
+                                <span class="subtitle">Modern Venue</span>
+                                <h2 class="title">
+                                    EVENT SPACE
+                                </h2>
+                                <span class="subtitle">Host with Style</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="hp-services-cards-main">
+                            <!-- Virtual Office -->
+                            <div class="icon-content word-anim" data-target="{{ $Servicesget[5]->slug ?? '' }}">
+                                <span class="subtitle">Business Address</span>
+                                <h2 class="title">
+                                    VIRTUAL OFFICE
+                                </h2>
+                                <span class="subtitle">Work from Anywhere</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -501,10 +566,10 @@
                 </div>
                 <div class="works-wrapper-box">
                     <div class="works-wrapper-1 fade-anim">
-                        <div class="work-box" data-target="co-working">
+                        <div class="work-box" data-target="{{ $Servicesget[1]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[1]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" alt="Co-Working Section Img">
                                     </a>
@@ -519,10 +584,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="private-office-to-rent-birmingham">
+                        <div class="work-box" data-target="{{ $Servicesget[2]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[2]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" alt="Private Office Section Img">
                                     </a>
@@ -537,10 +602,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="office-space-birmingham-uk">
+                        <div class="work-box" data-target="{{ $Servicesget[0]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[0]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" alt="Office Space Section Img">
                                     </a>
@@ -555,10 +620,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="event-space-birmingham">
+                        <div class="work-box" data-target="{{ $Servicesget[8]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[8]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" alt="Event Space Section Img">
                                     </a>
@@ -573,10 +638,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="virtual-office-birmingham-uk">
+                        <div class="work-box" data-target="{{ $Servicesget[5]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[5]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" alt="Virtual Office Section Img">
                                     </a>
@@ -591,10 +656,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="work-box" data-target="meeting-rooms-birmingham">
+                        <div class="work-box" data-target="{{ $Servicesget[7]->slug ?? '' }}">
                             <div class="thumb">
                                 <div class="image scale" data-cursor-text="View More">
-                                    <a href="javscript:void(0);">
+                                    <a href="{{ route('services', $Servicesget[7]->slug ?? '') }}">
                                         <div class="black-shade"></div>
                                         <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" alt="Meeting Room Section Img">
                                     </a>
@@ -1364,26 +1429,73 @@
 
     </script>
     <script>
+        // $(document).ready(function () {
+        //     // ---------- HOME PAGE ----------
+        //     $(document).on("click", ".icon-content", function () {
+        //         var target = $(this).data("target"); 
+        //         if (target) {
+        //             window.location.href = "/services/" + target;
+        //         }
+        //     });
+        //     $(document).on("click", ".work-box", function () {
+        //         var target = $(this).data("target"); 
+        //         if (target) {
+        //             window.location.href = "/services/" + target;
+        //         }
+        //     });
+
+        //     // sirf services page py hi niche ka code run ho
+        //     if (window.location.pathname.startsWith("/services")) {
+        //         // ---------- SERVICE PAGE ----------
+        //         let pathParts = window.location.pathname.split("/");
+        //         let serviceFromPath = pathParts[2];
+        //         let urlParams = new URLSearchParams(window.location.search);
+        //         let serviceFromQuery = urlParams.get("service");
+
+        //         let service = serviceFromPath || serviceFromQuery;
+
+        //         if (service) {
+        //             activateService(service);
+        //         } else if ($(".swiper-slide").length) {
+        //             let $firstService = $(".swiper-slide").first();
+        //             let defaultService = $firstService.data("target");
+
+        //             activateService(defaultService);
+
+        //             window.history.replaceState(null, "", "/services/" + defaultService);
+        //         }
+
+        //         $(".swiper-slide").on("click", function () {
+        //             let targetSlug = $(this).data("target");
+        //             activateService(targetSlug);
+        //             window.history.pushState(null, "", "/services/" + targetSlug);
+        //         });
+
+        //         function activateService(service) {
+        //             $(".services-navber-content").removeClass("active");
+        //             $(".services-section").removeClass("active");
+        //             $(".swiper-slide").removeClass("active");
+
+        //             $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+        //             $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+        //             $(`.${service}`).addClass("active");
+        //         }
+        //     }
+        // });
         $(document).ready(function () {
             // ---------- HOME PAGE ----------
-            $(document).on("click", ".icon-content", function () {
-                var target = $(this).data("target"); 
+            $(document).on("click", ".icon-content, .work-box", function () {
+                var target = $(this).data("target");
                 if (target) {
-                    window.location.href = "/services/" + target;
-                }
-            });
-            $(document).on("click", ".work-box", function () {
-                var target = $(this).data("target"); 
-                if (target) {
-                    window.location.href = "/services/" + target;
+                    window.location.href = "/" + target; // remove /services prefix
                 }
             });
 
-            // sirf services page py hi niche ka code run ho
-            if (window.location.pathname.startsWith("/services")) {
-                // ---------- SERVICE PAGE ----------
+            // ---------- SERVICES PAGE ----------
+            if (window.location.pathname !== "/" && $(".swiper-slide").length) {
+                // Get slug from path (skip leading '/')
                 let pathParts = window.location.pathname.split("/");
-                let serviceFromPath = pathParts[2];
+                let serviceFromPath = pathParts[1]; // now first part after "/" is the slug
                 let urlParams = new URLSearchParams(window.location.search);
                 let serviceFromQuery = urlParams.get("service");
 
@@ -1391,19 +1503,18 @@
 
                 if (service) {
                     activateService(service);
-                } else if ($(".swiper-slide").length) {
+                } else {
                     let $firstService = $(".swiper-slide").first();
                     let defaultService = $firstService.data("target");
-
                     activateService(defaultService);
-
-                    window.history.replaceState(null, "", "/services/" + defaultService);
+                    window.history.replaceState(null, "", "/" + defaultService);
                 }
 
                 $(".swiper-slide").on("click", function () {
                     let targetSlug = $(this).data("target");
+                    if (!targetSlug) return;
                     activateService(targetSlug);
-                    window.history.pushState(null, "", "/services/" + targetSlug);
+                    window.history.pushState(null, "", "/" + targetSlug);
                 });
 
                 function activateService(service) {
@@ -1417,6 +1528,73 @@
                 }
             }
         });
+        // $(document).ready(function () {
+        //     // ---------- HOME PAGE CLICK ----------
+        //     $(document).on("click", ".icon-content, .work-box", function () {
+        //         var target = $(this).data("target");
+        //         if (target) {
+        //             window.location.href = "/" + target;
+        //         }
+        //     });
+
+        //     // ---------- SERVICES LINK FIX ----------
+        //     $("a[href='{{route('services')}}']").on("click", function (e) {
+        //         e.preventDefault(); // prevent default /services route
+
+        //         // get first service slug dynamically
+        //         let $firstService = $(".swiper-slide").first();
+        //         let defaultService = $firstService.data("target");
+
+        //         if (defaultService) {
+        //             window.location.href = "/" + defaultService;
+        //         } else {
+        //             // fallback to / if no service found
+        //             window.location.href = "/";
+        //         }
+        //     });
+
+        //     // ---------- SERVICES PAGE ----------
+        //     if ($(".swiper-slide").length) {
+        //         // get slug from URL
+        //         let pathParts = window.location.pathname.split("/");
+        //         let serviceFromPath = pathParts[1]; // first part after "/" is the slug
+        //         let urlParams = new URLSearchParams(window.location.search);
+        //         let serviceFromQuery = urlParams.get("service");
+
+        //         let service = serviceFromPath || serviceFromQuery;
+
+        //         if (service) {
+        //             activateService(service);
+        //         } else {
+        //             // default to first service
+        //             let $firstService = $(".swiper-slide").first();
+        //             let defaultService = $firstService.data("target");
+        //             if (defaultService) {
+        //                 activateService(defaultService);
+        //                 window.history.replaceState(null, "", "/" + defaultService);
+        //             }
+        //         }
+
+        //         $(".swiper-slide").on("click", function () {
+        //             let targetSlug = $(this).data("target");
+        //             if (!targetSlug) return;
+        //             activateService(targetSlug);
+        //             window.history.pushState(null, "", "/" + targetSlug);
+        //         });
+
+        //         function activateService(service) {
+        //             $(".services-navber-content").removeClass("active");
+        //             $(".services-section").removeClass("active");
+        //             $(".swiper-slide").removeClass("active");
+
+        //             $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+        //             $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+        //             $(`.${service}`).addClass("active");
+        //         }
+        //     }
+        // });
+
+
 
     </script>
 @stop 

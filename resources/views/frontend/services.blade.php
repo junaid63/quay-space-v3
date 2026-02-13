@@ -1290,63 +1290,98 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            // ---------- HOME PAGE ----------
-            $(document).on("click", ".icon-content", function () {
-                var target = $(this).data("target"); // e.g., "meeting-room"
-                if (target) {
-                    // Safe redirect with slug as query param
-                    window.location.href = "/services?service=" + target;
-                }
-            });
+        // $(document).ready(function () {
+        //     // ---------- HOME PAGE ----------
+        //     $(document).on("click", ".icon-content", function () {
+        //         var target = $(this).data("target"); // e.g., "meeting-room"
+        //         if (target) {
+        //             window.location.href = "/services?service=" + target;
+        //         }
+        //     });
 
-            // ---------- SERVICE PAGE ----------
-            let pathParts = window.location.pathname.split("/");
-            // Example: /services/meeting-room → ["", "services", "meeting-room"]
-            let serviceFromPath = pathParts[2];
+        //     // ---------- SERVICE PAGE ----------
+        //     let pathParts = window.location.pathname.split("/");
+        //     let serviceFromPath = pathParts[2];
 
-            let urlParams = new URLSearchParams(window.location.search);
-            let serviceFromQuery = urlParams.get("service");
+        //     let urlParams = new URLSearchParams(window.location.search);
+        //     let serviceFromQuery = urlParams.get("service");
+        //     let service = serviceFromPath || serviceFromQuery;
 
-            // Final service slug check
-            let service = serviceFromPath || serviceFromQuery;
+        //     if (service) {
+        //         activateService(service);
+        //     } else if ($(".swiper-slide").length) {
+        //         let $firstService = $(".swiper-slide").first();
+        //         let defaultService = $firstService.data("target"); 
+        //         activateService(defaultService);
 
-            if (service) {
-                activateService(service);
-            } else if ($(".swiper-slide").length) {
-                // Agar slug URL me nahi hai → pehla wala slug le lo
-                let $firstService = $(".swiper-slide").first();
-                let defaultService = $firstService.data("target"); // e.g. "private-office"
+        //         window.history.replaceState(null, "", "/services?service=" + defaultService);
+        //     }
 
-                activateService(defaultService);
+        //     // ---------- SERVICE PAGE NAVIGATION ----------
+        //     $(".swiper-slide").on("click", function () {
+        //         let targetSlug = $(this).data("target"); // e.g. "custom-space"
 
-                // URL update bina reload
-                window.history.replaceState(null, "", "/services?service=" + defaultService);
-            }
+        //         activateService(targetSlug);
+        //         window.history.pushState(null, "", "/services?service=" + targetSlug);
+        //     });
 
-            // ---------- SERVICE PAGE NAVIGATION ----------
-            $(".swiper-slide").on("click", function () {
-                let targetSlug = $(this).data("target"); // e.g. "custom-space"
+        //     // 🔹 Common function: activate service
+        //     function activateService(service) {
+        //         $(".services-navber-content").removeClass("active");
+        //         $(".services-section").removeClass("active");
+        //         $(".swiper-slide").removeClass("active");
 
-                activateService(targetSlug);
+        //         // Navbar highlight
+        //         $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+        //         $(`.swiper-slide[data-target="${service}"]`).addClass("active");
 
-                // URL update bina reload
-                window.history.pushState(null, "", "/services?service=" + targetSlug);
-            });
+        //         // Section show
+        //         $(`.${service}`).addClass("active");
+        //     }
+        // });
+        // $(document).ready(function () {
+        //     // ---------- HOME PAGE CLICK ----------
+        //     $(document).on("click", ".icon-content, .work-box", function () {
+        //         var target = $(this).data("target");
+        //         if (target) {
+        //             window.location.href = "/" + target;
+        //         }
+        //     });
 
-            // 🔹 Common function: activate service
-            function activateService(service) {
-                $(".services-navber-content").removeClass("active");
-                $(".services-section").removeClass("active");
-                $(".swiper-slide").removeClass("active");
+        //     // ---------- SERVICES PAGE ----------
+        //     if ($(".swiper-slide").length) {
+        //         // get slug from URL
+        //         let pathParts = window.location.pathname.split("/");
+        //         let serviceFromPath = pathParts[1]; // first part after "/" is the slug
+        //         let urlParams = new URLSearchParams(window.location.search);
+        //         let serviceFromQuery = urlParams.get("service");
 
-                // Navbar highlight
-                $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
-                $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+        //         let service = serviceFromPath || serviceFromQuery;
 
-                // Section show
-                $(`.${service}`).addClass("active");
-            }
-        });
+        //         if (service) {
+        //             activateService(service);
+        //         } 
+        //         // now we do NOT auto-load the first service if no slug is present
+        //         // the page can show a default view or empty section until user clicks
+
+        //         $(".swiper-slide").on("click", function () {
+        //             let targetSlug = $(this).data("target");
+        //             if (!targetSlug) return;
+        //             activateService(targetSlug);
+        //             window.history.pushState(null, "", "/" + targetSlug);
+        //         });
+
+        //         function activateService(service) {
+        //             $(".services-navber-content").removeClass("active");
+        //             $(".services-section").removeClass("active");
+        //             $(".swiper-slide").removeClass("active");
+
+        //             $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+        //             $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+        //             $(`.${service}`).addClass("active");
+        //         }
+        //     }
+        // });
+
     </script>
 @stop 
