@@ -16,7 +16,7 @@
 
                 <div class="header__logo order-lg-1 order-md-1 order-0">
                     <a href="{{route('index')}}">
-                        <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" class="normal-logo" alt="imageSite Logo">
+                        <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" class="normal-logo" title="imageSite" alt="imageSite Logo">
                     </a>
                 </div>
 

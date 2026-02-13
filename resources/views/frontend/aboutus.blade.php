@@ -222,21 +222,21 @@ About Quay Space | Flexible Offices – Book Today
                         <div class="right-white-space"></div>
                         <div class="first-two-images fade-anim">
                             <div class="first">
-                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" alt="About img one">
+                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" title="About img one" alt="About img one">
                             </div>
                             <div class="second">
-                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" alt="About img two">test
+                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" title="About img two" alt="About img two">test
                             </div>
                         </div>
                         <div class="third fade-anim">
-                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" alt="About img three">
+                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" title="About img three" alt="About img three">
                         </div>
                         <div class="second-two-images fade-anim">
                             <div class="fourth">
-                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" alt="About img four">
+                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" title="About img four" alt="About img four">
                             </div>
                             <div class="five">
-                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" alt="About img five">
+                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" title="About img five" alt="About img five">
                             </div>
                         </div>
                         <div class="bottomleft-white-space"></div>
@@ -298,7 +298,7 @@ About Quay Space | Flexible Offices – Book Today
                 <div class="banefits-main-div">
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" title="one" alt="one">
                         </div>
                         <div class="content">
                             <span>Cost Savings & Flexibility</span>
@@ -309,7 +309,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" title="two" alt="two">
                         </div>
                         <div class="content">
                             <span>Networking & Community Events</span>
@@ -320,7 +320,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" title="three" alt="three">
                         </div>
                         <div class="content">
                             <span>Perks With The Space</span>
@@ -331,7 +331,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" title="four" alt="four">
                         </div>
                         <div class="content">
                             <span>Central Birmingham Location</span>
@@ -342,7 +342,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" title="five" alt="five">
                         </div>
                         <div class="content">
                             <span>Boost Productivity</span>
@@ -353,7 +353,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" title="six" alt="six">
                         </div>
                         <div class="content">
                             <span>Bring Structure To Your Day</span>
@@ -388,7 +388,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" title="one" alt="one">
                                     </div>
                                     <div class="content">
                                         <span>Cost Savings & Flexibility</span>
@@ -403,7 +403,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" title="two" alt="two">
                                     </div>
                                     <div class="content">
                                         <span>Networking & Community Events</span>
@@ -418,7 +418,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" title="three" alt="three">
                                     </div>
                                     <div class="content">
                                         <span>Perks With The Space</span>
@@ -433,7 +433,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" title="four" alt="four">
                                     </div>
                                     <div class="content">
                                         <span>Central Birmingham Location</span>
@@ -448,7 +448,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" title="five" alt="five">
                                     </div>
                                     <div class="content">
                                         <span>Boost Productivity</span>
@@ -463,7 +463,7 @@ About Quay Space | Flexible Offices – Book Today
                             <div class="banefits-main-div">
                                 <div class="icon-content">
                                     <div class="icon">
-                                        <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" alt="">
+                                        <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" title="six" alt="six">
                                     </div>
                                     <div class="content">
                                         <span>Bring Structure To Your Day</span>
@@ -526,7 +526,7 @@ About Quay Space | Flexible Offices – Book Today
                                     </div>
                                 </div>
                                 <div class="img">
-                                    <img src="{{url('storage/' . $team->card_img )}}" alt="{{ $team->title }} Img">
+                                    <img src="{{url('storage/' . $team->card_img )}}" title="{{ $team->title }}" alt="{{ $team->title }} Img">
                                 </div>
                                 <div class="information-details">
                                     <div class="name">
