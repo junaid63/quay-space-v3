@@ -1429,6 +1429,52 @@
 
     </script>
     <script>
+        $(document).ready(function () {
+            // ---------- HOME PAGE ----------
+            $(document).on("click", ".icon-content, .work-box", function () {
+                var target = $(this).data("target");
+                if (target) {
+                    window.location.href = "/" + target; // remove /services prefix
+                }
+            });
+
+            // ---------- SERVICES PAGE ----------
+            if (window.location.pathname !== "/" && $(".swiper-slide").length) {
+                // Get slug from path (skip leading '/')
+                let pathParts = window.location.pathname.split("/");
+                let serviceFromPath = pathParts[1]; // now first part after "/" is the slug
+                let urlParams = new URLSearchParams(window.location.search);
+                let serviceFromQuery = urlParams.get("service");
+
+                let service = serviceFromPath || serviceFromQuery;
+
+                if (service) {
+                    activateService(service);
+                } else {
+                    let $firstService = $(".swiper-slide").first();
+                    let defaultService = $firstService.data("target");
+                    activateService(defaultService);
+                    window.history.replaceState(null, "", "/" + defaultService);
+                }
+
+                $(".swiper-slide").on("click", function () {
+                    let targetSlug = $(this).data("target");
+                    if (!targetSlug) return;
+                    activateService(targetSlug);
+                    window.history.pushState(null, "", "/" + targetSlug);
+                });
+
+                function activateService(service) {
+                    $(".services-navber-content").removeClass("active");
+                    $(".services-section").removeClass("active");
+                    $(".swiper-slide").removeClass("active");
+
+                    $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
+                    $(`.swiper-slide[data-target="${service}"]`).addClass("active");
+                    $(`.${service}`).addClass("active");
+                }
+            }
+        });
         // $(document).ready(function () {
         //     // ---------- HOME PAGE ----------
         //     $(document).on("click", ".icon-content", function () {
@@ -1482,119 +1528,6 @@
         //         }
         //     }
         // });
-        $(document).ready(function () {
-            // ---------- HOME PAGE ----------
-            $(document).on("click", ".icon-content, .work-box", function () {
-                var target = $(this).data("target");
-                if (target) {
-                    window.location.href = "/" + target; // remove /services prefix
-                }
-            });
-
-            // ---------- SERVICES PAGE ----------
-            if (window.location.pathname !== "/" && $(".swiper-slide").length) {
-                // Get slug from path (skip leading '/')
-                let pathParts = window.location.pathname.split("/");
-                let serviceFromPath = pathParts[1]; // now first part after "/" is the slug
-                let urlParams = new URLSearchParams(window.location.search);
-                let serviceFromQuery = urlParams.get("service");
-
-                let service = serviceFromPath || serviceFromQuery;
-
-                if (service) {
-                    activateService(service);
-                } else {
-                    let $firstService = $(".swiper-slide").first();
-                    let defaultService = $firstService.data("target");
-                    activateService(defaultService);
-                    window.history.replaceState(null, "", "/" + defaultService);
-                }
-
-                $(".swiper-slide").on("click", function () {
-                    let targetSlug = $(this).data("target");
-                    if (!targetSlug) return;
-                    activateService(targetSlug);
-                    window.history.pushState(null, "", "/" + targetSlug);
-                });
-
-                function activateService(service) {
-                    $(".services-navber-content").removeClass("active");
-                    $(".services-section").removeClass("active");
-                    $(".swiper-slide").removeClass("active");
-
-                    $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
-                    $(`.swiper-slide[data-target="${service}"]`).addClass("active");
-                    $(`.${service}`).addClass("active");
-                }
-            }
-        });
-        // $(document).ready(function () {
-        //     // ---------- HOME PAGE CLICK ----------
-        //     $(document).on("click", ".icon-content, .work-box", function () {
-        //         var target = $(this).data("target");
-        //         if (target) {
-        //             window.location.href = "/" + target;
-        //         }
-        //     });
-
-        //     // ---------- SERVICES LINK FIX ----------
-        //     $("a[href='{{route('services')}}']").on("click", function (e) {
-        //         e.preventDefault(); // prevent default /services route
-
-        //         // get first service slug dynamically
-        //         let $firstService = $(".swiper-slide").first();
-        //         let defaultService = $firstService.data("target");
-
-        //         if (defaultService) {
-        //             window.location.href = "/" + defaultService;
-        //         } else {
-        //             // fallback to / if no service found
-        //             window.location.href = "/";
-        //         }
-        //     });
-
-        //     // ---------- SERVICES PAGE ----------
-        //     if ($(".swiper-slide").length) {
-        //         // get slug from URL
-        //         let pathParts = window.location.pathname.split("/");
-        //         let serviceFromPath = pathParts[1]; // first part after "/" is the slug
-        //         let urlParams = new URLSearchParams(window.location.search);
-        //         let serviceFromQuery = urlParams.get("service");
-
-        //         let service = serviceFromPath || serviceFromQuery;
-
-        //         if (service) {
-        //             activateService(service);
-        //         } else {
-        //             // default to first service
-        //             let $firstService = $(".swiper-slide").first();
-        //             let defaultService = $firstService.data("target");
-        //             if (defaultService) {
-        //                 activateService(defaultService);
-        //                 window.history.replaceState(null, "", "/" + defaultService);
-        //             }
-        //         }
-
-        //         $(".swiper-slide").on("click", function () {
-        //             let targetSlug = $(this).data("target");
-        //             if (!targetSlug) return;
-        //             activateService(targetSlug);
-        //             window.history.pushState(null, "", "/" + targetSlug);
-        //         });
-
-        //         function activateService(service) {
-        //             $(".services-navber-content").removeClass("active");
-        //             $(".services-section").removeClass("active");
-        //             $(".swiper-slide").removeClass("active");
-
-        //             $(`.swiper-slide[data-target="${service}"] .services-navber-content`).addClass("active");
-        //             $(`.swiper-slide[data-target="${service}"]`).addClass("active");
-        //             $(`.${service}`).addClass("active");
-        //         }
-        //     }
-        // });
-
-
 
     </script>
 @stop 
