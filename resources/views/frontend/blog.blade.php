@@ -43,7 +43,7 @@
                             <div class="blog-card">
                                 <a href="{{ route('blogdetails', $blog->slug ) }}">
                                     <div class="blog-image">
-                                        <img src="{{ url('storage/' . $blog->detail_banner) }}" alt="">
+                                        <img src="{{ url('storage/' . $blog->detail_banner) }}" title="{{ $blog->title }}" alt="{{ $blog->title }}">
                                     </div>
                                     <div class="blog-content">
                                         <div class="blog-meta">

@@ -393,21 +393,21 @@
                         <div class="right-white-space"></div>
                         <div class="first-two-images">
                             <div class="first">
-                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" alt="About Img one">
+                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" title="About Img one" alt="About Img one">
                             </div>
                             <div class="second">
-                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" alt="About Img two">
+                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" title="About Img two" alt="About Img two">
                             </div>
                         </div>
                         <div class="third">
-                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" alt="About Img three">
+                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" title="About Img three" alt="About Img three">
                         </div>
                         <div class="second-two-images">
                             <div class="fourth">
-                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" alt="About Img four">
+                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" title="About Img four" alt="About Img four">
                             </div>
                             <div class="five">
-                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" alt="About Img five">
+                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" title="About Img five" alt="About Img five">
                             </div>
                         </div>
                         <div class="bottomleft-white-space"></div>
@@ -571,7 +571,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[1]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" alt="Co-Working Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" title="Co-Working Section Img" alt="Co-Working Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -589,7 +589,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[2]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" alt="Private Office Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" title="Private Office Section Img" alt="Private Office Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -607,7 +607,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[0]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" alt="Office Space Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" title="Office Space Section Img" alt="Office Space Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -625,7 +625,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[8]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" alt="Event Space Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" title="Event Space Section Img" alt="Event Space Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -643,7 +643,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[5]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" alt="Virtual Office Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" title="Virtual Office Section Img" alt="Virtual Office Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -661,7 +661,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[7]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" alt="Meeting Room Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" title="Meeting Room Section Img" alt="Meeting Room Section Img">
                                     </a>
                                 </div>
                             </div>
@@ -929,7 +929,7 @@
                         </div>
                         <div class="service-banner-img px-lg-4 order-lg-1 order-0">
                             <div class="service-img image-wrapper image scale position-relative">
-                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new-01.webp')}}" alt="Mailing Advantage Img">
+                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new-01.webp')}}" title="Mailing Advantage Img" alt="Mailing Advantage Img">
                             </div>
                         </div>
                     </div>
@@ -972,7 +972,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/1.jpg')}}"  data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/1.jpg')}}" alt="Gallery first Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.jpg')}}" title="Gallery first Img" alt="Gallery first Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -993,7 +993,7 @@
                                         </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/2.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/2.jpg')}}" alt="Gallery second Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/2.jpg')}}" title="Gallery second Img" alt="Gallery second Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1009,7 +1009,7 @@
                                     </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/3.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/3.jpg')}}" alt="Gallery third Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/3.jpg')}}" title="Gallery third Img" alt="Gallery third Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1025,7 +1025,7 @@
                                         </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/4.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/4.jpg')}}" alt="Gallery fourth Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/4.jpg')}}" title="Gallery fourth Img" alt="Gallery fourth Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1041,7 +1041,7 @@
                             </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/5.jpg')}}" data-fancybox="gallery" >
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/5.jpg')}}" alt="Gallery five Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/5.jpg')}}" title="Gallery five Img" alt="Gallery five Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1062,7 +1062,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/1.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/1.png')}}" alt="Gallery six Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.png')}}" title="Gallery six Img" alt="Gallery six Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1078,7 +1078,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/2.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/2.png')}}" alt="Gallery seven Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/2.png')}}" title="Gallery seven Img" alt="Gallery seven Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1094,7 +1094,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/3.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/3.png')}}" alt="Gallery eight Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/3.png')}}" title="Gallery eight Img" alt="Gallery eight Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1110,7 +1110,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/4.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/4.png')}}" alt="Gallery nine Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/4.png')}}" title="Gallery nine Img" alt="Gallery nine Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1130,7 +1130,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/5.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/5.png')}}" alt="Gallery ten Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/5.png')}}" title="Gallery ten Img" alt="Gallery ten Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>

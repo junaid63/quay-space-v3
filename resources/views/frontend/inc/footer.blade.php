@@ -6,7 +6,7 @@
                 <div class="col-12 col-lg-4 col-md-6 footer-widget">
                     <div class="footer-logo">
                         <a href>
-                            <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" alt="Footer Logo" />
+                            <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" title="Footer" alt="Footer Logo" />
                         </a>
                     </div>
                     <p>
