@@ -47,7 +47,7 @@
                                     <a href="{{ route('services', $service->slug) }}" 
                                     class="services-navber-content {{ $Servicesdetail->id == $service->id ? 'active' : '' }}">
                                         <div class="img">
-                                            <img src="{{ url('storage/' . $service->icon) }}" alt="{{ $service->title }} Icon">
+                                            <img src="{{ url('storage/' . $service->icon) }}" title="{{ $service->title }}" alt="{{ $service->title }} Icon">
                                         </div>
                                         <div class="services-navber-title">
                                             <span>{{ $service->title }}</span>
@@ -111,9 +111,9 @@
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
                         @if(!empty($Servicesdetail->image))
-                            <img src="{{ url('storage/' . $Servicesdetail->image) }}" alt="{{ $Servicesdetail->title }}">
+                            <img src="{{ url('storage/' . $Servicesdetail->image) }}" title="{{ $Servicesdetail->title }} alt="{{ $Servicesdetail->title }}">
                         @else
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="Service Image">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" title="Service" alt="Service Image">
                         @endif
                     </div>
                 </div>

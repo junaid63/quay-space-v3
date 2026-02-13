@@ -18,7 +18,8 @@
                     <a href="{{ route('index') }}">
                         <img src="{{ url('storage') }}/@yield('page_logo', setting('site.footer-logo'))"
                              class="normal-logo"
-                             alt="Site Logo">
+                             alt="Site Logo"
+                             title="Site">
                     </a>
                 </div>
 

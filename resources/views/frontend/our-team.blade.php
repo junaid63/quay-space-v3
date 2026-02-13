@@ -67,7 +67,7 @@
 
                         {{-- Image --}}
                         <div class="team-thumb p-lg-4 p-0 flex-fill">
-                            <img src="{{ url('storage/' . $team->details_img) }}" alt="{{ $team->title }} Img" class="img-fluid rounded">
+                            <img src="{{ url('storage/' . $team->details_img) }}" title="{{ $team->title }}" alt="{{ $team->title }} Img" class="img-fluid rounded">
                         </div>
                     </div>
 
