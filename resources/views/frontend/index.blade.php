@@ -15,57 +15,38 @@
         {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "SSF Global",
-        "image": "https://www.ssfglobal.co.uk/storage/settings/December2025/5ToSygXkryFEmvdycMdg.png",
+        "name": "QUAY SPACE",
+        "image": "https://www.quay-space.co.uk/storage/settings/December2023/2Jxkorg8HK0giszfQueN.png",
         "@id": "",
-        "url": "https://www.ssfglobal.co.uk/",
-        "telephone": "7773941324",
-        "priceRange": "££££££££",
+        "url": "https://www.quay-space.co.uk/",
+        "telephone": "441212693637",
+        "priceRange": "$$$",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "5 Brayford Square,",
-            "addressLocality": "London",
-            "postalCode": "E1 0SG",
+            "streetAddress": "Quayside Tower, Broad St,",
+            "addressLocality": "Birmingham",
+            "postalCode": "B1 2HF",
             "addressCountry": "GB"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 51.5146379,
-            "longitude": -0.0504221
+            "latitude": 52.47704100000001,
+            "longitude": -1.9111622
         },
-        "openingHoursSpecification": [{
+        "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Monday",
+            "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+            ],
             "opens": "09:00",
-            "closes": "18:00"
-        },{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Tuesday",
-            "opens": "09:00",
-            "closes": "18:00"
-        },{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Wednesday",
-            "opens": "09:00",
-            "closes": "18:00"
-        },{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Thursday",
-            "opens": "09:00",
-            "closes": "18:00"
-        },{
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Friday",
-            "opens": "09:00",
-            "closes": "18:00"
-        }],
-        "sameAs": [
-            "https://www.facebook.com/ssfglobaluk",
-            "https://www.instagram.com/ssfglobaluk/",
-            "https://www.linkedin.com/company/ssf-global-uk/"
-        ] 
+            "closes": "17:00"
+        } 
         }
-        </script>
+    </script>
 @endsection
 
 @section('title')
