@@ -48,7 +48,9 @@ class FrontendController extends Controller
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view, compact('ourteams','contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view, compact('ourteams','contentpagesget','amenitiesget','Servicesget','firstService'));
     }
     public function ourteam()
     {
@@ -56,7 +58,9 @@ class FrontendController extends Controller
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('ourteams','contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('ourteams','contentpagesget','amenitiesget','Servicesget','firstService'));
         
     }
     public function blog()
@@ -66,7 +70,9 @@ class FrontendController extends Controller
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogs'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogs','Servicesget','firstService'));
         
     }
     public function blogdetails($slug)
@@ -77,7 +83,9 @@ class FrontendController extends Controller
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogdetails','popularblogs'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('ourteams','contentpagesget','amenitiesget','blogdetails','popularblogs','Servicesget','firstService'));
         
     }
     public function faqs()
@@ -86,14 +94,18 @@ class FrontendController extends Controller
         $dynamicFaqs = Faq::where('status', 1)->get();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','dynamicFaqs','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget','dynamicFaqs','amenitiesget','Servicesget','firstService'));
     }
     public function calendly()
     {
         $view = 'frontend.calendly';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget', 'amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget', 'amenitiesget','Servicesget','firstService'));
     }
     
 
@@ -102,7 +114,9 @@ class FrontendController extends Controller
         $view = 'frontend.contactus';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget','amenitiesget','Servicesget','firstService'));
 
     }
     public function threesixty()
@@ -110,7 +124,9 @@ class FrontendController extends Controller
         $view = 'frontend.360-view';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget','amenitiesget','Servicesget','firstService'));
 
     }
     public function threesixty_detail()
@@ -118,7 +134,9 @@ class FrontendController extends Controller
         $view = 'frontend.second-floor-detail';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view,compact('contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentpagesget','amenitiesget','Servicesget','firstService'));
 
     }
     
@@ -212,7 +230,9 @@ class FrontendController extends Controller
         $view = 'frontend.contact-thankyou';
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
-        return view($view, compact('contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view, compact('contentpagesget','amenitiesget','Servicesget','firstService'));
     }
 
     public function newsletterSubmit(Request $request)
@@ -492,7 +512,9 @@ class FrontendController extends Controller
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
         $contentPages = ContentPage::where('slug',$slug)->first();
-        return view($view,compact('contentPages','contentpagesget','amenitiesget'));
+        $Servicesget = Service::where('status', 1)->get();
+        $firstService = $Servicesget->first();
+        return view($view,compact('contentPages','contentpagesget','amenitiesget','Servicesget','firstService'));
     }
     
 
