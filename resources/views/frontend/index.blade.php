@@ -464,7 +464,7 @@
     <!--                <div class="threesixty-view">-->
     <!--                    <div class="loading-indicator">Loading 360° View</div>-->
     <!--                    <iframe -->
-    <!--                        src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html" -->
+    <!--                        src="https://quay-space.co.uk/vr/2nd/" -->
     <!--                        height="600" -->
     <!--                        width="100%"-->
     <!--                        frameborder="0" -->
@@ -501,28 +501,28 @@
                     <div class="threesixty-button">
                         <button type="button" class="active" 
                             data-floor="second" 
-                            data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html">
+                            data-src="https://quay-space.co.uk/vr/2nd/">
                             <i class="fa-regular fa-building"></i>
                             2nd Floor
                         </button>
 
                         <button type="button" 
                             data-floor="third" 
-                            data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/06/3rd_front_quarter/index.html">
+                            data-src="https://quay-space.co.uk/vr/3rd">
                             <i class="fa-regular fa-building"></i>
                             3rd Floor
                         </button>
 
                         <button type="button" 
                             data-floor="seven" 
-                            data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/7th_flr_and_Conference_Room/index.html">
+                            data-src="https://quay-space.co.uk/vr/7th">
                             <i class="fa-regular fa-building"></i>
                             7th Floor
                         </button>
 
                         <button type="button" 
                             data-floor="eight" 
-                            data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/08/8th_Floor/index.html">
+                            data-src="https://quay-space.co.uk/vr/8th">
                             <i class="fa-regular fa-building"></i>
                             8th Floor
                         </button>
@@ -532,7 +532,7 @@
                     <div class="threesixty-view">
                         <div class="loading-indicator">Loading 360° View</div>
                         <iframe 
-                            src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html" 
+                            src="https://quay-space.co.uk/vr/2nd/"
                             height="600" 
                             width="100%"
                             frameborder="0" 
@@ -1529,4 +1529,4 @@
         // });
 
     </script>
-@stop 
+@stop

@@ -37,7 +37,7 @@ Quay Space | 360 view
         <div class="container large">
             <div class="fthreesixty-view-card">
                 <iframe 
-                    src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html" 
+                    src="https://quay-space.co.uk/vr/2nd/"
                     height="600" 
                     width="100%"
                     frameborder="0" 
@@ -87,4 +87,4 @@ Quay Space | 360 view
         });
     });
 </script>
-@stop 
+@stop
