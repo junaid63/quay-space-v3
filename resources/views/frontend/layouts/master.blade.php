@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="{{url('frontend/assets/css/blog.css')}}?ref={{setting('site.css')}}">
     <link rel="stylesheet" href="{{url('frontend/assets/css/cookie.css')}}?ref={{setting('site.css')}}">
     <!-- Template Main CSS File -->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <!-- Link Swiper's CSS -->
@@ -66,6 +66,8 @@
     <!-- Calendly badge widget begin -->
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     @yield('css')
+    
+    <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "wd46qo1l4d"); </script>
 
 </head>
 
@@ -1311,7 +1313,7 @@
                     $('.cookie-popup').slideUp(300);
                     $('.cookie-popup-container').fadeOut(300);
                     $('html').removeClass('cookie-blocked');
-                    localStorage.setItem('quay-space', '0'); // 0 means declined
+                    localStorage.setItem('quay-space', '1'); // 0 means declined
                 });
             });
         }, 1000);

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour hassounds="0" start="node1" appversion="7.1.11" apprev="21010">
+  <panorama id="node1">
+    <input leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="225" fovmode="2">
+      <start projection="4" pan="-6.48" tilt="0.96" fov="116.16"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="1" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.476889" author="" nodeid="node1" description="" heading="225" source="" title="Lobby 8.0" longitude="-1.911300" copyright="" altitude="143.60" datetime="31/05/2025 16:52" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-4.13" description="" tilt="-4.23" target="0.0/0.0/100.0" title="Comfy Area 8.1" id="Point01" url="{node2}" distance="18.8741"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node2">
+    <input leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="180" fovmode="2">
+      <start projection="4" pan="-31.496" tilt="-0.0060705" fov="125.099"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.476814" author="" nodeid="node2" description="" heading="180" source="" title="Comfy Area 8.1" longitude="-1.911550" copyright="" altitude="144.20" datetime="31/05/2025 16:56" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-244.77" description="" tilt="-18.47" target="" title="Lobby 8.0" id="Point01" url="{node1}" distance="18.8741"/>
+      <hotspot skinid="ht_node" pan="-348.39" description="" tilt="-7.15" target="8.6/1.7/100.0" title="Open Plan Work Area 8.1" id="Point02" url="{node3}" distance="12.7026"/>
+      <hotspot skinid="ht_node" pan="-178.82" description="" tilt="-20.52" target="" title="Comfy area 8.2" id="Point03" url="{node18}" distance="27.1921"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node3">
+    <input leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="90" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.476850" author="" nodeid="node3" description="" heading="90" source="" title="Open Plan Work Area 8.1" longitude="-1.911372" copyright="" altitude="143.90" datetime="31/05/2025 16:58" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-225.41" description="" tilt="-9.43" target="" title="Comfy Area 8.1" id="Point01" url="{node2}" distance="12.7026"/>
+      <hotspot skinid="ht_node" pan="-353.56" description="" tilt="-6.51" target="0.0/0.0/100.0" title="Corridor" id="Point02" url="{node4}" distance="39.1337"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node4">
+    <input leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="45" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.476997" author="" nodeid="node4" description="" heading="45" source="" title="Corridor" longitude="-1.910847" copyright="" altitude="143.00" datetime="31/05/2025 17:01" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-249.8" description="" tilt="-17.37" target="" title="Open Plan Work Area 8.1" id="Point01" url="{node3}" distance="39.1337"/>
+      <hotspot skinid="ht_node" pan="-356.36" description="" tilt="-5.26" target="-1.1/-0.0/100.0" title="Open Plan Work Area 8.2" id="Point02" url="{node5}" distance="36.4194"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node5">
+    <input leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="299.83" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477200" author="" nodeid="node5" description="" heading="299.83" source="" title="Open Plan Work Area 8.2" longitude="-1.910425" copyright="" altitude="142.00" datetime="31/05/2025 17:02" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-268.7" description="" tilt="-8.05" target="" title="Corridor" id="Point01" url="{node4}" distance="36.4194"/>
+      <hotspot skinid="ht_node" pan="-117.5" description="" tilt="-10.45" target="" title="Coner Office" id="Point02" url="{node6}" distance="5.61068"/>
+      <hotspot skinid="ht_node" pan="-218.48" description="" tilt="-12.93" target="" title="middle Office" id="Point03" url="{node7}" distance="8.47608"/>
+      <hotspot skinid="ht_node" pan="-16.33" description="" tilt="-11.75" target="" title="Open Plan Work Area 8.3" id="Point04" url="{node8}" distance="10.6611"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node6">
+    <input leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="180" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477183" author="" nodeid="node6" description="" heading="180" source="" title="Coner Office" longitude="-1.910503" copyright="" altitude="142.70" datetime="31/05/2025 17:03" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-190.26" description="" tilt="-7.01" target="" title="Open Plan Work Area 8.2" id="Point01" url="{node5}" distance="5.61068"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="270" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477183" author="" nodeid="node7" description="" heading="270" source="" title="middle Office" longitude="-1.910547" copyright="" altitude="142.30" datetime="31/05/2025 17:04" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-6.4" description="" tilt="-5.88" target="" title="Open Plan Work Area 8.2" id="Point01" url="{node5}" distance="8.47608"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node8">
+    <input leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="315" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477294" author="" nodeid="node8" description="" heading="315" source="" title="Open Plan Work Area 8.3" longitude="-1.910456" copyright="" altitude="142.50" datetime="31/05/2025 17:09" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-212.47" description="" tilt="-16.51" target="" title="Open Plan Work Area 8.2" id="Point01" url="{node5}" distance="10.6611"/>
+      <hotspot skinid="ht_node" pan="-348.8" description="" tilt="-5" target="" title="Open Plan Work Area 8.4 to lobby" id="Point02" url="{node9}" distance="29.966"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node9">
+    <input leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="315" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477375" author="" nodeid="node9" description="" heading="315" source="" title="Open Plan Work Area 8.4 to lobby" longitude="-1.910878" copyright="" altitude="144.70" datetime="31/05/2025 17:11" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-144.68" description="" tilt="-4.24" target="" title="Open Plan Work Area 8.3" id="Point01" url="{node8}" distance="29.966"/>
+      <hotspot skinid="ht_node" pan="-12.35" description="" tilt="-12.39" target="" title="Open Plan Work Area 8.5" id="Point02" url="{node10}" distance="11.668"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node10">
+    <input leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="225" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477369" author="" nodeid="node10" description="" heading="225" source="" title="Open Plan Work Area 8.5" longitude="-1.910706" copyright="" altitude="142.50" datetime="31/05/2025 17:12" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-311.1" description="" tilt="-11.39" target="" title="Open Plan Work Area 8.4 to lobby" id="Point01" url="{node9}" distance="11.668"/>
+      <hotspot skinid="ht_node" pan="-58.27" description="" tilt="-7.63" target="" title="Open Plan Work Area 8.6" id="Point02" url="{node11}" distance="16.8529"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node11">
+    <input leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="315" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477489" author="" nodeid="node11" description="" heading="315" source="" title="Open Plan Work Area 8.6" longitude="-1.910858" copyright="" altitude="142.50" datetime="31/05/2025 17:13" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-184.33" description="" tilt="-7.62" target="" title="Open Plan Work Area 8.5" id="Point01" url="{node10}" distance="16.8529"/>
+      <hotspot skinid="ht_node" pan="-27.54" description="" tilt="-10.69" target="" title="Open Plan Work Area 8.7" id="Point02" url="{node12}" distance="21.3279"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node12">
+    <input leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="225" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477628" author="" nodeid="node12" description="" heading="225" source="" title="Open Plan Work Area 8.7" longitude="-1.911075" copyright="" altitude="142.80" datetime="31/05/2025 17:14" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-295.97" description="" tilt="-9.88" target="" title="Open Plan Work Area 8.6" id="Point01" url="{node11}" distance="21.3279"/>
+      <hotspot skinid="ht_node" pan="-2.05" description="" tilt="-3" target="" title="Open Plan Work Area 8.8" id="Point02" url="{node13}" distance="37.9435"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node13">
+    <input leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="135" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477289" author="" nodeid="node13" description="" heading="135" source="" title="Open Plan Work Area 8.8" longitude="-1.911139" copyright="" altitude="143.40" datetime="31/05/2025 17:16" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-24.41" description="" tilt="-18.25" target="" title="Boardroom 8.1" id="Point01" url="{node14}" distance="4.48913"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node14">
+    <input leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="270" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477253" author="" nodeid="node14" description="" heading="270" source="" title="Boardroom 8.1" longitude="-1.911169" copyright="" altitude="143.20" datetime="31/05/2025 17:18" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-8.83" description="" tilt="-7.06" target="" title="Boardroom 8.2" id="Point01" url="{node15}" distance="8.66895"/>
+      <hotspot skinid="ht_node" pan="-98.48" description="" tilt="-14.91" target="" title="Open Plan Work Area 8.8" id="Point02" url="{node13}" distance="4.48913"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node15">
+    <input leveltileurl="tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="135" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477253" author="" nodeid="node15" description="" heading="135" source="" title="Boardroom 8.2" longitude="-1.911297" copyright="" altitude="143.90" datetime="31/05/2025 17:19" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-344.92" description="" tilt="-5.6" target="" title="Boardroom 8.1" id="Point01" url="{node14}" distance="8.66895"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node16">
+    <input leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="225" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477308" author="" nodeid="node16" description="" heading="225" source="" title="Kitchen 8.1" longitude="-1.911108" copyright="" altitude="143.10" datetime="31/05/2025 17:21" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-222.16" description="" tilt="-11.12" target="" title="Kitchen 8.2" id="Point01" url="{node17}" distance="23.6141"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node17">
+    <input leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="45" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.477119" author="" nodeid="node17" description="" heading="45" source="" title="Kitchen 8.2" longitude="-1.911267" copyright="" altitude="143.00" datetime="31/05/2025 17:22" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-318.79" description="" tilt="-14.15" target="" title="Kitchen 8.1" id="Point01" url="{node16}" distance="23.6141"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <panorama id="node18">
+    <input leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" overlap="1" levelbiashidpi="1.000" height="1824" levelingroll="0" levelingpitch="0" width="1824" levelbias="0.400" leveltilesize="510">
+      <level width="1824" predecode="0" preload="0" height="1824"/>
+      <level width="912" predecode="0" preload="0" height="912"/>
+      <level width="456" predecode="1" preload="1" height="456"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="135" fovmode="2">
+      <start projection="4" pan="0" tilt="0" fov="121.39"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min pan="0" fovpixel="2" tilt="-90"/>
+      <max fovfisheye="360" fovstereographic="330" pan="360" scaletofit="1" tilt="90" fov="140"/>
+    </view>
+    <userdata latitude="52.476906" author="" nodeid="node18" description="" heading="135" source="" title="Comfy area 8.2" longitude="-1.911178" copyright="" altitude="142.80" datetime="31/05/2025 17:23" comment="" customnodeid="" tags="Tourphotos" info=""/>
+    <hotspots smoothmovement="0" width="180" wordwrap="1" height="20">
+      <label borderalpha="1" background="1" textalpha="1" textcolor="0x000000" bordercolor="0x000000" backgroundalpha="1" height="20" border="1" enabled="1" borderradius="1" width="180" backgroundcolor="0xffffff" wordwrap="1"/>
+      <polystyle borderalpha="1" handcursor="1" mode="0" backgroundcolor="0x0000ff" bordercolor="0x0000ff" backgroundalpha="0.25098"/>
+      <hotspot skinid="ht_node" pan="-103.66" description="" tilt="-9.8" target="" title="Kitchen 8.2" id="Point01" url="{node17}" distance="24.4395"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomafterinfov="140" blendtime="1" zoomoutpause="1" blendcolor="0x000000" delay="none" type="crossdissolve" enabled="1" softedge="0" zoomfov="40" zoomin="0" zoomafteroutfov="40" zoomspeed="2"/>
+    <autorotate noderandom="1" startloaded="0" useanimation="0" delay="2.00" enabled="1" nodefilter="" nodedelay="0.00" horizonfromdefview="0" returntohorizon="0.000" speed="0.100"/>
+    <animation clipsrandom="0" syncanimationwithvideo="0" useinautorotation="0" animsequence="Animation01"/>
+    <control contextvr="1" zoomcentercursor="1" simulatemass="1" contextfullscreen="1" lockedkeyboard="0" lockedkeyboardzoom="0" invertwheel="0" lockedwheel="0" sensitivity="8" dblclickfullscreen="0" contextprojections="0" lockedmouse="0" rubberband="0" hideabout="0" speedwheel="1" invertcontrol="1"/>
+  </panorama>
+  <masternode>
+    <userdata title="Lobby" copyright="" author="" description="8th Floor" comment="" tags=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>

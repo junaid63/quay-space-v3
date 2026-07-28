@@ -64,7 +64,7 @@
                                         </p>
                                         <div class="all-btn-wrapper fade-anim">
                                             <a href="{{ route('blogdetails', $blog->slug ) }}" class="rr-btn hover-bg-theme animated-btn">
-                                                <i class="fa-jelly fa-regular fa-arrow-right"></i>
+                                                <i class="fa fa-arrow-right"></i>
                                             </a>
                                         </div>
                                     </div>

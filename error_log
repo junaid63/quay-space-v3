@@ -1,0 +1,2 @@
+[22-Sep-2025 06:04:57 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.0.30. in /home/quayspace/public_html/test-v3.quay-space.co.uk/vendor/composer/platform_check.php on line 28
+[22-Sep-2025 06:07:15 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.0.30. in /home/quayspace/public_html/test-v3.quay-space.co.uk/vendor/composer/platform_check.php on line 28

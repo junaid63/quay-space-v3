@@ -81,7 +81,7 @@
                         <div class="d-block d-lg-block d-md-none book-a-meeting-main fade-anim flex-column gap-4 w-100">
                             <div class="service-contacts-main d-flex gap-lg-5 gap-3 justify-content-between">
                                 <div class="service-contacts">
-                                    <i class="fa-regular fa-phone-volume"></i>
+                                    <i class="fa fa-phone" style="font-weight: 900;"></i>
                                     <div class="d-flex flex-column gap-2">
                                         <label for="">Talk to us now:</label>
                                         <a href="tel:{{ setting('site.phone') }}">{{ setting('site.phone') }}</a>

@@ -428,62 +428,62 @@
         </video>
     </div> --}}
     <!--s video-box  end -->
-    {{-- <section class="home-360-view py-lg-5"> 
-        <div class="container large">
-            <div class="row">
-                <div class="section-header pb-lg-4 pb-4">
-                    <div class="section-content">
-                        <div class="section-title-wrapper">
-                            <div class="title-wrapper">
-                                <h2 class="section-title text-white text-center font-instrumentsans-medium word-anim">
-                                    360° Virtual Tour
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="threesixty-view-main-card">
-                    <div class="threesixty-button">
-                        <button type="button" class="active" data-floor="second">
-                            <i class="fa-regular fa-buildings"></i>
-                            2nd Floor
-                        </button>
-                        <button type="button" data-floor="third">
-                            <i class="fa-regular fa-buildings"></i>
-                            3rd Floor
-                        </button>
-                        <button type="button" data-floor="seven">
-                            <i class="fa-regular fa-buildings"></i>
-                            7th Floor
-                        </button>
-                        <button type="button" data-floor="eight">
-                            <i class="fa-regular fa-buildings"></i>
-                            8th Floor
-                        </button>
-                    </div>
-                    <div class="threesixty-view">
-                        <div class="loading-indicator">Loading 360° View</div>
-                        <iframe 
-                            src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html" 
-                            height="600" 
-                            width="100%"
-                            frameborder="0" 
-                            allowfullscreen>
-                        </iframe>
+    <!--{{-- <section class="home-360-view py-lg-5"> -->
+    <!--    <div class="container large">-->
+    <!--        <div class="row">-->
+    <!--            <div class="section-header pb-lg-4 pb-4">-->
+    <!--                <div class="section-content">-->
+    <!--                    <div class="section-title-wrapper">-->
+    <!--                        <div class="title-wrapper">-->
+    <!--                            <h2 class="section-title text-white text-center font-instrumentsans-medium word-anim">-->
+    <!--                                360° Virtual Tour-->
+    <!--                            </h2>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="threesixty-view-main-card">-->
+    <!--                <div class="threesixty-button">-->
+    <!--                    <button type="button" class="active" data-floor="second">-->
+    <!--                        <i class="fa-regular fa-building"></i>-->
+    <!--                        2nd Floor-->
+    <!--                    </button>-->
+    <!--                    <button type="button" data-floor="third">-->
+    <!--                        <i class="fa-regular fa-building"></i>-->
+    <!--                        3rd Floor-->
+    <!--                    </button>-->
+    <!--                    <button type="button" data-floor="seven">-->
+    <!--                        <i class="fa-regular fa-building"></i>-->
+    <!--                        7th Floor-->
+    <!--                    </button>-->
+    <!--                    <button type="button" data-floor="eight">-->
+    <!--                        <i class="fa-regular fa-building"></i>-->
+    <!--                        8th Floor-->
+    <!--                    </button>-->
+    <!--                </div>-->
+    <!--                <div class="threesixty-view">-->
+    <!--                    <div class="loading-indicator">Loading 360° View</div>-->
+    <!--                    <iframe -->
+    <!--                        src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html" -->
+    <!--                        height="600" -->
+    <!--                        width="100%"-->
+    <!--                        frameborder="0" -->
+    <!--                        allowfullscreen>-->
+    <!--                    </iframe>-->
                         
-                        <div class="floor-info show">
-                            <h3>Second Floor</h3>
-                            <p>This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+    <!--                    <div class="floor-info show">-->
+    <!--                        <h3>Second Floor</h3>-->
+    <!--                        <p>This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings.</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section> --}}-->
     <section class="home-360-view py-lg-5"> 
         <div class="container large">
             <div class="row">
-                <!-- Section Header -->
+                 
                 <div class="section-header pb-lg-4 pb-4">
                     <div class="section-content">
                         <div class="section-title-wrapper">
@@ -496,40 +496,39 @@
                     </div>
                 </div>
 
-                <!-- 360° Viewer -->
                 <div class="threesixty-view-main-card">
-                    <!-- Floor Buttons -->
+                    
                     <div class="threesixty-button">
                         <button type="button" class="active" 
                             data-floor="second" 
                             data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/2nd_flr_tour_wp/index.html">
-                            <i class="fa-regular fa-buildings"></i>
+                            <i class="fa-regular fa-building"></i>
                             2nd Floor
                         </button>
 
                         <button type="button" 
                             data-floor="third" 
                             data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/06/3rd_front_quarter/index.html">
-                            <i class="fa-regular fa-buildings"></i>
+                            <i class="fa-regular fa-building"></i>
                             3rd Floor
                         </button>
 
                         <button type="button" 
                             data-floor="seven" 
                             data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/05/7th_flr_and_Conference_Room/index.html">
-                            <i class="fa-regular fa-buildings"></i>
+                            <i class="fa-regular fa-building"></i>
                             7th Floor
                         </button>
 
                         <button type="button" 
                             data-floor="eight" 
                             data-src="https://seeyourselfonline.com/wordpress/wp-content/uploads/2025/08/8th_Floor/index.html">
-                            <i class="fa-regular fa-buildings"></i>
+                            <i class="fa-regular fa-building"></i>
                             8th Floor
                         </button>
                     </div>
 
-                    <!-- Viewer & Floor Info -->
+                  
                     <div class="threesixty-view">
                         <div class="loading-indicator">Loading 360° View</div>
                         <iframe 

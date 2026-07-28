@@ -5077,6 +5077,10 @@
   margin-bottom: 0;
 }
 
+.home-360-view {
+    display: none!important;
+}
+
 
     @media (min-width: 1200px) and (max-width: 1550px) {
         .newsletter-input-button .newsletter-button {
@@ -5796,6 +5800,7 @@
             padding-top: 150px;
         }
     }
+    
 
     @media (max-width: 510px) {
         .oops-heading {

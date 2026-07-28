@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node20" hassounds="0" apprev="21010" appversion="7.1.11">
+  <panorama id="node20">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="270">
+      <start projection="4" pan="41.4667" tilt="0" fov="115.679"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910750" customnodeid="" comment="" altitude="173.50" latitude="52.477461" title="Exhibition Room Start" source="" info="" copyright="" description="" datetime="03/05/2025 12:02" nodeid="node20" tags="stage4tourpanarama" author="" heading="270"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room far end" description="" distance="62.6471" pan="-295.07" tilt="-4.44" url="{node1}" id="Point01" skinid="ht_node"/>
+      <hotspot target="0.0/0.0/100.0" title="Exhibition Room " description="" distance="22.4345" pan="-112.38" tilt="-12.06" url="{node2}" id="Point02" skinid="ht_node"/>
+      <hotspot pan="-126.18" tilt="-2.96" target="" url="" id="Point03" title="" skinid="ht_info" description="Fire Exit&#xa;Ladies Rest Room"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node1">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="289.15">
+      <start projection="4" pan="46.2667" tilt="0" fov="98.4409"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911150" customnodeid="" comment="" altitude="173.50" latitude="52.477969" title="Exhibition Room far end" source="" info="" copyright="" description="" datetime="03/05/2025 12:03" nodeid="node1" tags="stage4tourpanarama" author="" heading="289.15"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="-110.5/-5.1/100.0" title="Exhibition Room Start" description="" distance="62.6471" pan="-153.59" tilt="-6.44" url="{node20}" id="Point01" skinid="ht_node"/>
+      <hotspot target="-153.2/-5.9/98.8" title="Exhibition Room " description="" distance="84.6681" pan="-158.5" tilt="-2.31" url="{node2}" id="Point02" skinid="ht_node"/>
+      <hotspot pan="-176.06" tilt="-4.06" target="" url="" id="Point03" title="" skinid="ht_info" description="Fire Exit&#xa;Gents Rest Room"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="211.78">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910544" customnodeid="" comment="" altitude="173.50" latitude="52.477303" title="Exhibition Room " source="" info="" copyright="" description="" datetime="03/05/2025 12:06" nodeid="node2" tags="stage4tourpanarama" author="" heading="211.78"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="0.0/0.0/100.0" title="Exhibition Room Annex" description="" distance="1.56993" pan="-358.29" tilt="-4.44" url="{node9}" id="Point01" skinid="ht_node"/>
+      <hotspot target="" title="Exhibition Room Start" description="" distance="22.4345" pan="-139.69" tilt="-14.09" url="{node20}" id="Point02" skinid="ht_node"/>
+      <hotspot target="" title="Exhibition Room far end" description="" distance="84.6681" pan="-149.33" tilt="-2.57" url="{node1}" id="Point03" skinid="ht_node"/>
+      <hotspot pan="-37.74" tilt="-5.04" target="" url="" id="Point04" title="" skinid="ht_info" description="Fire Exit&#xa;Ladies Rest Room"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node9">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910547" customnodeid="" comment="" altitude="173.50" latitude="52.477289" title="Exhibition Room Annex" source="" info="" copyright="" description="" datetime="03/05/2025 12:18" nodeid="node9" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="0.0/0.0/100.0" title="Annex Room 1" description="" distance="10.232" pan="-253.57" tilt="-7.91" url="{node3}" id="Point01" skinid="ht_node"/>
+      <hotspot target="0.0/0.0/100.0" title="Annex Room 2" description="" distance="63.7823" pan="-270.41" tilt="-7.64" url="{node5}" id="Point02" skinid="ht_node"/>
+      <hotspot target="" title="Annex Room 3" description="" distance="65.5117" pan="-79.85" tilt="-6.93" url="{node6}" id="Point03" skinid="ht_node"/>
+      <hotspot target="" title="Annex Room 4" description="" distance="8.26259" pan="-96.74" tilt="-7.04" url="{node7}" id="Point04" skinid="ht_node"/>
+      <hotspot target="0.0/0.0/100.0" title="Corridor" description="" distance="5.75812" pan="-122.92" tilt="-9.3" url="{node10}" id="Point05" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="315">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910544" customnodeid="" comment="" altitude="173.50" latitude="52.477381" title="Annex Room 1" source="" info="" copyright="" description="" datetime="03/05/2025 12:08" nodeid="node3" tags="stage4tourpanarama" author="" heading="315"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room Annex" description="" distance="10.232" pan="-169.96" tilt="-11.1" url="{node9}" id="Point01" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="249.39">
+      <start projection="4" pan="49.145" tilt="1.54318" fov="102.654"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Annex Room 2" source="" info="" copyright="" description="" datetime="03/05/2025 12:10" nodeid="node5" tags="stage4tourpanarama" author="" heading="249.39"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room Annex" description="" distance="63.7823" pan="-177.07" tilt="-13.14" url="{node9}" id="Point01" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="211.41">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="143.80" latitude="52.476867" title="Annex Room 3" source="" info="" copyright="" description="" datetime="03/05/2025 12:12" nodeid="node6" tags="stage4tourpanarama" author="" heading="211.41"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room Annex" description="" distance="65.5117" pan="-215.72" tilt="-12.78" url="{node9}" id="Point01" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910669" customnodeid="" comment="" altitude="173.50" latitude="52.477289" title="Annex Room 4" source="" info="" copyright="" description="" datetime="03/05/2025 12:16" nodeid="node7" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room Annex" description="" distance="8.26259" pan="-357.64" tilt="-10.85" url="{node9}" id="Point01" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node10">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="280.54">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.910631" customnodeid="" comment="" altitude="173.50" latitude="52.477297" title="Corridor" source="" info="" copyright="" description="" datetime="03/05/2025 12:22" nodeid="node10" tags="stage4tourpanarama" author="" heading="280.54"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Exhibition Room Annex" description="" distance="5.75812" pan="-107.83" tilt="-20.58" url="{node9}" id="Point01" skinid="ht_node"/>
+      <hotspot target="-59.2/-11.5/100.0" title="Reception " description="" distance="60.5006" pan="-353.34" tilt="-5.46" url="{node11}" id="Point02" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node18">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="270">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Office 2" source="" info="" copyright="" description="" datetime="03/05/2025 12:27" nodeid="node18" tags="stage4tourpanarama" author="" heading="270"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot pan="-2.85" tilt="-7.87" target="0.0/0.0/100.0" url="{node11}" id="Point01" title="Reception " skinid="ht_node" description=""/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node11">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="53.0668" tilt="4.7362" fov="103.735"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Reception " source="" info="" copyright="" description="" datetime="03/05/2025 12:26" nodeid="node11" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Corridor" description="" distance="60.5006" pan="-274.48" tilt="-6.85" url="{node10}" id="Point01" skinid="ht_node"/>
+      <hotspot pan="-295.88" tilt="-9.75" target="155.2/-3.6/100.0" url="{node12}" id="Point02" title="Office 1" skinid="ht_node" description=""/>
+      <hotspot pan="-92.75" tilt="-11.82" target="-173.6/-11.5/100.0" url="{node14}" id="Point03" title="Reception " skinid="ht_node" description=""/>
+      <hotspot pan="-283.02" tilt="-7.71" target="142.4/-0.5/100.0" url="{node18}" id="Point04" title="Office 2" skinid="ht_node" description=""/>
+      <hotspot pan="-267.9" tilt="-3.61" target="" url="" id="Point05" title="" skinid="ht_info" description="Fire Exit&#xa;Ladies Rest Room"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node12">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Office 1" source="" info="" copyright="" description="" datetime="03/05/2025 12:29" nodeid="node12" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot pan="-237.58" tilt="-9.89" target="0.0/0.0/100.0" url="{node11}" id="Point01" title="Reception " skinid="ht_node" description=""/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node13">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Data Room" source="" info="" copyright="" description="" datetime="03/05/2025 12:35" nodeid="node13" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot pan="-285.42" tilt="-18.01" target="13.4/-8.4/100.0" url="{node14}" id="Point01" title="Reception " skinid="ht_node" description=""/>
+      <hotspot target="-124.0/-6.2/100.0" title="Conference Room" description="" distance="57.1394" pan="-341.85" tilt="-10.05" url="{node16}" id="Point03" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node14">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="225">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Reception " source="" info="" copyright="" description="" datetime="03/05/2025 12:33" nodeid="node14" tags="stage4tourpanarama" author="" heading="225"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot pan="-1.41" tilt="-9.56" target="86.3/-0.7/100.0" url="{node11}" id="Point01" title="Reception " skinid="ht_node" description=""/>
+      <hotspot pan="-179.9" tilt="-12.31" target="17.8/-10.0/100.0" url="{node13}" id="Point02" title="Data Room" skinid="ht_node" description=""/>
+      <hotspot pan="-224.15" tilt="-4.31" target="" url="" id="Point03" title="" skinid="ht_info" description="Fire Exit&#xa;Gents Rest Room"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node16">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="254.79">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911133" customnodeid="" comment="" altitude="173.50" latitude="52.477400" title="Conference Room" source="" info="" copyright="" description="" datetime="03/05/2025 12:36" nodeid="node16" tags="stage4tourpanarama" author="" heading="254.79"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="" title="Data Room" description="" distance="57.1394" pan="-180.69" tilt="-12" url="{node13}" id="Point01" skinid="ht_node"/>
+      <hotspot target="0.0/0.0/100.0" title="Conference Room end" description="" distance="57.1394" pan="-105.22" tilt="-10.83" url="{node17}" id="Point02" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <panorama id="node17">
+    <input width="1824" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" leveltilesize="510" height="1824" levelbias="0.400">
+      <level preload="0" predecode="0" width="1824" height="1824"/>
+      <level preload="0" predecode="0" width="912" height="912"/>
+      <level preload="1" predecode="1" width="456" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="214.22">
+      <start projection="4" pan="0" tilt="0" fov="100"/>
+      <flyin projection="9" pan="0" tilt="-90" fov="170"/>
+      <min fovpixel="1" pan="0" tilt="-90"/>
+      <max fovstereographic="330" scaletofit="1" pan="360" tilt="90" fov="70" fovfisheye="360"/>
+    </view>
+    <userdata longitude="-1.911222" customnodeid="" comment="" altitude="173.50" latitude="52.476889" title="Conference Room end" source="" info="" copyright="" description="" datetime="03/05/2025 12:39" nodeid="node17" tags="stage4tourpanarama" author="" heading="214.22"/>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label background="1" width="180" backgroundcolor="0xffffff" borderalpha="1" textcolor="0x000000" textalpha="1" backgroundalpha="1" border="1" wordwrap="1" enabled="1" borderradius="1" height="20" bordercolor="0x000000"/>
+      <polystyle mode="0" backgroundcolor="0x0000ff" borderalpha="1" backgroundalpha="0.25098" bordercolor="0x0000ff" handcursor="1"/>
+      <hotspot target="178.4/-10.3/100.0" title="Conference Room" description="" distance="57.1394" pan="-356.73" tilt="-11.71" url="{node16}" id="Point01" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" delay="none" blendtime="1" zoomout="0" zoomfov="40" zoomafteroutfov="40" zoomoutpause="1" softedge="0" zoomin="0" blendcolor="0x000000" enabled="1" zoomafterinfov="140" zoomspeed="2"/>
+    <autorotate delay="2.00" noderandom="1" nodefilter="" returntohorizon="0.000" horizonfromdefview="0" useanimation="0" speed="0.100" nodedelay="0.00" startloaded="0" enabled="1"/>
+    <animation animsequence="Animation01" syncanimationwithvideo="0" clipsrandom="0" useinautorotation="0"/>
+    <control lockedkeyboardzoom="0" simulatemass="1" lockedmouse="0" lockedwheel="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" invertwheel="0" contextvr="1" sensitivity="8" lockedkeyboard="0" speedwheel="1" contextprojections="0" zoomcentercursor="1" contextfullscreen="1" hideabout="0"/>
+  </panorama>
+  <masternode>
+    <userdata comment="" tags="" title="" author="" copyright="" description=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+</tour>
