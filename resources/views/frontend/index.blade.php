@@ -508,21 +508,21 @@
 
                         <button type="button" 
                             data-floor="third" 
-                            data-src="https://quay-space.co.uk/vr/3rd">
+                            data-src="https://quay-space.co.uk/vr/3rd/">
                             <i class="fa-regular fa-building"></i>
                             3rd Floor
                         </button>
 
                         <button type="button" 
                             data-floor="seven" 
-                            data-src="https://quay-space.co.uk/vr/7th">
+                            data-src="https://quay-space.co.uk/vr/7th/">
                             <i class="fa-regular fa-building"></i>
                             7th Floor
                         </button>
 
                         <button type="button" 
                             data-floor="eight" 
-                            data-src="https://quay-space.co.uk/vr/8th">
+                            data-src="https://quay-space.co.uk/vr/8th/">
                             <i class="fa-regular fa-building"></i>
                             8th Floor
                         </button>
