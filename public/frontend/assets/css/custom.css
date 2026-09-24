@@ -8572,3 +8572,34 @@
             box-shadow: white 0 0 15px 0, var(--secondary) -14px -14px 0 7px, var(--primary) 14px -14px 0 7px, var(--third) 14px 14px 0 7px, var(--fourth) -14px 14px 0 7px;
         }
     }
+/* Stable homepage animated headings */
+.hero-area .cd-headline.clip .cd-words-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hero-area .cd-headline.clip .cd-words-wrapper b {
+    line-height: inherit;
+}
+
+.actually-area .explore-spaces-title {
+    max-width: 716px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-align: center;
+    overflow: visible;
+}
+
+@media (max-width: 767px) {
+    .hero-area .cd-headline.clip .cd-words-wrapper {
+        min-height: 1.25em;
+    }
+
+    .actually-area .explore-spaces-title {
+        font-size: 34px;
+        line-height: 1.35;
+    }
+}

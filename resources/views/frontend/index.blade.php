@@ -99,14 +99,11 @@
                                     Tailored for You
                                     <br>
                                     <span class="cd-words-wrapper">
-                                            <b
-                                                class="is-visible">Co-Working</b>
+                                            <b class="is-visible">Co-Working</b>
                                             <b>Private Office</b>
-                                            <b>Dedicated
-                                                Co-Working</b>
+                                            <b>Dedicated Co-Working</b>
                                             <b>Virtual Office</b>
-                                            <span
-                                                class="cursor"></span>
+                                            <span class="cursor"></span>
                                     </span>
                                 </h2>
                                 <h2 class="d-md-none d-block section-title font-instrumentsans-medium char-anim cd-headline clip is-full-width" data-delay="0.45">
@@ -116,8 +113,7 @@
                                     <span class="cd-words-wrapper">
                                         <b class="is-visible">Co-Working</b>
                                         <b>Private Office</b>
-                                        <b>Dedicated
-                                            Co-Working</b>
+                                        <b>Dedicated Co-Working</b>
                                         <b>Virtual Office</b>
                                         <span class="cursor"></span>
                                     </span>
@@ -943,8 +939,8 @@
         <div class="actually-area-inner section-spacing">
             <div class="container">
                 <div class="bg-area"></div>
-                <h2 class="section-title font-sequelsans-romanbody t_line">
-                    Explore Our <br> Spaces, Imagine<br> Your Future
+                <h2 class="section-title font-sequelsans-romanbody t_line explore-spaces-title">
+                    Explore Our<br>Spaces, Imagine<br>Your Future
                 </h2>
             </div>
         </div>

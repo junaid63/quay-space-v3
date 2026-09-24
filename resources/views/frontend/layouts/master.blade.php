@@ -668,13 +668,23 @@
             // Define your color list
             var colors = ['#f14246', '#f6861f', '#0495f3', '#52b347'];
 
+            function getHeadlineWidth($wrapper) {
+                var widestWord = 0;
+
+                $wrapper.children('b').each(function() {
+                    widestWord = Math.max(widestWord, Math.ceil($(this).outerWidth()));
+                });
+
+                return widestWord + 14;
+            }
+
             function animateHeadline($headlines) {
                 $headlines.each(function() {
                     var headline = $(this);
 
                     if (headline.hasClass('clip')) {
                         var spanWrapper = headline.find('.cd-words-wrapper'),
-                            newWidth = spanWrapper.width() + 10;
+                            newWidth = getHeadlineWidth(spanWrapper);
                         spanWrapper.css('width', newWidth);
                     }
 
@@ -710,7 +720,7 @@
 
                     // Animate word reveal
                     $word.parents('.cd-words-wrapper').animate({
-                        'width': $word.width() + 10
+                        'width': getHeadlineWidth($word.parents('.cd-words-wrapper'))
                     }, revealDuration, function() {
                         // Blink eyes on each new word
                         blinkEyes();
@@ -807,7 +817,7 @@
                 this.reset();
                 selectedDate = null;
                 selectedTime = null;
-                $(".cd-words-wrapper").css("display", ""); // ✅ ensure animation returns
+                $(".cd-words-wrapper").removeClass("hide");
             });
 
             // Time slot selection
@@ -821,11 +831,11 @@
             $(window).on("click", function(e) {
                 if ($(e.target).is("#bookingModal")) {
                     $("#bookingModal").removeClass("active");
-                    $(".cd-words-wrapper").css("display", ""); // ✅ restore animation
+                    $(".cd-words-wrapper").removeClass("hide");
                 }
                 if ($(e.target).is("#formModal")) {
                     $("#formModal").removeClass("active");
-                    $(".cd-words-wrapper").css("display", ""); // ✅ restore animation
+                    $(".cd-words-wrapper").removeClass("hide");
                 }
             });
 

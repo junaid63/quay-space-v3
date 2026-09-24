@@ -750,6 +750,9 @@
 
     // service-area-2 text and bg animation start
     if (document.querySelectorAll(".actually-area").length > 0) {
+        const t_line = new SplitText(".t_line", { type: "lines" });
+        gsap.set(t_line.lines, { backgroundPositionX: "100%" });
+
         var tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".actually-area",
@@ -757,20 +760,15 @@
                 scrub: 1,
                 start: "top top",
                 end: "bottom+=1500 top",
+                invalidateOnRefresh: true,
             }
         });
-        const t_line = new SplitText(".t_line", { type: "lines" });
-        t_line.lines.forEach((target) => {
-            tl.to(target, {
-                backgroundPositionX: 0,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: target,
-                    scrub: 1,
-                    start: 'top 25%',
-                    end: "center 25%",
-                }
-            });
+
+        tl.to(t_line.lines, {
+            backgroundPositionX: 0,
+            ease: "none",
+            stagger: 0.15,
+            duration: 0.65,
         });
         tl.to(".actually-area .section-title", {
             scale: 40,
