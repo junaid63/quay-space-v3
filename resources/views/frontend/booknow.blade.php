@@ -840,7 +840,7 @@ Quay Space | Book Now
                                         <i class="fa-solid fa-check"></i>
                                         <div class="selected-service" id="selectedService">
                                             <div class="selected-img">
-                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionevents.svg" alt="">
+                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionevents.svg" alt="Quay Space workspace image">
                                             </div>
                                             <div>
                                                 <h3 id="serviceName">Event Space</h3>
@@ -898,7 +898,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="firstfloor" data-available-services="office,coworking,private-office,meeting-room,event-space">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> First Floor</h3>
                                     </div>
@@ -926,7 +926,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="secondfloor" data-available-services="office,private-office,meeting-room">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> Second Floor</h3>
                                     </div>
@@ -954,7 +954,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="thirdfloor" data-available-services="meeting-room,event-space">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> Third Floor</h3>
                                     </div>

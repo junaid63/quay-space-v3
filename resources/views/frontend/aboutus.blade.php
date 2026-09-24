@@ -72,7 +72,7 @@ About Quay Space | Flexible Offices – Book Today
                 </div>
                 <div class="row position-relative">
                     <div class="background-image">
-                        <img src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-dot-shape.webp" alt="">
+                        <img src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-dot-shape.webp" alt="Quay Space workspace image">
                     </div>
                     <div class="col-lg-6 col-md-6 order-lg-0 order-md-0 order-1">
                         <div class="section-title-wrapper d-block d-lg-none d-md-none">
@@ -122,10 +122,10 @@ About Quay Space | Flexible Offices – Book Today
                     <div class="col-lg-6 col-md-6 order-lg-1 order-md-1 order-0">
                         <div class="about-images">
                             <div class="first-img about-img reveal">
-                                <img class="img-2" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img-1.webp" alt="">
+                                <img class="img-2" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img-1.webp" alt="Quay Space workspace image">
                             </div>
                             <div class="second-img about-img reveal">
-                                <img class="img-1" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img.webp" alt="">
+                                <img class="img-1" src="https://html.ravextheme.com/redox/light/assets/imgs/web-design/about-img.webp" alt="Quay Space workspace image">
                             </div>
                         </div>
                     </div>
@@ -136,7 +136,7 @@ About Quay Space | Flexible Offices – Book Today
                 <div class="banefits-main-div">
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/1.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Cost Savings and Flexibility</span>
@@ -144,7 +144,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/2.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Networking & Community Events</span>
@@ -152,7 +152,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/3.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Perks With The Space</span>
@@ -160,7 +160,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/4.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Central Location For Clients</span>
@@ -168,7 +168,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/5.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Enhanced Company Productivity</span>
@@ -176,7 +176,7 @@ About Quay Space | Flexible Offices – Book Today
                     </div>
                     <div class="icon-content">
                         <div class="icon">
-                            <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-icons/6.png.png')}}" alt="Quay Space workspace image">
                         </div>
                         <div class="content">
                             <span>Bring Structure to Your Day</span>
@@ -502,7 +502,7 @@ About Quay Space | Flexible Offices – Book Today
                         {{-- <div class="our-teams-cards position-relative">
                             <div class="white-border"></div>
                             <div class="image">
-                                <img src="https://www.quay-space.co.uk/frontend/assets/images/team/AnnieDurrant.jpg" alt="">
+                                <img src="https://www.quay-space.co.uk/frontend/assets/images/team/AnnieDurrant.jpg" alt="Quay Space workspace image">
                             </div>
                             <div class="content fade-anim">
                                 <div class="name">

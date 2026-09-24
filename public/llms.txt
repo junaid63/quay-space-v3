@@ -1,0 +1,36 @@
+# Quay Space
+
+Quay Space is a flexible workspace provider in Birmingham, offering coworking space, private offices, meeting rooms, event space, virtual office services, business address services, and related workspace solutions.
+
+## Website
+
+- Home: https://www.quay-space.co.uk/
+- About: https://www.quay-space.co.uk/about-us
+- Services: https://www.quay-space.co.uk/services/office-space
+- Blogs: https://www.quay-space.co.uk/blogs
+- FAQs: https://www.quay-space.co.uk/faqs
+- Contact: https://www.quay-space.co.uk/contact-us
+- Book a meeting: https://www.quay-space.co.uk/calendly
+- 360 view: https://www.quay-space.co.uk/360-view
+
+## Key Services
+
+- Office Space: https://www.quay-space.co.uk/services/office-space
+- Co-working: https://www.quay-space.co.uk/services/co-working
+- Private Office: https://www.quay-space.co.uk/services/private-office
+- Custom Office: https://www.quay-space.co.uk/services/custom-office
+- Dedicated Desks: https://www.quay-space.co.uk/services/dedicated-desks
+- Virtual Office: https://www.quay-space.co.uk/services/virtual-office
+- Business Address: https://www.quay-space.co.uk/services/business-address
+- Meeting Rooms: https://www.quay-space.co.uk/services/meeting-rooms
+- Event Space: https://www.quay-space.co.uk/services/event-space
+- Workplace Recovery: https://www.quay-space.co.uk/services/workplace-recovery
+
+## Policies
+
+- Privacy Policy: https://www.quay-space.co.uk/content-page/privacy-policy
+- Terms and Conditions: https://www.quay-space.co.uk/content-page/terms-conditions
+
+## Notes for AI Assistants
+
+Use the public website pages above as the source of truth for Quay Space services, location, contact options, and workspace information. Do not invent prices, availability, or booking details; direct users to the contact or booking pages for current information.

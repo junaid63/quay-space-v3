@@ -37,7 +37,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".officespace">
                                 <div class="services-navber-content active">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Office Space</span>
@@ -47,7 +47,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".coworking">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncoworking.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncoworking.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Coworking</span>
@@ -57,7 +57,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".virtual">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Virtual Office</span>
@@ -67,7 +67,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".meetingroom">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmeetingrooms.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmeetingrooms.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Meeting Room</span>
@@ -77,7 +77,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".membership">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmembership.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmembership.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Memberships</span>
@@ -87,7 +87,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".businessaddress">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionbusinessaddress.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionbusinessaddress.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Business Address</span>
@@ -97,7 +97,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".telephoneanswering">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiontelephone.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiontelephone.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Telephone Answering</span>
@@ -107,7 +107,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".eventspace">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionevents.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionevents.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Event Space</span>
@@ -117,7 +117,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".private">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmeetingrooms.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionmeetingrooms.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Private Office</span>
@@ -127,7 +127,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".customoffice">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncustomoffice.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncustomoffice.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Custom Office</span>
@@ -137,7 +137,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".dayoffice">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondayoffice.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondayoffice.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Day Office</span>
@@ -147,7 +147,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".hotdesks">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondayoffice.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondayoffice.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Hot Desks</span>
@@ -157,7 +157,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".dedicateddesks">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondedicated.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutiondedicated.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Dedicated Desks</span>
@@ -167,7 +167,7 @@ Quay Space | Services
                             <div class="swiper-slide" data-target=".workplace">
                                 <div class="services-navber-content">
                                     <div class="img">
-                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/emergency.svg" alt="">
+                                        <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/emergency.svg" alt="Quay Space workspace image">
                                     </div>
                                     <div class="services-navber-title">
                                         <span>Workplace Recovery</span>
@@ -232,7 +232,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -289,7 +289,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/medium-shot-woman-resigning_23-2149445783.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/medium-shot-woman-resigning_23-2149445783.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -338,7 +338,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241198.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -387,7 +387,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/indoor-shot-attractive-experienced-mature-woman-architect-sitting-desk-checking-engineering-drawings-by-her-ambitious-skilled-young-colleague-people-job-occupation-cooperation_344912-1633.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/indoor-shot-attractive-experienced-mature-woman-architect-sitting-desk-checking-engineering-drawings-by-her-ambitious-skilled-young-colleague-people-job-occupation-cooperation_344912-1633.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -436,7 +436,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/close-up-young-business-person-doing-internship_23-2149305389.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/close-up-young-business-person-doing-internship_23-2149305389.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -534,7 +534,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280244/WebsiteImagery/Gallery/CW_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280244/WebsiteImagery/Gallery/CW_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -591,7 +591,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/group-young-business-professionals-having-meeting-diverse-group-young-designers-smiling-meeting-office_484651-12407.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/group-young-business-professionals-having-meeting-diverse-group-young-designers-smiling-meeting-office_484651-12407.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -640,7 +640,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/team-graphic-designers-having-meeting_107420-42702.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/team-graphic-designers-having-meeting_107420-42702.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -689,7 +689,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/business-people-group-modern-office-have-team-meeting-brainstorming-while-working-tablet-laptop-presenting-ideas-take-notes_530697-19624.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/business-people-group-modern-office-have-team-meeting-brainstorming-while-working-tablet-laptop-presenting-ideas-take-notes_530697-19624.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -738,7 +738,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/empty-office-workplace-with-table-chair-computer_1170-1967.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/empty-office-workplace-with-table-chair-computer_1170-1967.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -825,7 +825,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280252/WebsiteImagery/Gallery/VO_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280252/WebsiteImagery/Gallery/VO_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -849,7 +849,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -898,7 +898,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/entrepreneur-chatting-with-people-business-videocall-attending-remote-telework-meeting-desk-executive-manager-planning-report-with-colleagues-online-telecoference-webcam-talk_482257-60127.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/entrepreneur-chatting-with-people-business-videocall-attending-remote-telework-meeting-desk-executive-manager-planning-report-with-colleagues-online-telecoference-webcam-talk_482257-60127.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -947,7 +947,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/man-using-video-call-meeting-with-manager-computer-corporate-employee-talking-trainer-online-remote-conference-with-webcam-business-development-virtual-marketing_482257-35912.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/man-using-video-call-meeting-with-manager-computer-corporate-employee-talking-trainer-online-remote-conference-with-webcam-business-development-virtual-marketing_482257-35912.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -996,7 +996,7 @@ Quay Space | Services
                     <div class="services-cards needhelp-card fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1094,7 +1094,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280472/WebsiteImagery/Gallery/MR_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280472/WebsiteImagery/Gallery/MR_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -1151,7 +1151,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/business-meeting-room-office_1170-1966.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/business-meeting-room-office_1170-1966.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1196,7 +1196,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/group-casually-dressed-colleagues-sitting-office-open-door-talking_1098-20440.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1241,7 +1241,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/full-shot-people-correcting-grammar-mistakes_23-2150171159.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/full-shot-people-correcting-grammar-mistakes_23-2150171159.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1253,7 +1253,7 @@ Quay Space | Services
                             </div>
                             <div class="two-sublines d-flex flex-column gap-lg-2 gap-2 mb-lg-3 mb-2">
                                 <div class="icon-para">
-                                    <img src="https://www.regus.com/icons/media/regus/redesign/navigation-icons/svg/16/nocapital.svg" alt="">
+                                    <img src="https://www.regus.com/icons/media/regus/redesign/navigation-icons/svg/16/nocapital.svg" alt="Quay Space workspace image">
                                     <span>Equipped for learning</span>
                                 </div>
                             </div>
@@ -1286,7 +1286,7 @@ Quay Space | Services
                     <div class="services-cards needhelp-card fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1383,7 +1383,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280307/WebsiteImagery/Gallery/MS_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280307/WebsiteImagery/Gallery/MS_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -1440,7 +1440,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/creative-business-people-discussing-office_107420-33671.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/creative-business-people-discussing-office_107420-33671.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1461,7 +1461,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/sad-dismissed-man-holding-box-with-belongings-after-being-fired-while-his-collegues-looking-hom-working-startup-office-businesspeople-brainstorming-ideas-developing-marketing-project_482257-40109.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/sad-dismissed-man-holding-box-with-belongings-after-being-fired-while-his-collegues-looking-hom-working-startup-office-businesspeople-brainstorming-ideas-developing-marketing-project_482257-40109.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1482,7 +1482,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/woman-holding-shopping-boxes_329181-8874.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/woman-holding-shopping-boxes_329181-8874.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1542,7 +1542,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280329/WebsiteImagery/Gallery/BA_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280329/WebsiteImagery/Gallery/BA_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -1566,7 +1566,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/day-office-travel-agency_23-2150769958.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1587,7 +1587,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/businesswoman-taking-notes-clipboard-sitting-desk-corporate-office-while-taking_482257-4201.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/businesswoman-taking-notes-clipboard-sitting-desk-corporate-office-while-taking_482257-4201.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1608,7 +1608,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/entrepreneur-chatting-with-people-business-videocall-attending-remote-telework-meeting-desk-executive-manager-planning-report-with-colleagues-online-telecoference-webcam-talk_482257-60127.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/entrepreneur-chatting-with-people-business-videocall-attending-remote-telework-meeting-desk-executive-manager-planning-report-with-colleagues-online-telecoference-webcam-talk_482257-60127.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1629,7 +1629,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/man-using-video-call-meeting-with-manager-computer-corporate-employee-talking-trainer-online-remote-conference-with-webcam-business-development-virtual-marketing_482257-35912.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/man-using-video-call-meeting-with-manager-computer-corporate-employee-talking-trainer-online-remote-conference-with-webcam-business-development-virtual-marketing_482257-35912.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1686,7 +1686,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280250/WebsiteImagery/Gallery/TA_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280250/WebsiteImagery/Gallery/TA_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 order-md-2 d-none d-lg-none d-md-flex">
@@ -1730,7 +1730,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/portrait-modern-woman-working-with-laptop_23-2148131714.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/portrait-modern-woman-working-with-laptop_23-2148131714.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1772,7 +1772,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/premium-photo/remote-work-brunette-woman-with-headphones-working-remotely-online-her-laptop-girl-actively-discussing-business-with-her-colleagues-through-video-call-her-cozy-home-workplace_221404-343.jpg" alt="">
+                            <img src="https://img.freepik.com/premium-photo/remote-work-brunette-woman-with-headphones-working-remotely-online-her-laptop-girl-actively-discussing-business-with-her-colleagues-through-video-call-her-cozy-home-workplace_221404-343.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1814,7 +1814,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/business-partners-meet-with-people_482257-79716.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/business-partners-meet-with-people_482257-79716.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1856,7 +1856,7 @@ Quay Space | Services
                     <div class="services-cards needhelp-card fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="">
+                            <img src="https://img.freepik.com/free-photo/support-colleagues_1098-13685.jpg" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -1960,7 +1960,7 @@ Quay Space | Services
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
                 <div class="col-md-12 mt-md-5 order-md-2 d-none d-lg-none d-md-block">
@@ -2075,10 +2075,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -2092,10 +2092,10 @@ Quay Space | Services
                     <div class="services-about-images order-lg-0 order-1">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents order-lg-1 order-0">
@@ -2221,7 +2221,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -2299,10 +2299,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -2316,10 +2316,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">
@@ -2432,7 +2432,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280307/WebsiteImagery/Gallery/CO_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280307/WebsiteImagery/Gallery/CO_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -2515,10 +2515,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -2532,10 +2532,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">
@@ -2661,7 +2661,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280250/WebsiteImagery/Gallery/DO_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280250/WebsiteImagery/Gallery/DO_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -2743,10 +2743,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -2760,10 +2760,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">
@@ -2877,7 +2877,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280479/WebsiteImagery/Gallery/HD_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_345,h_259/v1753280479/WebsiteImagery/Gallery/HD_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -2959,10 +2959,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -2976,10 +2976,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">
@@ -3092,7 +3092,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280295/WebsiteImagery/Gallery/DD_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280295/WebsiteImagery/Gallery/DD_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -3175,10 +3175,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                 </div>
@@ -3192,10 +3192,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">
@@ -3307,7 +3307,7 @@ Quay Space | Services
                 </div>
                 <div class="col-5">
                     <div class="services-image">
-                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280272/WebsiteImagery/Gallery/WR_1.jpg" alt="">
+                        <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280272/WebsiteImagery/Gallery/WR_1.jpg" alt="Quay Space workspace image">
                     </div>
                 </div>
             </div>
@@ -3331,7 +3331,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -3352,7 +3352,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -3373,7 +3373,7 @@ Quay Space | Services
                     <div class="services-cards fade-anim">
                         <div class="img">
                             <!-- <div class="top-color"></div> -->
-                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="">
+                            <img src="{{url('frontend/assets/imgs/about/about-banner.webp')}}" alt="Quay Space workspace image">
                             <!-- <div class="bottom-color"></div> -->
                         </div>
                         <div class="cards-content">
@@ -3400,10 +3400,10 @@ Quay Space | Services
                     <div class="services-about-images">
                         <div class="border-line"></div>
                         <div class="img-one">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280478/WebsiteImagery/Gallery/PO_1.jpg" alt="Quay Space workspace image">
                         </div>
                         <div class="img-two">
-                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="">
+                            <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280321/WebsiteImagery/Gallery/ES_1.jpg" alt="Quay Space workspace image">
                         </div>
                     </div>
                     <div class="services-contents">

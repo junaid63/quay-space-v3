@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://www.quay-space.co.uk/sitemap.xml

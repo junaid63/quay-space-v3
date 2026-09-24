@@ -78,7 +78,7 @@
 
                 {{-- <div class="section-content-wrapper fade-anim">
                     <div class="team-thumb order-lg-0 order-1">
-                        <img src="https://www.quay-space.co.uk/frontend/assets/images/team/SkyeBrowne.webp" alt="">
+                        <img src="https://www.quay-space.co.uk/frontend/assets/images/team/SkyeBrowne.webp" alt="Quay Space workspace image">
                     </div>
                     <div class="section-content order-lg-1 order-0">
                         <div class="section-title-wrapper">

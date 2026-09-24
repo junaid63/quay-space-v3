@@ -4,7 +4,7 @@
         <div class="container large">
             <div class="header-area-7__inner">
                 <div class="header__navicon order-lg-0 order-md-0 order-1">
-                    <button class="side-toggle">
+                    <button class="side-toggle" aria-label="Open navigation menu">
                         <span class="menu-icon">
                             <span class="line"></span>
                             <span class="line short-1"></span>
@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="header__button order-lg-2 order-md-2">
-                    <a href="#" class="rr-btn transperent-button bookMeetingBtn">
+                    <a href="{{ route('calendly') }}" class="rr-btn transperent-button bookMeetingBtn">
                         <span class="btn-wrap">
                             <span class="text-one">Let’s Talk</span>
                             <span class="text-two">Let’s Talk</span>
@@ -44,7 +44,7 @@
         <div class="container large">
             <div class="header-area-7__inner">
                 <div class="header__navicon order-lg-0 order-md-0 order-1">
-                    <button class="side-toggle">
+                    <button class="side-toggle" aria-label="Open navigation menu">
                             <span class="menu-icon">
                                 <span class="line"></span>
                                 <span class="line short-1"></span>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="header__button order-lg-2 order-md-2">
-                    <a href="#" class="rr-btn transperent-button bookMeetingBtn">
+                    <a href="{{ route('calendly') }}" class="rr-btn transperent-button bookMeetingBtn">
                         <span class="btn-wrap">
                                 <span class="text-one">Let’s Talk</span>
                         <span class="text-two">Let’s Talk</span>

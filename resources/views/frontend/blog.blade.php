@@ -86,7 +86,7 @@
                                 <a href="{{ route('blogdetails', $blog->slug) }}" class="text-ellipsis-2">
                                     <li class="recent-post">
                                         <div class="recent-post-image">
-                                            <img src="{{ url('storage/' . $blog->home_card_img) }}" alt="Travel">
+                                            <img src="{{ url('storage/' . $blog->home_card_img) }}" alt="{{ $blog->title }}">
                                         </div>
                                         <div class="recent-post-content">
                                             <h4>
