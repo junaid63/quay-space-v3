@@ -133,7 +133,7 @@
                         <div class="circle-text-wrapper">
                             <div class="curve-text">
                                 <div class="icon-box">
-                                    <img src="https://www.quay-space.co.uk/frontend/assets/images/icons/icon-5.png" alt="">
+                                    <img src="https://www.quay-space.co.uk/frontend/assets/images/icons/icon-5.png" alt="Quay Space workspace image">
                                 </div>
 
                                 <svg class="curved-circle rotate-me" viewBox="0 0 200 200">

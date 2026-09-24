@@ -886,21 +886,21 @@ Quay Space | Book Now
                                     <div class="membership-card" data-service="Coworking">
                                         <div class="membership-img-title mb-lg-4 mb-3">
                                             <div class="membership-card-img">
-                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncoworking.svg" alt="">
+                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutioncoworking.svg" alt="Quay Space workspace image">
                                             </div>
                                             <span class="membership-service-title">Coworking</span>
                                         </div>
                                         <ul>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-table-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-table-small.svg" alt="Quay Space workspace image">
                                                 <p>Coworking access</p>
                                             </li>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-vo-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-vo-small.svg" alt="Quay Space workspace image">
                                                 <p>Live Receptionist Services</p>
                                             </li>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-app-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-app-small.svg" alt="Quay Space workspace image">
                                                 <p>Book your days with the app</p>
                                             </li>
                                         </ul>
@@ -925,25 +925,25 @@ Quay Space | Book Now
                                     <div class="membership-card" data-service="Office">
                                         <div class="membership-img-title mb-lg-4 mb-3">
                                             <div class="membership-card-img">
-                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="">
+                                                <img src="https://www.regus.com/icons/media/regus/redesign/secondary-icons-new/solutionofficespace.svg" alt="Quay Space workspace image">
                                             </div>
                                             <span class="membership-service-title">Office</span>
                                         </div>
                                         <ul>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-lamp-and-sofa-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-lamp-and-sofa-small.svg" alt="Quay Space workspace image">
                                                 <p>All of Coworking</p>
                                             </li>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-private-access-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-private-access-small.svg" alt="Quay Space workspace image">
                                                 <p>Private Office access</p>
                                             </li>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-office-cleaning-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-office-cleaning-small.svg" alt="Quay Space workspace image">
                                                 <p>Office cleaning and maintenance</p>
                                             </li>
                                             <li class="icon-heading">
-                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-app-small.svg" alt="">
+                                                <img src="https://www.regus.com/en-gb/membership/office-checkout-page/assets/images/plan-icons/icon-app-small.svg" alt="Quay Space workspace image">
                                                 <p>Book your days with the app</p>
                                             </li>
                                         </ul>
@@ -992,7 +992,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="firstfloor" data-available-services="office,coworking,private-office,meeting-room,event-space">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> First Floor</h3>
                                     </div>
@@ -1012,7 +1012,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="secondfloor" data-available-services="office,private-office,meeting-room">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> Second Floor</h3>
                                     </div>
@@ -1032,7 +1032,7 @@ Quay Space | Book Now
                                 <div class="location-card" data-location="thirdfloor" data-available-services="meeting-room,event-space">
                                     <div class="img-title">
                                         <div class="img">
-                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/9512/9512315.png" alt="Quay Space workspace image">
                                         </div>
                                         <h3> Third Floor</h3>
                                     </div>

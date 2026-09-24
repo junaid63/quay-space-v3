@@ -111,7 +111,7 @@
                 <div class="col-12 col-md-6 col-lg-5 order-lg-1 order-md-1 order-0">
                     <div class="services-image">
                         @if(!empty($Servicesdetail->image))
-                            <img src="{{ url('storage/' . $Servicesdetail->image) }}" title="{{ $Servicesdetail->title }} alt="{{ $Servicesdetail->title }}">
+                            <img src="{{ url('storage/' . $Servicesdetail->image) }}" title="{{ $Servicesdetail->title }}" alt="{{ $Servicesdetail->title }}">
                         @else
                             <img src="https://assets.iwgplc.com/image/upload/c_fill,f_auto,q_auto,w_auto,h_245,g_auto:subject,ar_4:3/v1753280271/WebsiteImagery/Gallery/OS_1.jpg" title="Service" alt="Service Image">
                         @endif
@@ -176,7 +176,7 @@
                             <div class="services-cards fade-anim">
                                 <div class="img">
                                     <!-- <div class="top-color"></div> -->
-                                    <img src="{{ url('storage/' . $card->image) }}" alt="">
+                                    <img src="{{ url('storage/' . $card->image) }}" alt="{{ $card->title ?? $heading->title ?? 'Quay Space service' }}">
                                     <!-- <div class="bottom-color"></div> -->
                                 </div>
                                 <div class="cards-content">
