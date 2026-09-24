@@ -5,7 +5,7 @@
                 <!-- Column 1 -->
                 <div class="col-12 col-lg-4 col-md-6 footer-widget">
                     <div class="footer-logo">
-                        <a href>
+                        <a href="{{route('index')}}" aria-label="Quay Space home">
                             <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" title="Footer" alt="Footer Logo" />
                         </a>
                     </div>
@@ -52,10 +52,10 @@
                         <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-3">Follow Us</h4>
                         <div class="crp-footer-social">
                             @if(setting('site.facebook'))
-                                <a href="{{setting('site.facebook')}}"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="{{setting('site.facebook')}}" aria-label="Quay Space Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                             @endif
                             @if(setting('site.instagram'))
-                                <a href="{{setting('site.instagram')}}"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="{{setting('site.instagram')}}" aria-label="Quay Space Instagram"><i class="fa-brands fa-instagram"></i></a>
                             @endif
                         </div>
                     </div>
@@ -66,10 +66,10 @@
                         <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-2">Follow Us</h4>
                         <div class="crp-footer-social">
                             @if(setting('site.facebook'))
-                                <a href="{{setting('site.facebook')}}"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="{{setting('site.facebook')}}" aria-label="Quay Space Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                             @endif
                             @if(setting('site.instagram'))
-                                <a href="{{setting('site.instagram')}}"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="{{setting('site.instagram')}}" aria-label="Quay Space Instagram"><i class="fa-brands fa-instagram"></i></a>
                             @endif
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                 <div class="col-12 col-lg-4 col-md-6 tablet-flex">
                     <div class="footer-contact-location mb-lg-4 mb-4">
                         <h4 class="crp-footer-widget-title mb-lg-4 mb-md-4 mb-3">Location</h4>
-                        <a href="https://maps.app.goo.gl/mRAnRGSL1hZJZEj2A" target="_blank">
+                        <a href="https://maps.app.goo.gl/mRAnRGSL1hZJZEj2A" target="_blank" rel="noopener noreferrer">
                             {{setting('site.address')}}
                         </a>
                     </div>
@@ -131,14 +131,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="copy-right">
-                            <p>© <span id="currentYear"></span> <a href="#"> Quay Space
+                            <p>© <span id="currentYear"></span> <a href="{{route('index')}}"> Quay Space
                                     </a> All rights reserved.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="designed">
                             Designed by
-                            <a href="https://www.ssftech.co.uk/" target="_blank">
+                            <a href="https://www.ssftech.co.uk/" target="_blank" rel="noopener noreferrer">
                                     SSF Tech
                                 </a> - Under the Provision of SSF Group
                         </div>

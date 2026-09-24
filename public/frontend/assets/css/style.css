@@ -103,24 +103,28 @@ work page css
     font-family: "Thunder";
     src: url("../fonts/Thunder-BoldLC.ttf");
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Thunder";
     src: url("../fonts/Thunder-SemiBoldLC.ttf");
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Thunder";
     src: url("../fonts/Thunder-LC.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Thunder";
     src: url("../fonts/Thunder-MediumLC.ttf");
     font-weight: 500;
+    font-display: swap;
 }
 
 
@@ -130,12 +134,14 @@ work page css
     font-family: "Sequel Sans Roman Body";
     src: url("../fonts/Sequel Sans Roman Body.otf");
     font-weight: 310;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Sequel Sans Medium Body";
     src: url("../fonts/Sequel Sans Medium Body.otf");
     font-weight: 315;
+    font-display: swap;
 }
 
 
@@ -145,6 +151,7 @@ work page css
     font-family: "TimesNow-SemiLightItalic";
     src: url("../fonts/TimesNow-SemiLightItalic.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 
@@ -154,18 +161,21 @@ work page css
     font-family: "BDOGrotesk-Regular";
     src: url("../fonts/BDOGrotesk-Regular.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "BDOGrotesk-Regular";
     src: url("../fonts/BDOGrotesk-Medium.ttf");
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "BDOGrotesk-Regular";
     src: url("../fonts/BDOGrotesk-DemiBold.ttf");
     font-weight: 600;
+    font-display: swap;
 }
 
 
@@ -175,24 +185,28 @@ work page css
     font-family: "Tartuffo_Trial";
     src: url("../fonts/Tartuffo_Trial-Thin.otf");
     font-weight: 100;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tartuffo_Trial";
     src: url("../fonts/Tartuffo_Trial-LightItalic.otf");
     font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Tartuffo_Trial";
     src: url("../fonts/Tartuffo_Trial-Light.otf");
     font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "tartuffo-font-family-family";
     src: url("../fonts/Tartuffo_Trial-MediumItalic.otf");
     font-weight: 500;
+    font-display: swap;
 }
 
 :root {
@@ -24677,6 +24691,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     src: url("../fonts/busico.eot?#iefix") format("embedded-opentype"), url("../fonts/busico.woff2") format("woff2"), url("../fonts/busico.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 } */
 
 [class^=icon-]:before,
@@ -26665,30 +26680,35 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Regular.ttf");
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Medium.ttf");
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Semibold.ttf");
     font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Bold.ttf");
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Beatrice Trial";
     src: url("../fonts/BeatriceTRIAL-Extrabold.ttf");
     font-weight: 800;
+    font-display: swap;
 } */
 
 :root {

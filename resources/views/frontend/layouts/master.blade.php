@@ -105,7 +105,7 @@
     <div class="modal" id="bookingModal">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="close-btn" id="closeModalForm">&times;</button>
+                <button class="close-btn" id="closeModalForm" aria-label="Close booking form">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="modal-content-form">
@@ -352,16 +352,16 @@
         <div class="side-info-content">
             <div class="offset-widget offset-header">
                 <div class="offset-logo">
-                    <a href="javascript:void(0);">
+                    <a href="{{route('index')}}" aria-label="Quay Space home">
                         <img src="{{url('storage')}}/{{setting('site.footer-logo')}}" alt="site logo">
                     </a>
                 </div>
-                <button id="side-info-close" class="side-info-close bg-transperent">
+                <button id="side-info-close" class="side-info-close bg-transperent" aria-label="Close navigation menu">
                             <i class="fas fa-times"></i>
                         </button>
             </div>
             <div class="offset-button">
-                <a href="#" class="rr-btn hover-bg-theme">
+                <a href="{{route('contactus')}}" class="rr-btn hover-bg-theme">
                     <span class="btn-wrap">
                         <span class="text-one">Let's Talk</span>
                         <span class="text-two">Let's Talk</span>
@@ -454,10 +454,10 @@
                 <h2 class="title text-center">Follow Us</h2>
                 <div class="crp-footer-social header-menu">
                     @if(setting('site.facebook'))
-                        <a href="{{setting('site.facebook')}}"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="{{setting('site.facebook')}}" aria-label="Quay Space Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     @endif
                     @if(setting('site.instagram'))
-                        <a href="{{setting('site.instagram')}}"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="{{setting('site.instagram')}}" aria-label="Quay Space Instagram"><i class="fa-brands fa-instagram"></i></a>
                     @endif
                 </div>
             </div>

@@ -44,7 +44,7 @@
             ],
             "opens": "09:00",
             "closes": "17:00"
-        } 
+        }
         }
     </script>
 @endsection
@@ -60,14 +60,15 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-K12Z2DJ2P4');
     </script>
     <!-- Google tag (gtag.js) -->
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" /> 
+    <link rel="preload" as="image" href="{{url('frontend/assets/imgs/banner/1.webp')}}" fetchpriority="high">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 @stop
 
@@ -77,9 +78,9 @@
     <section class="hero-area">
         <!-- Background Slider -->
         <div class="hero-slider">
-            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/1.jpg');"></div>
-            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/2.jpg');"></div>
-            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/3.jpg');"></div>
+            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/1.webp');"></div>
+            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/2.webp');"></div>
+            <div class="slide" style="background-image: url('frontend/assets/imgs/banner/3.webp');"></div>
         </div>
 
         <div class="container large">
@@ -150,7 +151,7 @@
                             </div>
 
                         </div>
-                        
+
                     </div> --}}
                 </div>
             </div>
@@ -393,21 +394,21 @@
                         <div class="right-white-space"></div>
                         <div class="first-two-images">
                             <div class="first">
-                                <img src="{{url('frontend/assets/imgs/about/new-first.png')}}" title="About Img one" alt="About Img one">
+                                <img src="{{url('frontend/assets/imgs/about/new-first.webp')}}" title="About Img one" alt="About Img one" width="1094" height="625" loading="lazy" decoding="async">
                             </div>
                             <div class="second">
-                                <img src="{{url('frontend/assets/imgs/about/new-second.png')}}" title="About Img two" alt="About Img two">
+                                <img src="{{url('frontend/assets/imgs/about/new-second.webp')}}" title="About Img two" alt="About Img two" width="1094" height="625" loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="third">
-                            <img src="{{url('frontend/assets/imgs/about/new-third.png')}}" title="About Img three" alt="About Img three">
+                            <img src="{{url('frontend/assets/imgs/about/new-third.webp')}}" title="About Img three" alt="About Img three" width="394" height="394" loading="lazy" decoding="async">
                         </div>
                         <div class="second-two-images">
                             <div class="fourth">
-                                <img src="{{url('frontend/assets/imgs/about/new-fourth.png')}}" title="About Img four" alt="About Img four">
+                                <img src="{{url('frontend/assets/imgs/about/new-fourth.webp')}}" title="About Img four" alt="About Img four" width="1094" height="625" loading="lazy" decoding="async">
                             </div>
                             <div class="five">
-                                <img src="{{url('frontend/assets/imgs/about/new-five.png')}}" title="About Img five" alt="About Img five">
+                                <img src="{{url('frontend/assets/imgs/about/new-five.webp')}}" title="About Img five" alt="About Img five" width="1094" height="625" loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="bottomleft-white-space"></div>
@@ -470,7 +471,7 @@
     <!--                        frameborder="0" -->
     <!--                        allowfullscreen>-->
     <!--                    </iframe>-->
-                        
+
     <!--                    <div class="floor-info show">-->
     <!--                        <h3>Second Floor</h3>-->
     <!--                        <p>This floor features our modern conference rooms, collaborative workspaces, and a comfortable lounge area for informal meetings.</p>-->
@@ -480,10 +481,10 @@
     <!--        </div>-->
     <!--    </div>-->
     <!--</section> --}}-->
-    <section class="home-360-view py-lg-5"> 
+    <section class="home-360-view py-lg-5">
         <div class="container large">
             <div class="row">
-                 
+
                 <div class="section-header pb-lg-4 pb-4">
                     <div class="section-content">
                         <div class="section-title-wrapper">
@@ -497,45 +498,44 @@
                 </div>
 
                 <div class="threesixty-view-main-card">
-                    
+
                     <div class="threesixty-button">
-                        <button type="button" class="active" 
-                            data-floor="second" 
+                        <button type="button" class="active"
+                            data-floor="second" aria-label="Show second floor 360 view"
                             data-src="https://quay-space.co.uk/vr/2nd/">
                             <i class="fa-regular fa-building"></i>
                             2nd Floor
                         </button>
 
-                        <button type="button" 
-                            data-floor="third" 
+                        <button type="button"
+                            data-floor="third" aria-label="Show third floor 360 view"
                             data-src="https://quay-space.co.uk/vr/3rd/">
                             <i class="fa-regular fa-building"></i>
                             3rd Floor
                         </button>
 
-                        <button type="button" 
-                            data-floor="seven" 
+                        <button type="button"
+                            data-floor="seven" aria-label="Show seventh floor 360 view"
                             data-src="https://quay-space.co.uk/vr/7th/">
                             <i class="fa-regular fa-building"></i>
                             7th Floor
                         </button>
 
-                        <button type="button" 
-                            data-floor="eight" 
+                        <button type="button"
+                            data-floor="eight" aria-label="Show eighth floor 360 view"
                             data-src="https://quay-space.co.uk/vr/8th/">
                             <i class="fa-regular fa-building"></i>
                             8th Floor
                         </button>
                     </div>
 
-                  
+
                     <div class="threesixty-view">
                         <div class="loading-indicator">Loading 360° View</div>
-                        <iframe 
-                            src="https://quay-space.co.uk/vr/2nd/"
-                            height="600" 
+                        <iframe title="Quay Space second floor 360 virtual tour" loading="lazy" src="https://quay-space.co.uk/vr/2nd/"
+                            height="600"
                             width="100%"
-                            frameborder="0" 
+                            frameborder="0"
                             allowfullscreen>
                         </iframe>
 
@@ -570,7 +570,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[1]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/co-working.jpg')}}" title="Co-Working Section Img" alt="Co-Working Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/co-working.webp')}}" title="Co-Working Section Img" alt="Co-Working Section Img" width="1920" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -588,7 +588,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[2]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/private-office.jpg')}}" title="Private Office Section Img" alt="Private Office Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/private-office.webp')}}" title="Private Office Section Img" alt="Private Office Section Img" width="1920" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -606,7 +606,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[0]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/floor.jpg')}}" title="Office Space Section Img" alt="Office Space Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/floor.webp')}}" title="Office Space Section Img" alt="Office Space Section Img" width="1920" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -624,7 +624,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[8]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/event.jpg')}}" title="Event Space Section Img" alt="Event Space Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/event.webp')}}" title="Event Space Section Img" alt="Event Space Section Img" width="1920" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -642,7 +642,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[5]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/virtual-office.jpg')}}" title="Virtual Office Section Img" alt="Virtual Office Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/virtual-office.webp')}}" title="Virtual Office Section Img" alt="Virtual Office Section Img" width="1620" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -660,7 +660,7 @@
                                 <div class="image scale" data-cursor-text="View More">
                                     <a href="{{ route('services', $Servicesget[7]->slug ?? '') }}">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/office-space/meeting.jpg')}}" title="Meeting Room Section Img" alt="Meeting Room Section Img">
+                                        <img src="{{url('frontend/assets/imgs/office-space/meeting.webp')}}" title="Meeting Room Section Img" alt="Meeting Room Section Img" width="1920" height="auto" loading="lazy" decoding="async">
                                     </a>
                                 </div>
                             </div>
@@ -794,7 +794,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Feature 2 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -809,7 +809,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Feature 3 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -824,7 +824,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Feature 4 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -839,7 +839,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Feature 5 -->
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -858,7 +858,7 @@
             {{-- <div class="cta-section">
                 <h3>Ready to Join Our Community?</h3>
                 <p>Book a tour today and experience the Quayspace difference for yourself. Our team is ready to help you find the perfect workspace solution.</p>
-                <a href="#" class="cta-button">Schedule a Visit</a>
+                <a href="{{route('contactus')}}" class="cta-button">Schedule a Visit</a>
             </div> --}}
         </div>
     </section>
@@ -928,7 +928,7 @@
                         </div>
                         <div class="service-banner-img px-lg-4 order-lg-1 order-0">
                             <div class="service-img image-wrapper image scale position-relative">
-                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new-01.webp')}}" title="Mailing Advantage Img" alt="Mailing Advantage Img">
+                                <img src="{{url('frontend/assets/imgs/mailing/mailing-new-01.webp')}}" title="Mailing Advantage Img" alt="Mailing Advantage Img" width="1641" height="1250" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -971,7 +971,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/1.jpg')}}"  data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/1.jpg')}}" title="Gallery first Img" alt="Gallery first Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery first Img" alt="Gallery first Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -992,7 +992,7 @@
                                         </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/2.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/2.jpg')}}" title="Gallery second Img" alt="Gallery second Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/2.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery second Img" alt="Gallery second Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1008,7 +1008,7 @@
                                     </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/3.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/3.jpg')}}" title="Gallery third Img" alt="Gallery third Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/3.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery third Img" alt="Gallery third Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1024,7 +1024,7 @@
                                         </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/4.jpg')}}" data-fancybox="gallery">
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/4.jpg')}}" title="Gallery fourth Img" alt="Gallery fourth Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/4.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery fourth Img" alt="Gallery fourth Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1040,7 +1040,7 @@
                             </div>" data-cursor-class="-big">
                                         <a href="{{url('frontend/assets/imgs/gallery/5.jpg')}}" data-fancybox="gallery" >
                                             <div class="black-shade"></div>
-                                            <img src="{{url('frontend/assets/imgs/gallery/5.jpg')}}" title="Gallery five Img" alt="Gallery five Img">
+                                            <img src="{{url('frontend/assets/imgs/gallery/5.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery five Img" alt="Gallery five Img">
                                             <ul class="project-section-3__tag">
                                                 <li>Gallery Space Name
                                                 </li>
@@ -1061,7 +1061,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/1.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/1.png')}}" title="Gallery six Img" alt="Gallery six Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/1.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery six Img" alt="Gallery six Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1077,7 +1077,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/2.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/2.png')}}" title="Gallery seven Img" alt="Gallery seven Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/2.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery seven Img" alt="Gallery seven Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1093,7 +1093,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/3.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/3.png')}}" title="Gallery eight Img" alt="Gallery eight Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/3.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery eight Img" alt="Gallery eight Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1109,7 +1109,7 @@
                         </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/4.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/4.png')}}" title="Gallery nine Img" alt="Gallery nine Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/4.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery nine Img" alt="Gallery nine Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1129,7 +1129,7 @@
                                     </div>" data-cursor-class="-big">
                                     <a href="{{url('frontend/assets/imgs/gallery/5.png')}}" data-fancybox="gallery">
                                         <div class="black-shade"></div>
-                                        <img src="{{url('frontend/assets/imgs/gallery/5.png')}}" title="Gallery ten Img" alt="Gallery ten Img">
+                                        <img src="{{url('frontend/assets/imgs/gallery/5.webp')}}" loading="lazy" decoding="async" width="1116" height="628" title="Gallery ten Img" alt="Gallery ten Img">
                                         <ul class="project-section-3__tag">
                                             <li>Gallery Space Name
                                             </li>
@@ -1140,11 +1140,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 {{-- <div class="col-lg-12">
                     <div class="project-section-3__item">
                         <div class="project-section-3__btn">
-                            <a href="#">View Gallery 
+                            <a href="{{route('contactus')}}" aria-label="View Quay Space gallery or contact us">View Gallery
                                 <span>
                                     <svg
                                         width="21"
@@ -1181,7 +1181,7 @@
     <!-- client area start  -->
     @include('frontend.inc.amenities')
     <!-- client area end  -->
-   
+
     <section class="services-section blog-home-main py-lg-5 py-4 mt-lg-5 mt-2">
         <div class="container large">
             <div class="work-area-inner">
@@ -1201,8 +1201,8 @@
                             <div class="blog-home-content-img">
                                 <a href="{{route('blogdetails', $blog->slug)}}">
                                     <div class="image">
-                                        <img src="{{ url('storage/'. $blog->home_card_img ) }}" alt="{{ $blog->title }}">
-                                    </div>  
+                                        <img src="{{ url('storage/'. $blog->home_card_img ) }}" alt="{{ $blog->title }}" width="416" height="280" loading="lazy" decoding="async">
+                                    </div>
                                     <div class="content p-3">
                                         <span class="subtitle">{{ ucwords($blog->sub_title) }}</span>
                                         <h4>
@@ -1477,13 +1477,13 @@
         // $(document).ready(function () {
         //     // ---------- HOME PAGE ----------
         //     $(document).on("click", ".icon-content", function () {
-        //         var target = $(this).data("target"); 
+        //         var target = $(this).data("target");
         //         if (target) {
         //             window.location.href = "/services/" + target;
         //         }
         //     });
         //     $(document).on("click", ".work-box", function () {
-        //         var target = $(this).data("target"); 
+        //         var target = $(this).data("target");
         //         if (target) {
         //             window.location.href = "/services/" + target;
         //         }
