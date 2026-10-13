@@ -66,7 +66,7 @@ class FrontendController extends Controller
     public function blog()
     {
         $view = 'frontend.blog';
-        $blogs = Blog::get();
+        $blogs = Blog::latest()->get();
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
@@ -79,7 +79,7 @@ class FrontendController extends Controller
     {
         $view = 'frontend.blog-details';
         $blogdetails = Blog::where('slug', $slug)->first();
-        $popularblogs = Blog::where('id' , '!=' , $blogdetails->id)->inRandomOrder()->take(3)->get();
+        $popularblogs = Blog::where('id' , '!=' , $blogdetails->id)->latest()->take(3)->get();
         $ourteams = $this->OurTeamsGet();
         $contentpagesget = $this->ContentPagesGet();
         $amenitiesget = $this->AmenitiesGet();
