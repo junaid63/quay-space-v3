@@ -668,14 +668,8 @@
             // Define your color list
             var colors = ['#f14246', '#f6861f', '#0495f3', '#52b347'];
 
-            function getHeadlineWidth($wrapper) {
-                var widestWord = 0;
-
-                $wrapper.children('b').each(function() {
-                    widestWord = Math.max(widestWord, Math.ceil($(this).outerWidth()));
-                });
-
-                return widestWord + 14;
+            function getHeadlineWidth($word) {
+                return $word.length ? Math.ceil($word.outerWidth()) + 6 : 0;
             }
 
             function animateHeadline($headlines) {
@@ -684,8 +678,12 @@
 
                     if (headline.hasClass('clip')) {
                         var spanWrapper = headline.find('.cd-words-wrapper'),
-                            newWidth = getHeadlineWidth(spanWrapper);
-                        spanWrapper.css('width', newWidth);
+                            visibleWord = spanWrapper.children('b.is-visible').eq(0),
+                            newWidth = getHeadlineWidth(visibleWord);
+
+                        if (newWidth) {
+                            spanWrapper.css('width', newWidth);
+                        }
                     }
 
                     setTimeout(function() {
@@ -720,7 +718,7 @@
 
                     // Animate word reveal
                     $word.parents('.cd-words-wrapper').animate({
-                        'width': getHeadlineWidth($word.parents('.cd-words-wrapper'))
+                        'width': getHeadlineWidth($word)
                     }, revealDuration, function() {
                         // Blink eyes on each new word
                         blinkEyes();
