@@ -106,18 +106,27 @@
     var device_width = window.screen.width;
 
     if (device_width > 767) {
-        if (document.querySelector("#has_smooth").classList.contains("has-smooth")) {
-            const smoother = ScrollSmoother.create({
-                smooth: 0.9,
-                effects: device_width < 1025 ? false : true,
-                smoothTouch: 0.1,
-                normalizeScroll: {
-                    allowNestedScroll: true,
-                },
-                ignoreMobileResize: true,
-            });
-        }
+        const smoothMarker = document.querySelector("#has_smooth");
+        const smoothWrapper = document.querySelector("#smooth-wrapper");
+        const smoothContent = document.querySelector("#smooth-content");
 
+        if (smoothMarker && smoothMarker.classList.contains("has-smooth") && smoothWrapper && smoothContent && typeof ScrollSmoother !== "undefined") {
+            try {
+                ScrollSmoother.create({
+                    wrapper: smoothWrapper,
+                    content: smoothContent,
+                    smooth: 0.9,
+                    effects: device_width < 1025 ? false : true,
+                    smoothTouch: 0.1,
+                    normalizeScroll: {
+                        allowNestedScroll: true,
+                    },
+                    ignoreMobileResize: true,
+                });
+            } catch (error) {
+                console.warn("ScrollSmoother disabled:", error);
+            }
+        }
     }
 
     // Side Info Js
@@ -489,22 +498,7 @@
         });
     })
 
-    // cta text animation
-    if (document.querySelectorAll(".cta-area").length > 0) {
-        var tl = gsap.timeline({
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".cta-area",
-                pin: true,
-                pinSpacing: true,
-                scrub: 2,
-                start: 'bottom 100%',
-                end: "200%",
-            }
-        });
-        tl.to(".cta-area .area-bg", { scale: "10", delay: 0.1, ease: "power2.in" });
-        tl.to(".cta-area .section-title", { fontSize: "10vw", ease: "power2.in" }, "<");
-    }
+    // cta text animation disabled to keep the section in place
 
     // hover reveal start
     if (document.querySelectorAll(".hover-reveal").length > 0) {
@@ -753,34 +747,19 @@
         const t_line = new SplitText(".t_line", { type: "lines" });
         gsap.set(t_line.lines, { backgroundPositionX: "100%" });
 
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".actually-area",
-                pin: true,
-                scrub: 1,
-                start: "top 5%",
-                end: "bottom+=1500 top",
-                invalidateOnRefresh: true,
-            }
-        });
-
-        tl.to(t_line.lines, {
+        gsap.to(t_line.lines, {
             backgroundPositionX: 0,
             ease: "none",
             stagger: 0.15,
             duration: 0.65,
+            scrollTrigger: {
+                trigger: ".actually-area",
+                scrub: 1,
+                start: "top 75%",
+                end: "bottom 45%",
+                invalidateOnRefresh: true,
+            }
         });
-        tl.to(".actually-area .section-title", {
-            scale: 40,
-            opacity: 0,
-            ease: "power4.inOut",
-            delay: 0.35,
-            duration: 0.75,
-        });
-        tl.to(".actually-area", {
-            backgroundColor: "#111111",
-            duration: 0.45,
-        }, "-=0.50");
     }
     // service-area-2 text and bg animation end
 
