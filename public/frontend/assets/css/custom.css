@@ -903,6 +903,26 @@
         position: relative;
     }
 
+    .popular-posts-list {
+        /* max-height: 460px; */
+        max-height: 590px;
+        overflow-y: auto;
+        padding-right: 8px;
+    }
+
+    .popular-posts-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .popular-posts-list::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .popular-posts-list::-webkit-scrollbar-thumb {
+        background: var(--secondary);
+        border-radius: 10px;
+    }
+
     .hero-area .hero-content {
         width: 100%;
         display: flex;
@@ -5207,6 +5227,9 @@
     }
 
     @media (min-width: 1300px) and (max-width: 1550px) {
+        .popular-posts-list {
+            max-height: 320px;
+        }
         .gap-lg-2 {
             gap: .1rem !important;
         }

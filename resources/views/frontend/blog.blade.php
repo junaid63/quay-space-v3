@@ -81,7 +81,7 @@
                         <!-- Recent Posts Widget -->
                         <div class="sidebar-widget">
                             <h3 class="widget-title">Popular Posts</h3>
-                            <ul class="recent-posts">
+                            <ul class="recent-posts popular-posts-list">
                                 @foreach ($blogs as $blog)
                                 <a href="{{ route('blogdetails', $blog->slug) }}" class="text-ellipsis-2">
                                     <li class="recent-post">
