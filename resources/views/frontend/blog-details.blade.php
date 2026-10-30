@@ -42,7 +42,7 @@
                             <div class="blog-details-content">
                                 @php
                                     $createdat = $blogdetails->created_at;
-                                    $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
+                                    $timeformat = \Carbon\Carbon::parse($createdat)->format('F Y');
                                 @endphp
                                 <div class="blog-details-meta">
                                     <span class="blog-details-date">{{ $timeformat }}</span>
@@ -73,7 +73,7 @@
                                         <div class="recent-post-content">
                                                 @php
                                                 $createdat = $blog->created_at;
-                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('d - F - Y');
+                                                $timeformat = \Carbon\Carbon::parse($createdat)->format('F Y');
                                             @endphp
                                             <div class="recent-post-content">
                                                 <h4>
